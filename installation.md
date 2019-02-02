@@ -43,7 +43,7 @@ Pour Windows Vista:
 Pour Windows 7 et 8:
 
 - Cliquez avec le bouton droit sur Ordinateur de votre bureau et sélectionnez `Propriétés` ou cliquez sur `Démarrer` et choisissez `Panneau de configuration` -> `Système et sécurité` -> `Système`. Cliquez sur `Paramètres système avancés` sur la gauche, puis sur l'onglet `Avancé`. En bas, cliquez sur "Variables d'environnement" et sous "Variables système", recherchez la variable `PATH`, sélectionnez-la, puis appuyez sur `Modifier`.
-- Allez à la fin de la ligne sous `Valeur de la variable` et ajoutez `;C:\Python36` (veuillez vérifier que ce dossier existe, il sera différent pour les versions les plus récentes de Python) à la fin de ce qui existe déjà. Bien sûr, utilisez le nom de dossier approprié.
+- Allez à la fin de la ligne sous `Valeur de la variable` et ajoutez `;C:\Python36` à la fin de ce qui existe déjà (veuillez vérifier que ce dossier existe, il sera différent pour les versions les plus récentes de Python). Bien sûr, utilisez le nom de dossier approprié.
 - Si la valeur était `%SystemRoot%\system32;` il deviendra maintenant `%SystemRoot%\system32;C:\Python36` <!-- Le répertoire doit correspondre à la variable pythonVersion de book.json -->
 - Cliquez sur `OK` et vous avez terminé. Aucun redémarrage n'est requis, mais vous devrez peut-être fermer et rouvrir la ligne de commande.
 
