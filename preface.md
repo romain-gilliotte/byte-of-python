@@ -14,7 +14,7 @@ Si vous avez déjà programmé, vous serez intéressé par les différences entr
 
 Le site officiel du livre est https://python.swaroopch.com/ où vous pouvez lire l'intégralité du livre en ligne, télécharger les dernières versions du livre, acheter un exemplaire imprimé et également m'envoyer des commentaires.
 
-## Quelque chose à quoi penser
+## Matière à réflexion
 
 > Il existe deux manières de concevoir un logiciel: l'une consiste à le rendre si simple qu'il n'y a manifestement aucune lacune; l'autre est de le rendre si compliqué qu'il n'y a pas de lacunes évidentes. -- C. A. R. Hoare
 
