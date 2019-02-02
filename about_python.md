@@ -36,7 +36,7 @@ En raison de son caractère open-source, Python a été porté sur de nombreuses
 
 Vous pouvez utiliser Python sous GNU/Linux, Windows, FreeBSD, Macintosh, Solaris, OS/2, Amiga, AROS, AS/400, BeOS, OS/390, z/OS, Palm OS, QNX, VMS, Psion, Acorn RISC OS, VxWorks, PlayStation, Sharp Zaurus, Windows CE et même PocketPC !
 
-You can even use a platform like [Kivy](http://kivy.org) to create games for your computer _and_ for iPhone, iPad, and Android.
+Vous pouvez même utiliser une plate-forme comme [Kivy](http://kivy.org) pour créer des jeux pour votre ordinateur _et_ pour iPhone, iPad et Android.
 
 ### Interprété
 
