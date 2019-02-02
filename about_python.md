@@ -69,7 +69,7 @@ En plus de la bibliothèque standard, il y a d'autres bibliothèques de grande q
 
 Python est vraiment un langage puissant et formidable. Il possède la bonne combinaison de performance et fonctionnalités, ce qui rend l'écriture de programmes Python à la fois amusante et aisée.
 
-## Python 3 versus 2
+## Python 3 par rapport à 2
 
 Vous pouvez ignorer cette section si la différence entre "Python version 2" et "Python version 3" ne vous intéresse pas. Mais soyez conscient de la version que vous utilisez. Ce livre est écrit pour Python version 3.
 
