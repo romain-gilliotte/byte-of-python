@@ -1,283 +1,282 @@
 # A Byte of Python
 
-"A Byte of Python" is a free book on programming using the Python language. It serves as a tutorial or guide to the Python language for a beginner audience. If all you know about computers is how to save text files, then this is the book for you.
+"A Byte of Python" est un livre libre sur la programmation avec le langage Python. Il peut être vu comme un tutoriel ou un guide sur le langage Python pour les débutants. Si tout ce que vous savez sur l'informatique se résume à enregistrer des fichiers, alors ce livre est fait pour vous.
 
-## For Python version 3
+## Pour Python version 3
 
-This book will teach you to use Python version 3. There will also be guidance for you to adapt to the older and more common Python version 2 in the book.
+Ce livre vous apprendra à utiliser Python version 3. Ce guide vous aidera également dans votre adaptation à la version 2 de Python, plus ancienne et plus courante.
 
-## Who reads A Byte of Python? {#who-reads-bop}
+## Qui lit A Byte of Python? {#who-reads-bop}
 
-Here are what people are saying about the book:
+Voilà ce que disent les lecteurs à propos du livre:
 
-> This is the best beginner's tutorial I've ever seen! Thank you for your effort.
+> Ceci est le meilleur tutoriel pour débutant que j'aie jamais lu ! Merci pour votre effort.
 > -- [Walt Michalik](mailto:wmich50@theramp.net)
 
 <!-- -->
 
-> The best thing i found was "A Byte of Python", which is simply a brilliant book for a beginner. It's well written, the concepts are well explained with self evident examples.
+> La meilleure chose que j'ai trouvée est "A Byte of Python", qui est tout simplement un livre brillant pour un débutant. C'est bien écrit, les concepts sont bien expliqués avec des exemples évidents.
 > -- [Joshua Robin](mailto:joshrob@poczta.onet.pl)
 
 <!-- -->
 
-> Excellent gentle introduction to programming #Python for beginners
+> Excellente introduction en douceur à la programmation #Python pour les débutants
 > -- [Shan Rajasekaran](https://twitter.com/ShanRajasekaran/status/268910645842423809)
 
 <!-- -->
 
-> Best newbie guide to python
+> Meilleur guide pour débutant en python
 > -- [Nickson Kaigi](https://twitter.com/nickaigi/status/175508815729541120)
 
 <!-- -->
 
-> start to love python with every single page read
+> commencez à aimer le python à chaque page lue
 > -- [Herbert Feutl](https://twitter.com/HerbertFeutl/status/11901471389913088)
 
 <!-- -->
 
-> perfect beginners guide for python, will give u key to unlock magical world of python
+> guide parfait pour débutants en python, vous donnera la clé pour déverrouiller le monde magique du python
 > -- [Dilip](https://twitter.com/Dili_mathilakam/status/220033783066411008)
 
 <!-- -->
 
-> I should be doing my actual "work" but just found "A Byte of Python". A great guide with great examples.
+> Je devrais faire mon "travail" actuel mais je viens de trouver "A Byte of Python". Un excellent guide avec d'excellents exemples.
 > -- [Biologist John](https://twitter.com/BiologistJohn/statuses/194726001803132928)
 
 <!-- -->
 
-> Recently started reading a Byte of python. Awesome work. And that too for free. Highly recommended for aspiring pythonistas.
+> J'ai récemment commencé à lire A Byte of Python. Super travail. Et gratuitement. Fortement recommandé pour les pythonistes en herbe.
 > -- [Mangesh](https://twitter.com/mangeshnanoti/status/225680668867321857)
 
 <!-- -->
 
-> A Byte of Python, written by Swaroop. (this is the book I'm currently reading). Probably the best to start with, and probably the best in the world for every newbie or even a more experienced user.
+> A Byte of Python, écrit par Swaroop. (c'est le livre que je lis actuellement). Probablement le meilleur pour commencer, et probablement le meilleur au monde pour chaque débutant ou même pour un utilisateur plus expérimenté.
 > -- [Apostolos](http://apas.gr/2010/04/27/learning-python/)
 
 <!-- -->
 
-> Enjoying Reading #ByteOfPython by @swaroopch best book ever
+> Je profite de la lecture de #ByteOfPython par @swaroopch meilleur livre de tous les temps
 > -- [Yuvraj Sharma](https://twitter.com/YuvrajPoudyal/status/448050415356346368)
 
 <!-- -->
 
-> Thank you so much for writing A Byte Of Python. I just started learning how to code two days ago and I'm already building some simple games. Your guide has been a dream and I just wanted to let you know how valuable it has been.
+> Merci beaucoup d'avoir écrit A Byte Of Python. Je viens de commencer à apprendre à coder il y a deux jours et je suis déjà en train de construire des jeux simples. Votre guide a été un rêve et je voulais juste vous dire à quel point il a été précieux.
 > -- Franklin
 
 <!-- -->
 
-> I'm from Dayanandasagar College of Engineering (7th sem, CSE). Firstly i want to say that your book "The byte of python" is too good a book for a beginner in python like me.The concepts are so well explained with simple examples that helped me to easily learn python. Thank you so much.
+> Je viens du Dayanandasagar College of Engineering (7ème semestre, CSE). Tout d'abord, je tiens à dire que votre livre "A Byte of Python" est un livre trop bon pour un débutant en python comme moi. Les concepts sont si bien expliqués à l'aide d'exemples simples qui m'ont aidé à apprendre facilement le python. Merci beaucoup.
 > -- Madhura
 
 <!-- -->
 
-> I am a 18 year old IT student studying at University in Ireland. I would like to express my gratitude to you for writing your book "A Byte of Python", I already had knowledge of 3 programming langagues - C, Java and Javascript, and Python was by far the easiest langague I have ever learned, and that was mainly because your book was fantastic and made learning python very simple and interesting. It is one of the best written and easy to follow programming books I have ever read. Congratulations and keep up the great work.
+> Je suis un étudiant en informatique de 18 ans qui étudie à l’université irlandaise. Je tiens à vous exprimer ma gratitude pour avoir écrit votre livre "A Byte of Python". Je connaissais déjà 3 langagues de programmation - C, Java et Javascript, et Python était de loin le langage le plus simple que j'ai jamais appris et que était principalement dû au fait que votre livre était fantastique et rendait l’apprentissage du python très simple et intéressant. C'est l'un des meilleurs livres de programmation écrits et faciles à suivre que j'ai jamais lus. Félicitations et continuez votre bon travail.
 > -- Matt
 
 <!-- -->
 
-> Hi, I'm from Dominican Republic. My name is Pavel, recently I read your book _A Byte of Python_ and I consider it excellent!!  :). I learnt much from all the examples. Your book is of great help for newbies like me...
+> Bonjour, je viens de la République Dominicaine. Mon nom est Pavel, j'ai récemment lu votre livre _A Byte of Python_ et je le considère comme excellent !! :) J'ai beaucoup appris de tous les exemples. Votre livre est d'une grande aide pour les débutants comme moi ...
 > -- [Pavel Simo](mailto:pavel.simo@gmail.com)
 
 <!-- -->
-
-> I am a student from China, Now ,I have read you book A byte of Python, Oh it's beautiful. The book is very simple but can help all the first learnners. You know I am interesting in Java and cloud computing many times, i have to coding programm for the server, so i think python is a good choice, finish your book, i think its not only a good choice its must use the Python. My English is not very well, the email to you, i just wanna thank you! Best Wishes for you and your family.
+> Je suis un étudiant originaire de Chine. J'ai lu votre livre "A Byte of Python". Oh, c'est beau. Le livre est très simple mais peut aider tous les premiers apprenants. Vous savez que je suis intéressé par Java et par le cloud computing, je dois programmer un programme pour le serveur. Je pense donc que python est un bon choix. J'ai terminé votre livre. Je pense que ce n'est pas seulement un bon choix, il doit également utiliser le Python. Mon anglais n'est pas très bien, l'email à vous, je veux juste vous remercier! Meilleurs voeux pour vous et votre famille.
 > -- Roy Lau
 
 <!-- -->
 
-> I recently finished reading Byte of Python, and I thought I really ought to thank you. I was very sad to reach the final pages as I now have to go back to dull, tedious oreilly or etc.  manuals for learning about python. Anyway, I really appreciate your book.
+> J'ai récemment fini de lire Byte of Python et je pensais devoir vous remercier. J'étais très triste d'atteindre les dernières pages, car je dois maintenant revenir à des manuels ennuyeux et fastidieux pour apprendre le python. Quoi qu'il en soit, j'apprécie vraiment votre livre.
 > [Samuel Young](mailto:sy137@gmail.com)
 
 <!-- -->
 
-> Dear Swaroop, I am taking a class from an instructor that has no interest in teaching. We are using Learning Python, second edition, by O'Reilly. It is not a text for beginner without any programming knowledge, and an instructor that should be working in another field.  Thank you very much for your book, without it I would be clueless about Python and programming. Thanks a million, you are able to _break the message down_ to a level that beginners can understand and not everyone can.
+> Cher Swaroop, je prends une classe d'un enseignant qui n'a pas d'intérêt dans l'enseignement. Nous utilisons Learning Python, deuxième édition, par O'Reilly. Ce n'est pas un texte pour débutant sans aucune connaissance en programmation, et l'instructeur devrait travailler dans un autre domaine. Merci beaucoup pour votre livre, sans cela, je n'aurais rien compris à Python et à la programmation. Merci mille fois, vous êtes capable de _ décomposer le message_ à un niveau que des débutants peuvent comprendre et ce n'est pas donné à tout le monde.
 > -- [Joseph Duarte](mailto:jduarte1@cfl.rr.com)
 
 <!-- -->
 
-> I love your book! It is the greatest Python tutorial ever, and a very useful reference. Brilliant, a true masterpiece! Keep up the good work!
+> J'adore votre livre! C’est le meilleur tutoriel sur Python de tous les temps et une référence très utile. Brillant, un vrai chef-d'œuvre! Continuez votre bon travail!
 > -- Chris-André Sommerseth
 
 <!-- -->
 
-> First of all, I want to say thanks to you for this greate book. I think it is a good book for those who are looking for a beginner's tutorial for Python.
-> It is about two or there years ago, I think, when I first heard of this book. At that time, I am not able to read some book in English yet, so I got a chinese translation, which took me into the gate of Python programming.
-> Recently, I reread this book. This time, of course, the english version. I couldn't believe that I can read the whole book without my dictionary at hand. Of course, it all dues to your effort to make this book an easy-to-understand one.
+> Tout d’abord, je tiens à vous remercier pour ce superbe livre. Je pense que c'est un bon livre pour ceux qui recherchent un tutoriel pour débutant en Python.
+> J'ai entendu parler de ce livre, je pense, il y a deux ou trois ans environ. À cette époque, je n'étais pas encore capable de lire un livre en anglais. J'ai donc obtenu une traduction en chinois, qui m'a amené à la programmation en Python.
+> Récemment, j'ai relu ce livre. Cette fois, bien sûr, la version anglaise. Je ne pouvais pas croire que je puisse lire le livre en entier sans mon dictionnaire sous la main. Bien sûr, c'est dû à tous vos efforts pour rendre ce livre facile à comprendre.
 > -- [myd7349](https://github.com/swaroopch/byte_of_python/pull/13)
 
 <!-- -->
 
-> I'm just e-mailing you to thank you for writing Byte of Python online.  I had been attempting Python for a few months prior to stumbling across your book, and although I made limited success with pyGame, I never completed a program.
-> Thanks to your simplification of the categories, Python actually seems a reachable goal. It seems like I have finally learned the foundations and I can continue into my real goal, game development.
+> Je vous envoie simplement un e-mail pour vous remercier d'avoir écrit Byte of Python en ligne. J'avais essayé Python pendant quelques mois avant de tomber sur votre livre, et bien j'ai eu un succès limité avec pyGame, je n'ai jamais terminé un programme.
+> Grâce à votre simplification par catégories, Python semble être un objectif atteignable. Il semble que j’ai enfin appris les bases et que je puisse continuer dans mon objectif réel, le développement de jeux.
 > ...
-> Once again, thanks VERY much for placing such a structured and helpful guide to basic programming on the web.  It shoved me into and out of OOP with an understanding where two text books had failed.
+> Encore une fois, merci beaucoup d'avoir placé un guide aussi structuré et utile sur la programmation de base sur le Web. Cela m'a poussé à entrer dans la POO avec une compréhension que deux livres avaient échoué à m'apporter.
 > -- [Matt Gallivan](mailto:m_gallivan12@hotmail.com)
 
 <!-- -->
 
-> I would like to thank you for your book _A Byte of Python_ which i myself find the best way to learn python. I am a 15 year old i live in egypt my name is Ahmed. Python was my second programming language i learn visual basic 6 at school but didn't enjoy it, however i really enjoyed learning python. I made the addressbook program and i was sucessful. i will try to start make more programs and read python programs (if you could tell me source that would be helpful). I will also start on learning java and if you can tell me where to find a tutorial as good as yours for java that would help me a lot. Thanx.
+> Je tiens à vous remercier pour votre livre _A Byte of Python_ que je trouve moi-même le meilleur moyen d’apprendre le python. J'ai 15 ans, je vis en Egypte, mon nom est Ahmed. Python était mon deuxième langage de programmation. J’ai appris Visual Basic 6 à l’école mais je n’ai pas apprécié, mais j’ai vraiment aimé apprendre le python. J'ai créé un programme de carnet d'adresses et j'ai réussi. Je vais essayer de commencer à créer plus de programmes et à lire des programmes Python (si vous pouviez m'indiquer des codes sources qui pourraient être utiles). Je vais aussi commencer par apprendre java et si vous pouvez me dire où trouver un tutoriel aussi bon que le vôtre pour java, cela me serait très utile. Merci
 > -- [Ahmed Mohammed](mailto:sedo_91@hotmail.com)
 
 <!-- -->
 
-> A wonderful resource for beginners wanting to learn more about Python is the 110-page PDF tutorial A Byte of Python by Swaroop C H. It is well-written, easy to follow, and may be the best introduction to Python programming available.
+> Le didacticiel PDF de 110 pages A Byte of Python de Swaroop C H. est une excellente ressource pour les débutants qui souhaitent en savoir plus sur Python. Il est bien écrit, facile à suivre et constitue peut-être la meilleure introduction disponible à la programmation Python.
 > -- [Drew Ames](http://www.linux.com/feature/126522)
 
 <!-- -->
 
-> Yesterday I got through most of Byte of Python on my Nokia N800 and it's the easiest and most concise introduction to Python I have yet encountered. Highly recommended as a starting point for learning Python.
+> Hier, j'ai lu presque tout Byte of Python sur mon Nokia N800 et c'est l'introduction de Python la plus simple et la plus concise que j'ai jamais rencontrée. Fortement recommandé comme point de départ pour apprendre Python.
 > -- [Jason Delport](http://paxmodept.com/telesto/blogitem.htm?id=627)
 
 <!-- -->
 
-> Byte of Vim and Python by @swaroopch is by far the best works in technical writing to me. Excellent reads #FeelGoodFactor
+> Byte of Vim et Byte of Python de @swaroopch est de loin le meilleur travail d’écriture technique auquel j’ai eu affaire. Excellente lecture #FeelGoodFactor
 > -- [Surendran](http://twitter.com/suren/status/12840485454)
 
 <!-- -->
 
-> "Byte of python" best one by far man
-> (in response to the question "Can anyone suggest a good, inexpensive resource for learning the basics of Python? ")
+> "Byte of python" est le meilleur de loin mec
+> (en réponse à la question "Quelqu'un peut-il suggérer une bonne ressource bon marché pour apprendre les bases de Python?")
 > -- [Justin LoveTrue](http://www.facebook.com/pythonlang/posts/406873916788)
 
 <!-- -->
 
-> The Book Byte of python was very helpful ..Thanks bigtime :)
+> Le livre Byte de python était très utile .. Merci beaucoup :)
 > [Chinmay](https://twitter.com/a_chinmay/status/258822633741762560)
 
 <!-- -->
 
-> Always been a fan of A Byte of Python - made for both new and experienced programmers.
+> J'ai toujours été fan de A Byte of Python, conçu pour les programmeurs débutants et expérimentés.
 > -- [Patrick Harrington](http://stackoverflow.com/a/457785/4869)
 
 <!-- -->
 
-> I started learning python few days ago from your book..thanks for such a nice book. it is so well written, you made my life easy..so you found a new fan of yours..thats me :) tons of thanks.
+> J'ai commencé à apprendre Python il y a quelques jours à partir de votre livre. Merci pour un libre aussi agréable. Il est si bien écrit, que vous m'avez rendu la vie facile... donc vous voici avec un nouveau fan... c'est moi :). Des tonnes de remerciments.
 > -- [Gadadhari Bheem](https://twitter.com/Pagal_e_azam/statuses/242865885256232960)
 
 <!-- -->
 
-> Before I started to learn Python, I've acquired basic programming skills in Assembly, C, C++, C# and Java. The very reason I wanted to learn Python is it's popular (people are talking about it) and powerful (reality). This book written by Mr. Swaroop is a very good guide for both brand-new programmers and new python programmers. Took 10 half days to go through it. Great Help!
+> Avant de commencer à apprendre le python, j'avais acquis des compétences de base en programmation en assembleur, C, C++, C# et Java. La raison même pour laquelle j'ai voulu apprendre le python est qu'il est populaire (les gens en parlent) et puissant (la réalité). Ce livre écrit par M. Swaroop est un très bon guide pour les nouveaux programmeurs et les nouveaux programmeurs python. Il a fallu 10 demi-journées pour le parcourir. Grande aide!
 > -- [Fang Biyi (PhD Candidate ECE, Michigan State University)](mailto:fangbiyi@gmail.com)
 
 <!-- -->
 
-> Thank you ever so much for this book!!
-> This book cleared up many questions I had about certain aspects of Python such as object oriented programming.
-> I do not feel like an expert at OO but I know this book helped me on a first step or two.
-> I have now written several python programs that actually do real things for me as a system administrator. They are all procedural oriented but they are small by most peoples standards.
-> Again, thanks for this book. Thank you for having it on the web.
+> Merci beaucoup pour ce livre !!
+> Ce livre a éclairci de nombreuses questions sur certains aspects de Python, telles que la programmation orientée objet.
+> Je ne me sens pas comme un expert en OO mais je sais que ce livre m'a aidé pour les premières étapes.
+> J'ai maintenant écrit plusieurs programmes python qui font de vraies choses pour moi en tant qu'administrateur système. Ils sont tous procéduraux mais ils sont petits par rapport aux standarts de la plupart des gens.
+> Encore merci pour ce livre. Merci de l'avoir mis à disposition sur le web.
 > -- Bob
 
 <!-- -->
 
-> I just want to thank you for writing the first book on programming I've ever really read. Python is now my first language, and I can just imagine all the possibilities. So thank you for giving me the tools to create things I never would have imagined I could do before.
+> Je tiens simplement à vous remercier d'avoir écrit le premier livre sur la programmation que j'ai jamais vraiment lu. Python est maintenant ma langue maternelle et je peux imaginer toutes les possibilités. Je vous remercie donc de m'avoir donné les outils pour créer des choses que je n'aurais jamais imaginé pouvoir faire auparavant.
 > -- "The Walrus"
 
 <!-- -->
 
-> I wanted to thank you for writing _A Byte Of Python_ (2 & 3 Versions).  It has been invaluable to my learning experience in Python & Programming in general.
-> Needless to say, I am a beginner in the programming world, a couple of months of self study up to this point. I had been using youtube tutorials & some other online tutorials including other free books. I decided to dig into your book yesterday, & I've learned more on the first few pages than any other book or tutorial. A few things I had been confused about, were cleared right up with a GREAT example & explanation. Can't wait to read (and learn) more!!
-> Thank you so much for not only writing the book, but for putting it under the creative commons license (free). Thank goodness there are unselfish people like you out there to help & teach the rest of us.
+> Je voulais vous remercier d'avoir écrit _A Byte Of Python_ (versions 2 et 3). Cela a été inestimable pour mon expérience d’apprentissage en Python et en Programmation en général.
+> Inutile de dire que je suis un débutant dans le monde de la programmation, quelques mois d’auto-apprentissage jusqu’à maintenant. J'avais utilisé des tutoriels youtube et d'autres tutoriels en ligne, y compris d'autres livres gratuits. J'ai décidé de fouiller dans votre livre hier et j'ai appris davantage au cours des premières pages que tout autre livre ou tutoriel. Quelques choses qui m'avaient dérouté, ont été éclaircies avec un excellent exemple et une explication. J'ai hâte de lire (et d'apprendre) plus !!
+> Merci beaucoup d'avoir non seulement écrit le livre, mais aussi de l'avoir placé sous la licence Creative Commons (gratuite). Dieu merci, il y a des gens altruistes comme vous pour aider et enseigner au reste d'entre nous.
 > -- Chris
 
 <!-- -->
 
-> I wrote you back in 2011 and I was just getting into Python and wanted to thank you for your tutorial "A Byte of Python".  Without it, I would have fallen by the wayside.  Since then I have gone on to program a number of functions in my organization with this language with yet more on the horizon.  I would not call myself an advanced programmer by any stretch but I notice the occasional request for assistance now from others since I started using it.  I discovered, while reading "Byte" why I had ceased studying C and C\++ and it was because the book given to me started out with an example containing an augmented assignment.  Of course, there was no explanation for this arrangement of operators and I fell on my head trying to make sense of what was on the written page.  As I recall it was a most frustrating exercise which I eventually abandoned. Doesn't mean C or C++ is impossible to learn, or even that I am stupid, but it does mean that the documentation I worked my way through did not define the symbols and words which is an essential part of any instruction. Just as computers will not be able to understand a computer word or computer symbol that is outside the syntax for the language being used, a student new to any field will not grasp his subject if he encounters words or symbols for which there are no definitions.  You get a "blue screen" as it were in either case.  The solution is simple, though: find the word or symbol and get the proper definition or symbol and lo and behold,the computer or student can proceed.  Your book was so well put together that I found very little in it I couldn't grasp.  So, thank you.  I encourage you to continue to include full definitions of terms.  The documentation with Python is good, once you know, (the examples are its strength from what I see) but in many cases it seems that you have to know in order to understand the documentation which to my mind is not what should be.  Third party tutorials express the need for clarification of the documentation and their success largely depends on the words that are used to describe the terminology.  I have recommended your book to many others. Some in Australia, some in the Caribbean and yet others in the US. It fills a niche no others do.  I hope you are doing well and wish you all the success in the future.
+> Je vous ai écrit en 2011 et je commençais tout juste à utiliser Python. Je souhaitais vous remercier pour votre tutoriel "A Byte of Python". Sans cela, j’aurais abandonné en chemin. Depuis lors, j'ai programmé un certain nombre de fonctions dans ma societé avec ce langage, et ce n'est pas fini. Je n'oserais pas m'appeller "programmeur avancé", mais je remarque les demandes d'aide occasionnelles de la part d'autres personnes depuis que je l'utilise. En lisant "Byte", j’ai découvert pourquoi j’avais cessé d’étudier le C et le C\++ et c’est parce que le livre qui m’a été donné a commencé avec un exemple contenant une assignation augmentée (+=). Bien sûr, il n'y avait aucune explication à cet arrangement d'opérateurs et je me suis arraché les cheveux en essayant de comprendre ce qui était sur la page écrite. Si je me souviens bien, c’était un exercice des plus frustrants et j'ai fini par abandonner. Cela ne veut pas dire que C ou C++ soit impossible à apprendre, ou même que je sois stupide, mais cela signifie que la documentation à partir de laquelle j'ai travaillé n'a pas défini les symboles et les mots, ce qui est une partie essentielle de toute instruction. Tout comme les ordinateurs ne pourront pas comprendre un mot ou un symbole d'ordinateur qui ne soit pas conforme à la syntaxe du langage utilisé, un étudiant débutant dans un domaine donné ne comprendra pas son sujet s'il rencontre des mots ou des symboles pour lesquels il n'y a pas de définition. Vous obtenez un "écran bleu" pour ainsi dire dans les deux cas. La solution est simple: rechercher le mot ou le symbole et obtenir la définition ou le symbole approprié et voilà, l'ordinateur ou l'étudiant peut procéder. Votre livre est si bien rédigé que je n’y ai trouvé que très peu de choses que je ne comprenais pas. Alors merci. Je vous encourage à continuer à inclure des définitions complètes des termes. La documentation de Python est bonne, une fois que vous avez déjà compris (les exemples font sa force de ce que je vois), mais dans de nombreux cas, il semble que vous ayez à savoir en avance pour comprendre la documentation, ce qui, à mon avis, ne devrait pas être le cas. Les didacticiels tiers indiquent la nécessité de clarifier la documentation et leur succès dépend en grande partie des mots utilisés pour décrire le jargon. J'ai recommandé votre livre à beaucoup d'autres. Certains en Australie, certains dans les Caraïbes et d'autres encore aux États-Unis. Il remplit un créneau qu'aucun autre livre ne couvre. J'espère que vous allez bien et je vous souhaite tout le succès possible à l'avenir.
 > -- Nick
 
 <!-- -->
 
-> hey, this is ankush(19). I was facing a great difficulty to start with python. I tried a lot of books but all were bulkier and not target oriented; and then i found this lovely one, which made me love python in no time. Thanks a lot for this "beautiful piece of book".
+> hé, c'est ankush(19). Je faisais face à une grande difficulté pour commencer avec python. J'ai essayé beaucoup de livres, mais ils étaient tous plus volumineux et n'étaient pas orienté objectif. et puis j'ai trouvé cette adorable livre, qui m'a fait aimer le python en un rien de temps. Merci beaucoup pour ce "beau morceau de livre".
 > -- Ankush
 
 <!-- -->
 
-> I would like to thank you for your excellent guide on Python. I am a molecular biologist (with little programming background) and for my work I need to handle big datasets of DNA sequences and to analyse microscope images. For both things, programming in python has been useful, if not essential to complete and publish a 6-years project.
-> That such a guide is freely available is a clear sign that the forces of evil are not yet ruling the world! :)
+> Je tiens à vous remercier pour votre excellent guide sur Python. Je suis biologiste moléculaire (avec peu de formation en programmation) et pour mon travail, j'ai besoin de manipuler de grands ensembles de données de séquences d'ADN et d'analyser des images au microscope. Pour les deux choses, la programmation en python a été utile, voire indispensable pour terminer et publier un projet de 6 ans.
+> La disponibilité d'un tel guide est un signe clair que les forces du mal ne dominent encore pas le monde! :)
 > -- Luca
 
 <!-- -->
 
-> Since this is going to be the first language you learn, you should use A Byte of Python. It really gives a proper introduction into programming in Python and it is paced well enough for the average beginner. The most important thing from then on will be actually starting to practice making your own little programs.
+> Étant donné que ce sera le premier language que vous apprendrez, vous pourriez utiliser A Byte of Python. Il donne vraiment une bonne introduction à la programmation en Python et est bien rythmé pour le débutant moyen. Dès lors, le plus important sera de commencer à vous entraîner à créer vos propres petits programmes.
 > -- ["{Unregistered}"](http://www.overclock.net/t/1177951/want-to-learn-programming-where-do-i-start#post_15837176)
 
 <!-- -->
 
-> Just to say a loud and happy _thank you very much_ for publishing "A Byte of Python" and "A Byte of Vim". Those books were very useful to me four or five years ago when I starting learning programming. Right now I'm developing a project that was a dream for a long, long time and just want to say _thank you_. Keep walking. You are a source of motivation. All the best.
+> Juste pour dire un fort et joyeux merci beaucoup pour la publication de "A Byte of Python" et "A Byte of Vim". Ces livres m'ont été très utiles il y a quatre ou cinq ans lorsque j'ai commencé à apprendre la programmation. En ce moment, je développe un projet qui a été un rêve pendant très longtemps et je veux juste dire merci. Continuez dans cette direction. Vous êtes une source de motivation. Bonne chance.
 > -- Jocimar
 
 <!-- -->
 
-> Finished reading A byte of Python in 3 days. It is thoroughly interesting. Not a single page was boring. I want to understand the Orca screen reader code. Your book has hopefully equipped me for it.
+> J'ai fini de lire Un octet de Python en 3 jours. C'est vraiment intéressant. Pas une seule page n'était ennuyeuse. Je veux comprendre le code du lecteur d'écran Orca. Votre livre m'a, espérons, équipé pour cela.
 > -- Dattatray
 
 <!-- -->
 
-> Hi, 'A byte of python' is really a good reading for python beginners. So, again, NICE WORK!
-> i'm a 4 years experienced Java&C developer from China. Recently, i want to do some work on zim-wiki note project which uses pygtk to implement.
-> i read your book in 6 days, and i can read and write python code examples now.
-> thx for your contribution.
-> plz keep your enthusiasm to make this world better, this is just a little encourage from China.
+> Salut, "A byte of python" est vraiment une bonne lecture pour les débutants en python. Donc, encore une fois, BEAU TRAVAIL!
+> Je suis un développeur chinois expérimenté de Java & C depuis 4 ans. Récemment, je souhaitais travailler sur le projet de note zim-wiki qui utilise pygtk.
+> J'ai lu votre livre en 6 jours et je peux maintenant lire et écrire des exemples de code Python.
+> Merci pour votre contribution.
+> S'il vous plait, gardez votre enthousiasme pour rendre ce monde meilleur, ceci est juste un petit mot d'encouragement de Chine.
 > -- Lee
 
 <!-- -->
 
-> I am Isen from Taiwan, who is a graduating PhD student in Electrical Engineering Department of National Taiwan University. I would like to thank you for your great book. I think it is not only just easy to read but also comprehensive and complete for a new comer of Python. The reason I read your book is that I am starting to work on the GNU Radio framework. Your book let me catch most of important core ideas and skill of Python with a minimum time.
-> I also saw that you do not mind that readers send you a thank note in your book. So I really like your book and appreciate it. Thanks.
+> Je suis Isen, de Taiwan, diplômé en doctorat du département de génie électrique de l’Université nationale de Taiwan. Je voudrais vous remercier pour votre excellent livre. Je pense que ce n'est pas seulement facile à lire, mais aussi complet pour un nouveau venu de Python. La raison pour laquelle j'ai lu votre livre est que je commence à travailler sur le framework GNU Radio. Votre livre m'a permis de comprendre la plupart des idées de base importantes et les compétences de Python en un minimum de temps.
+> J'ai aussi vu que cela ne vous dérangeait pas que les lecteurs vous envoient une note de remerciement dans votre livre. Donc, j'aime beaucoup votre livre et je l'apprécie. Merci.
 > -- [Isen I-Chun Chao](mailto:chao926@gmail.com)
 
-The book is even used by NASA! It is used in their [Jet Propulsion Laboratory](https://web.archive.org/web/20130614003212/http://dsnra.jpl.nasa.gov/software/Python/byte-of-python/output/byteofpython_html/) with their Deep Space Network project.
+Le livre est même utilisé par la NASA! Il est utilisé au [Jet Propulsion Laboratory](https://web.archive.org/web/20130614003212/http://dsnra.jpl.nasa.gov/software/Python/byte-of-python/output/byteofpython_html/) avec leur projet Deep Space Network.
 
-## Academic Courses
+## Cours en Universités
 
-This book is/was being used as instructional material in various educational institutions:
+Ce livre est ou à été utilisé comme support dans différentes institutions:
 
-- 'Principles of Programming Languages' course at [Vrije Universiteit, Amsterdam](http://www.few.vu.nl/~nsilvis/PPL/2007/index.html)
-- 'Basic Concepts of Computing' course at [University of California, Davis](http://www.cs.ucdavis.edu/courses/exp_course_desc/10.html)
-- 'Programming With Python' course at [Harvard University](http://www.people.fas.harvard.edu/~preshman/python_winter.html)
-- 'Introduction to Programming' course at [University of Leeds](http://www.comp.leeds.ac.uk/acom1900/)
-- 'Introduction to Application Programming' course at [Boston University](http://www.cs.bu.edu/courses/cs108/materials.html)
-- 'Information Technology Skills for Meteorology' course at [University of Oklahoma](http://gentry.metr.ou.edu/byteofpython/)
-- 'Geoprocessing' course at [Michigan State University](http://www.msu.edu/~ashton/classes/825/index.html)
-- 'Multi Agent Semantic Web Systems' course at the [University of Edinburgh](http://homepages.inf.ed.ac.uk/ewan/masws/)
-- 'Introduction to Computer Science and Programming' at [MIT OpenCourseWare](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00sc-introduction-to-computer-science-and-programming-spring-2011/references/)
-- 'Basic programming at the Faculty of Social Sciences, University of Ljubljana, Slovenia' -- [Aleš Žiberna](mailto:ales.ziberna@fdv.uni-lj.si) says _"I (and my predecessor) have been using your book as the main literature for this course"_
--  'Introduction to programming', Department of Information Sciences, University of Zadar, Croatia -- Krešimir Zauder says _"I would like to inform you that A Byte of Python is a mandatory read at my course"_
+- 'Principes des langages de programmation' [Vrije Universiteit, Amsterdam](http://www.few.vu.nl/~nsilvis/PPL/2007/index.html)
+- 'Concepts de base de l'informatique' [Université de California, Davis](http://www.cs.ucdavis.edu/courses/exp_course_desc/10.html)
+- 'Programmer avec Python' [Université de Harvard](http://www.people.fas.harvard.edu/~preshman/python_winter.html)
+- 'Introduction à la programmation' [Université de Leeds](http://www.comp.leeds.ac.uk/acom1900/)
+- 'Introduction à la programmation d'applications' [Université de Boston](http://www.cs.bu.edu/courses/cs108/materials.html)
+- 'Compétences informatiques pour la météorologie' [Université d'Oklahoma](http://gentry.metr.ou.edu/byteofpython/)
+- 'Géotraitement' [Université d'État du Michigan](http://www.msu.edu/~ashton/classes/825/index.html)
+- 'Systèmes Web sémantiques multi-agents' [Université d'Édimbourg](http://homepages.inf.ed.ac.uk/ewan/masws/)
+- 'Introduction à l'informatique et à la programmation' [MIT OpenCourseWare](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00sc-introduction-to-computer-science-and-programming-spring-2011/references/)
+- 'Programmation de base à la Faculté des sciences sociales, Université de Ljubljana, Slovénie' -- [Aleš Žiberna](mailto:ales.ziberna@fdv.uni-lj.si) dit _"J'ai (ainsi que mon prédécesseur) utilisé votre livre comme littérature principale pour ce cours"_
+-  'Introduction à la programmation', Département des sciences de l'information, Université de Zadar, Croatie -- Krešimir Zauder dit _"J'aimerais vous informer que la lecture de A Byte of Python est une lecture obligatoire de mon cours"_
 
 ## License
 
-This book is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+Ce livre est sous la licence [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
-This means:
+Cela signifie que:
 
-- You are free to Share i.e. to copy, distribute and transmit this book
-- You are free to Remix i.e. to make changes to this book (especially translations)
-- You are free to use it for commercial purposes
+- Vous êtes libre de partager et donc copier, distribuer et transmettre ce livre.
+- Vous êtes libre de retoucher et adapter ce livre (en particulier translations)
+- Vous êtes libre de l'utiliser à des fins commerciales
 
-Please note:
+Notez cependant:
 
-- Please do *not* sell electronic or printed copies of the book unless you have clearly and prominently mentioned in the description that these copies are *not* from the original author of this book.
-- Attribution *must* be shown in the introductory description and front page of the document by linking back to {{ book.officialUrl }} and clearly indicating that the original text can be fetched from this location.
-- All the code/scripts provided in this book is licensed under the [3-clause BSD License](http://www.opensource.org/licenses/bsd-license.php) unless otherwise noted.
+- S'il vous plaît, ne vendez *pas* de copies électroniques ou imprimées du livre à moins que vous n'ayez clairement indiqué dans la description que ces copies ne sont *pas* de l'auteur original de ce livre.
+- L'attribution *doit* être indiquée dans la description d'introduction et la page de couverture du document en renvoyant à {{book.officialUrl}} et en indiquant clairement que le texte original peut être récupéré à partir de cet emplacement.
+- Tout code/script offert dans ce livre est licencié sous la licence [3-clause BSD](http://www.opensource.org/licenses/bsd-license.php) sauf avis contraire.
 
-## Read Now
+## Lire Maintenant
 
-You can read it online at {{ book.officialUrl }}
+Vous pouvez lire le livre en ligne à l'adresse suivante https://python.swaroopch.com/
 
-## Buy The Book
+## Acheter le livre
 
-A printed hardcopy of the book can be purchased at {{ book.buyBookUrl }} for your offline reading pleasure, and to support the continued development and improvement of this book.
+Une copie papier du livre peut être achetée à l'adresse {{ book.buyBookUrl }}, pour le plaisir de lire hors-ligne, et pour soutenir le développement permanent et l'amélioration continue de ce livre.
 
-## Download
+## Téléchargement
 
-Visit {{ book.downloadUrl }} for the following types of downloads:
+Visitez https://www.gitbook.com/book/swaroopch/byte-of-python/details pour accéder aux téléchargements suivants:
 
-- [PDF (for desktop reading, etc.)](https://www.gitbook.com/download/pdf/book/swaroopch/byte-of-python)
-- [EPUB (for iPhone/iPad, ebook readers, etc.)](https://www.gitbook.com/download/epub/book/swaroopch/byte-of-python)
-- [Mobi (for Kindle)](https://www.gitbook.com/download/mobi/book/swaroopch/byte-of-python)
+- [PDF (lecture hors ligne, etc.)](https://www.gitbook.com/download/pdf/book/swaroopch/byte-of-python)
+- [EPUB (pour iPhone/iPad, liseuse, etc.)](https://www.gitbook.com/download/epub/book/swaroopch/byte-of-python)
+- [Mobi (pour liseuse Kindle)](https://www.gitbook.com/download/mobi/book/swaroopch/byte-of-python)
 
-Visit {{ book.sourceUrl }} for the raw content (for suggesting corrections, changes, translating, etc.)
+Rendez-vous sur https://github.com/swaroopch/byte-of-python pour accéder au contenu brut (pour suggérer des corrections, des modifications, traduire, etc.)
 
-## Read the book in your native language
+## Lire le livre dans votre langue maternelle
 
-If you are interested in reading or contributing translations of this book to other human languages, please see [Translations](./translations.md#translations).
+Si vous souhaitez lire ou contribuer à la traduction de ce livre dans d'autres langues, consultez la section [Translations](./translations.md#translations).

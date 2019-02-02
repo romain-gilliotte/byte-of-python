@@ -1,4 +1,4 @@
-# Summary
+# Sommaire
 
 * [Dédicace](dedication.md)
 * [Préface](preface.md)

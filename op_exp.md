@@ -1,6 +1,6 @@
 # Opérateurs Et Expressions {#op-exp}
 
-la plupart des instructions (lignes logiques) que vous écrierez contiendront _des expressions_. Un exemple simple d'une expression est `2 + 3`. Une expression peut être décomposée en opérateurs et opérandes.
+La plupart des instructions (lignes logiques) que vous écrierez contiendront _des expressions_. Un exemple simple d'une expression est `2 + 3`. Une expression peut être décomposée en opérateurs et opérandes.
 
 Les _Opérateurs_ sont la fonctionnalité qui fait quelque chose et peuvent être représentés par des symboles comme `+` ou des mots-clés spéciaux. Les opérateurs ont besoins de données pour agir et ces données sont appelées des _opérandes_. Dans ce cas, `2` et `3` sont les opérandes.
 
