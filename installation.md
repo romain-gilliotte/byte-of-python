@@ -4,20 +4,20 @@ Lorsque nous nous référons à "Python 3" dans ce livre, nous ferons référenc
 
 ## Installation sous Windows
 
-Visitez https://www.python.org/downloads/ et téléchargez la dernière version. Au moment d'écrire ces lignes, c'était Python 3.5.1
+Visitez https://www.python.org/downloads/ et téléchargez la dernière version. Au moment d'écrire ces lignes, c'était Python 3.6.0.
 L'installation est comme n'importe quel autre logiciel basé sur Windows.
 
 Notez que si votre version de Windows est antérieure à Vista, vous devez [télécharger Python 3.4 uniquement](https://www.python.org/downloads/windows/) car les versions ultérieures nécessitent des versions plus récentes de Windows.
 
-ATTENTION: Assurez-vous de cocher l'option `Ajouter Python 3.5 au PATH`.
+ATTENTION: Assurez-vous de cocher l'option `Ajouter Python 3.6 au PATH`.
 
-Pour changer l'emplacement d'installation, cliquez sur `Personnaliser l'installation`, puis sur `Suivant` et entrez `C:\python35` (ou un autre emplacement approprié) comme emplacement d'installation.
+Pour changer l'emplacement d'installation, cliquez sur `Personnaliser l'installation`, puis sur `Suivant` et entrez `C:\python36` (ou un autre emplacement approprié) comme emplacement d'installation.
 
-Si vous n'avez pas coché l'option `Ajouter Python 3.5 au PATH` plus tôt, cochez `Ajouter Python aux variables d'environment`. Cela fait la même chose que `Ajouter Python 3.5 au PATH` sur le premier écran d’installation.
+Si vous n'avez pas coché l'option `Ajouter Python 3.6 au PATH` plus tôt, cochez `Ajouter Python aux variables d'environment`. Cela fait la même chose que `Ajouter Python 3.6 au PATH` sur le premier écran d’installation.
 
 Vous pouvez choisir d'installer Launcher pour tous les utilisateurs ou non, peu importe. Launcher est utilisé pour basculer entre différentes versions de Python installées.
 
-Si votre chemin n'a pas été défini correctement (en cochant les options `Ajouter Python 3.5 au PATH` ou `Ajouter Python aux variables d'environment`), suivez les étapes décrites dans la section suivante (`Invite de commandes DOS )` pour y remédier. Sinon, allez à la section `Lancer l'invite de commandes Python sous Windows` de ce document.
+Si votre chemin n'a pas été défini correctement (en cochant les options `Ajouter Python 3.6 au PATH` ou `Ajouter Python aux variables d'environment`), suivez les étapes décrites dans la section suivante (`Invite de commandes DOS )` pour y remédier. Sinon, allez à la section `Lancer l'invite de commandes Python sous Windows` de ce document.
 
 REMARQUE: Si vous connaissez déjà la programmation et que vous êtes familiers avec Docker consultez [Python dans Docker](https://hub.docker.com/_/python/) et [Docker sous Windows](https://docs.docker.com/windows/).
 
