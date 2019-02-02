@@ -1,10 +1,15 @@
-# First Steps
+# Premiers Pas
 
-We will now see how to run a traditional 'Hello World' program in Python. This will teach you how to write, save and run Python programs.
+Nous allons maintenant voir comment exécuter le traditionnel programme 'Hello World' en Python. Cela vous apprendra comment écrire, enregistrer et exécuter un programme Python. 
 
-There are two ways of using Python to run your program - using the interactive interpreter prompt or using a source file. We will now see how to use both of these methods.
+Il y a deux façons d'utiliser Python pour lancer votre programme - utiliser le prompt interactif ou un fichier source. Nous allons maintenant voir comment utiliser ces deux méthodes.
 
-## Using The Interpreter Prompt
+## Utiliser L'Invite De L'Interpréteur
+
+Démarrez l'interpréteur sur la ligne de commande en entrant `python` au prompt shell. 
+
+Pour les utilisateurs Windows, vous pouvez lancer l'interpreteur sur la ligne de commande si vous avez modifié la variable `PATH` correctement.
+
 
 Open the terminal in your operating system (as discussed previously in the [Installation](./installation.md#installation) chapter) and then open the Python prompt by typing `python3` and pressing `[enter]` key.
 
@@ -32,13 +37,13 @@ Hello World
 
 Notice that Python gives you the output of the line immediately! What you just entered is a single Python _statement_. We use `print` to (unsurprisingly) print any value that you supply to it. Here, we are supplying the text `Hello World` and this is promptly printed to the screen.
 
-### How to Quit the Interpreter Prompt
+### Comment Quitter Le Prompt De L'Interpreteur
 
 If you are using a GNU/Linux or OS X shell, you can exit the interpreter prompt by pressing `[ctrl + d]` or entering `exit()` (note: remember to include the parentheses, `()`) followed by the `[enter]` key.
 
 If you are using the Windows command prompt, press `[ctrl + z]` followed by the `[enter]` key.
 
-## Choosing An Editor
+## Choisir Un Éditeur
 
 We cannot type out our program at the interpreter prompt every time we want to run something, so we have to save them in files and can run our programs any number of times.
 
@@ -169,21 +174,21 @@ In case you got an error, please type the above program _exactly_ as shown above
 
 A Python program is composed of _statements_. In our first program, we have only one statement. In this statement, we call the `print` _statement_ to which we supply the text "hello world".
 
-## Getting Help
+## Obtenir De L'Aide
 
-If you need quick information about any function or statement in Python, then you can use the built-in `help` functionality. This is very useful especially when using the interpreter prompt. For example, run `help('len')` - this displays the help for the `len` function which is used to count number of items.
+Si vous besoin rapidement d'information sur n'importe quelle fonction ou instruction dans Python, alors vous pouvez utiliser la fonctionnalité `help`. Cela est très utile particulièrement quand on utilise le prompt de l'interpréteur. Par exemple, tapez `help(print)` - cela affiche l'aide pour la fonction print qui est utilisée pour afficher des choses à l'écran.
 
-TIP: Press `q` to exit the help.
+Note: Tapez `q` pour sortir de l'aide.
 
-Similarly, you can obtain information about almost anything in Python. Use `help()` to learn more about using `help` itself!
+De la même manière, vous pouvez obtenir de l'information sur pratiquement n'importe quoi dans Python. Utilisez `help()` pour appendre plus de choses sur le `help` lui-même !
 
-In case you need to get help for operators like `return`, then you need to put those inside quotes such as `help('return')` so that Python doesn't get confused on what we're trying to do.
+Pour avoir de l'aide sur les opérateurs comme `return`, il faut mettre des quotes à l'intérieur comme dans `help('return')` pour que Python comprenne ce que l'on veut faire.
 
-## Summary
+## Récapitulatif
 
-You should now be able to write, save and run Python programs at ease.
+Vous devriez être maintenant capable d'écrire, enregistrer et exécuter facilement des programmes Python.
 
-Now that you are a Python user, let's learn some more Python concepts.
+Maintenant que vous êtes un utilisateur Python, apprenons quelques concepts Python supplémentaires. 
 
 ---
 

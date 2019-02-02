@@ -1,16 +1,16 @@
-# Appendix: History Lesson {#history-lesson}
+# Appendix: Leçon D'Histoire {#history-lesson}
 
-I first started with Python when I needed to write an installer for software I had written called 'Diamond' so that I could make the installation easy. I had to choose between Python and Perl bindings for the Qt library. I did some research on the web and I came across [an article by Eric S. Raymond](http://www.python.org/about/success/esr/), a famous and respected hacker, where he talked about how Python had become his favorite programming language. I also found out that the PyQt bindings were more mature compared to Perl-Qt. So, I decided that Python was the language for me.
+J'ai commencé avec Python quand j'ai eu besoin d'écrire un installeur pour un logiciel que j'avais écrit appellé 'Diamant' afin de faciliter l'installation. Je devais choisir entre les bindings Python et Perl pour la librairie Qt. J'ai cherché sur le web et je suis tombé sur [un article d'Eric S. Raymond](http://www.python.org/about/success/esr/), le hacker célèbre et respecté, qui expliquait comment Python était devenu son langage favori. J'ai également trouvé que les bindings PyQt étaient plus mûrs que Perl-Qt. Donc, je décidai de choisir Python.
 
-Then, I started searching for a good book on Python. I couldn't find any!  I did find some O'Reilly books but they were either too expensive or were more like a reference manual than a guide. So, I settled for the documentation that came with Python. However, it was too brief and small. It did give a good idea about Python but was not complete. I managed with it since I had previous programming experience, but it was unsuitable for newbies.
+Puis, je cherchais un bon livre sur Python. Je n'ai pu en trouver aucun ! J'ai trouvé des livres chez O'Reilly, mais ils étaient soit trop chers, soit plus un manuel de référence qu'un guide. Donc je consultais la documentation livrée avec Python. Cependant c'était trop succinct et petit. Cela m'a donné une bonne idée à propos de Python, mais ce n'était pas complet. Je me débrouillai avec car j'avais déjà une expérience de la programmation, mais ce n'était pas adapté aux débutants.
 
-About six months after my first brush with Python, I installed the (then) latest Red Hat 9.0 Linux and I was playing around with KWord. I got excited about it and suddenly got the idea of writing some stuff on Python. I started writing a few pages but it quickly became 30 pages long. Then, I became serious about making it more useful in a book form. After a _lot_ of rewrites, it has reached a stage where it has become a useful guide to learning the Python language.  I consider this book to be my contribution and tribute to the open source community.
+Six mois après ce premier contact avec Python, j'installais le (à ce moment-là) dernier Red Hat 9.0 Linux et je jouais avec KWord. J'étais enthousiaste à ce sujet, et j'ai eu d'un coup l'idée d'écrire un truc sur Python. Je commençais à écrire quelques pages, mais rapidement cela devint 30 pages. Puis, je décidai de faire quelque chose d'utile sous la forme d'un livre. Après _beaucoup_ de corrections, cela a atteint une étape où c'est devenu un guide utile pour apprendre le langage Python.  Je considère ce livre comme ma contribution et mon  hommage à la communauté open source.
 
-This book started out as my personal notes on Python and I still consider it in the same way, although I've taken a lot of effort to make it more palatable to others :)
+Ce livre a commencé comme des notes personnelles sur Python et je le considère toujours comme cela, cependant j'ai fait de nombreux efforts pour le rendre acceptable aux autres personnes :)
 
-In the true spirit of open source, I have received lots of constructive suggestions, criticisms and [feedback](./README.md#who-reads-bop) from enthusiastic readers which has helped me improve this book a lot.
+Dans le véritable esprit de l'open source, j'ai reçu beaucoup de suggestions constructives, critiques et [feedback](./README.md#who-reads-bop) des lecteurs enthousiastes ont aidé à beaucoup améliorer le livre.
 
-## Status Of The Book
+## Statut Du Livre
 
 The book needs the help of its readers such as yourselves to point out any parts of the book which are not good, not comprehensible or are simply wrong. Please [write to the main author]({{ book.contactUrl }}) or the respective [translators](./translations.md#translations) with your comments and suggestions.
 

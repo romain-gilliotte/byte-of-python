@@ -1,18 +1,18 @@
 # Preface
 
-Python is probably one of the few programming languages which is both simple and powerful. This is good for beginners as well as for experts, and more importantly, is fun to program with. This book aims to help you learn this wonderful language and show how to get things done quickly and painlessly - in effect 'The Anti-venom to your programming problems'.
+Python est sans doute l'un des rares langages de programmation à être à la fois simple et puissant. C'est une bonne chose pour les débutants comme pour les experts, et plus important, il est amusant de programmer avec. Ce livre a pour but de vous aider à apprendre ce formidable langage et de vous montrer comment faire des choses rapidement et facilement - en fait 'Le Parfait Antidote à vos problèmes de programmation'.
 
-## Who This Book Is For
+## Le Public Visé Par Ce Livre
 
-This book serves as a guide or tutorial to the Python programming language. It is mainly targeted at newbies. It is useful for experienced programmers as well.
+Ce livre est un guide ou un tutoriel pour le langage de programmation Python. Le public visé est les débutants. Il est également utile aux programmeurs exprimentés.
 
-The aim is that if all you know about computers is how to save text files, then you can learn Python from this book. If you have previous programming experience, then you can also learn Python from this book.
+Le but est le suivant : si vos seules connaissances en informatique se limitent à enregistrer un fichier, vous pouvez apprendre Python à partir de ce livre. Si vous avez déjà une expérience en programmation, alors vous pouvez aussi apprendre Python à partir de ce livre.
 
-If you do have previous programming experience, you will be interested in the differences between Python and your favorite programming language - I have highlighted many such differences. A little warning though, Python is soon going to become your favorite programming language!
+Si vous avez déjà programmé, vous serez intéressé par les différences entre Python et votre langage de programmation préféré, et j'ai mis en évidence ces différences. Un avertissement cependant, Python va devenir sous peu votre langage de programmation favori !
 
 ## Official Website
 
-The official website of the book is {{ book.officialUrl }} where you can read the whole book online, download the latest versions of the book, [buy a printed hard copy]({{ book.buyBookUrl }}) and also send me feedback.
+Le site web du livre est {{ book.officialUrl }} où vous pouvez lire le livre complet en ligne, télécharger les dernières versions [buy a printed hard copy]({{ book.buyBookUrl }}) et aussi m'envoyer vos retours.
 
 ## Something To Think About
 

@@ -1,6 +1,6 @@
 # Basics
 
-Just printing `hello world` is not enough, is it? You want to do more than that - you want to take some input, manipulate it and get something out of it. We can achieve this in Python using constants and variables, and we'll learn some other concepts as well in this chapter.
+Afficher seulement 'Hello World' n'est pas assez, n'est-ce pas ? Vous voulez faire plus que cela - vous voulez prendre des choses en entrée, les manipuler et en sortir quelque chose. Nous pouvons réussir cela  avec Python en utilisant des constantes et des variables.
 
 ## Comments
 
@@ -31,43 +31,42 @@ Use as many useful comments as you can in your program to:
 
 This is useful for readers of your program so that they can easily understand what the program is doing. Remember, that person can be yourself after six months!
 
-## Literal Constants
+## Constantes Littérales
 
-An example of a literal constant is a number like `5`, `1.23`, or a string like `'This is a string'` or `"It's a string!"`.
+Un exemple d'une constante littérale est un nombre comme `5`, `1.23`, `9.25e-3` ou une chaîne de caractères comme `'This is a string'` ou `"It's a string!"`.
 
-It is called a literal because it is _literal_ - you use its value literally. The number `2` always represents itself and nothing else - it is a _constant_ because its value cannot be changed. Hence, all these are referred to as literal constants.
+Cela s'appelle un littéral parce que c'est _littéral_ - vous pouvez utiliser la valeur littéralement. Le nombre `2` représente toujours lui-même et rien d'autre - c'est une _constante_ parce que sa valeur ne peut être changée. Donc, on se réfère à toutes ces valeurs en tant que constantes littérales.
 
-## Numbers
+## Nombres
 
-Numbers are mainly of two types - integers and floats.
+Les nombres dans Python sont principalement divisés en deux types - entiers, nombres en virgule flottante.
 
-An example of an integer is `2` which is just a whole number.
+* Un exemple d'un entier est `2` qui est juste un nombre entier.
+* Des exemples de nombres en virgule flottante (ou ''floats''  en abrégé) sont `3.23` et `52.3E-4`. La notation `E`  indique des puissances de 10. Dans ce cas, `52.3E-4` signifie `52.3 * 10^-4`.
 
-Examples of floating point numbers (or _floats_ for short) are `3.23` and `52.3E-4`. The `E` notation indicates powers of 10. In this case, `52.3E-4` means `52.3 * 10^-4^`.
+> **Note pour les programmeurs expérimentés**
+>
+> Il n'y a pas de type 'long int' à part. Le type entier par défaut  peut être une valeur de n'importe quelle longueur.
 
-> **Note for Experienced Programmers**
-> 
-> There is no separate `long` type. The `int` type can be an integer of any size.
+## Chaînes De Caractères
 
-## Strings
+Une chaîne de caractères est une ''suite'' de ''caractères''. Les chaînes de caractères sont juste un groupe de mots.
 
-A string is a _sequence_ of _characters_. Strings are basically just a bunch of words.
-
-You will be using strings in almost every Python program that you write, so pay attention to the following part.
+Vous utiliserez des chaînes de caractères dans pratiquement chaque programme que vous écrirez, donc soyez attentifs à ce qui suit.
 
 ### Single Quote
 
-You can specify strings using single quotes such as `'Quote me on this'`.
+Vous pouvez définir des chaînes de caractères en utilisant des simples quotes comme `'Quote me on this'`.
 
-All white space i.e. spaces and tabs, within the quotes, are preserved as-is.
+Tous les whitespaces, par exemple les espaces et des tabulations, sont gardés tels quels.
 
 ### Double Quotes
 
-Strings in double quotes work exactly the same way as strings in single quotes. An example is `"What's your name?"`.
+Les chaînes de caractères entre double quotes fonctionnent exactement de la même manière qu'avec les simples quotes. Un exemple est `"What's your name?"`
 
 ### Triple Quotes {#triple-quotes}
 
-You can specify multi-line strings using triple quotes - (`"""` or `'''`). You can use single quotes and double quotes freely within the triple quotes. An example is:
+Vous pouvez déclarer les chaînes de caractères sur plusieurs lignes en utilisant des triples quotes - (`"""` ou `'''`). Vous pouvez utiliser des simples quotes et des double quotes librement à l'intérieur des triple quotes. Un exemple est:
 
 ```python
 '''This is a multi-line string. This is the first line.
@@ -77,11 +76,9 @@ He said "Bond, James Bond."
 '''
 ```
 
-### Strings Are Immutable
+### Les Chaînes De caractères Sont Immuables
 
-This means that once you have created a string, you cannot change it. Although this might seem like
-a bad thing, it really isn't. We will see why this is not a limitation in the various programs that
-we see later on.
+Cela signifie que quand vous avez créé une chaîne, vous ne pouvez pas la changer. Bien que cela semble être une mauvaise chose, ce n'est pas le cas. Nous verrons pourquoi cela n'est pas une limitation dans les différents programmes à venir.
 
 > **Note for C/C++ Programmers**
 > 
@@ -93,9 +90,9 @@ we see later on.
 > 
 > Remember that single-quoted strings and double-quoted strings are the same - they do not differ in any way.
 
-### The format method
+### La Méthode format
 
-Sometimes we may want to construct strings from other information. This is where the `format()` method is useful.
+Nous avons parfois besoin de fabriquer des chaînes de caractères à partir d'autres informations. Dans ce cas la méthode `format()` est utile.
 
 Save the following lines as a file `str_format.py`:
 
@@ -115,19 +112,19 @@ Swaroop was 20 years old when he wrote this book
 Why is Swaroop playing with that python?
 ```
 
-**How It Works**
+**Comment cela marche**
 
-A string can use certain specifications and subsequently, the `format` method can be called to substitute those specifications with corresponding arguments to the `format` method.
+Une chaîne de caractères peut utiliser certaines spécifications et par la suite, la méthode ''format'' peut être appelée pour remplacer ces spécifications avec les arguments correspondants à la méthode `format`. 
 
-Observe the first usage where we use `{0}` and this corresponds to the variable `name` which is the first argument to the format method. Similarly, the second specification is `{1}` corresponding to `age` which is the second argument to the format method. Note that Python starts counting from 0 which means that first position is at index 0, second position is at index 1, and so on.
+Observez le premier usage dans lequel nous utilisons `{0}` et cela correspond à la variable `name` qui est le premier argument de la méthode format. De la même manière, la deuxième spécification est `{1}` qui correspond à `age` qui est le deuxième argument de la méthode format.
 
-Notice that we could have achieved the same using string concatenation:
+Notez que nous pouvons arriver au même résultat en utilisant la concaténation de chaînes de caractères
 
 ```python
 name + ' is ' + str(age) + ' years old'
 ```
 
-but that is much uglier and error-prone. Second, the conversion to string would be done automatically by the `format` method instead of the explicit conversion to strings needed in this case. Third, when using the `format` method, we can change the message without having to deal with the variables used and vice-versa.
+mais notez comme c'est plus laid et sujet à l'erreur. Ensuite, la conversion vers string serait faite automatiquement par la méthode `format` au lieu de la conversion explicite ici. Troisièmement, en utilisant la méthode  `format` , nous pouvons changer le message sans devoir s'occuper des variables utilisées et vice-versa.
 
 Also note that the numbers are optional, so you could have also written as:
 
@@ -165,15 +162,15 @@ print(f'Why is {name} playing with that python?')  # notice the 'f' before the s
 
 which will give the same exact output as the previous program.
 
-What Python does in the `format` method is that it substitutes each argument value into the place of the specification. There can be more detailed specifications such as:
+Dans la méthode `format` Python substitue chaque valeur d'argument. Il peut y avoir des spécifications détaillées comme :
 
 ```python
-# decimal (.) precision of 3 for float '0.333'
+# décimal (.) avec une précision de 3 pour float '0.333'
 print('{0:.3f}'.format(1.0/3))
-# fill with underscores (_) with the text centered
-# (^) to 11 width '___hello___'
+# compléter avec des underscores (_) le texte centré (^) avec
+# une largeur de 11 '___hello___'
 print('{0:_^11}'.format('hello'))
-# keyword-based 'Swaroop wrote A Byte of Python'
+# basé sur un mot-clé
 print('{name} wrote {book}'.format(name='Swaroop', book='A Byte of Python'))
 ```
 
@@ -214,26 +211,27 @@ a b c
 
 ### Escape Sequences
 
-Suppose, you want to have a string which contains a single quote (`'`), how will you specify this string? For example, the string is `"What's your name?"`. You cannot specify `'What's your name?'` because Python will be confused as to where the string starts and ends. So, you will have to specify that this single quote does not indicate the end of the string. This can be done with the help of what is called an _escape sequence_. You specify the single quote as `\'` : notice the backslash. Now, you can specify the string as `'What\'s your name?'`.
+Supposons, vous voulez avoir une chaîne de caractères contenant une simple quote (`'`), comment faire ? Par exemple, la chaîne de caractères `What's your name?`. Vous ne pouvez pas déclarer `'What's your name?'` parce que Python sera perdu, où commence et se termine la chaîne de caractères ? Donc, il vous faut indiquer que cette simple quote n'indique pas la fin de la chaîne. Cela peut être fait avec l'aide de ce qu'on appelle une ''escape sequence''. Vous indiquez la simple quote comme `\'` - notez le backslash. Maintenant, vous pouvez indiquer la chaîne de caractères comme `'What\'s your name?'`.
 
-Another way of specifying this specific string would be `"What's your name?"` i.e. using double quotes. Similarly, you have to use an escape sequence for using a double quote itself in a double quoted string. Also, you have to indicate the backslash itself using the escape sequence `\\`.
+Une autre façon de faire serait `"What's your name?"` c'est à dire utiliser des double quotes. De la même manière, vous devez utiliser une ''escape sequence'' pour utiliser une double quote elle-même dans une chaîne de caractères définie par des double quotes. Pour indiquer le backslash, vous devez utiliser le backslash lui-même `\\`.
 
-What if you wanted to specify a two-line string? One way is to use a triple-quoted string as shown [previously](#triple-quotes) or you can use an escape sequence for the newline character - `\n` to indicate the start of a new line. An example is:
+Comment faire pour indiquer une chaîne de caractère sur deux lignes ? Une façon est d'utiliser une chaîne de caractère entre des triple quotes comme montré [précédemment](#triple-quotes) ou vous pouvez utiliser une _escape sequence_ pour le caractère - `\n` pour indiquer le début d'une nouvelle ligne. Un exemple est:
+
 
 ```python
 'This is the first line\nThis is the second line'
 ```
 
-Another useful escape sequence to know is the tab: `\t`. There are many more escape sequences but I have mentioned only the most useful ones here.
+Un autre _escape sequence_ utile à connaître est la tabulation - `\t`. Il y a beaucoup d'autres _escape sequences_ mais j'ai seulement mentionné les plus utiles ici.
 
-One thing to note is that in a string, a single backslash at the end of the line indicates that the string is continued in the next line, but no newline is added. For example:
+Une chose à noter est que, dans une chaîne de caractères, un backslash unique à la fin de la ligne indique que la chaîne de caractères continue à la ligne suivante, mais une nouvelle ligne n'est pas ajoutée, par exemple :
 
 ```python
 "This is the first sentence. \
 This is the second sentence."
 ```
 
-is equivalent to
+est équivalent à
 
 ```python
 "This is the first sentence. This is the second sentence."
@@ -251,32 +249,33 @@ r"Newlines are indicated by \n"
 > 
 > Always use raw strings when dealing with regular expressions. Otherwise, a lot of backwhacking may be required. For example, backreferences can be referred to as `'\\1'` or `r'\1'`.
 
-## Variable
+## Variables
 
-Using just literal constants can soon become boring - we need some way of storing any information and manipulate them as well. This is where _variables_ come into the picture. Variables are exactly what the name implies - their value can vary, i.e., you can store anything using a variable. Variables are just parts of your computer's memory where you store some information. Unlike literal constants, you need some method of accessing these variables and hence you give them names.
+Utiliser seulement des constantes littérales peut rapidement devenir ennuyeux - nous avons besoin de solutions pour ranger n'importe quelles informations et les manipuler. C'est là que les ''variables'' interviennent. Les variables sont exactement ce que leur nom implique - leur valeur peut changer, vous pouvez stocker n'importe quoi avec une variable. Les variables sont juste des endroits où vous rangez de l'information dans la mémoire de l'ordinateur. Contrairement aux constantes littérales, vous avez besoin d'une méthode pour accéder à ces variables et donc vous leur donnez des noms.
 
-## Identifier Naming
+## Nommage D'Identifiants
 
-Variables are examples of identifiers. _Identifiers_ are names given to identify _something_. There are some rules you have to follow for naming identifiers:
+Les variables sont des exemples d'identifiers. Les _identifiants_ sont des noms donnés pour identifier _quelque chose_. Vous devez respecter quelques règles pour donner un nom aux identifiants:
 
-- The first character of the identifier must be a letter of the alphabet (uppercase ASCII or lowercase ASCII or Unicode character) or an underscore (`_`).
-- The rest of the identifier name can consist of letters (uppercase ASCII or lowercase ASCII or Unicode character), underscores (`_`) or digits (0-9).
-- Identifier names are case-sensitive. For example, `myname` and `myName` are _not_ the same. Note the lowercase `n` in the former and the uppercase `N` in the latter.
-- Examples of _valid_ identifier names are `i`, `name_2_3`. Examples of _invalid_ identifier names are `2things`, `this is spaced out`, `my-name` and `>a1b2_c3`.
+- Le premier caractère de l'identifier doit être une lettre de l'alphabet (majuscule ASCII ou minuscule ASCII ou caractère Unicode) ou un underscore ('_').
+- Le reste du nom de l'identifier peut être composé de lettres (majuscules ASCII ou minuscules ASCII ou caractère Unicode), underscores ('_') ou chiffres (0-9).
+- Les noms des Identifiers sont sensibles à la casse. Par exemple, `myname` et `myName` ne sont _pas_ identiques. Notez la minuscule `n` dans le premier cas et la majuscule `N` ensuite.
+- Des exemples de noms d'identifiers _valides_ sont `i`, `name_2_3`. Des exemples _invalides_ sont `2things`, `this is spaced out`, `my-name`, et `>a1b2_c3`.
 
-## Data Types
+## Types De Données
 
-Variables can hold values of different types called _data types_. The basic types are numbers and strings, which we have already discussed. In later chapters, we will see how to create our own types using [classes](./oop.md#classes).
+Les variables peuvent contenir des valeurs de différents types appelés _types de données_. Les types de base sont les nombres et les chaînes de caractères, dont nous avons déjà parlé. Dans les chapitres suivants, nous verrons comment créer nos propres types de données en utilisant les [classes](./oop.md#classes).
 
-## Object
+## Objets
 
-Remember, Python refers to anything used in a program as an _object_.  This is meant in the generic sense. Instead of saying "the _something_"', we say "the _object_".
+Rappelez-vous, Python fait référence à tout ce qui est utilisé dans un programme en tant que _objet_. Cela est compris dans le sens générique. Au lieu de dire "le _quelque chose_", nous disons "l'_objet_".
 
-> **Note for Object Oriented Programming users**:
+
+> **Note pour les utilisateurs de la Programmation Orientée Objet**
 >
-> Python is strongly object-oriented in the sense that everything is an object including numbers, strings and functions.
+> Python est fortement orientée objet, dans le sens que tout est un objet, en incluant les nombres, chaînes de caractères et fonctions.
 
-We will now see how to use variables along with literal constants. Save the following example and run the program.
+Nous allons voir comment utiliser des variables avec des constantes  littérales. Enregistrez l'exemple suivant et lancez le programme.
 
 ## How to write Python programs
 
@@ -300,7 +299,7 @@ NOTE: Whenever you have to provide [command line arguments](./modules.md#modules
 3. Save it as a file with the filename mentioned.
 4. Run the interpreter with the command `python program.py` to run the program.
 
-### Example: Using Variables And Literal Constants
+### Un Exemple: Utiliser Des Variables Et Des Constantes Littérales
 
 Type and run the following program:
 
@@ -311,12 +310,12 @@ print(i)
 i = i + 1
 print(i)
 
-s = '''This is a multi-line string.
-This is the second line.'''
+s = '''Voici une chaîne multi-ligne.
+Voici la deuxième ligne.'''
 print(s)
 ```
 
-Output:
+Résultat:
 
 ```
 5
@@ -325,55 +324,56 @@ This is a multi-line string.
 This is the second line.
 ```
 
-**How It Works**
+**Comment cela fonctionne**
 
-Here's how this program works. First, we assign the literal constant value `5` to the variable `i` using the assignment operator (`=`). This line is called a statement because it states that something should be done and in this case, we connect the variable name `i` to the value `5`. Next, we print the value of `i` using the `print` statement which, unsurprisingly, just prints the value of the variable to the screen.
+D'abord, nous assignons la valeur littérale constante `5` à la variable `i` en utilisant l'opérateur d'assignation (`=`). Cette ligne est appelée une instruction parce qu'elle indique qu'une action doit être faite, et dans ce cas, nous connectons la variable nommée `i` à la valeur `5`.  Ensuite, nous affichons la valeur de  `i` en utilisant l'instruction `print` qui, sans surprise, affiche juste la valeur de la variable à l'écran.
 
-Then we add `1` to the value stored in `i` and store it back. We then print it and expectedly, we get the value `6`.
+Ensuite nous ajoutons `1` à la valeur stockée dans `i` et nous la stockons à nouveau. Nous l'affichons et comme prévu, nous obtenons la valeur `6`.
 
-Similarly, we assign the literal string to the variable `s` and then print it.
+De la même manière, nous assignons la chaîne littérale à la variable `s` et nous l'affichons.
 
-> **Note for static language programmers**
+> **Note pour les programmeurs dans des langages statiques**
 > 
-> Variables are used by just assigning them a value. No declaration or data type definition is needed/used.
+> Les variables sont créées en leur donnant juste une valeur. Il n'y a pas de déclaration ou de définition de type de données.
 
-## Logical And Physical Line
+## Lignes Physiques Et Lignes Logiques
 
-A physical line is what you _see_ when you write the program. A logical line is what _Python sees_ as a single statement. Python implicitly assumes that each _physical line_ corresponds to a _logical line_.
+Une ligne physique est ce que vous ''voyez'' quand vous écrivez le programme. Une ligne logique est ce que ''Python voit'' comme une seule instruction. Python suppose implicitement que chaque ''ligne physique'' correspond à une ''ligne logique''.
 
-An example of a logical line is a statement like `print 'hello world'` - if this was on a line by itself (as you see it in an editor), then this also corresponds to a physical line.
+Un exemple d'une ligne logique est une instruction comme `print('Hello World')` - si c'était une ligne (comme vous la voyez dans un éditeur), alors cela correspondrait aussi à une ligne physique.
 
-Implicitly, Python encourages the use of a single statement per line which makes code more readable.
+Implicitement, Python encourage l'utilisation d'une seule instruction par ligne, ce qui rend le code plus lisible.
 
-If you want to specify more than one logical line on a single physical line, then you have to explicitly specify this using a semicolon (`;`) which indicates the end of a logical line/statement. For example:
+Si vous voulez spécifier plus d'une ligne logique sur une seule ligne physique, alors il vous faut l'indiquer avec un point-virgule (`;`) qui indique la fin d'une ligne/instruction logique. Par exemple:
 
 ```python
 i = 5
 print(i)
 ```
 
-is effectively same as
+est la même chose que 
 
 ```python
 i = 5;
 print(i);
 ```
 
-which is also same as
+et peut être écrit
 
 ```python
 i = 5; print(i);
 ```
 
-and same as
+ou même
 
 ```python
 i = 5; print(i)
 ```
 
-However, I *strongly recommend* that you stick to *writing a maximum of a single logical line on each single physical line*. The idea is that you should never use the semicolon. In fact, I have _never_ used or even seen a semicolon in a Python program.
 
-There is one kind of situation where this concept is really useful: if you have a long line of code, you can break it into multiple physical lines by using the backslash. This is referred to as _explicit line joining_:
+Cependant, je *recommande fortement* que vous continuiez à *écrire une seule ligne logique dans seulement une seule ligne  physique*. Utilisez plus d'une ligne physique pour une seule ligne logique seulement si la ligne logique est vraiment longue. L'idée est d'éviter le point-virgule autant que possible vu que cela rend le code moins lisible. En fait, je n'ai _jamais_ utilisé ou même vu un point virgule dans un programme Python.
+
+Un exemple d'une ligne logique s'étendant sur plusieurs lignes physiques suit. Cela s'appelle _explicit line joining_.
 
 ```python
 s = 'This is a string. \
@@ -381,64 +381,62 @@ This continues the string.'
 print(s)
 ```
 
-Output:
+Cela donne l'affichage :
 
 ```
 This is a string. This continues the string.
 ```
 
-Similarly,
+De la même manière,
 
 ```python
 i = \
 5
 ```
 
-is the same as
+est la même chose que
 
 ```python
 i = 5
 ```
 
-Sometimes, there is an implicit assumption where you don't need to use a backslash. This is the case where the logical line has a starting parentheses, starting square brackets or a starting curly braces but not an ending one. This is called *implicit line joining*. You can see this in action when we write programs using [list](./data_structures.md#lists) in later chapters.
+Parfois, il y a une supposition implicite quand vous n'avez pas besoin d'utiliser un backslash. C'est le cas quand les lignes logiques utilisent des parenthèses, entre crochets ou accolades. Cela s'appelle _implicit line joining_.  Vous pouvez voir cela en action quand nous écrirons des programmes utilisant [des listes](./data_structures.md#lists) dans les chapitres suivants.
 
 ## Indentation
 
-Whitespace is important in Python. Actually, *whitespace at the beginning of the line is important*. This is called _indentation_. Leading whitespace (spaces and tabs) at the beginning of the logical line is used to determine the indentation level of the logical line, which in turn is used to determine the grouping of statements.
+Les espaces sont importants dans Python. En fait *les espaces au début de la ligne sont importants*. Cela s'appelle _l'indentation_. Les espaces (espaces et tabulations) au début de la ligne logique sont utilisés pour déterminer le niveau d'indentation de la ligne logique, qui est à son tour utilisée pour déterminer le groupement des instructions.
 
-This means that statements which go together _must_ have the same indentation. Each such set of statements is called a *block*. We will see examples of how blocks are important in later chapters.
+Cela signifie que les intructions qui vont ensemble _doivent_ avoir la même indentation. Chaque jeu d'instructions est appelé un *bloc*. Nous verrons des exemples de l'importance des blocs dans les chapitres suivants.
 
-One thing you should remember is that wrong indentation can give rise to errors. For example:
+Un chose à retenir est qu'une fausse indentation va mener à des erreurs. Par exemple:
 
 ```python
 i = 5
-# Error below! Notice a single space at the start of the line
- print('Value is', i)
-print('I repeat, the value is', i)
+ print('La valeur est ', i) # Erreur! Notez l'espace en début de ligne
+print('Je repète, la valeur est ', i)
 ```
 
-When you run this, you get the following error:
+A l'exécution, vous obtenez l'erreur suivante :
 
 ```
-  File "whitespace.py", line 3
-    print('Value is', i)
+  File "whitespace.py", line 4
+    print('La valeur est ', i) # Erreur! Notez l'espace en début de ligne
     ^
 IndentationError: unexpected indent
 ```
 
-Notice that there is a single space at the beginning of the second line. The error indicated by Python tells us that the syntax of the program is invalid i.e. the program was not properly written. What this means to you is that _you cannot arbitrarily start new blocks of statements_ (except for the default main block which you have been using all along, of course). Cases where you can use new blocks will be detailed in later chapters such as the [control flow](./control_flow.md#control_flow).
+Notez qu'il y a un espace au début de la deuxième ligne. L'erreur indiquée par Python nous dit que la syntaxe est invalide, c'est-à-dire que le programme n'est pas correctement écrit. Cela vous dit que _vous ne pouvez pas commencer des nouveaux blocs n'importe où_ (à part pour le bloc principal par défaut que vous avez constamment utilisé, bien sûr). Les cas dans lesquels vous pouvez utiliser des nouveaux blocs seront détaillés dans les chapitres suivants comme le chapitre sur le [contrôle de flux](./control_flow.md#control_flow)..
 
-> **How to indent**
+> **Comment indenter**
 > 
-> Use four spaces for indentation. This is the official Python language recommendation. Good editors will automatically do this for you. Make sure you use a consistent number of spaces for indentation, otherwise your program will not run or will have unexpected behavior.
+> Utilisez quatre espaces pour indenter. C'est la recommendation officiele du language Python. Les bons éditeurs le feront automatiquement pour vous. Soyez sûr d'utiliser un nombre cohérent d'espaces pour indenter, sinon votre programme ne fonctionnera pas, ou aura des comportements inattendus.
 
 <!-- -->
 
-> **Note to static language programmers**
+> **Note pour les programmeurs en langage statique**
 > 
-> Python will always use indentation for blocks and will never use braces. Run `from __future__ import braces` to learn more.
+> Python utilisera l'indentation pour les blocs et n'utilisera jamais les accolades. Lancez `from __future__ import braces` pour en savoir plus.
 
-## Summary
+## Récapitulatif
 
-Now that we have gone through many nitty-gritty details, we can move on to more interesting stuff such as control flow statements. Be sure to become comfortable with what you have read in this chapter.
-
+Maintenant que nous avons vu les détails essentiels, nous pouvons passer à des choses plus intéressantes comme les instructions de contrôle de flux. Soyez certains de devenir à l'aise avec les notions vues dans ce chapitreêtre à l'aise avec ces notions.
