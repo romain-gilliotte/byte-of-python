@@ -8,7 +8,7 @@ L'introduction officielle à Python est :
 
 Je parlerai plus en détail de ces fonctionnalités dans le paragraphe suivant.
 
-## Story behind the name
+## Histoire derrière le nom
 
 Guido van Rossum, le créateur du langage, l'a appelé en référence à la série télévisée de la BBC "Monty Python's Flying Circus". Il n'aime pas particulièrement les serpents qui tuent des animaux pour manger en les étouffant et les écrasant.
 
