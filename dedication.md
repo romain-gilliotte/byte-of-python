@@ -1,7 +1,7 @@
-# Dedication
+# Dédicace
 
-To [Kalyan Varma](http://www.kalyanvarma.net/) and many other seniors at [PESIT](http://www.pes.edu/) who introduced us to GNU/Linux and the world of open source.
+À [Kalyan Varma](http://www.kalyanvarma.net/) et à beaucoup d'autres seniors de [PESIT](http://www.pes.edu/) qui nous ont présenté GNU/Linux et le monde de l'open source .
 
-To the memory of [Atul Chitnis](http://www.nextbigwhat.com/atul-chitnis-obituary-297/), a friend and guide who shall be missed greatly.
+À la mémoire de [Atul Chitnis](http://www.nextbigwhat.com/atul-chitnis-obituary-297/), un ami et guide qui nous manquera énormément.
 
-To the [pioneers who made the Internet happen](http://www.ibiblio.org/pioneers/index.html). This book was first written in 2003. It still remains popular, thanks to the nature of sharing knowledge on the Internet as envisioned by the pioneers.
+Aux [pionniers qui ont créé Internet](http://www.ibiblio.org/pioneers/index.html). Ce livre a été écrit pour la première fois en 2003. Il reste toujours populaire grâce à la nature du partage des connaissances sur Internet telle qu’envisagée par les pionniers.

@@ -1,12 +1,12 @@
 # Premiers Pas
 
-Nous allons maintenant voir comment exécuter le traditionnel programme 'Hello World' en Python. Cela vous apprendra comment écrire, enregistrer et exécuter un programme Python. 
+Nous allons maintenant voir comment exécuter le traditionnel programme 'Hello World' en Python. Cela vous apprendra comment écrire, enregistrer et exécuter un programme Python.
 
 Il y a deux façons d'utiliser Python pour lancer votre programme - utiliser le prompt interactif ou un fichier source. Nous allons maintenant voir comment utiliser ces deux méthodes.
 
 ## Utiliser L'Invite De L'Interpréteur
 
-Démarrez l'interpréteur sur la ligne de commande en entrant `python` au prompt shell. 
+Démarrez l'interpréteur sur la ligne de commande en entrant `python` au prompt shell.
 
 Pour les utilisateurs Windows, vous pouvez lancer l'interpreteur sur la ligne de commande si vous avez modifié la variable `PATH` correctement.
 
@@ -188,7 +188,7 @@ Pour avoir de l'aide sur les opérateurs comme `return`, il faut mettre des quot
 
 Vous devriez être maintenant capable d'écrire, enregistrer et exécuter facilement des programmes Python.
 
-Maintenant que vous êtes un utilisateur Python, apprenons quelques concepts Python supplémentaires. 
+Maintenant que vous êtes un utilisateur Python, apprenons quelques concepts Python supplémentaires.
 
 ---
 

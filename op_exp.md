@@ -1,14 +1,14 @@
-# Operators and Expressions {#op-exp}
+# Opérateurs Et Expressions {#op-exp}
 
-Most statements (logical lines) that you write will contain _expressions_. A simple example of an expression is `2 + 3`. An expression can be broken down into operators and operands.
+la plupart des instructions (lignes logiques) que vous écrierez contiendront _des expressions_. Un exemple simple d'une expression est `2 + 3`. Une expression peut être décomposée en opérateurs et opérandes.
 
-_Operators_ are functionality that do something and can be represented by symbols such as `+` or by special keywords. Operators require some data to operate on and such data is called _operands_. In this case, `2` and `3` are the operands.
+Les _Opérateurs_ sont la fonctionnalité qui fait quelque chose et peuvent être représentés par des symboles comme `+` ou des mots-clés spéciaux. Les opérateurs ont besoins de données pour agir et ces données sont appelées des _opérandes_. Dans ce cas, `2` et `3` sont les opérandes.
 
-## Operators
+## Opérateurs
 
-We will briefly take a look at the operators and their usage.
+Nous jetterons un coup d'oeil rapide aux opérateurs et à leur utilisation.
 
-Note that you can evaluate the expressions given in the examples using the interpreter interactively. For example, to test the expression `2 + 3`, use the interactive Python interpreter prompt:
+Notez que vous pouvez évaluer de manière interactive les expressions données dans les exemples en utilisant l'interpréteur. Par exemple, pour tester l'expression `2 + 3`, utilisez le prompt Python interactif :
 
 ```python
 >>> 2 + 3
@@ -17,164 +17,163 @@ Note that you can evaluate the expressions given in the examples using the inter
 15
 >>>
 ```
-
-Here is a quick overview of the available operators:
+Voici un aperçu rapide des opérateurs disponibles:
 
 - `+` (plus)
-    - Adds two objects
-    - `3 + 5` gives `8`. `'a' + 'b'` gives `'ab'`.
+    - Additionne les deux objets
+    - `3 + 5` vaut `8`. `'a' + 'b'` vaut `'ab'`.
 
-- `-` (minus)
-    - Gives the subtraction of one number from the other; if the first operand is absent it is assumed to be zero.
-    - `-5.2` gives a negative number and `50 - 24` gives `26`.
+- `-` (moins)
+    - Donne le résultat de la soustraction entre deux nombres; si le premier opérande est absent, on suppose qu'il vaut zéro.
+    - `-5.2` vaut un nombre négatif et `50 - 24` vaut `26`.
 
-- `*` (multiply)
-    - Gives the multiplication of the two numbers or returns the string repeated that many times.
-    - `2 * 3` gives `6`. `'la' * 3` gives `'lalala'`.
+- `*` (multiplication)
+    - Donne le produit de deux nombres, ou bien une une chaîne de caractères répétée le nombre de fois indiqué.
+    - `2 * 3` vaut `6`. `'la' * 3` vaut `'lalala'`.
 
-- `**` (power)
-    - Returns x to the power of y
-    - `3 ** 4` gives `81` (i.e. `3 * 3 * 3 * 3`)
+- `**` (puissance)
+    - Renvoie x à la puissance y
+    - `3 ** 4` vaut `81` (c'est-à-dire `3 * 3 * 3 * 3`)
 
-- `/` (divide)
-    - Divide x by y
-    - `13 / 3` gives `4.333333333333333`
+- `/` (division)
+    - Divise x par y
+    - `13 / 3` vaut `4.333333333333333`
 
-- `//` (divide and floor)
-    - Divide x by y and round the answer _down_ to the nearest integer value. Note that if one of the values is a float, you'll get back a float.
-    - `13 // 3` gives `4`
-    - `-13 // 3` gives `-5`
-    - `9//1.81` gives `4.0`
+- `//` (quotient)
+    - Divise x par y et arrondi le resultat à l'entier `inférieur`. Si l'une des opérandes est un flottant, le résultat sera également un flottant.
+    - `13 // 3` vaut `4`
+    - `-13 // 3` vaut `-5`
+    - `9//1.81` vaut `4.0`
 
 - `%` (modulo)
-    - Returns the remainder of the division
-    - `13 % 3` gives `1`. `-25.5 % 2.25` gives `1.5`.
+    - Renvoie le reste d'une division
+    - `13 % 3` vaut `1`. `-25.5 % 2.25` vaut `1.5`.
 
-- `<<` (left shift)
-    - Shifts the bits of the number to the left by the number of bits specified. (Each number is represented in memory by bits or binary digits i.e. 0 and 1)
-    - `2 << 2` gives `8`. `2` is represented by `10` in bits.
-    - Left shifting by 2 bits gives `1000` which represents the decimal `8`.
+- `<<` (décalage de bits à gauche)
+    - Fait un décalage à gauche du nombre de bits indiqué. (Chaque nombre est représenté en mémoire par des bits, c'est-à-dire 0 et 1)
+    - `2 << 2` vaut `8`. `2` est représenté par `10` in binaire.
+    - Le décalage à gauche de 2 bits donne `1000` qui représente le nombre `8` en décimale.
 
-- `>>` (right shift)
-    - Shifts the bits of the number to the right by the number of bits specified.
-    - `11 >> 1` gives `5`.
-    - `11` is represented in bits by `1011` which when right shifted by 1 bit gives `101`which is the decimal `5`.
+- `>>` (décalage de bits à droite)
+    - Fait un décalage à droite du nombre de bits indiqué.
+    - `11 >> 1` vaut `5`.
+    - `11` est représenté par `1011` en binaire, qui décallé à droite d'un bit donne `101`, qui vaut `5` en décimale.
 
-- `&` (bit-wise AND)
-    - Bit-wise AND of the numbers
-    - `5 & 3` gives `1`.
+- `&` (et logique bit à bit)
+    - `ET` bit à bit des nombres
+    - `5 & 3` vaut `1`.
 
-- `|` (bit-wise OR)
-    - Bitwise OR of the numbers
-    - `5 | 3` gives `7`
+- `|` (ou logique bit à bit)
+    - `OU` bit à bit des nombres
+    - `5 | 3` vaut `7`
 
-- `^` (bit-wise XOR)
-    - Bitwise XOR of the numbers
-    - `5 ^ 3` gives `6`
+- `^` (ou exclusif bit à bit)
+    - Calcule le ou exclusif bit à bit des nombres (`XOR`)
+    - `5 ^ 3` vaut `6`
 
-- `~` (bit-wise invert)
-    - The bit-wise inversion of x is -(x+1)
-    - `~5` gives `-6`. More details at http://stackoverflow.com/a/11810203
+- `~` (inversion bit à bit)
+    - L'inversion bit à bit de x vaut -(x+1)
+    - `~5` vaut `-6`. Plus de détails à l'adresse http://stackoverflow.com/a/11810203
 
-- `<` (less than)
-    - Returns whether x is less than y. All comparison operators return `True` or `False`. Note the capitalization of these names.
-    - `5 < 3` gives `False` and `3 < 5` gives `True`.
-    - Comparisons can be chained arbitrarily: `3 < 5 < 7` gives `True`.
+- `<` (moins que)
+    - Indique si x est plus petit que y. Tous les opérateurs de comparaison renvoient `True` ou `False`. Notez la première lettre en majuscule.
+    - `5 < 3` vaut `False` et `3 < 5` vaut `True`.
+    - Les comparaisons peuvent être chaînées de manière arbitraire: `3 < 5 < 7` vaut `True`.
 
-- `>` (greater than)
+- `>` (plus grand que)
     - Returns whether x is greater than y
-    - `5 > 3` returns `True`. If both operands are numbers, they are first converted to a common type. Otherwise, it always returns `False`.
+    - `5 > 3` renvoie `True`. Si les deux opérandes sont des nombres, ils sont d'abord convertis en un type commun. Sinon, il renvoie toujours `False`.
 
-- `<=` (less than or equal to)
-    - Returns whether x is less than or equal to y
-    - `x = 3; y = 6; x <= y` returns `True`
+- `<=` (inférieur ou égal à)
+    - Indique si x est inférieur ou égal à y
+    - `x = 3; y = 6; x <= y` vaut `True`
 
-- `>=` (greater than or equal to)
-    - Returns whether x is greater than or equal to y
-    - `x = 4; y = 3; x >= 3` returns `True`
+- `>=` (supérieur ou égal à)
+    - Indique si x est supérieur ou égal à y
+    - `x = 4; y = 3; x >= 3` vaut `True`
 
-- `==` (equal to)
-    - Compares if the objects are equal
-    - `x = 2; y = 2; x == y` returns `True`
-    - `x = 'str'; y = 'stR'; x == y` returns `False`
-    - `x = 'str'; y = 'str'; x == y` returns `True`
+- `==` (egal à)
+    - Compare deux objets pour voir s'ils sont égaux
+    - `x = 2; y = 2; x == y` vaut `True`
+    - `x = 'str'; y = 'stR'; x == y` vaut `False`
+    - `x = 'str'; y = 'str'; x == y` vaut `True`
 
-- `!=` (not equal to)
-    - Compares if the objects are not equal
-    - `x = 2; y = 3; x != y` returns `True`
+- `!=` (différent de)
+    - Compare deux objets pour voir s'ils sont différents
+    - `x = 2; y = 3; x != y` vaut `True`
 
-- `not` (boolean NOT)
-    - If x is `True`, it returns `False`. If x is `False`, it returns `True`.
-    - `x = True; not x` returns `False`.
+- `not` (non)
+    - Si x vaut `True`, il renvoie `False`. Si x est `False`, il renvoie `True`.
+    - `x = True; not x` vaut `False`.
 
-- `and` (boolean AND)
-    - `x and y` returns `False` if x is `False`, else it returns evaluation of y
-    - `x = False; y = True; x and y` returns `False` since x is False. In this case, Python will not evaluate y since it knows that the left hand side of the 'and' expression is `False` which implies that the whole expression will be `False` irrespective of the other values. This is called short-circuit evaluation.
+- `and` (et booléen)
+    - `x and y` vaut `False` si x est `False`, sinon il vaut l'évaluation de y
+    - `x = False; y = True; x and y` vaut `False` vu que x est False. Dans ce cas, Python ne va pas évaluer y car il sait que la partie gauche de l'expression 'and' est `False` ce qui implique que l'expression complète sera `False` quelles que soient les autres valeurs. C'est ce que l'on appelle _short-circuit evaluation_.
 
-- `or` (boolean OR)
-    - If x is `True`, it returns True, else it returns evaluation of y
-    - `x = True; y = False; x or y` returns `True`. Short-circuit evaluation applies here as well.
+- `or` (ou booléen)
+    - Si x est `True`, il renvoie True, sinon il rencoir l'évaluation de y
+    - `x = True; y = False; x or y` vaut `True`. La _short-circuit evaluation_ s'applique ici aussi.
 
-## Shortcut for math operation and assignment
+## Raccourci pour les opérations mathématiques et les assignations
 
-It is common to run a math operation on a variable and then assign the result of the operation back to the variable, hence there is a shortcut for such expressions:
+Il est fréquent de faire une opération mathématique avec une variable et ensuite affecter à nouveau le résultat de l'opération à la variable, et donc il y a un raccourci pour de telles expressions:
 
 ```python
 a = 2
 a = a * 3
 ```
 
-can be written as:
+s'écrit également:
 
 ```python
 a = 2
 a *= 3
 ```
 
-Notice that `var = var operation expression` becomes `var operation= expression`.
+Notez que `variable = variable operation expression` devient `variable operation= expression`.
 
-## Evaluation Order
+## Ordre D'Evaluation
 
-If you had an expression such as `2 + 3 * 4`, is the addition done first or the multiplication? Our high school maths tells us that the multiplication should be done first. This means that the multiplication operator has higher precedence than the addition operator.
+Si vous avez une expression comme `2 + 3 * 4`, fait-on d'abord l'addition ou la multiplication? Nos souvenirs de maths à l'école nous disent qu'il faut d'abord faire la multiplication. Cela signifie que l'opérateur de  multiplication est prioritaire par rapport à l'opérateur d'addition.
 
-The following table gives the precedence table for Python, from the lowest precedence (least binding) to the highest precedence (most binding). This means that in a given expression, Python will first evaluate the operators and expressions lower in the table before the ones listed higher in the table.
+Le tableau suivant donne les priorités pour Python, de la plus basse (least binding) à la plus élevée (most binding). Cela signifie que dans une expression donnée, Python va d'abord évaluer les opérateurs et expressions les plus bas dans ce tableau, avant ceux placés plus en haut.
 
-The following table, taken from the [Python reference manual](http://docs.python.org/3/reference/expressions.html#operator-precedence), is provided for the sake of completeness. It is far better to use parentheses to group operators and operands appropriately in order to explicitly specify the precedence. This makes the program more readable. See [Changing the Order of Evaluation](#changing-order-of-evaluation) below for details.
+Le tableau suivant, extrait du [Manuel Python de référence](http://docs.python.org/3/reference/expressions.html#operator-precedence), est fourni afin d'être complet. Il est bien meilleur d'utiliser les parenthèses pour grouper correctement les opérateurs et les opérandes afin d'indiquer explicitement la précédence. Cela rend le programme plus lisible. Voyez [Changer l'ordre d'évaluations](#changing-order-of-evaluation) pour plus de détails.
 
-- `lambda` : Lambda Expression
-- `if - else` : Conditional expression
-- `or` : Boolean OR
-- `and` : Boolean AND
-- `not x` : Boolean NOT
-- `in, not in, is, is not, <, <=, >, >=, !=, ==` : Comparisons, including membership tests and identity tests
-- `|` : Bitwise OR
-- `^` : Bitwise XOR
-- `&` : Bitwise AND
-- `<<, >>` : Shifts
-- `+, -` : Addition and subtraction
-- `*, /, //, %` : Multiplication, Division, Floor Division and Remainder
-- `+x, -x, ~x` : Positive, Negative, bitwise NOT
+- `lambda` : Expression Lambda
+- `if - else` : Expression conditionnelle
+- `or` : Ou booléen
+- `and` : Et booléen
+- `not x` : Non booléen
+- `in, not in, is, is not, <, <=, >, >=, !=, ==` : Comparaisons, en incluant les tests d'appartenance et les tests d'identité
+- `|` : Ou bit à bit
+- `^` : Ou exclusif bit à bit (XOR)
+- `&` : Et bit à bit
+- `<<, >>` : Décalage
+- `+, -` : Addition et soustraction
+- `*, /, //, %` : Multiplication, Division, Quotient et Reste
+- `+x, -x, ~x` : Positif, Négatif, non bit à bit
 - `**` : Exponentiation
 - `x[index], x[index:index], x(arguments...), x.attribute` : Subscription, slicing, call, attribute reference
 - `(expressions...), [expressions...], {key: value...}, {expressions...}` : Binding or tuple display, list display, dictionary display, set display
 
-The operators which we have not already come across will be explained in later chapters.
+Les opérateurs que nous n'avons pas encore rencontrés seront expliqués dans les chapitres suivants.
 
-Operators with the _same precedence_ are listed in the same row in the above table. For example, `+` and `-` have the same precedence.
+Les opérateurs avec la _même précédence_ sont listés dans la même ligne dans le tableau ci-dessus. Par exemple, `+` et `-` ont la même précédence.
 
-## Changing the Order Of Evaluation {#changing-order-of-evaluation}
+## Changer L'Ordre D'Evaluation {#changing-order-of-evaluation}
 
-To make the expressions more readable, we can use parentheses. For example, `2 + (3 * 4)` is definitely easier to understand than `2 + 3 * 4` which requires knowledge of the operator precedences. As with everything else, the parentheses should be used reasonably (do not overdo it) and should not be redundant, as in `(2 + (3 * 4))`.
+Pour rendre les expressions plus lisibles, nous pouvons utiliser des parenthèses. Par exemple, `2 + (3 * 4)` est bien plus facile à comprendre que `2 + 3 * 4` qui demande de connaître la précédence des opérateurs. Comme pour toute chose, les parenthèses doivent être utilisées à bon escient (n'en abusez pas) et ne doivent pas être redondantes comme dans `(2 + (3 + 4))`.
 
-There is an additional advantage to using parentheses - it helps us to change the order of evaluation. For example, if you want addition to be evaluated before multiplication in an expression, then you can write something like `(2 + 3) * 4`.
+Il y a un autre avantage à utiliser des parenthèses - cela nous aide à changer l'ordre d'évaluation. Par exemple, si vous évaluer une addition avant une multiplication dans une expression, alors vous pouvez écrire quelque chose comme  `(2 + 3) * 4`.
 
-## Associativity
+## Associativité
 
-Operators are usually associated from left to right. This means that operators with the same precedence are evaluated in a left to right manner. For example, `2 + 3 + 4` is evaluated as `(2 + 3) + 4`.
+Les opérateurs sont en général associés de gauche à droite, c'est-à-dire que les opérateurs avec la même précédence sont évalués de la gauche vers la droite. Par exemple, `2 + 3 + 4` est évalué comme `(2 + 3) + 4`.
 
 ## Expressions
 
-Example (save as `expression.py`):
+Exemple (sauvegardez en nommant le fichier `expression.py`):
 
 ```python
 length = 5
@@ -185,7 +184,7 @@ print('Area is', area)
 print('Perimeter is', 2 * (length + breadth))
 ```
 
-Output:
+Résultat:
 
 ```
 $ python expression.py
@@ -193,12 +192,12 @@ Area is 10
 Perimeter is 14
 ```
 
-**How It Works**
+**Comment cela fonctionne**
 
-The length and breadth of the rectangle are stored in variables by the same name. We use these to calculate the area and perimeter of the rectangle with the help of expressions. We store the result of the expression `length * breadth` in the variable `area` and then print it using the `print` function. In the second case, we directly use the value of the expression `2 * (length + breadth)` in the print function.
+La longueur et la largeur du rectangle sont rangés dans des variables du même nom (length et breadth). Nous les utilisons pour calculer la surface et le périmètre du rectangle avec l'aide des expressions. Nous rangeons le résultat de l'expression `length * breadth` dans la variable `area` et ensuite nous l'affichons en utilisant la fonction `print`. Dans le deuxième cas, nous utilisons directement la valeur de l'expression `2 * (length + breadth)` dans la fonction print.
 
-Also, notice how Python _pretty-prints_ the output. Even though we have not specified a space between `'Area is'` and the variable `area`, Python puts it for us so that we get a clean nice output and the program is much more readable this way (since we don't need to worry about spacing in the strings we use for output). This is an example of how Python makes life easy for the programmer.
+Notez également comment Python _affiche joliment_ le résultat. Même si nous n'avons pas ajouté un espace entre `'l'aire est de'` et la variable `area`, Python l'insère pour nous afin d'avoir un joli affichage et le programme est bien plus lisible ainsi (vu que nous n'avons pas à nous inquiéter des espaces dans les chaînes de caractères utilisées à l'affichage). Voici un exemple de ce que fait Python pour rendre la vie du programmeur plus facile.
 
-## Summary
+## Récapitulatif
 
-We have seen how to use operators, operands and expressions - these are the basic building blocks of any program. Next, we will see how to make use of these in our programs using statements.
+Nous avons vu comment utiliser les opérateurs, opérandes et expressions - ce sont les briques de base de n'importe quel programme. Ensuite, nous verrons comment les utiliser dans nos programmes avec des instructions.

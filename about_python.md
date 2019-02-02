@@ -1,4 +1,4 @@
-# About Python
+# À propos de Python
 
 Python est un des rares langages à être à la fois _simple_ et _puissant_.  Vous serez agréablement surpris de voir comme il est facile de se concentrer sur la solution d'un problème plutôt que sur la syntaxe et la structure du langage utilisé .
 
@@ -10,7 +10,7 @@ Je parlerai plus en détail de ces fonctionnalités dans le paragraphe suivant.
 
 ## Story behind the name
 
-Guido van Rossum, le créateur du langage, l'a appelé en référence au show de la BBC "Monty Python's Flying Circus". Il n'aime pas particulièrement les serpents qui tuent des animaux pour manger en les étouffant et les écrasant.
+Guido van Rossum, le créateur du langage, l'a appelé en référence à la série télévisée de la BBC "Monty Python's Flying Circus". Il n'aime pas particulièrement les serpents qui tuent des animaux pour manger en les étouffant et les écrasant.
 
 ## Fonctionnalités de Python
 
@@ -57,7 +57,7 @@ Si vous avez besoin qu'un morceau de code critique tourne très vite, ou qu'un a
 ### Embarqué
 
 
-: Vous pouvez embarquer Python dans vos progammes C/C\++ pour donner des possibilités de _scripting_ aux utilisateurs de vos programmes.
+Vous pouvez embarquer Python dans vos progammes C/C\++ pour donner des possibilités de _scripting_ aux utilisateurs de vos programmes.
 
 ### De Nombreuses Bibliothèques
 
@@ -65,25 +65,24 @@ La Python Standard Library est immense. Cela peut vous aider à faire de nombreu
 
 En plus de la bibliothèque standard, il y a d'autres bibliothèques de grande qualité que vous pouvez trouver dans le [Python Package Index](http://pypi.python.org/pypi).
 
-### Summary
+### Résumé
 
 Python est vraiment un langage puissant et formidable. Il possède la bonne combinaison de performance et fonctionnalités, ce qui rend l'écriture de programmes Python à la fois amusante et aisée.
 
 ## Python 3 versus 2
 
-You can ignore this section if you're not interested in the difference between "Python version 2" and "Python version 3". But please do be aware of which version you are using. This book is written for Python version 3.
+Vous pouvez ignorer cette section si la différence entre "Python version 2" et "Python version 3" ne vous intéresse pas. Mais soyez conscient de la version que vous utilisez. Ce livre est écrit pour Python version 3.
 
-Remember that once you have properly understood and learn to use one version, you can easily learn the differences and use the other one. The hard part is learning programming and understanding the basics of Python language itself. That is our goal in this book, and once you have achieved that goal, you can easily use Python 2 or Python 3 depending on your situation.
+N'oubliez pas qu'une fois que vous avez bien compris et appris à utiliser une version, vous pouvez facilement apprendre les différences et utiliser l'autre. Le plus difficile est d’apprendre à programmer et à comprendre les bases du langage Python lui-même. C’est notre objectif dans ce livre, et une fois que vous avez atteint cet objectif, vous pouvez facilement utiliser Python 2 ou Python 3 en fonction de votre situation.
 
-For details on differences between Python 2 and Python 3, see:
+Pour plus de détails sur les différences entre Python 2 et Python 3, voir:
 
-- [The future of Python 2](http://lwn.net/Articles/547191/)
-- [Porting Python 2 Code to Python 3](https://docs.python.org/3/howto/pyporting.html)
-- [Writing code that runs under both Python2 and 3](https://wiki.python.org/moin/PortingToPy3k/BilingualQuickRef)
-- [Supporting Python 3: An in-depth guide](http://python3porting.com)
+- [Le futur de Python 2](http://lwn.net/Articles/547191/)
+- [Porter du code de Python 2 vers Python 3](https://docs.python.org/3/howto/pyporting.html)
+- [Ecriture de code sous Python 2 et 3](https://wiki.python.org/moin/PortingToPy3k/BilingualQuickRef)
+- [Prise en charge de Python 3: un guide détaillé](http://python3porting.com)
 
-## What Programmers Say
-
+## Que disent les programmeurs
 
 Vous trouverez intéressant de lire ce que des grands hackers comme ESR disent à propos de Python:
 

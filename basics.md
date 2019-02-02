@@ -1,35 +1,35 @@
-# Basics
+# Les Bases
 
 Afficher seulement 'Hello World' n'est pas assez, n'est-ce pas ? Vous voulez faire plus que cela - vous voulez prendre des choses en entrée, les manipuler et en sortir quelque chose. Nous pouvons réussir cela  avec Python en utilisant des constantes et des variables.
 
-## Comments
+## Commentaires
 
-_Comments_ are any text to the right of the `#` symbol and is mainly useful as notes for the reader of the program.
-
-For example:
+Les _commentaires_ sont un texte quelconque à droite du symbole `#` et sont principalement utiles en tant que notes pour le lecteur du programme.
+Par exemple:
 
 ```python
-print('hello world') # Note that print is a function
+print('hello world') # Remarquez que print est une fonction
 ```
 
-or:
+ou:
 
 ```python
-# Note that print is a function
+# Remarquez que print est une fonction
 print('hello world')
 ```
+Utilisez autant de commentaires utiles que possible dans votre programme pour:
+
+- expliquer vos hypothèses
+- expliquer les décisions importantes
+- expliquer les détails importants
+- expliquer les problèmes que vous essayez de résoudre
+- expliquer les problèmes que vous essayez de surmonter dans votre programme, etc.
 
 Use as many useful comments as you can in your program to:
 
-- explain assumptions
-- explain important decisions
-- explain important details
-- explain problems you're trying to solve
-- explain problems you're trying to overcome in your program, etc.
+[*Le code vous dit comment, les commentaires devraient vous dire pourquoi*](http://www.codinghorror.com/blog/2006/12/code-tells-you-how-comments-tell-you-why.html).
 
-[*Code tells you how, comments should tell you why*](http://www.codinghorror.com/blog/2006/12/code-tells-you-how-comments-tell-you-why.html).
-
-This is useful for readers of your program so that they can easily understand what the program is doing. Remember, that person can be yourself after six months!
+Ceci est utile pour les lecteurs de votre programme afin qu’ils puissent facilement comprendre ce qu’il fait. Rappelez-vous que cette personne peut être vous-même six mois plus tard!
 
 ## Constantes Littérales
 
@@ -54,19 +54,19 @@ Une chaîne de caractères est une ''suite'' de ''caractères''. Les chaînes de
 
 Vous utiliserez des chaînes de caractères dans pratiquement chaque programme que vous écrirez, donc soyez attentifs à ce qui suit.
 
-### Single Quote
+### Guillemets simples
 
-Vous pouvez définir des chaînes de caractères en utilisant des simples quotes comme `'Quote me on this'`.
+Vous pouvez définir des chaînes de caractères en utilisant des guillemets simples comme `'Je suis entre guillemets'`.
 
 Tous les whitespaces, par exemple les espaces et des tabulations, sont gardés tels quels.
 
-### Double Quotes
+### Doubles guillemets
 
-Les chaînes de caractères entre double quotes fonctionnent exactement de la même manière qu'avec les simples quotes. Un exemple est `"What's your name?"`
+Les chaînes de caractères entre doubles guillemets fonctionnent exactement de la même manière qu'avec les guillemets simples. Un exemple est `"Comment tu t'appelles?"`
 
-### Triple Quotes {#triple-quotes}
+### Triples guillemets {#triple-quotes}
 
-Vous pouvez déclarer les chaînes de caractères sur plusieurs lignes en utilisant des triples quotes - (`"""` ou `'''`). Vous pouvez utiliser des simples quotes et des double quotes librement à l'intérieur des triple quotes. Un exemple est:
+Vous pouvez déclarer les chaînes de caractères sur plusieurs lignes en utilisant des triples guillemets - (`"""` ou `'''`). Vous pouvez utiliser des guillemets simples et des doubles guillemets librement à l'intérieur des triples guillemets. Un exemple est:
 
 ```python
 '''This is a multi-line string. This is the first line.
