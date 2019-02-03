@@ -1,106 +1,179 @@
-# Functions
+# Fonctions
 
-Functions are reusable pieces of programs. They allow you to give a name to a block of statements, allowing you to run that block using the specified name anywhere in your program and any number of times. This is known as *calling* the function. We have already used many built-in functions such as `len` and `range`.
+Les fonctions sont des morceaux re-utilisables de programmes. Ils vous permettent de donner un nom à un bloc d'instructions et vous pouvez exécuter ce bloc n'importe où et autant de fois que vous le voulez. C'est ce qu'on nomme *appeler* la fonction. Nous avons déjà utilisé des fonctions intégrées comme `len` et `range`.
 
-The function concept is probably *the* most important building block of any non-trivial software (in any programming language), so we will explore various aspects of functions in this chapter.
+Le concept de fonction est probablement *le* plus important bloc de base de n'importe quel logiciel un peu complexe (dans n'importe quel langage), donc nous explorerons divers aspects des fonctions dans ce chapitre.
 
-Functions are defined using the `def` keyword. After this keyword comes an *identifier* name for the function, followed by a pair of parentheses which may enclose some names of variables, and by the final colon that ends the line. Next follows the block of statements that are part of this function. An example will show that this is actually very simple:
+Les fonctions sont définies en utilisant le mot-clé `def`. Cela est suivi par un *identifiant* pour la fonction suivi d'une paire de parenthèses qui peuvent inclure des noms de variables et par un caractère deux-points qui termine la ligne. Puis suit un bloc d'instructions qui font partie de la fonction. Un exemple va montrer que cela est en fait très simple:
 
-Example (save as `function1.py`):
+Exemple (sauvegarder sous `function1.py`):
 
-<pre><code class="lang-python">{% include "./programs/function1.py" %}</code></pre>
+```python
+def say_hello():
+    # bloc appartenant à la fonction
+    print('hello world')
+# Fin de la fonction
 
-Output:
+say_hello()  # appel de la fonction
+say_hello()  # nouvel appel de la fonction
+```
 
-<pre><code>{% include "./programs/function1.txt" %}</code></pre>
+Résultat:
 
-**How It Works**
+```
+$ python function1.py
+Hello World!
+Hello World!
+```
 
-We define a function called `say_hello` using the syntax as explained above. This function takes no parameters and hence there are no variables declared in the parentheses. Parameters to functions are just input to the function so that we can pass in different values to it and get back corresponding results.
+**Comment ça marche**
 
-Notice that we can call the same function twice which means we do not have to write the same code again.
+Nous avons défini une fonction appelée `say_hello` qui utilise la syntaxe expliquée ci-dessus. La fonction ne prend pas de paramètre et donc il n'y a pas de variables déclarées entre les parenthèses. Les paramètres d'une fonctions sont juste des données en entrée de la fonction afin de passer des valeurs et de récupérer les résultats correspondants.
 
-## Function Parameters
+Notez que nous pouvons appeler la même fonction deux fois ce qui implique que nous n'avons pas à écrire le même code à nouveau.
 
-A function can take parameters, which are values you supply to the function so that the function
-can *do* something utilising those values. These parameters are just like variables except that the
-values of these variables are defined when we call the function and are already assigned values
-when the function runs.
+## Paramètres de fonction
 
-Parameters are specified within the pair of parentheses in the function definition, separated by
-commas. When we call the function, we supply the values in the same way.  Note the terminology
-used - the names given in the function definition are called *parameters* whereas the values you
-supply in the function call are called *arguments*.
+Une fonction peut prendre des paramètres, qui sont des valeurs fournies à la fonction afin que la fonction *fasse* quelque chose en utilisant ces valeurs. Ces paramètres sont comme des variables, sauf que les valeurs de ces variables sont définies quand nous appelons la fonction et ont déjà des valeurs assignées quand la fonction est exécutée.
 
-Example (save as `function_param.py`):
+Les paramètres sont spécifiés à l'intérieur de la paire de parenthèses de la définition de la fonction, séparées par des virgules. Quand nous appelons la fonction, nous fournissons les valeurs de la même manière. Notez la terminologie utilisée - les noms donnés dans la définition de la fonction sont appelés des  *paramètres* quand les valeurs que vous fournissez à l'appel de la fonction sont des *arguments*.
 
-<pre><code class="lang-python">{% include "./programs/function_param.py" %}</code></pre>
+Exemple (sauvegarder sous `function_param.py`):
 
-Output:
+```python
+def print_max(a, b):
+    if a > b:
+        print(a, 'est le plus grand')
+    elif a == b:
+        print(a, 'est égal à', b)
+    else:
+        print(b, 'est le plus grand')
 
-<pre><code>{% include "./programs/function_param.txt" %}</code></pre>
+# fournit des constantes littérales en tant qu'arguments
+print_max(3, 4)
 
-**How It Works**
+x = 5
+y = 7
 
-Here, we define a function called `print_max` that uses two parameters called `a` and `b`.  We find out the greater number using a simple `if..else` statement and then print the bigger number.
+# fournit des variables en tant qu'arguments
+print_max(x, y)
+```
 
-The first time we call the function `print_max`, we directly supply the numbers as arguments. In the second case, we call the function with variables as arguments. `print_max(x, y)` causes the value of argument `x` to be assigned to parameter `a` and the value of argument `y` to be assigned to parameter `b`. The `print_max` function works the same way in both cases.
+Résultat:
 
-## Local Variables
+```
+$ python func_param.py
+4 est le plus grand
+7 est le plus grand
+```
 
-When you declare variables inside a function definition, they are not related in any way to other variables with the same names used outside the function - i.e. variable names are *local* to the function. This is called the *scope* of the variable. All variables have the scope of the block they are declared in starting from the point of definition of the name.
+**Comment ça marche**
 
-Example (save as `function_local.py`):
+Ici, nous définissons une fonction appelée  `print_max` qui prend deux paramètres appelés `a` et `b`.  Nous trouvons le nombre le plus grand en utilisant une simple instruction `if..else` et nous l'affichons.
 
-<pre><code class="lang-python">{% include "./programs/function_local.py" %}</code></pre>
+Dans la première utilisation de `print_max`, nous fournissons directement les nombres, c'est-à-dire les arguments. Dans la deuxième utilisation, nous appelons la fonction en utilisant des variables. `print_max(x, y)` fait que la valeur de l'argument `x` est assignée au paramètre `a` et la valeur de l'argument `y` assignée au paramètre `b`. La fonction print_max agit de la même manière dans les deux cas.
 
-Output:
+## Variables locales
 
-<pre><code>{% include "./programs/function_local.txt" %}</code></pre>
+Quand vous déclarez des variables à l'intérieur de la définition d'une fonction, elles ne sont en aucun cas en rapport avec d'autres variables portant le même nom, utilisées en dehors de la fonction, c'est-à-dire que les noms de variables sont *locaux* à la fonction. Cela est appelé la *portée* de la variable. Toutes les variables ont la portée du bloc dans lequel elles sont déclarées, à partir du point de définition du nom.
 
-**How It Works**
+> **Note de la traduction**
+> 
+> Le terme anglais *scope* est très utilisé, et à le même sens que *portée*.
 
-The first time that we print the *value* of the name *x* with the first line in the function's body, Python uses the value of the parameter declared in the main block, above the function definition.
+Exemple (sauvegardez sous `function_local.py`):
 
-Next, we assign the value `2` to `x`. The name `x` is local to our function.  So, when we change the value of `x` in the function, the `x` defined in the main block remains unaffected.
+```python
+x = 50
 
-With the last `print` statement, we display the value of `x` as defined in the main block, thereby confirming that it is actually unaffected by the local assignment within the previously called function.
+def func(x):
+    print('x vaut', x)
+    x = 2
+    print('Nous avons changé le x local à', x)
 
-## The `global` statement {#global-statement}
+func(x)
+print('x vaut toujours', x)
+```
 
-If you want to assign a value to a name defined at the top level of the program (i.e. not inside any kind of scope such as functions or classes), then you have to tell Python that the name is not local, but it is *global*. We do this using the `global` statement. It is impossible to assign a value to a variable defined outside a function without the `global` statement.
+Résultat:
 
-You can use the values of such variables defined outside the function (assuming there is no variable with the same name within the function). However, this is not encouraged and should be avoided since it becomes unclear to the reader of the program as to where that variable's definition is. Using the `global` statement makes it amply clear that the variable is defined in an outermost block.
+```
+$ python func_local.py
+x est 50
+Nous avons changé le x local à 2
+x est toujours 50
+```
 
-Example (save as `function_global.py`):
+**Comment ça marche**
 
-<pre><code class="lang-python">{% include "./programs/function_global.py" %}</code></pre>
+La première fois que nous imprimons la *valeur* du nom *x* avec la première ligne du corps de la fonction, Python utilise la valeur du paramètre déclaré dans le bloc principal, au-dessus de la définition de la fonction.
 
-Output:
+Ensuite, nous assignons la valeur `2` à `x`. Le nom `x` est local dans notre fonction. Ainsi, lorsque nous changeons la valeur de `x` dans la fonction, le `x` défini dans le bloc principal reste inchangé.
 
-<pre><code>{% include "./programs/function_global.txt" %}</code></pre>
+Avec la dernière instruction `print`, nous affichons la valeur de `x` telle que définie dans le bloc principal, confirmant ainsi qu'elle n'est en réalité pas affectée par l'affectation locale dans la fonction précédemment appelée.
 
-**How It Works**
+## L'instruction `global` {#global-statement}
 
-The `global` statement is used to declare that `x` is a global variable - hence, when we assign a value to `x` inside the function, that change is reflected when we use the value of `x` in the main block.
+Si vous voulez assigner une valeur à un nom défini au niveau supérieur de votre programme (c'est-à-dire en dehors de la portée de n'importe quelle fonction ou classe), alors vous devez indiquer à Python que ce nom n'est pas local, mais qu'il est *global*. Vous faites cela avec l'instruction `global` . Il est impossible d'assigner une valeur à une variable définie en dehors d'une fonction sans l'instruction `global` .
 
-You can specify more than one global variable using the same `global` statement e.g. `global x, y, z`.
+Vous pouvez utiliser les valeurs de telles variables définies en dehors d'une fonction (en supposant qu'il n'existe pas de variable avec le même nom à l'intérieur de la fonction). Cependant, cela est déconseillé et devrait être évité car le programme devient confus et le lecteur ne sait plus où est la définition de la variable. Utiliser l'instruction `global` indique clairement que la variable est définie dans un bloc éloigné.
 
-## Default Argument Values {#default-arguments}
+Exemple (sauvegardez sous `function_global.py`):
 
-For some functions, you may want to make some parameters *optional* and use default values in case the user does not want to provide values for them. This is done with the help of default argument values. You can specify default argument values for parameters by appending to the parameter name in the function definition the assignment operator (`=`) followed by the default value.
+```python
+x = 50
 
-Note that the default argument value should be a constant. More precisely, the default argument value should be immutable - this is explained in detail in later chapters. For now, just remember this.
+def func():
+    global x
 
-Example (save as `function_default.py`):
+    print('x vaut', x)
+    x = 2
+    print('Nous avons changé la valeur de la variable globale x à', x)
 
-<pre><code class="lang-python">{% include "./programs/function_default.py" %}</code></pre>
+func()
+print('x vaut', x)
+```
 
-Output:
+Résultat:
 
-<pre><code>{% include "./programs/function_default.txt" %}</code></pre>
+```
+$ python func_global.py
+x vaut 50
+Nous avons changé la valeur de la variable globale x à 2
+x vaut 2
+```
 
-**How It Works**
+**Comment ça marche**
+
+L'instruction `global` est utilisée pour déclarer que `x` est une variable globale - d'où, quand nous assignons une valeur à `x` à l'intérieur de la fonction, ce changement est mis en évidence quand nous utilisons la valeur de `x` dans le bloc principal .
+
+Vous pouvez déclarer plusieurs variables globales en utilisant la même instruction `global`. Par exemple, `global x, y, z`.
+
+## Valeurs d'arguments par défaut {#default-arguments}
+
+Pour certaines fonctions, vous voudrez que certains des arguments soient *optionnels* et utilisent des valeurs par défaut si l'utilisateur ne précise pas leur valeur. Cela est fait avec des valeurs d'arguments par défaut. Vous pouvez spécifier ces valeurs par défaut en ajoutant au nom du paramètre dans la définition de la fonction l'opérateur d'affectation (`=`) suivi de la valeur par défaut.
+
+Notez que la valeur d'argument par défaut doit être une constante. Plus précisément, la valeur d'argument par défaut doit être immuable - cela est expliqué en détail dans des chapitres ultérieurs. Pour l'instant, retenez juste ce qui précède.
+
+Exemple (sauvegardez sous `function_default.py`):
+
+```python
+def say(message, times = 1):
+    print(message * times)
+
+say('Hello')
+say('World', 5)
+```
+
+Résultat:
+
+```
+$ python func_default.py
+Hello
+WorldWorldWorldWorldWorld
+```
+
+**Comment ça marche**
 
 The function named `say` is used to print a string as many times as specified. If we don't supply a value, then by default, the string is printed just once. We achieve this by specifying a default argument value of `1` to the parameter `times`.
 
@@ -121,15 +194,15 @@ If you have some functions with many parameters and you want to specify only som
 
 There are two advantages - one, using the function is easier since we do not need to worry about the order of the arguments. Two, we can give values to only those parameters to which we want to, provided that the other parameters have default argument values.
 
-Example (save as `function_keyword.py`):
+Exemple (sauvegardez sous `function_keyword.py`):
 
 <pre><code class="lang-python">{% include "./programs/function_keyword.py" %}</code></pre>
 
-Output:
+Résultat:
 
 <pre><code>{% include "./programs/function_keyword.txt" %}</code></pre>
 
-**How It Works**
+**Comment ça marche**
 
 The function named `func` has one parameter without a default argument value, followed by two parameters with default argument values.
 
@@ -145,11 +218,11 @@ Sometimes you might want to define a function that can take _any_ number of para
 
 <pre><code class="lang-python">{% include "./programs/function_varargs.py" %}</code></pre>
 
-Output:
+Résultat:
 
 <pre><code>{% include "./programs/function_varargs.txt" %}</code></pre>
 
-**How It Works**
+**Comment ça marche**
 
 When we declare a starred parameter such as `*param`, then all the positional arguments from that point till the end are collected as a tuple called 'param'.
 
@@ -161,15 +234,15 @@ We will explore tuples and dictionaries in a [later chapter](./data_structures.m
 
 The `return` statement is used to *return* from a function i.e. break out of the function. We can optionally *return a value* from the function as well.
 
-Example (save as `function_return.py`):
+Exemple (sauvegardez sous `function_return.py`):
 
 <pre><code class="lang-python">{% include "./programs/function_return.py" %}</code></pre>
 
-Output:
+Résultat:
 
 <pre><code>{% include "./programs/function_return.txt" %}</code></pre>
 
-**How It Works**
+**Comment ça marche**
 
 The `maximum` function returns the maximum of the parameters, in this case the numbers supplied to the function. It uses a simple `if..else` statement to find the greater value and then *returns* that value.
 
@@ -190,15 +263,15 @@ The `pass` statement is used in Python to indicate an empty block of statements.
 
 Python has a nifty feature called *documentation strings*, usually referred to by its shorter name *docstrings*. DocStrings are an important tool that you should make use of since it helps to document the program better and makes it easier to understand. Amazingly, we can even get the docstring back from, say a function, when the program is actually running!
 
-Example (save as `function_docstring.py`):
+Exemple (sauvegardez sous `function_docstring.py`):
 
 <pre><code class="lang-python">{% include "./programs/function_docstring.py" %}</code></pre>
 
-Output:
+Résultat:
 
 <pre><code>{% include "./programs/function_docstring.txt" %}</code></pre>
 
-**How It Works**
+**Comment ça marche**
 
 A string on the first logical line of a function is the *docstring* for that function. Note that DocStrings also apply to [modules](./modules.md#modules) and [classes](./oop.md#oop) which we will learn about in the respective chapters.
 

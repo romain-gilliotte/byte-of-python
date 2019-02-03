@@ -2,7 +2,7 @@
 
 Python est sans doute l'un des rares langages de programmation à être à la fois simple et puissant. C'est une bonne chose pour les débutants comme pour les experts, et plus important, il est amusant de programmer avec. Ce livre a pour but de vous aider à apprendre ce formidable langage et de vous montrer comment faire des choses rapidement et facilement - en fait 'Le Parfait Antidote à vos problèmes de programmation'.
 
-## Le Public Visé Par Ce Livre
+## Le public visé par ce livre
 
 Ce livre est un guide ou un tutoriel pour le langage de programmation Python. Le public visé est les débutants. Il est également utile aux programmeurs exprimentés.
 

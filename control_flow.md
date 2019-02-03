@@ -205,13 +205,13 @@ Résultat:
 ```
 $ python break.py
 Entrez quelque chose : La programmation est drôle
-La longueur de la chaîne est 18
+La longueur de la chaîne est 26
 Entrez quelque chose : Quand le travail est fait
-La longueur de la chaîne est 21
+La longueur de la chaîne est 25
 Entrez quelque chose : si vous voulez rendre votre travail drôle:
-La longueur de la chaîne est 37
+La longueur de la chaîne est 42
 Entrez quelque chose :     utiliser Python sera parfait!
-La longueur de la chaîne est 12
+La longueur de la chaîne est 33
 Entrez quelque chose : quit
 Terminé
 ```
