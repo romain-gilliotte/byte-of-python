@@ -168,7 +168,7 @@ print('{0:.3f}'.format(1.0/3))
 # une largeur de 11 '___hello___'
 print('{0:_^11}'.format('hello'))
 # basé sur un mot-clé
-print('{name} wrote {book}'.format(name='Swaroop', book='A Byte of Python'))
+print('{name} a écrit {book}'.format(name='Swaroop', book='A Byte of Python'))
 ```
 
 donne:
@@ -176,7 +176,7 @@ donne:
 ```
 0.333
 ___hello___
-Swaroop wrote A Byte of Python
+Swaroop a écrit A Byte of Python
 ```
 
 Puisque nous discutons formatage, notez que `print` se termine toujours par un caractère invisible de "nouvelle ligne" (`\n`), de sorte que des appels répétés à `print` s’imprimeront sur des lignes distinctes. Pour empêcher l'impression de ce caractère de nouvelle ligne, vous pouvez spécifier vouloir finir avec une chaîne vide:
@@ -208,15 +208,15 @@ a b c
 
 ### Caractère d'échappement et de contrôle
 
-Supposons, vous voulez avoir une chaîne de caractères contenant un simple guillemet (`'`), comment faire? Par exemple, la chaîne de caractères `What's your name?`. Vous ne pouvez pas déclarer `'What's your name?'` parce que Python sera perdu, où commence et se termine la chaîne de caractères? Donc, il vous faut indiquer que ce simple guillemet n'indique pas la fin de la chaîne. Cela peut être fait avec l'aide de ce qu'on appelle un _caractère d'échappement_. Vous indiquez le simple guillemet comme `\'` - notez le _backslash_ (barre oblique inversée). Maintenant, vous pouvez indiquer la chaîne de caractères comme `'What\'s your name?'`.
+Supposons, vous voulez avoir une chaîne de caractères contenant un simple guillemet (`'`), comment faire? Par exemple, la chaîne de caractères `Comment t'appelles-tu?`. Vous ne pouvez pas déclarer `'Comment t'appelles-tu?'` parce que Python sera perdu, où commence et se termine la chaîne de caractères? Donc, il vous faut indiquer que ce simple guillemet n'indique pas la fin de la chaîne. Cela peut être fait avec l'aide de ce qu'on appelle un _caractère d'échappement_. Vous indiquez le simple guillemet comme `\'` - notez le _backslash_ (barre oblique inversée). Maintenant, vous pouvez indiquer la chaîne de caractères comme `'Comment t\'appelles-tu?'`.
 
-Une autre façon de faire serait `"What's your name?"` c'est à dire utiliser des double guillemets. De la même manière, vous devez utiliser un _caractère d'échappement_ pour utiliser une double guillemet elle-même dans une chaîne de caractères définie par des double guillemets. Pour indiquer le backslash, vous devez utiliser le _backslash_ sur lui-même `\\`.
+Une autre façon de faire serait `"Comment t'appelles-tu?"` c'est à dire utiliser des double guillemets. De la même manière, vous devez utiliser un _caractère d'échappement_ pour utiliser une double guillemet elle-même dans une chaîne de caractères définie par des double guillemets. Pour indiquer le backslash, vous devez utiliser le _backslash_ sur lui-même `\\`.
 
 Comment faire pour indiquer une chaîne de caractère sur deux lignes? Une façon est d'utiliser une chaîne de caractère entre des triple guillemets comme montré [précédemment](#triple-quotes) ou vous pouvez utiliser un _caractère de contrôle_ comme le caractère `\n` pour indiquer le début d'une nouvelle ligne. Un exemple est:
 
 
 ```python
-'This is the first line\nThis is the second line'
+'Ceci est la première ligne\nCeci est la deuxième ligne'
 ```
 
 Un autre _caractère de contrôle_ utile à connaître est la tabulation - `\t`. Il y a beaucoup d'autres _caractère de contrôle_ mais j'ai seulement mentionné les plus utiles ici.
@@ -224,14 +224,14 @@ Un autre _caractère de contrôle_ utile à connaître est la tabulation - `\t`.
 Une chose à noter est que, dans une chaîne de caractères, un backslash unique à la fin de la ligne indique que la chaîne de caractères continue à la ligne suivante, mais une nouvelle ligne n'est pas ajoutée, par exemple:
 
 ```python
-"This is the first sentence. \
-This is the second sentence."
+"Ceci est la première phrase. \
+Ceci est la deuxième phrase."
 ```
 
 est équivalent à
 
 ```python
-"This is the first sentence. This is the second sentence."
+"Ceci est la première phrase. Ceci est la deuxième phrase."
 ```
 
 ### Chaînes "brutes"
