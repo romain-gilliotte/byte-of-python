@@ -17,7 +17,7 @@ Si vous n'avez pas coché l'option `Ajouter Python 3.6 au PATH` plus tôt, coche
 
 Vous pouvez choisir d'installer Launcher pour tous les utilisateurs ou non, peu importe. Launcher est utilisé pour basculer entre différentes versions de Python installées.
 
-Si votre chemin n'a pas été défini correctement (en cochant les options `Ajouter Python 3.6 au PATH` ou `Ajouter Python aux variables d'environment`), suivez les étapes décrites dans la section suivante (`Invite de commandes DOS )` pour y remédier. Sinon, allez à la section `Lancer l'invite de commandes Python sous Windows` de ce document.
+Si votre chemin n'a pas été défini correctement (en cochant les options `Ajouter Python 3.6 au PATH` ou `Ajouter Python aux variables d'environment`), suivez les étapes décrites dans la section suivante (`Invite de commandes DOS )` pour y remédier. Sinon, allez à la section `Lancer l'interpréteur intéractif Python sous Windows` de ce document.
 
 REMARQUE: Si vous connaissez déjà la programmation et que vous êtes familiers avec Docker consultez [Python dans Docker](https://hub.docker.com/_/python/) et [Docker sous Windows](https://docs.docker.com/windows/).
 
@@ -51,7 +51,7 @@ Pour Windows 10:
 
 - Menu Démarrer de Windows> `Paramètres` > `À propos de` > `Informations système` (tout à droite) > `Paramètres système avancés` > `Variables d’environnement` (vers le bas) > Choisissez `Variable Path` et cliquez sur `Modifier`)> `New` > (tapez le lieu de votre emplacement python. Par exemple, `C:\Python36\`)
 
-### Lancer l'invite de commandes Python sous Windows
+### Lancer l'interpréteur intéractif Python sous Windows
 
 Pour les utilisateurs Windows, vous pouvez exécuter l'interpréteur en ligne de commande si vous avez défini [la variable `PATH` de manière appropriée](#DOS-prompt).
 
@@ -79,7 +79,7 @@ $ python3 -V
 Python 3.6.0
 ```
 
-NOTE: `$` est l'invite du shell. Ce sera différent pour vous selon le paramètrage du système d'exploitation de votre ordinateur, par conséquent, je vais indiquer l'invite uniquement par le symbole `$`.
+NOTE: `$` est l'invite du terminal. Ce sera différent pour vous selon le paramètrage du système d'exploitation de votre ordinateur, par conséquent, je vais indiquer l'invite uniquement par le symbole `$`.
 
 ATTENTION: la sortie peut être différente sur votre ordinateur, selon la version du logiciel Python installé sur votre ordinateur.
 
