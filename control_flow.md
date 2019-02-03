@@ -116,9 +116,9 @@ Résultat:
 ```
 $ python while.py
 Saisissez un entier: 50
-Non, c\'est un peu moins que ça.
+Non, c'est un peu moins que ça.
 Saisissez un entier: 22
-Non, c\'est un peu plus que ça.
+Non, c'est un peu plus que ça.
 Saisissez un entier: 23
 Bravo, vous avez deviné.
 La boucle while est finie.
