@@ -1,90 +1,167 @@
 # Structure de contrôle {#control-flow}
 
-In the programs we have seen till now, there has always been a series of statements faithfully executed by Python in exact top-down order. What if you wanted to change the flow of how it works? For example, you want the program to take some decisions and do different things depending on different situations, such as printing 'Good Morning' or 'Good Evening' depending on the time of the day?
+Dans les programmes que nous avons vus jusqu'à présent, il y a toujours eu une série d'instructions fidèlement exécutés par Python de haut en bas sans exceptions. Et si vous vouliez changer le flux de son fonctionnement? Par exemple, vous voulez que le programme prenne des décisions et fasse des choses différentes en fonction de situations différentes, comme afficher "Bonjour" ou "Bonsoir" en fonction de l’heure de la journée?
 
-As you might have guessed, this is achieved using control flow statements. There are three control flow statements in Python - `if`, `for` and `while`.
+Comme vous l'avez peut-être deviné, ceci est réalisé à l'aide de structure de contrôle. Il existe trois instructions de structure de contrôle en Python - `if`,`for` et `while`.
 
-## The `if` statement
+## L'instruction `if`
 
-The `if` statement is used to check a condition: *if* the condition is true, we run a block of statements (called the _if-block_), *else* we process another block of statements (called the _else-block_). The *else* clause is optional.
+L'instruction `if` est utilisée pour vérifier une condition: *si* la condition est vraie, nous exécutons un bloc d'instructions (appelé le _bloc if_), *sinon* nous traitons un autre bloc d'instructions (appelé le _bloc else_). La clause *else* est facultative.
 
-Example (save as `if.py`):
+Exemple (enregistrer sous `if.py`):
 
-<!-- Tags expansion does not happen inside code blocks https://github.com/GitbookIO/gitbook/issues/707 -->
-<pre><code class="lang-python">{% include "./programs/if.py" %}</code></pre>
+```python
+number = 23
+guess = int(input('Saisissez un entier: '))
 
-Output:
+if guess == number:
+    # Le nouveau bloc commence ici
+    print('Bravo, vous avez deviné.')
+    print('(mais il n\'y a rien a gagner!)')
+    # Le nouveau bloc fini ici
+elif guess < number:
+    # Un autre bloc
+    print('Non, c\'est un peu plus que ça')
+    # Vous pouvez faire ce que vous voulez dans un bloc...
+else:
+    print('Non, c\'est une peu moins que ça')
+    # Il faut que guessed > number pour être ici
 
-<pre><code>{% include "./programs/if.txt" %}</code></pre>
+print('Fini')
+# Cette dernière instruction est toujours executée,
+# après que l'instruction if soit executé.
+```
 
-**How It Works**
+Résultat:
 
-In this program, we take guesses from the user and check if it is the number that we have. We set the variable `number` to any integer we want, say `23`. Then, we take the user's guess using the `input()` function. Functions are just reusable pieces of programs. We'll read more about them in the [next chapter](./functions.md#functions).
+```
+$ python if.py
+Saisissez un entier: 50
+Non, c'est un peu moins que ça
+Fini
 
-We supply a string to the built-in `input` function which prints it to the screen and waits for input from the user. Once we enter something and press kbd:[enter] key, the `input()` function returns what we entered, as a string. We then convert this string to an integer using `int` and then store it in the variable `guess`. Actually, the `int` is a class but all you need to know right now is that you can use it to convert a string to an integer (assuming the string contains a valid integer in the text).
+$ python if.py
+Saisissez un entier: 22
+Non, c'est un peu plus que ça
+Fini
 
-Next, we compare the guess of the user with the number we have chosen. If they are equal, we print a success message. Notice that we use indentation levels to tell Python which statements belong to which block. This is why indentation is so important in Python. I hope you are sticking to the "consistent indentation" rule. Are you?
+$ python if.py
+Saisissez un entier: 23
+Bravo, vous avez deviné.
+(mais il n'y a rien a gagner!)
+Fini
+```
 
-Notice how the `if` statement contains a colon at the end - we are indicating to Python that a block of statements follows.
+**Comment ça marche**
 
-Then, we check if the guess is less than the number, and if so, we inform the user that they must guess a little higher than that. What we have used here is the `elif` clause which actually combines two related `if else-if else` statements into one combined `if-elif-else` statement. This makes the program easier and reduces the amount of indentation required.
+Dans ce programme, nous prenons des conjectures de l'utilisateur et vérifions si c'est le nombre que nous avons. Nous définissons la variable `number` avec le nombre entier voulu, par exemple, `23`. Ensuite, nous prenons la conjecture de l'utilisateur en utilisant la fonction `input()`. Les fonctions ne sont que des morceaux de programmes réutilisables. Nous en apprendrons plus à leur sujet dans le [chapitre suivant](./functions.md#).
 
-The `elif` and `else` statements must also have a colon at the end of the logical line followed by their corresponding block of statements (with proper indentation, of course)
+Nous fournissons une chaîne à la fonction `input` intégrée, qui l'affiche à l'écran et attend l'entrée de l'utilisateur. Une fois que nous avons entré quelque chose et appuyé sur la touche [Entrée], la fonction `input()` renvoie ce que nous avons entré, sous forme de chaîne. Nous convertissons ensuite cette chaîne en un entier en utilisant `int`, puis nous l'enregistrons dans la variable `guess`. En fait, le `int` est une classe mais tout ce que vous devez savoir maintenant c’est que vous pouvez l’utiliser pour convertir une chaîne en entier (en supposant que la chaîne contienne un entier valide dans le texte).
 
-You can have another `if` statement inside the if-block of an `if` statement and so on - this is called a nested `if` statement.
+Ensuite, nous comparons la conjecture de l'utilisateur avec le nombre que nous avons choisi. S'ils sont égaux, nous imprimons un message de réussite. Notez que nous utilisons des niveaux d'indentation pour indiquer à Python quelles instructions appartiennent à quel bloc. C'est pourquoi l'indentation est si importante en Python. J'espère que vous vous en tenez à la règle de "l'indentation systématique". Le faites-vous?
 
-Remember that the `elif` and `else` parts are optional. A minimal valid `if` statement is:
+Notez que l’instruction `if` contient deux points à la fin: nous indiquons à Python qu’un bloc d’instructions suit.
+
+Ensuite, nous vérifions si l'estimation est inférieure au nombre et, dans l'affirmative, nous informons l'utilisateur qu'il doit deviner un peu plus haut que cela. Ce que nous avons utilisé ici est la clause `elif` qui combine en fait deux instructions `if else-if else` liées en une seule instruction `if-elif-else` combinée. Cela facilite le programme et réduit la quantité d'indentation requise.
+
+Les instructions `elif` et `else` doivent également comporter un signe deux-points à la fin de la ligne logique, suivies du bloc d'instructions correspondant (avec l'indentation appropriée, bien sûr)
+
+Vous pouvez avoir une autre instruction `if` dans le bloc if d'une instruction` if` et ainsi de suite. Cette instruction est appelée une instruction `if` imbriquée.
+
+Rappelez-vous que les parties `elif` et` else` sont optionnelles. Une instruction `if` valide minimale est:
 
 ```python
 if True:
-    print('Yes, it is true')
+    print('Oui, c\'est vrai')
 ```
 
-After Python has finished executing the complete `if` statement along with the associated `elif` and `else` clauses, it moves on to the next statement in the block containing the `if` statement. In this case, it is the main block (where execution of the program starts), and the next statement is the `print('Done')` statement. After this, Python sees the ends of the program and simply finishes up.
+Une fois que Python a fini d’exécuter l’instruction `if` complète ainsi que les clauses` elif` et `else` associées, il passe à l’instruction suivante du bloc contenant l’instruction `if`. Dans ce cas, il s’agit du bloc principal (où commence l’exécution du programme) et l’instruction suivante est l’instruction `print('Fini')`. Après cela, Python voit la fin du programme et finit simplement.
 
-Even though this is a very simple program, I have been pointing out a lot of things that you should notice. All these are pretty straightforward (and surprisingly simple for those of you from C/C++ backgrounds). You will need to become aware of all these things initially, but after some practice you will become comfortable with them, and it will all feel 'natural' to you.
+Même s’il s’agit d’un programme très simple, j’ai souligné beaucoup de choses que vous devriez remarquer. Tout cela est assez simple (et étonnamment simple pour ceux d’entre vous qui programment en C/C\++). Vous aurez besoin d'appliquer tous ces éléments au début, mais après quelques exercices, vous vous sentirez à l'aise avec elles et elles vous paraîtrons "naturelles".
 
-> **Note for C/C++ Programmers**
+> **Remarque pour les programmeurs C/C++**
 > 
-> There is no `switch` statement in Python. You can use an `if..elif..else` statement to do the same thing (and in some cases, use a [dictionary](./data_structures.md#dictionary) to do it quickly)
+> Il n'y a pas d'instruction `switch` en Python. Vous pouvez utiliser une instruction `if..elif..else` pour faire la même chose (et dans certains cas, utiliser un [dictionnaire](./data_structures.md#dictionary) pour le faire rapidement)
 
-## The while Statement
+## L'instruction while
 
-The `while` statement allows you to repeatedly execute a block of statements as long as a condition is true. A `while` statement is an example of what is called a *looping* statement. A `while` statement can have an optional `else` clause.
+L'instruction `while` vous permet d'exécuter plusieurs fois un bloc d'instructions tant qu'une condition est vraie. Une instruction `while` est un exemple de ce que l’on appelle une instruction de *boucle*. Une instruction `while` peut avoir une clause optionnelle `else`.
 
-Example (save as `while.py`):
+Exemple (enregistrer sous `while.py`):
 
-<pre><code class="lang-python">{% include "./programs/while.py" %}</code></pre>
+```python
+number = 23
+running = True
 
-Output:
+while running:
+    guess = int(input('Saisissez un entier: '))
 
-<pre><code>{% include "./programs/while.txt" %}</code></pre>
+    if guess == number:
+        print('Bravo, vous avez deviné.')
+        # Ceci va arrêter la boucle while
+        running = False
+    elif guess < number:
+        print('Non, c\'est un peu plus que ça.')
+    else:
+        print('Non, c\'est un peu moins que ça.')
+else:
+    print('La boucle while est finie.')
+    # Faites tout ce que vous voulez faire d'autre ici
 
-**How It Works**
+print('Fini')
+```
 
-In this program, we are still playing the guessing game, but the advantage is that the user is allowed to keep guessing until he guesses correctly - there is no need to repeatedly run the program for each guess, as we have done in the previous section. This aptly demonstrates the use of the `while` statement.
+Résultat:
 
-We move the `input` and `if` statements to inside the `while` loop and set the variable `running` to `True` before the while loop. First, we check if the variable `running` is `True` and then proceed to execute the corresponding *while-block*. After this block is executed, the condition is again checked which in this case is the `running` variable. If it is true, we execute the while-block again, else we continue to execute the optional else-block and then continue to the next statement.
+```
+$ python while.py
+Saisissez un entier: 50
+Non, c\'est un peu moins que ça.
+Saisissez un entier: 22
+Non, c\'est un peu plus que ça.
+Saisissez un entier: 23
+Bravo, vous avez deviné.
+La boucle while est finie.
+Fini
+```
 
-The `else` block is executed when the `while` loop condition becomes `False` - this may even be the first time that the condition is checked. If there is an `else` clause for a `while` loop, it is always executed unless you break out of the loop with a `break` statement.
+**Comment ça marche**
 
-The `True` and `False` are called Boolean types and you can consider them to be equivalent to the value `1` and `0` respectively.
+Dans ce programme, nous continuons à jouer aux devinettes, mais l’avantage est que l’utilisateur est autorisé à continuer à essayer jusqu’à ce qu’il devine correctement: il n’est pas nécessaire de relancer le programme à chaque fois, comme nous l’avons fait dans la section précédente. Cela montre bien l’utilisation de l’instruction `while`.
 
-> **Note for C/C++ Programmers**
+Nous déplaçons les instructions `input` et `if` dans la boucle `while` et définissons la variable `running` à `True` avant la boucle while. Premièrement, nous vérifions si la variable `running` est `True`, puis exécutons le *bloc while* correspondant. Une fois ce bloc exécuté, la condition est à nouveau vérifiée, qui dans ce cas est la variable `running`. Si elle vaut vrai, nous exécutons à nouveau le *bloc while*, sinon, nous continuons d'exécuter le bloc optionnel `else`, puis nous passons à l'instruction suivante.
+
+Le bloc `else` est exécuté lorsque la condition de boucle `while` devient `False`: il peut même s'agir de la première fois que la condition est vérifiée. S'il existe une clause `else` pour une boucle `while`, elle est toujours exécutée à moins que vous ne sortiez de la boucle avec une instruction `break`.
+
+Les types `True` et `False` sont appelés types booléens et vous pouvez les considérer comme équivalents aux valeurs `1` et `0` respectivement.
+
+> **Remarque pour les programmeurs C/C++**
 > 
-> Remember that you can have an `else` clause for the `while` loop.
+> N'oubliez pas la clause `else` des boucles `while`.
 
-## The `for` loop
+## La boucle `for`
 
-The `for..in` statement is another looping statement which *iterates* over a sequence of objects i.e. go through each item in a sequence. We will see more about [sequences](./data_structures.md#sequence) in detail in later chapters. What you need to know right now is that a sequence is just an ordered collection of items.
+L’instruction `for..in` est une autre instruction pour réaliser des boucles qui *itère* sur une séquence d’objets, c’est-à-dire passe en revue chaque élément d’une séquence. Nous verrons les [séquences](./data_structures.md#sequence) en détail dans les chapitres suivants. Ce que vous devez savoir maintenant, c’est qu’une séquence est simplement une collection ordonnée d'objets.
 
-Example (save as `for.py`):
+Exemple (enregistrer sous `for.py`):
 
-<pre><code class="lang-python">{% include "./programs/for.py" %}</code></pre>
+```python
+for i in range(1, 5):
+    print(i)
+else:
+    print('La boucle for est finie')
+```
 
-Output:
+Résultat:
 
-<pre><code>{% include "./programs/for.txt" %}</code></pre>
+```
+$ python for.py
+1
+2
+3
+4
+La boucle for est finie
+```
 
 **How It Works**
 

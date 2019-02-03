@@ -31,7 +31,7 @@ Ceci est utile pour les lecteurs de votre programme afin qu’ils puissent facil
 
 ## Constantes littérales
 
-Un exemple d'une constante littérale est un nombre comme `5`, `1.23`, `9.25e-3` ou une chaîne de caractères comme `'This is a string'` ou `"It's a string!"`.
+Un exemple d'une constante littérale est un nombre comme `5`, `1.23`, `9.25e-3` ou une chaîne de caractères comme `'Ceci est une chaîne'` ou `"C'est une chaîne!"`.
 
 Cela s'appelle un littéral parce que c'est _littéral_ - vous pouvez utiliser la valeur littéralement. Le nombre `2` représente toujours lui-même et rien d'autre - c'est une _constante_ parce que sa valeur ne peut être changée. Donc, on se réfère à toutes ces valeurs en tant que constantes littérales.
 
@@ -435,4 +435,4 @@ Notez qu'il y a un espace au début de la deuxième ligne. L'erreur indiquée pa
 
 ## Récapitulatif
 
-Maintenant que nous avons vu les détails essentiels, nous pouvons passer à des choses plus intéressantes comme les instructions de contrôle de flux. Soyez certains de devenir à l'aise avec les notions vues dans ce chapitreêtre à l'aise avec ces notions.
+Maintenant que nous avons vu les détails essentiels, nous pouvons passer à des choses plus intéressantes comme les instructions de contrôle de flux. Soyez certains d'être à l'aise avec les notions de ce chapitre.

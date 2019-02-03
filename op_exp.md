@@ -8,7 +8,7 @@ Les _Opérateurs_ sont la fonctionnalité qui fait quelque chose et peuvent êtr
 
 Nous jetterons un coup d'oeil rapide aux opérateurs et à leur utilisation.
 
-Notez que vous pouvez évaluer de manière interactive les expressions données dans les exemples en utilisant l'interpréteur. Par exemple, pour tester l'expression `2 + 3`, utilisez le prompt Python interactif :
+Notez que vous pouvez évaluer de manière interactive les expressions données dans les exemples en utilisant l'interpréteur. Par exemple, pour tester l'expression `2 + 3`, utilisez l'interpréteur intéractif python:
 
 ```python
 >>> 2 + 3
@@ -132,7 +132,7 @@ a *= 3
 
 Notez que `variable = variable operation expression` devient `variable operation= expression`.
 
-## Ordre D'Evaluation
+## Ordre d'évaluation
 
 Si vous avez une expression comme `2 + 3 * 4`, fait-on d'abord l'addition ou la multiplication? Nos souvenirs de maths à l'école nous disent qu'il faut d'abord faire la multiplication. Cela signifie que l'opérateur de  multiplication est prioritaire par rapport à l'opérateur d'addition.
 
@@ -161,7 +161,7 @@ Les opérateurs que nous n'avons pas encore rencontrés seront expliqués dans l
 
 Les opérateurs avec la _même précédence_ sont listés dans la même ligne dans le tableau ci-dessus. Par exemple, `+` et `-` ont la même précédence.
 
-## Changer L'Ordre D'Evaluation {#changing-order-of-evaluation}
+## Changer l'ordre d'évaluation {#changing-order-of-evaluation}
 
 Pour rendre les expressions plus lisibles, nous pouvons utiliser des parenthèses. Par exemple, `2 + (3 * 4)` est bien plus facile à comprendre que `2 + 3 * 4` qui demande de connaître la précédence des opérateurs. Comme pour toute chose, les parenthèses doivent être utilisées à bon escient (n'en abusez pas) et ne doivent pas être redondantes comme dans `(2 + (3 + 4))`.
 

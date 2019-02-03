@@ -2,7 +2,7 @@
 
 Nous allons maintenant voir comment exécuter le traditionnel programme 'Hello World' en Python. Cela vous apprendra comment écrire, enregistrer et exécuter un programme Python.
 
-Il y a deux façons d'utiliser Python pour lancer votre programme - utiliser le prompt interactif ou un fichier source. Nous allons maintenant voir comment utiliser ces deux méthodes.
+Il y a deux façons d'utiliser Python pour lancer votre programme - utiliser le l'interpréteur interactif ou un fichier source. Nous allons maintenant voir comment utiliser ces deux méthodes.
 
 ## Utiliser l'interpréteur intéractif
 
@@ -174,7 +174,7 @@ Un programme Python est composé d'_instructions_. Dans notre premier programme,
 
 ## Obtenir de l'aide
 
-Si vous besoin rapidement d'information sur n'importe quelle fonction ou instruction dans Python, alors vous pouvez utiliser la fonctionnalité `help`. Cela est très utile particulièrement quand on utilise le prompt de l'interpréteur. Par exemple, tapez `help(print)` - cela affiche l'aide pour la fonction print qui est utilisée pour afficher des choses à l'écran.
+Si vous besoin rapidement d'information sur n'importe quelle fonction ou instruction dans Python, alors vous pouvez utiliser la fonctionnalité `help`. Cela est très utile particulièrement quand on utilise l'interpréteur intéractif. Par exemple, tapez `help(print)` - cela affiche l'aide pour la fonction print qui est utilisée pour afficher des choses à l'écran.
 
 Note: Tapez `q` pour sortir de l'aide.
 
