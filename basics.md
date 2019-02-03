@@ -29,7 +29,7 @@ Utilisez autant de commentaires utiles que possible dans votre programme pour:
 
 Ceci est utile pour les lecteurs de votre programme afin qu’ils puissent facilement comprendre ce qu’il fait. Rappelez-vous que cette personne peut être vous-même six mois plus tard!
 
-## Constantes Littérales
+## Constantes littérales
 
 Un exemple d'une constante littérale est un nombre comme `5`, `1.23`, `9.25e-3` ou une chaîne de caractères comme `'This is a string'` ou `"It's a string!"`.
 
@@ -46,7 +46,7 @@ Les nombres dans Python sont principalement divisés en deux types - entiers, no
 >
 > Il n'y a pas de type 'long int' à part. Le type entier par défaut  peut être une valeur de n'importe quelle longueur.
 
-## Chaînes De Caractères
+## Chaînes de caractères
 
 Une chaîne de caractères est une ''suite'' de ''caractères''. Les chaînes de caractères sont juste un groupe de mots.
 
@@ -74,7 +74,7 @@ He said "Bond, James Bond."
 '''
 ```
 
-### Les Chaînes De caractères Sont Immuables
+### Les chaînes de caractères sont immuables
 
 Cela signifie que quand vous avez créé une chaîne, vous ne pouvez pas la changer. Bien que cela semble être une mauvaise chose, ce n'est pas le cas. Nous verrons pourquoi cela n'est pas une limitation dans les différents programmes à venir.
 
@@ -88,7 +88,7 @@ Cela signifie que quand vous avez créé une chaîne, vous ne pouvez pas la chan
 > 
 > Remember that single-quoted strings and double-quoted strings are the same - they do not differ in any way.
 
-### La Méthode format
+### La méthode format
 
 Nous avons parfois besoin de fabriquer des chaînes de caractères à partir d'autres informations. Dans ce cas la méthode `format()` est utile.
 
@@ -98,16 +98,16 @@ Save the following lines as a file `str_format.py`:
 age = 20
 name = 'Swaroop'
 
-print('{0} was {1} years old when he wrote this book'.format(name, age))
-print('Why is {0} playing with that python?'.format(name))
+print('{0} avait {1} ans quand il a écrit ce livre'.format(name, age))
+print('Pourquoi {0} joue avec ce python?'.format(name))
 ```
 
 Output:
 
 ```
 $ python str_format.py
-Swaroop was 20 years old when he wrote this book
-Why is Swaroop playing with that python?
+Swaroop avait 20 ans quand il a écrit ce livre
+Pourquoi Swaroop joue avec ce python?
 ```
 
 **Comment cela marche**
@@ -119,48 +119,47 @@ Observez le premier usage dans lequel nous utilisons `{0}` et cela correspond à
 Notez que nous pouvons arriver au même résultat en utilisant la concaténation de chaînes de caractères
 
 ```python
-name + ' is ' + str(age) + ' years old'
+name + ' a ' + str(age) + ' ans'
 ```
 
-mais notez comme c'est plus laid et sujet à l'erreur. Ensuite, la conversion vers string serait faite automatiquement par la méthode `format` au lieu de la conversion explicite ici. Troisièmement, en utilisant la méthode  `format` , nous pouvons changer le message sans devoir s'occuper des variables utilisées et vice-versa.
+mais notez comme c'est plus laid et sujet à erreur. Ensuite, la conversion en chaîne de caractères serait faite automatiquement par la méthode `format` au lieu de la conversion explicite ici. Enfin, en utilisant la méthode `format`, nous pouvons changer le message sans avoir à s'occuper des variables utilisées et vice-versa.
 
-Also note that the numbers are optional, so you could have also written as:
+Notez également que les numéros sont facultatifs, vous auriez donc pu écrire:
 
 ```python
 age = 20
 name = 'Swaroop'
 
-print('{} was {} years old when he wrote this book'.format(name, age))
-print('Why is {} playing with that python?'.format(name))
+print('{} avait {} ans quand il a écrit ce livre'.format(name, age))
+print('Pourquoi {} joue avec ce python?'.format(name))
 ```
+qui donnera exactement le même résultat que le programme précédent.
 
-which will give the same exact output as the previous program.
-
-We can also name the parameters:
+Nous pouvons aussi nommer les paramètres:
 
 ```python
 age = 20
 name = 'Swaroop'
 
-print('{name} was {age} years old when he wrote this book'.format(name=name, age=age))
-print('Why is {name} playing with that python?'.format(name=name))
+print('{name} avait {age} ans quand il a écrit ce livre'.format(name=name, age=age))
+print('Pourquoi {name} joue avec ce python?'.format(name=name))
 ```
 
-which will give the same exact output as the previous program.
+qui donnera également le même résultat que le programme précédent.
 
-Python 3.6 introduced a shorter way to do named parameters, called "f-strings":
+Python 3.6 a introduit un moyen plus court de nommer les paramètres, appelé "f-strings":
 
 ```python
 age = 20
 name = 'Swaroop'
 
-print(f'{name} was {age} years old when he wrote this book')  # notice the 'f' before the string
-print(f'Why is {name} playing with that python?')  # notice the 'f' before the string
+print(f'{name} avait {age} ans quand il a écrit ce livre') # remarquez le 'f' devant la chaîne de caractères
+print(f'Pourquoi {name} joue avec ce python?') # remarquez le 'f' devant la chaîne de caractères
 ```
 
-which will give the same exact output as the previous program.
+qui donnera encore le même résultat que le programme précédent.
 
-Dans la méthode `format` Python substitue chaque valeur d'argument. Il peut y avoir des spécifications détaillées comme :
+La méthode `format` de Python substitue chaque valeur d'argument. Il peut y avoir des spécifications détaillées comme :
 
 ```python
 # décimal (.) avec une précision de 3 pour float '0.333'
@@ -172,7 +171,7 @@ print('{0:_^11}'.format('hello'))
 print('{name} wrote {book}'.format(name='Swaroop', book='A Byte of Python'))
 ```
 
-Output:
+donne:
 
 ```
 0.333
@@ -180,20 +179,20 @@ ___hello___
 Swaroop wrote A Byte of Python
 ```
 
-Since we are discussing formatting, note that `print` always ends with an invisible "new line" character (`\n`) so that repeated calls to `print` will all print on a separate line each. To prevent this newline character from being printed, you can specify that it should `end` with a blank:
+Puisque nous discutons formatage, notez que `print` se termine toujours par un caractère invisible de "nouvelle ligne" (`\n`), de sorte que des appels répétés à `print` s’imprimeront sur des lignes distinctes. Pour empêcher l'impression de ce caractère de nouvelle ligne, vous pouvez spécifier vouloir finir avec une chaîne vide:
 
 ```python
 print('a', end='')
 print('b', end='')
 ```
 
-Output is:
+La sortie est:
 
 ```
 ab
 ```
 
-Or you can `end` with a space:
+Ou vous pouvez terminer avec un espace:
 
 ```python
 print('a', end=' ')
@@ -201,28 +200,28 @@ print('b', end=' ')
 print('c')
 ```
 
-Output is:
+La sortie est:
 
 ```
 a b c
 ```
 
-### Escape Sequences
+### Caractère d'échappement et de contrôle
 
-Supposons, vous voulez avoir une chaîne de caractères contenant une simple quote (`'`), comment faire ? Par exemple, la chaîne de caractères `What's your name?`. Vous ne pouvez pas déclarer `'What's your name?'` parce que Python sera perdu, où commence et se termine la chaîne de caractères ? Donc, il vous faut indiquer que cette simple quote n'indique pas la fin de la chaîne. Cela peut être fait avec l'aide de ce qu'on appelle une ''escape sequence''. Vous indiquez la simple quote comme `\'` - notez le backslash. Maintenant, vous pouvez indiquer la chaîne de caractères comme `'What\'s your name?'`.
+Supposons, vous voulez avoir une chaîne de caractères contenant un simple guillemet (`'`), comment faire? Par exemple, la chaîne de caractères `What's your name?`. Vous ne pouvez pas déclarer `'What's your name?'` parce que Python sera perdu, où commence et se termine la chaîne de caractères? Donc, il vous faut indiquer que ce simple guillemet n'indique pas la fin de la chaîne. Cela peut être fait avec l'aide de ce qu'on appelle un _caractère d'échappement_. Vous indiquez le simple guillemet comme `\'` - notez le _backslash_ (barre oblique inversée). Maintenant, vous pouvez indiquer la chaîne de caractères comme `'What\'s your name?'`.
 
-Une autre façon de faire serait `"What's your name?"` c'est à dire utiliser des double quotes. De la même manière, vous devez utiliser une ''escape sequence'' pour utiliser une double quote elle-même dans une chaîne de caractères définie par des double quotes. Pour indiquer le backslash, vous devez utiliser le backslash lui-même `\\`.
+Une autre façon de faire serait `"What's your name?"` c'est à dire utiliser des double guillemets. De la même manière, vous devez utiliser un _caractère d'échappement_ pour utiliser une double guillemet elle-même dans une chaîne de caractères définie par des double guillemets. Pour indiquer le backslash, vous devez utiliser le _backslash_ sur lui-même `\\`.
 
-Comment faire pour indiquer une chaîne de caractère sur deux lignes ? Une façon est d'utiliser une chaîne de caractère entre des triple quotes comme montré [précédemment](#triple-quotes) ou vous pouvez utiliser une _escape sequence_ pour le caractère - `\n` pour indiquer le début d'une nouvelle ligne. Un exemple est:
+Comment faire pour indiquer une chaîne de caractère sur deux lignes? Une façon est d'utiliser une chaîne de caractère entre des triple guillemets comme montré [précédemment](#triple-quotes) ou vous pouvez utiliser un _caractère de contrôle_ comme le caractère `\n` pour indiquer le début d'une nouvelle ligne. Un exemple est:
 
 
 ```python
 'This is the first line\nThis is the second line'
 ```
 
-Un autre _escape sequence_ utile à connaître est la tabulation - `\t`. Il y a beaucoup d'autres _escape sequences_ mais j'ai seulement mentionné les plus utiles ici.
+Un autre _caractère de contrôle_ utile à connaître est la tabulation - `\t`. Il y a beaucoup d'autres _caractère de contrôle_ mais j'ai seulement mentionné les plus utiles ici.
 
-Une chose à noter est que, dans une chaîne de caractères, un backslash unique à la fin de la ligne indique que la chaîne de caractères continue à la ligne suivante, mais une nouvelle ligne n'est pas ajoutée, par exemple :
+Une chose à noter est que, dans une chaîne de caractères, un backslash unique à la fin de la ligne indique que la chaîne de caractères continue à la ligne suivante, mais une nouvelle ligne n'est pas ajoutée, par exemple:
 
 ```python
 "This is the first sentence. \
@@ -235,17 +234,17 @@ est équivalent à
 "This is the first sentence. This is the second sentence."
 ```
 
-### Raw String
+### Chaînes "brutes"
 
-If you need to specify some strings where no special processing such as escape sequences are handled, then what you need is to specify a _raw_ string by prefixing `r` or `R` to the string. An example is:
+Si vous devez spécifier des chaînes pour lesquelles aucun traitement spécial, tel que les caractère d'échappement et de contrôle, ne sont traités, vous devez spécifier une chaîne _brute_ (_raw_) en préfixant `r` ou` R` à la chaîne. Un exemple est:
 
 ```python
-r"Newlines are indicated by \n"
+r"Les retours à la ligne sont indiqués par \n"
 ```
 
-> **Note for Regular Expression Users**
+> **Remarque pour les utilisateurs d'expressions régulières**
 > 
-> Always use raw strings when dealing with regular expressions. Otherwise, a lot of backwhacking may be required. For example, backreferences can be referred to as `'\\1'` or `r'\1'`.
+> Utilisez toujours des chaînes brutes lorsque vous utilisez des expressions régulières. Sinon, vous aurez besoin de beaucoup de caractères d'échappements. Par exemple, les références arrières peuvent être appelées `'\\1'` ou `r'\1'`.
 
 ## Variables
 
@@ -273,33 +272,33 @@ Rappelez-vous, Python fait référence à tout ce qui est utilisé dans un progr
 >
 > Python est fortement orientée objet, dans le sens que tout est un objet, en incluant les nombres, chaînes de caractères et fonctions.
 
-Nous allons voir comment utiliser des variables avec des constantes  littérales. Enregistrez l'exemple suivant et lancez le programme.
+Nous allons voir comment utiliser des variables avec des constantes littérales. Enregistrez l'exemple suivant et lancez le programme.
 
 ## How to write Python programs
 
 Henceforth, the standard procedure to save and run a Python program is as follows:
 
-### For PyCharm
+### Pour PyCharm
 
-1. Open [PyCharm](./first_steps.md#pycharm).
-2. Create new file with the filename mentioned.
-3. Type the program code given in the example.
-4. Right-click and run the current file.
+1. Ouvrez [PyCharm](./first_steps.md#pycharm).
+2. Créez un nouveau fichier avec le nom de fichier mentionné.
+3. Tapez le code du programme donné dans l'exemple.
+4. Cliquez avec le bouton droit et exécutez le fichier actuel.
 
-NOTE: Whenever you have to provide [command line arguments](./modules.md#modules), click on `Run` -> `Edit Configurations` and type the arguments in the `Script parameters:` section and click the `OK` button:
+REMARQUE: Si vous devez fournir des [arguments de ligne de commande](./modules.md#modules), cliquez sur `Run` -> `Edit Configurations` et tapez les arguments dans la section `Script parameters:` puis cliquez sur le bouton `OK`:
 
-![PyCharm command line arguments](./img/pycharm_command_line_arguments.png)
+![Arguments en ligne de commande PyCharm](./img/pycharm_command_line_arguments.png)
 
-### For other editors
+### Pour les autres éditeurs
 
-1. Open your editor of choice.
-2. Type the program code given in the example.
-3. Save it as a file with the filename mentioned.
-4. Run the interpreter with the command `python program.py` to run the program.
+1. Ouvrez votre éditeur.
+2. Tapez le code du programme donné dans l'exemple.
+3. Enregistrez-le dans un fichier avec le nom de fichier mentionné.
+4. Exécutez l'interprèteur avec la commande `python program.py` pour exécuter le programme.
 
-### Un Exemple: Utiliser Des Variables Et Des Constantes Littérales
+### Un exemple: utiliser des variables et des constantes littérales
 
-Type and run the following program:
+Tapez et exécutez le programme suivant:
 
 ```python
 # Filename : var.py
@@ -318,8 +317,8 @@ Résultat:
 ```
 5
 6
-This is a multi-line string.
-This is the second line.
+Voici une chaîne multi-ligne.
+Voici la deuxième ligne.
 ```
 
 **Comment cela fonctionne**
@@ -336,7 +335,7 @@ De la même manière, nous assignons la chaîne littérale à la variable `s` et
 
 ## Lignes Physiques Et Lignes Logiques
 
-Une ligne physique est ce que vous ''voyez'' quand vous écrivez le programme. Une ligne logique est ce que ''Python voit'' comme une seule instruction. Python suppose implicitement que chaque ''ligne physique'' correspond à une ''ligne logique''.
+Une ligne physique est ce que vous _voyez_ quand vous écrivez le programme. Une ligne logique est ce que _Python voit_ comme une seule instruction. Python suppose implicitement que chaque _ligne physique_ correspond à une _ligne logique_.
 
 Un exemple d'une ligne logique est une instruction comme `print('Hello World')` - si c'était une ligne (comme vous la voyez dans un éditeur), alors cela correspondrait aussi à une ligne physique.
 
@@ -368,21 +367,20 @@ ou même
 i = 5; print(i)
 ```
 
-
 Cependant, je *recommande fortement* que vous continuiez à *écrire une seule ligne logique dans seulement une seule ligne  physique*. Utilisez plus d'une ligne physique pour une seule ligne logique seulement si la ligne logique est vraiment longue. L'idée est d'éviter le point-virgule autant que possible vu que cela rend le code moins lisible. En fait, je n'ai _jamais_ utilisé ou même vu un point virgule dans un programme Python.
 
-Un exemple d'une ligne logique s'étendant sur plusieurs lignes physiques suit. Cela s'appelle _explicit line joining_.
+Un exemple d'une ligne logique s'étendant sur plusieurs lignes physiques suit. Cela s'appelle _jonction de ligne explicite_.
 
 ```python
-s = 'This is a string. \
-This continues the string.'
+s = 'Ceci est une chaîne de caractères. \
+Ceci continue la chaîne.'
 print(s)
 ```
 
 Cela donne l'affichage :
 
 ```
-This is a string. This continues the string.
+Ceci est une chaîne de caractères. Ceci continue la chaîne.
 ```
 
 De la même manière,
@@ -398,7 +396,7 @@ est la même chose que
 i = 5
 ```
 
-Parfois, il y a une supposition implicite quand vous n'avez pas besoin d'utiliser un backslash. C'est le cas quand les lignes logiques utilisent des parenthèses, entre crochets ou accolades. Cela s'appelle _implicit line joining_.  Vous pouvez voir cela en action quand nous écrirons des programmes utilisant [des listes](./data_structures.md#lists) dans les chapitres suivants.
+Parfois, il y a une supposition implicite quand vous n'avez pas besoin d'utiliser un backslash. C'est le cas quand les lignes logiques utilisent des parenthèses, entre crochets ou accolades. Cela s'appelle _jonction de ligne implicite_.  Vous pouvez voir cela en action quand nous écrirons des programmes utilisant [des listes](./data_structures.md#lists) dans les chapitres suivants.
 
 ## Indentation
 

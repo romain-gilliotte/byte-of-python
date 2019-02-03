@@ -259,7 +259,7 @@ Notez cependant:
 - L'attribution *doit* être indiquée dans la description d'introduction et la page de couverture du document en renvoyant à {{book.officialUrl}} et en indiquant clairement que le texte original peut être récupéré à partir de cet emplacement.
 - Tout code/script offert dans ce livre est licencié sous la licence [3-clause BSD](http://www.opensource.org/licenses/bsd-license.php) sauf avis contraire.
 
-## Lire Maintenant
+## Lire maintenant
 
 Vous pouvez lire le livre en ligne à l'adresse suivante https://python.swaroopch.com/
 

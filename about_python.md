@@ -46,7 +46,7 @@ Un programme écrit dans un langage compilé comme C ou C++ est converti à part
 
 Python, par contre, n'a pas besoin de compilation vers du code binaire. Vous _lancez_ juste le programme directement à partir du code source. En interne, Python convertit le code souce dans une forme intermédiaire appelée bytecode et ensuite le convertit dans le langage natif de l'ordinateur et le lance. Tout cela, en fait, rend l'utilisation de Python plus facile, vu que vous n'avez pas besoin de vous inquiéter de la compilation du programme, que les bonnes librairies sont liées et chargées, etc... Cela rend aussi les programmes Python plus portables, vu qu'il suffit de copier un programme Python d'un ordinateur sur un autre, et cela marche!
 
-### Orienté Objet
+### Orienté objet
 
 Python supporte la programmation orientée procédure et la programmation orientée objet. Dans les langages _orienté-procedure_, le programme est construit autour de procédures ou fonctions qui sont des portions re-utilisables de programmes. Dans les langages _orienté-objet_, le programme est construit autour d'objets qui comprennent données et fonctionnalités. Python a une manière à la fois très puissante et très simple de faire de la Programmation Orientée Objet, en particulier comparé à des langages comme C++ ou Java.
 
@@ -59,7 +59,7 @@ Si vous avez besoin qu'un morceau de code critique tourne très vite, ou qu'un a
 
 Vous pouvez embarquer Python dans vos progammes C/C\++ pour donner des possibilités de _scripting_ aux utilisateurs de vos programmes.
 
-### De Nombreuses Bibliothèques
+### De nombreuses bibliothèques
 
 La Python Standard Library est immense. Cela peut vous aider à faire de nombreuses choses comme les expressions régulières, la création de documentation, les tests unitaires, les threads, les bases de données, les navigateurs web, CGI, FTP, email, XML, XML-RPC, HTML, fichiers WAV, cryptographie, GUI (graphical user interfaces), Tk, et autres choses dépendant du système. Rappelez-vous, tout ceci est toujours disponible, quand Python est installé. Cela est appelé l'approche _Batteries Included_ de Python.
 

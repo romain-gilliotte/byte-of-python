@@ -1,4 +1,4 @@
-# Premiers Pas
+# Premiers pas
 
 Nous allons maintenant voir comment exécuter le traditionnel programme 'Hello World' en Python. Cela vous apprendra comment écrire, enregistrer et exécuter un programme Python.
 
@@ -42,7 +42,7 @@ Si vous utilisez un terminal GNU/Linux ou OS X, vous pouvez quitter interpréteu
 
 Si vous utilisez l'invite de commande Windows, appuyez sur les touches `[Ctrl + z]` puis sur `[Entrée]`.
 
-## Choisir Un Éditeur
+## Choisir un éditeur
 
 Nous ne pouvons pas taper nos programmes dans l'interpréteur intéractif à chaque fois que nous voulons exécuter quelque chose. Nous devons donc les enregistrer dans des fichiers et pouvoir exécuter nos programmes autant de fois que nécessaire.
 
@@ -172,7 +172,7 @@ Au cas où vous auriez une erreur, veuillez taper votre programme _exactement_ c
 
 Un programme Python est composé d'_instructions_. Dans notre premier programme, nous n’avons qu’une instruction. Dans cette instruction, nous appelons l'_instruction_ `print` à laquelle nous fournissons le texte "hello world".
 
-## Obtenir De L'Aide
+## Obtenir de l'aide
 
 Si vous besoin rapidement d'information sur n'importe quelle fonction ou instruction dans Python, alors vous pouvez utiliser la fonctionnalité `help`. Cela est très utile particulièrement quand on utilise le prompt de l'interpréteur. Par exemple, tapez `help(print)` - cela affiche l'aide pour la fonction print qui est utilisée pour afficher des choses à l'écran.
 
