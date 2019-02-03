@@ -81,7 +81,7 @@ Voici un aperçu rapide des opérateurs disponibles:
     - Les comparaisons peuvent être chaînées de manière arbitraire: `3 < 5 < 7` vaut `True`.
 
 - `>` (plus grand que)
-    - Returns whether x is greater than y
+    - Indique si x est plus grand que y
     - `5 > 3` renvoie `True`. Si les deux opérandes sont des nombres, ils sont d'abord convertis en un type commun. Sinon, il renvoie toujours `False`.
 
 - `<=` (inférieur ou égal à)
