@@ -7,7 +7,7 @@
 * [Premiers pas](first_steps.md)
 * [Les Bases](basics.md)
 * [Opérateurs et Expressions](op_exp.md)
-* [Structure de contrôle](control_flow.md)
+* [Structures de contrôle](control_flow.md)
 * [Fonctions](functions.md)
 * [Modules](modules.md)
 * [Structures de données](data_structures.md)
