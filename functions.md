@@ -175,116 +175,181 @@ WorldWorldWorldWorldWorld
 
 **Comment ça marche**
 
-The function named `say` is used to print a string as many times as specified. If we don't supply a value, then by default, the string is printed just once. We achieve this by specifying a default argument value of `1` to the parameter `times`.
+Le nom de la fonction `say` est utilisé pour afficher une chaîne de caractères autant de fois qu'indiqué. Si nous ne fournissons pas de valeur pour ce nombre de fois, alors par défaut la chaîne de caractères est affichée juste une fois. Nous obtenons ceci en indiquant une valeur par défaut de `1` pour le paramètre `times`.
 
-In the first usage of `say`, we supply only the string and it prints the string once. In the second usage of `say`, we supply both the string and an argument `5` stating that we want to *say* the string message 5 times.
+Au premier appel de `say`, nous fournissons seulement la chaîne de caractères et elle est imprimée une fois. Au deuxième appel de `say`, nous fournissons à la fois la chaîne de caractères et un argument `5` indiquant que nous voulons dire le message de la chaîne de caractères 5 fois.
 
-> *CAUTION*
+> *Important*
 > 
-> Only those parameters which are at the end of the parameter list can be given default argument
-> values i.e. you cannot have a parameter with a default argument value preceding a parameter without
-> a default argument value in the function's parameter list.
+> Seuls les paramètres à la fin de la liste de paramètres peuvent recevoir une valeur par défaut, c'est-à-dire que vous ne pouvez avoir un paramètre avec une valeur par défaut avant un paramètre sans valeur par défaut dans la liste des paramètres de la fonction.
 > 
-> This is because the values are assigned to the parameters by position. For example,`def func(a,
-> b=5)` is valid, but `def func(a=5, b)` is *not valid*.
+> La raison est que les valeurs sont assignées aux paramètres par position. Par exemple, `def func(a, b=5)` est valide, mais `def func(a=5, b)` n'est *pas valide*.
 
-## Keyword Arguments
+## Paramètres nommés
 
-If you have some functions with many parameters and you want to specify only some of them, then you can give values for such parameters by naming them - this is called *keyword arguments* - we use the name (keyword) instead of the position (which we have been using all along) to specify the arguments to the function.
+Si vous avez des fonctions avec de nombreux paramètres et que vous en spécifiez seulement certains, vous pouvez donner des valeurs à ces paramètres en les nommant - cela est appelé *paramètres nommés* - nous utilisons le nom (mot-clé) au lieu de la position (que nous avons utilisée jusque-là) pour spécifier les arguments de la fonction.
 
-There are two advantages - one, using the function is easier since we do not need to worry about the order of the arguments. Two, we can give values to only those parameters to which we want to, provided that the other parameters have default argument values.
+Il y a deux avantages - un, utiliser la fonction est plus facile car nous n'avons pas à nous soucier de l'ordre des paramètres. Deux, nous pouvons donner des valeurs seulement aux paramètres que nous voulons, en supposant que les autres paramètres ont des valeurs par défaut.
 
 Exemple (sauvegardez sous `function_keyword.py`):
 
-<pre><code class="lang-python">{% include "./programs/function_keyword.py" %}</code></pre>
+```python
+def func(a, b=5, c=10):
+    print('a vaut', a, 'et b vaut', b, 'et c vaut', c)
+
+func(3, 7)
+func(25, c=24)
+func(c=50, a=100)
+```
 
 Résultat:
 
-<pre><code>{% include "./programs/function_keyword.txt" %}</code></pre>
+```
+$ python func_key.py
+a vaut 3 et b vaut 7 et c vaut 10
+a vaut 25 et b vaut 5 et c vaut 24
+a vaut 100 et b vaut 5 et c vaut 50
+```
 
 **Comment ça marche**
 
-The function named `func` has one parameter without a default argument value, followed by two parameters with default argument values.
 
-In the first usage, `func(3, 7)`, the parameter `a` gets the value `3`, the parameter `b` gets the value `7` and `c` gets the default value of `10`.
+La fonction `func` a un paramètre par défaut sans valeur, suivi de deux paramètres avec des valeurs par défaut.
 
-In the second usage `func(25, c=24)`, the variable `a` gets the value of 25 due to the position of the argument. Then, the parameter `c` gets the value of `24` due to naming i.e. keyword arguments. The variable `b` gets the default value of `5`.
+Dans le premier cas, `func(3, 7)`, le paramètre `a` prend la valeur `3`, le paramètre `b` la valeur `7` et `c` la valeur par défaut `10`.
 
-In the third usage `func(c=50, a=100)`, we use keyword arguments for all specified values. Notice that we are specifying the value for parameter `c` before that for `a` even though `a` is defined before `c` in the function definition.
+Dans le deuxième cas, `func(25, c=24)`, la variable `a` prend la valeur 25 à cause de la position du paramètre. Ensuite, le paramètre `c` prend la valeur `24` à cause du nom des paramètres. La variable `b` prend la valeur par défaut de `5`.
 
-## VarArgs parameters
+Dans le troisième cas, `func(c=50, a=100)`, nous utilisons le mot-clé argument pour spécifier les valeurs. Notez que nous spécifions la valeur du paramètre `c` avant celle de `a` même si `a` est défini avant `c` dans la définition de la fonction.
 
-Sometimes you might want to define a function that can take _any_ number of parameters, i.e. **var**iable number of **arg**uments, this can be achieved by using the stars (save as `function_varargs.py`):
+## Nombre d'arguments arbitraire
 
-<pre><code class="lang-python">{% include "./programs/function_varargs.py" %}</code></pre>
+Vous voudrez parfois définir une fonction qui peut prendre  _n'importe quel_ nombre de paramètres, cela peut être obtenu en utilisant les étoiles (sauvegardez sous `function_varargs.py`):
+
+```python
+def total(a=5, *numbers, **phonebook):
+    print('a', a)
+
+    #parcourt tous les éléments du tuple
+    for single_item in numbers:
+        print('single_item', single_item)
+
+    #parcourt tous les éléments du dictionnaire
+    for first_part, second_part in phonebook.items():
+        print(first_part,second_part)
+
+total(10, 1, 2, 3, Jack=1123, John=2231, Inge=1560)
+```
 
 Résultat:
 
-<pre><code>{% include "./programs/function_varargs.txt" %}</code></pre>
+$ python function_varargs.py
+a 10
+single_item 1
+single_item 2
+single_item 3
+Inge 1560
+John 2231
+Jack 1123
 
 **Comment ça marche**
 
-When we declare a starred parameter such as `*param`, then all the positional arguments from that point till the end are collected as a tuple called 'param'.
+Quand nous déclarons un paramètre arbitraire comme `*param`, alors tous les paramètres à partir de cette position jusqu'à la fin sont regroupés dans un tuple appelé 'param'.
 
-Similarly, when we declare a double-starred parameter such as `**param`, then all the keyword arguments from that point till the end are collected as a dictionary called 'param'.
+De la même manière, quand nous déclarons un paramètre non-explicite comme `**param`, alors tous les mots-clés jusqu'à la fin sont regroupés dans un dictionnaire appelé 'param'.
 
-We will explore tuples and dictionaries in a [later chapter](./data_structures.md#data-structures).
+Nous explorerons les tuples et les dictionnaires dans un [chapitre suivant](./data_structures.md#data-structures).
 
-## The `return` statement {#return-statement}
+## L'instruction `return` {#return-statement}
 
-The `return` statement is used to *return* from a function i.e. break out of the function. We can optionally *return a value* from the function as well.
+L'instruction `return` est utilisée pour *revenir* d'une fonction, c'est à dire sortir de la fonction. Vous pouvez optionnellement *retourner une valeur* de la fonction.
 
 Exemple (sauvegardez sous `function_return.py`):
 
-<pre><code class="lang-python">{% include "./programs/function_return.py" %}</code></pre>
+```python
+def maximum(x, y):
+    if x > y:
+        return x
+    elif x == y:
+        print('Les nombres sont égaux')
+    else:
+        return y
+
+print(maximum(2, 3))
+```
 
 Résultat:
 
-<pre><code>{% include "./programs/function_return.txt" %}</code></pre>
+```
+$ python func_return.py
+3
+```
 
 **Comment ça marche**
 
-The `maximum` function returns the maximum of the parameters, in this case the numbers supplied to the function. It uses a simple `if..else` statement to find the greater value and then *returns* that value.
+La fonction `maximum` renvoie la valeur maximum des paramètres, dans ce cas les nombres fournis à la fonction. Elle utilise une simple instruction `if..else` pour trouver la plus grand valeur et ensuite *retourne* cette valeur.
 
-Note that a `return` statement without a value is equivalent to `return None`. `None` is a special type in Python that represents nothingness. For example, it is used to indicate that a variable has no value if it has a value of `None`.
+Notez qu'une instruction `return` sans une valeur est équivalente à `return None`. `None` est un type spécial en Python, qui représente le néant. Par exemple, il est utilisé pour indiquer qu'une valeur n'a pas de valeur, si elle a une valeur de `None`.
 
-Every function implicitly contains a `return None` statement at the end unless you have written your own `return` statement. You can see this by running `print(some_function())` where the function `some_function` does not use the `return` statement such as:
+Chaque fonction contient implicitement une instruction `return None` à la fin, à moins que vous ayez écrit votre propre instruction `return` . Vous pouvez voir cela en lançant `print(someFunction())` où la fonction `someFunction` n'utilise pas l'instruction `return` comme:
 
 ```python
 def some_function():
     pass
 ```
 
-The `pass` statement is used in Python to indicate an empty block of statements.
+L'instruction `pass` est utilisée en Python pour indiquer un bloc d'instructions vide.
 
-> TIP: There is a built-in function called `max` that already implements the 'find maximum' functionality, so use this built-in function whenever possible.
+> CONSEIL: Il y a une fonction intégrée appelée `max` qui implémente déjà la fonctionnalité 'trouver le maximum', donc utilisez-là de préférence autant que possible.
 
 ## DocStrings
 
-Python has a nifty feature called *documentation strings*, usually referred to by its shorter name *docstrings*. DocStrings are an important tool that you should make use of since it helps to document the program better and makes it easier to understand. Amazingly, we can even get the docstring back from, say a function, when the program is actually running!
+Python a une chic fonctionnalité appelée *documentation strings*, communément appelée *docstrings*. Les DocStrings sont un outil important que vous devriez utiliser, car cela vous aide à mieux documenter le programme et le rend plus facile à comprendre. Etonnament, nous pouvons même récuperer les docstrings en revenant, disons d'une fonction, pendant que le programme s'exécute!
 
 Exemple (sauvegardez sous `function_docstring.py`):
 
-<pre><code class="lang-python">{% include "./programs/function_docstring.py" %}</code></pre>
+```python
+def print_max(x, y):
+    '''Affiche le plus grand de deux nombres
+
+    Les deux valeurs doivent être des entiers.'''
+    x = int(x) # conversion vers un entier, si possible
+    y = int(y)
+
+    if x > y:
+        print(x, 'est le plus grand')
+    else:
+        print(y, 'est le plus grand')
+
+print_max(3, 5)
+print(print_max.__doc__)
+```
 
 Résultat:
 
-<pre><code>{% include "./programs/function_docstring.txt" %}</code></pre>
+```
+$ python func_doc.py
+5 est le plus grand
+Affiche le plus grand de deux nombres
+
+Les deux valeurs doivent être des entiers.
+```
 
 **Comment ça marche**
 
-A string on the first logical line of a function is the *docstring* for that function. Note that DocStrings also apply to [modules](./modules.md#modules) and [classes](./oop.md#oop) which we will learn about in the respective chapters.
 
-The convention followed for a docstring is a multi-line string where the first line starts with a capital letter and ends with a dot. Then the second line is blank followed by any detailed explanation starting from the third line. You are *strongly advised* to follow this convention for all your docstrings for all your non-trivial functions.
+Une chaîne de caractères sur la première ligne logique de la fonction est la *docstring* pour cette fonction. Notez que les docstrings s'appliquent aussi aux [modules](./modules.md#modules) et aux [classes](./oop.md#oop) que nous verrons dans les chapitres suivants.
 
-We can access the docstring of the `print_max` function using the `__doc__` (notice the *double underscores*) attribute (name belonging to) of the function. Just remember that Python treats *everything* as an object and this includes functions. We'll learn more about objects in the chapter on [classes](./oop.md#oop).
+La convention pour une docstring est une chaîne de caractères sur plusieurs lignes, la première ligne commençant avec une majuscule et se terminant par un point. La deuxième ligne est vide suivie par une explication détaillée commençant sur la troisième ligne. Vous êtes *fortement invité* à suivre cette convention pour toutes vos docstrings pour toutes vos fonctions non-triviales.
 
-If you have used `help()` in Python, then you have already seen the usage of docstrings! What it does is just fetch the `__doc__` attribute of that function and displays it in a neat manner for you. You can try it out on the function above - just include `help(print_max)` in your program. Remember to press the `q` key to exit `help`.
+Nous pouvons accéder la docstring de la fonction `print_max` en utilisant les attributs (nom appartenant à) `__doc__` (notez les *double underscores*) de la fonction. Souvenez-vous juste que Python traite *tout* en tant qu'objet et cela inclut les fonctions. Nous en apprendrons plus sur les objets dans un prochain chapitre sur [classes](./oop.md#oop).
 
-Automated tools can retrieve the documentation from your program in this manner. Therefore, I *strongly recommend* that you use docstrings for any non-trivial function that you write. The `pydoc` command that comes with your Python distribution works similarly to `help()` using docstrings.
+Si vous avez utilisé `help()` en Python, alors vous avez déjà utilisé les docstrings! Les docstrings vont juste chercher l'attribut `__doc__` de la fonction et vous l'affichent d'une manière soignée. Vous pouvez essayer sur la fonction au-dessus - incluez juste `help(print_max)` dans votre programme. Souvenez-vous d'appuyer sur `q` pour sortir du `help`.
+
+Des outils automatiques peuvent récupérer la documentation de votre programme de cette manière. Par conséquent, je *recommande fortement* que vous utilisiez les docstrings pour tout fonction non-triviale que vous écrivez. La commande `pydoc` fournie avec Python fonctionne de manière similaire au `help()` en utilisant les docstrings.
 
 ## Summary
 
-We have seen so many aspects of functions but note that we still haven't covered all aspects of them. However, we have already covered most of what you'll use regarding Python functions on an everyday basis.
+Nous avons couvert de nombreux aspects des fonctions mais il nous reste des choses à voir. Cependant nous avons vu l'essentiel de ce que vous utiliserez couramment concernant les fonctions dans Python.
 
-Next, we will see how to use as well as create Python modules.
+Nous allons maintenant voir comment créer des modules Python.
