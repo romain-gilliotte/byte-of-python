@@ -1,3 +1,3 @@
 # Feedback
 
-The book needs the help of its readers such as yourselves to point out any parts of the book which are not good, not comprehensible or are simply wrong. Please [write to the main author]({{ book.contactUrl }}) or the respective [translators](./translations.md#translations) with your comments and suggestions.
+Le livre a besoin de l’aide de ses lecteurs tels que vous pour indiquer les parties du livre qui ne sont pas bonnes, qui ne sont pas compréhensibles ou qui sont simplement fausses. Veuillez [écrire à l'auteur principal](https://www.swaroopch.com/contact/) ou aux [traducteurs](./translations.md#translations) respectifs avec vos commentaires et suggestions.

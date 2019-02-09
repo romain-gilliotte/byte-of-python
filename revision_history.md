@@ -1,4 +1,4 @@
-# Appendix: Leçon D'Histoire {#history-lesson}
+# Annexe: Leçon d'histoire {#history-lesson}
 
 J'ai commencé avec Python quand j'ai eu besoin d'écrire un installeur pour un logiciel que j'avais écrit appellé 'Diamant' afin de faciliter l'installation. Je devais choisir entre les bindings Python et Perl pour la librairie Qt. J'ai cherché sur le web et je suis tombé sur [un article d'Eric S. Raymond](http://www.python.org/about/success/esr/), le hacker célèbre et respecté, qui expliquait comment Python était devenu son langage favori. J'ai également trouvé que les bindings PyQt étaient plus mûrs que Perl-Qt. Donc, je décidai de choisir Python.
 
@@ -10,96 +10,96 @@ Ce livre a commencé comme des notes personnelles sur Python et je le considère
 
 Dans le véritable esprit de l'open source, j'ai reçu beaucoup de suggestions constructives, critiques et [feedback](./README.md#who-reads-bop) des lecteurs enthousiastes ont aidé à beaucoup améliorer le livre.
 
-## Statut Du Livre
+## Statut du livre
 
-The book needs the help of its readers such as yourselves to point out any parts of the book which are not good, not comprehensible or are simply wrong. Please [write to the main author]({{ book.contactUrl }}) or the respective [translators](./translations.md#translations) with your comments and suggestions.
+Le livre a besoin de l’aide de ses lecteurs tels que vous pour indiquer les parties du livre qui ne sont pas bonnes, qui ne sont pas compréhensibles ou qui sont simplement fausses. Veuillez [écrire à l'auteur principal](https://www.swaroopch.com/contact/) ou aux [traducteurs](./translations.md#translations) respectifs avec vos commentaires et suggestions.
 
-# Appendix: Revision History {#revision-history}
+# Annexe: Historique des révisions {#revision-history}
 
 - 4.0
-    - 19 Jan 2016
-    - Switched back to Python 3
-    - Switched back to Markdown, using [GitBook](https://www.gitbook.com) and [Spacemacs](http://spacemacs.org)
+    - 19 janvier 2016
+    - Retour au Python 3
+    - Retour au Markdown, en utilisant [GitBook](https://www.gitbook.com) et [Spacemacs](http://spacemacs.org)
 
 - 3.0
-    - 31 Mar 2014
-    - Rewritten for Python 2 using [AsciiDoc](http://asciidoctor.org/docs/what-is-asciidoc/) and [adoc-mode](https://github.com/sensorflo/adoc-mode/wiki).
+    - 31 mars 2014
+    - Re-écriture pour Python 2 en utilisant [AsciiDoc](http://asciidoctor.org/docs/what-is-asciidoc/) et [adoc-mode](https://github.com/sensorflo/adoc-mode/wiki).
 
 - 2.1
-    - 03 Aug 2013
-    - Rewritten using Markdown and [Jason Blevins' Markdown Mode](http://jblevins.org/projects/markdown-mode/)
+    - 03 août 2013
+    - Re-écriture en Markdown avec le [Mode Markdown de Jason Blevins](http://jblevins.org/projects/markdown-mode/)
 
 - 2.0
-    - 20 Oct 2012
-    - Rewritten in [Pandoc format](http://johnmacfarlane.net/pandoc/README.html), thanks to my wife who did most of the conversion from the Mediawiki format
-    - Simplifying text, removing non-essential sections such as `nonlocal` and metaclasses
+    - 20 octobre 2012
+    - Re-écriture au [format Pandoc](http://johnmacfarlane.net/pandoc/README.html), grâce à ma femme qui a réalisé la majorité de la conversion à partir du format Mediawiki
+    - Simplification du texte en supprimant des sections non essentielles telles que les variables `nonlocal` et les `metaclass`
 
 - 1.90
-    - 04 Sep 2008 and still in progress
-    - Revival after a gap of 3.5 years!
-    - Rewriting for Python 3.0
-    - Rewrite using http://www.mediawiki.org[MediaWiki] (again)
+    - 04 septembre 2008, toujours en cours
+    - Réveil après une interruption de 3 ans et demi!
+    - Re-écriture pour Python 3.0
+    - Conversion au format http://www.mediawiki.org[MediaWiki] (à nouveau)
 
 - 1.20
-    - 13 Jan 2005
-    - Complete rewrite using [Quanta+](https://en.wikipedia.org/wiki/Quanta_Plus) on [Fedora](http://fedoraproject.org/) Core 3 with lot of corrections and updates. Many new examples. Rewrote my DocBook setup from scratch.
+    - 13 janvier 2005
+    - Re-écriture complète au format [Quanta+](https://en.wikipedia.org/wiki/Quanta_Plus) sur [Fedora](http://fedoraproject.org/) Core 3 avec beaucoup de corrections et de mises à jour. Beaucoup de nouveaux exemples. J'ai réécrit ma configuration DocBook de zéro.
 
 - 1.15
-    - 28 Mar 2004
-    - Minor revisions
+    - 28 mars 2004
+    - Révisions mineures
 
 - 1.12
-    - 16 Mar 2004
-    - Additions and corrections
+    - 16 mars 2004
+    - Ajouts et corrections
 
 - 1.10
-    - 09 Mar 2004
-    - More typo corrections, thanks to many enthusiastic and helpful readers.
+    - 09 mars 2004
+    - De nouvelles corrections de fautes de frappe, grâce à de nombreux retours de lecteurs enthousiastes et aidants.
 
 - 1.00
-    - 08 Mar 2004
-    - After tremendous feedback and suggestions from readers, I have made significant revisions to the content along with typo corrections.
+    - 08 mars 2004
+    - Après de nombreux commentaires et suggestions de la part de lecteurs, j’ai apporté des modifications importantes au contenu, ainsi que des corrections de fautes de frappe.
 
 - 0.99
-    - 22 Feb 2004
-    - Added a new chapter on modules. Added details about variable number of arguments in functions.
+    - 22 février 2004
+    - Ajout d'un nouveau chapitre sur les modules. Ajout de détails sur les fonctions à nombre variable d'arguments.
 
 - 0.98
-    - 16 Feb 2004
-    - Wrote a Python script and CSS stylesheet to improve XHTML output, including a crude-yet-functional lexical analyzer for automatic VIM-like syntax highlighting of the program listings.
+    - 16 février 2004
+    - Ecriture d'un script Python et une feuille de style CSS pour améliorer la sortie XHTML, y compris un analyseur lexical, simple mais fonctionnel, pour la coloration automatique de la syntaxe (comme VIM).
 
 - 0.97
-    - 13 Feb 2004
-    - Another completely rewritten draft, in DocBook XML (again). Book has improved a lot - it is more coherent and readable.
+    - 13 février 2004
+    - Un autre brouillon complètement réécrit, au format DocBook XML (à nouveau). Le livre s’est beaucoup amélioré - il est plus cohérent et lisible.
 
 - 0.93
-    - 25 Jan 2004
-    - Added IDLE talk and more Windows-specific stuff
+    - 25 janvier 2004
+    - Ajout de contenu sur IDLE et plus de choses spécifiques à Windows
 
 - 0.92
-    - 05 Jan 2004
-    - Changes to few examples.
+    - 05 janvier 2004
+    - Modifications de quelques exemples.
 
 - 0.91
     - 30 Dec 2003
-    - Corrected typos. Improvised many topics.
+    - Correction de fautes de frappe. Amélioration de nombreux sujets.
 
 - 0.90
     - 18 Dec 2003
-    - Added 2 more chapters. [OpenOffice](https://en.wikipedia.org/wiki/OpenOffice) format with revisions.
+    - Ajout de 2 chapitres supplémentaires. Format [OpenOffice](https://en.wikipedia.org/wiki/OpenOffice) avec révisions.
 
 - 0.60
     - 21 Nov 2003
-    - Fully rewritten and expanded.
+    - Entièrement réécrit et étendu.
 
 - 0.20
     - 20 Nov 2003
-    - Corrected some typos and errors.
+    - Correction de fautes de frappe et d'erreurs.
 
 - 0.15
     - 20 Nov 2003
-    - Converted to [DocBook XML](https://en.wikipedia.org/wiki/DocBook) with XEmacs.
+    - Conversion au format [DocBook XML](https://en.wikipedia.org/wiki/DocBook) avec XEmacs.
 
 - 0.10
     - 14 Nov 2003
-    - Initial draft using [KWord](https://en.wikipedia.org/wiki/Kword).
+    - Brouillon initial avec [KWord](https://en.wikipedia.org/wiki/Kword).

@@ -20,7 +20,7 @@ for i in sys.argv:
 print('\n\nThe PYTHONPATH is', sys.path, '\n')
 ```
 
-Output:
+Résultat:
 
 ```
 $ python using_sys.py nous sommes des arguments
@@ -79,7 +79,7 @@ from math import sqrt
 print("La racine carré de 16 vaut", sqrt(16))
 ```
 
-## A module's `__name__` {#module-name}
+## Nommage des modules {#module-name}
 
 Chaque module a un nom et les instructions dans un module peuvent retrouver le nom du module. Cela est pratique pour déterminer si le module s'exécute tout seul ou s'il est importé. Comme précédemment indiqué, quand un module est importé pour la première fois, le code dans ce module est exécuté. Nous pouvons utiliser ce concept pour modifier le comportement du module selon que  le programme s'exécute tout seul ou qu'il est importé à partir d'un autre module. Cela est obtenu avec l'attribut `__name__` du module.
 
@@ -172,7 +172,7 @@ Cela va importer tous les noms publics comme `sayhi` mais ne va pas importer `__
 
 <!-- -->
 
-> **Zen of Python**
+> **Zen de Python**
 > 
 > L'un des principes directeurs de Python est que "Explicite est mieux qu'implicite". Exécutez `import this` en Python pour en savoir plus.
 
