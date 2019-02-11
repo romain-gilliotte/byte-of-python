@@ -17,6 +17,7 @@ Notez que vous pouvez évaluer de manière interactive les expressions données 
 15
 >>>
 ```
+
 Voici un aperçu rapide des opérateurs disponibles:
 
 - `+` (plus)
@@ -138,7 +139,7 @@ Si vous avez une expression comme `2 + 3 * 4`, fait-on d'abord l'addition ou la 
 
 Le tableau suivant donne les priorités pour Python, de la plus basse (least binding) à la plus élevée (most binding). Cela signifie que dans une expression donnée, Python va d'abord évaluer les opérateurs et expressions les plus bas dans ce tableau, avant ceux placés plus en haut.
 
-Le tableau suivant, extrait du [Manuel Python de référence](http://docs.python.org/3/reference/expressions.html#operator-precedence), est fourni afin d'être complet. Il est bien meilleur d'utiliser les parenthèses pour grouper correctement les opérateurs et les opérandes afin d'indiquer explicitement la précédence. Cela rend le programme plus lisible. Voyez [Changer l'ordre d'évaluation](#changing-order-of-evaluation) pour plus de détails.
+Le tableau suivant, extrait du [Manuel de référence de Python](http://docs.python.org/3/reference/expressions.html#operator-precedence), est fourni afin d'être complet. Il est bien meilleur d'utiliser les parenthèses pour grouper correctement les opérateurs et les opérandes afin d'indiquer explicitement la précédence. Cela rend le programme plus lisible. Voyez [Changer l'ordre d'évaluation](#changing-order-of-evaluation) pour plus de détails.
 
 - `lambda` : Expression Lambda
 - `if - else` : Expression conditionnelle
@@ -154,8 +155,8 @@ Le tableau suivant, extrait du [Manuel Python de référence](http://docs.python
 - `*, /, //, %` : Multiplication, Division, Quotient et Reste
 - `+x, -x, ~x` : Positif, Négatif, non bit à bit
 - `**` : Exponentiation
-- `x[index], x[index:index], x(arguments...), x.attribute` : Subscription, slicing, call, attribute reference
-- `(expressions...), [expressions...], {key: value...}, {expressions...}` : Binding or tuple display, list display, dictionary display, set display
+- `x[index], x[index:index], x(arguments...), x.attribute` : Subscription, slicing, appel, référence aux attributs
+- `(expressions...), [expressions...], {key: value...}, {expressions...}` : Création de tuples, listes, dictionnaires, sets.
 
 Les opérateurs que nous n'avons pas encore rencontrés seront expliqués dans les chapitres suivants.
 
@@ -188,13 +189,13 @@ Résultat:
 
 ```
 $ python expression.py
-Area is 10
-Perimeter is 14
+L'aire vaut 10
+Le périmètre vaut 14
 ```
 
 **Comment cela fonctionne**
 
-La longueur et la largeur du rectangle sont rangés dans des variables du même nom (length et breadth). Nous les utilisons pour calculer la surface et le périmètre du rectangle avec l'aide des expressions. Nous rangeons le résultat de l'expression `length * breadth` dans la variable `area` et ensuite nous l'affichons en utilisant la fonction `print`. Dans le deuxième cas, nous utilisons directement la valeur de l'expression `2 * (length + breadth)` dans la fonction print.
+La longueur et la largeur du rectangle sont rangées dans des variables du même nom (length et breadth). Nous les utilisons pour calculer la surface et le périmètre du rectangle avec l'aide des expressions. Nous rangeons le résultat de l'expression `length * breadth` dans la variable `area` et ensuite nous l'affichons en utilisant la fonction `print`. Dans le deuxième cas, nous utilisons directement la valeur de l'expression `2 * (length + breadth)` dans la fonction print.
 
 Notez également comment Python _affiche joliment_ le résultat. Même si nous n'avons pas ajouté un espace entre `"l'aire est de"` et la variable `area`, Python l'insère pour nous afin d'avoir un joli affichage et le programme est bien plus lisible ainsi (vu que nous n'avons pas à nous inquiéter des espaces dans les chaînes de caractères utilisées à l'affichage). Voici un exemple de ce que fait Python pour rendre la vie du programmeur plus facile.
 

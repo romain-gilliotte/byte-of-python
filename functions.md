@@ -78,7 +78,7 @@ Dans la première utilisation de `print_max`, nous fournissons directement les n
 Quand vous déclarez des variables à l'intérieur de la définition d'une fonction, elles ne sont en aucun cas en rapport avec d'autres variables portant le même nom, utilisées en dehors de la fonction, c'est-à-dire que les noms de variables sont *locaux* à la fonction. Cela est appelé la *portée* de la variable. Toutes les variables ont la portée du bloc dans lequel elles sont déclarées, à partir du point de définition du nom.
 
 > **Note de la traduction**
-> 
+>
 > Le terme anglais *scope* est très utilisé, et à le même sens que *portée*.
 
 Exemple (sauvegardez sous `function_local.py`):
@@ -180,9 +180,9 @@ Le nom de la fonction `say` est utilisé pour afficher une chaîne de caractère
 Au premier appel de `say`, nous fournissons seulement la chaîne de caractères et elle est imprimée une fois. Au deuxième appel de `say`, nous fournissons à la fois la chaîne de caractères et un argument `5` indiquant que nous voulons dire le message de la chaîne de caractères 5 fois.
 
 > *Important*
-> 
+>
 > Seuls les paramètres à la fin de la liste de paramètres peuvent recevoir une valeur par défaut, c'est-à-dire que vous ne pouvez avoir un paramètre avec une valeur par défaut avant un paramètre sans valeur par défaut dans la liste des paramètres de la fonction.
-> 
+>
 > La raison est que les valeurs sont assignées aux paramètres par position. Par exemple, `def func(a, b=5)` est valide, mais `def func(a=5, b)` n'est *pas valide*.
 
 ## Paramètres nommés
@@ -212,7 +212,6 @@ a vaut 100 et b vaut 5 et c vaut 50
 ```
 
 **Comment ça marche**
-
 
 La fonction `func` a un paramètre par défaut sans valeur, suivi de deux paramètres avec des valeurs par défaut.
 
