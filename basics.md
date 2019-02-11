@@ -337,7 +337,7 @@ De la même manière, nous assignons la chaîne littérale à la variable `s` et
 >
 > Les variables sont créées en leur donnant juste une valeur. Il n'y a pas de déclaration ou de définition de type de données.
 
-## Lignes Physiques Et Lignes Logiques
+## Lignes physiques et lignes logiques
 
 Une ligne physique est ce que vous _voyez_ quand vous écrivez le programme. Une ligne logique est ce que _Python voit_ comme une seule instruction. Python suppose implicitement que chaque _ligne physique_ correspond à une _ligne logique_.
 
