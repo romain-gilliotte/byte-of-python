@@ -250,7 +250,7 @@ r"Les retours à la ligne sont indiqués par \n"
 
 Utiliser seulement des constantes littérales peut rapidement devenir ennuyeux - nous avons besoin de solutions pour ranger n'importe quelles informations et les manipuler. C'est là que les *variables* interviennent. Les variables sont exactement ce que leur nom implique - leur valeur peut changer, vous pouvez stocker n'importe quoi avec une variable. Les variables sont juste des endroits où vous rangez de l'information dans la mémoire de l'ordinateur. Contrairement aux constantes littérales, vous avez besoin d'une méthode pour accéder à ces variables et donc vous leur donnez des noms.
 
-## nommage d'identifiants
+## Nommage d'identifiants
 
 Les variables sont des exemples d'identifiants. Les _identifiants_ sont des noms donnés pour identifier _quelque chose_. Vous devez respecter quelques règles pour donner un nom aux identifiants:
 
