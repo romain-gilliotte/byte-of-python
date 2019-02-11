@@ -242,6 +242,7 @@ total(10, 1, 2, 3, Jack=1123, John=2231, Inge=1560)
 
 Résultat:
 
+```
 $ python function_varargs.py
 a 10
 single_item 1
@@ -250,6 +251,7 @@ single_item 3
 Inge 1560
 John 2231
 Jack 1123
+```
 
 **Comment ça marche**
 
