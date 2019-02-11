@@ -17,7 +17,7 @@
 * [Exceptions](exceptions.md)
 * [Bibliothèque standard](stdlib.md)
 * [Aller plus loin](more.md)
-* [What Next](what_next.md)
+* [Et ensuite](what_next.md)
 * [Annexe: FLOSS](floss.md)
 * [Annexe: À propos du livre](about.md)
 * [Annexe: Historique des révisions](revision_history.md)

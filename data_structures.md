@@ -1,4 +1,4 @@
-# Data Structures {#data-structures}
+# Structures de données {#data-structures}
 
 Les structures de données sont juste cela - ce sont des *structures* qui peuvent contenir des *données*. En d'autres termes, elles sont utilisées pour stocker un ensemble de données liées entre elles.
 
@@ -64,139 +64,232 @@ Ma liste de commissions est ['carotte', 'mangue', 'pomme', 'riz']
 
 **Comment ça marche**
 
-The variable `shoplist` is a shopping list for someone who is going to the market. In `shoplist`, we only store strings of the names of the items to buy but you can add _any kind of object_ to a list including numbers and even other lists.
+La variable `shoplist` est une liste pour quelqu'un qui va faire ses courses au marché. Dans `shoplist`, nous stockons seulement les chaînes de caractères des noms des objets à acheter mais vous pouvez ajouter _n'importe quel type d'objet_ à une liste, incluant des nombres et même d'autres listes.
 
-We have also used the `for..in` loop to iterate through the items of the list. By now, you must have realised that a list is also a sequence. The speciality of sequences will be discussed in a [later section](#sequence).
+Nous utilisons aussi la boucle `for..in` pour itérer les éléments de la liste. Vous réalisez maintenant qu'une liste est aussi une séquence. La spécificité des séquences sera vue plus tard dans la [section dédiée](#sequence).
 
-Notice the use of the `end` parameter in the call to `print` function to indicate that we want to end the output with a space instead of the usual line break.
+Notez l'utilisation du mot-clé `end` de la fonction `print` pour indiquer que nous voulons finir l'affichage avec un espace au lieu de l'habituel retour à la ligne.
 
-Next, we add an item to the list using the `append` method of the list object, as already discussed before. Then, we check that the item has been indeed added to the list by printing the contents of the list by simply passing the list to the `print` function which prints it neatly.
+Ensuite, nous ajoutons un élément à la liste en utilisant la méthode `append` de l'objet _list_, comme indiqué précédemment. puis, nous vérifiions que l'élément a bien été ajouté à la liste en affichant le contenu de la liste avec l'instruction `print` qui l'affiche proprement.
+Puis, nous trions la liste avec la méthode `sort` de la liste. Il est important de comprendre que cette méthode modifie la liste elle-même et ne renvoie pas une liste modifiée - c'est différent de la manière dont les chaînes de caractères fonctionnent. C'est pour cela que nous disons que les listes sont modifiables (ndlt: _mutable_) et que les chaînes de caractères sont immuables (ndlt: _immutable_).
 
-Then, we sort the list by using the `sort` method of the list. It is important to understand that this method affects the list itself and does not return a modified list - this is different from the way strings work. This is what we mean by saying that lists are _mutable_ and that strings are _immutable_.
+Ensuite, quand nous avons fini d'acheter des objets sur le marché, nous voulons les enlever de la liste. Nous faisons cela avec l'instruction `del` . Ici, nous indiquons quel élément de la liste nous voulons enlever et l'instruction `del` le fait pour nous.  Nous indiquons que nous voulons enlever le premier élément de la liste et donc nous utilisons `del shoplist[0]` (souvenez-vous que Python compte à partir de 0).
 
-Next, when we finish buying an item in the market, we want to remove it from the list. We achieve this by using the `del` statement. Here, we mention which item of the list we want to remove and the `del` statement removes it from the list for us.  We specify that we want to remove the first item from the list and hence we use `del shoplist[0]` (remember that Python starts counting from 0).
-
-If you want to know all the methods defined by the list object, see `help(list)` for details.
+Si vous voulez connaître toutes les méthodes définies par l'objet list voyez `help(list)` pour plus de détails.
 
 ## Tuple
 
-Tuples are used to hold together multiple objects. Think of them as similar to lists, but without the extensive functionality that the list class gives you. One major feature of tuples is that they are *immutable* like strings i.e. you cannot modify tuples.
+Les tuples sont utilisés pour contenir plusieurs objets. Voyez-les comme des listes, mais sans les fonctionnalités supplémentaires que la classe `list` vous apporte. Une caractéristique majeure des tuples est qu'ils sont *immuables* comme les chaînes de caractères, vous ne pouvez pas modifier les tuples.
 
-Tuples are defined by specifying items separated by commas within an optional pair of parentheses.
+Les tuples sont définis en indiquant des éléments séparés par des virgules, avec éventuellement une paire de parenthèses.
 
-Tuples are usually used in cases where a statement or a user-defined function can safely assume that the collection of values (i.e. the tuple of values used) will not change.
+Les tuples sont en général utilisés dans des cas où une instruction ou une fonction définie par l'utilisateur peut légitimement supposer que la liste de valeurs, c'est-à-dire le tuple de valeurs, ne changera pas.
 
 Exemple (sauvegarder sous `ds_using_tuple.py`):
 
-<pre><code class="lang-python">{% include "./programs/ds_using_tuple.py" %}</code></pre>
+```python
+zoo = ('python', 'éléphant', 'pingouin')
+#  souvenez-vous, les parenthèses sont optionnelles
+print('Le nombre d\'animaux est', len(zoo))
+
+new_zoo = ('singe', 'chameau', zoo)
+print('le nombre de cages dans le nouveau zoo est', len(new_zoo))
+print('Les animaux dans le nouveau zoo sont', new_zoo)
+print('Les animaux venant de l\'ancien zoo sont', new_zoo[2])
+print('Le dernier animal venant de l\ancien zoo sont', new_zoo[2][2])
+print('Le nombre d\'animaux dans le nouveau zoo sont', len(new_zoo)-1+len(new_zoo[2]))
+```
 
 Résultat:
 
-<pre><code>{% include "./programs/ds_using_tuple.txt" %}</code></pre>
+```
+$ python using_tuple.py
+Le nombre d'animaux est 3
+Le nombre de cages dans le nouveau zoo est 3
+Les animaux dans le nouveau zoo sont ('singe', 'chameau', ('python', 'éléphant', 'pingouin'))
+Les animaux venant de l'ancien zoo sont ('python', 'éléphant', 'pingouin')
+Le dernier animal venant de l'ancien zoo est pingouin
+Le nombre d'animaux dans le nouveau zoo est 5
+```
 
 **Comment ça marche**
 
-The variable `zoo` refers to a tuple of items. We see that the `len` function can be used to get the length of the tuple. This also indicates that a tuple is a [sequence](#sequence) as well.
 
-We are now shifting these animals to a new zoo since the old zoo is being closed. Therefore, the `new_zoo` tuple contains some animals which are already there along with the animals brought over from the old zoo. Back to reality, note that a tuple within a tuple does not lose its identity.
+La variable `zoo` se réfère à un tuple d'éléments. Nous voyons que la fonction `len` peut être utilisée pour obtenir la longueur du tuple. Cela indique aussi qu'un tuple est également une [séquence](#sequence).
 
-We can access the items in the tuple by specifying the item's position within a pair of square brackets just like we did for lists. This is called the _indexing_ operator. We access the third item in `new_zoo` by specifying `new_zoo[2]` and we access the third item within the third item in the `new_zoo` tuple by specifying `new_zoo[2][2]`. This is pretty simple once you've understood the idiom.
+Nous décalons ces animaux vers un nouveau zoo, car l'ancien est maintenant fermé. En conséquence, le tuple `new_zoo` contient quelques animaux qui étaient déjà là, et les animaux de l'ancien zoo. Retour à la réalité, notez qu'un tuple à l'intérieur d'un tuple ne perd pas son identité.
 
-> **Tuple with 0 or 1 items**
-> 
-> An empty tuple is constructed by an empty pair of parentheses such as `myempty = ()`. However, a tuple with a single item is not so simple. You have to specify it using a comma following the first (and only) item so that Python can differentiate between a tuple and a pair of parentheses surrounding the object in an expression i.e. you have to specify `singleton = (2 , )` if you mean you want a tuple containing the item `2`.
+Nous pouvons accéder les éléments dans le tuple en indiquant la position de l'élément à l'intérieur d'une paire de crochets comme pour les listes. On appelle cela l'opérateur _d'indexation_. Nous accédons le troisième élément dans `new_zoo` en indiquant `new_zoo[2]` et nous accédons le troisième élément à l'intérieur du troisième élément à l'intérieur du tuple `new_zoo` en indiquant `new_zoo[2][2]`. C'est très simple une fois que vous avez compris le principe.
+
+> **Tuple avec 0 ou 1 élément**
+>
+> Un tuple vide créé par une paire de parenthèses sans rien à l'intérieur comme `myempty = ()`. Cependant, un tuple avec un seul élément n'est pas si simple. Il faut le définir avec une virgule suivi du premier e(et seul) élément, afin que Python puisse différencier un tuple d'une paire de parenthèses entourant l'objet dans une expression, c'est-à-dire que vous devez déclarer `singleton = (2 , )` si vous voulez un tuple contenant l'élément `2`.
 
 <!-- -->
 
-> **Note for Perl programmers**
-> 
-> A list within a list does not lose its identity i.e. lists are not flattened as in Perl. The same applies to a tuple within a tuple, or a tuple within a list, or a list within a tuple, etc. As far as Python is concerned, they are just objects stored using another object, that's all.
+> **Note pour les programmeurs Perl**
+>
+> Une liste à l'intérieur d'une liste ne perd pas son identité, c'est-à-dire que les listes ne sont pas aplaties comme en Perl. Le même principe s'applique à un tuple à l'intérieur d'un tuple, ou un tuple à l'intérieur d'une liste, ou une liste à l'intérieur d'un tuple, etc. En Python, ils sont juste des objets stockés dans un autre objet, c'est tout.
 
-## Dictionary
+## Dictionnaire
 
-A dictionary is like an address-book where you can find the address or contact details of a person by knowing only his/her name i.e. we associate *keys* (name) with *values* (details). Note that the key must be unique just like you cannot find out the correct information if you have two persons with the exact same name.
+Un dictionnaire est comme un carnet d'adresses dans lequel vous pouvez trouver une adresse et des renseignements sur une personne à partir de son nom, c'est-à-dire que nous associons des *clés* (nom) avec des *valeurs* (détails). Notez que la clé doit être unique, de la même manière que vous ne pouvez pas trouver une information correcte si vous avez deux personnes avec exactement le même nom.
 
-Note that you can use only immutable objects (like strings) for the keys of a dictionary but you can use either immutable or mutable objects for the values of the dictionary.  This basically translates to say that you should use only simple objects for keys.
+Notez que pour les clés d'un dictionnaire, vous pouvez seulement utiliser des objets immuables (comme des chaînes de caractères), mais vous pouvez utiliser soit des objets immuables ou mutables pour les valeurs d'un dictionnaire. Cela revient à dire que pour les clés, vous devez seulement utiliser des simples objets.
 
-Pairs of keys and values are specified in a dictionary by using the notation `d = {key1 : value1, key2 : value2 }`. Notice that the key-value pairs are separated by a colon and the pairs are separated themselves by commas and all this is enclosed in a pair of curly braces.
+Des paires de clés et valeurs sont spécifiées dans un dictionnaire avec la notation `d = {key1: value1, key2: value2}`. Notez que les paires de valeurs de clés sont séparées par le caractère deux-points et que les paires sont elle-mêmes séparées par une virgule et que tout cela est entouré d'accolades.
 
-Remember that key-value pairs in a dictionary are not ordered in any manner. If you want a particular order, then you will have to sort them yourself before using it.
+Souvenez-vous que les paires de valeurs de clé dans un dictionnaire ne sont pas ordonnées. Si vous voulez qu'elle soient dans l'ordre, il vous faudra les trier vous-mêmes avant de les utiliser.
 
-The dictionaries that you will be using are instances/objects of the `dict` class.
+Les dictionnaires que vous utiliserez sont des instances/objets de la classe `dict` .
 
 Exemple (sauvegarder sous `ds_using_dict.py`):
 
-<pre><code class="lang-python">{% include "./programs/ds_using_dict.py" %}</code></pre>
+```python
+ab = {
+    'Swaroop'   : 'swaroop@swaroopch.com',
+    'Larry'     : 'larry@wall.org',
+    'Matsumoto' : 'matz@ruby-lang.org',
+    'Spammer'   : 'spammer@hotmail.com'
+}
+
+print("L'adresse de Swaroop est", ab['Swaroop'])
+
+# Destruction d'une paire de valeurs
+del ab['Spammer']
+
+print("\nIl y a {0} contacts dans le carnet d'adresse\n".format(len(ab)))
+
+for name, address in ab.items():
+    print("Contactez {0} à l'adresse {1}".format(name, address))
+
+# Ajout d'une paire de valeurs
+ab['Guido'] = 'guido@python.org'
+
+if 'Guido' in ab:
+    print("\nL'adresse de Guido est", ab['Guido'])
+```
 
 Résultat:
 
-<pre><code>{% include "./programs/ds_using_dict.txt" %}</code></pre>
+```
+$ python using_dict.py
+L'adresse de Swaroop est swaroop@swaroopch.com
+
+Il y a 3 contacts dans le carnet d'adresse
+
+Contact Swaroop at swaroop@swaroopch.com
+Contact Matsumoto at matz@ruby-lang.org
+Contact Larry at larry@wall.org
+
+L'adresse de Guido est guido@python.org
+```
 
 **Comment ça marche**
 
-We create the dictionary `ab` using the notation already discussed. We then access key-value pairs by specifying the key using the indexing operator as discussed in the context of lists and tuples. Observe the simple syntax.
+Nous créons le dictionnaire `ab` en utilisant la notation déjà vue. Puis nous accédons les paires de valeurs de clés en indiquant la clé avec l'opérateur d'indexation comme vu dans le contexte de listes et tuples. Observez la simplicité de la syntaxe.
 
-We can delete key-value pairs using our old friend - the `del` statement. We simply specify the dictionary and the indexing operator for the key to be removed and pass it to the `del` statement. There is no need to know the value corresponding to the key for this operation.
+Nous pouvons détruire les paires de valeurs de clés en utilisant notre vieil ami, l'instruction `del` . Nous indiquons simplement le dictionnaire et l'opérateur d'indexation pour la clé à enlever et nous la passons à l'instruction `del` . Il n'y a pas besoin de connaître la valeur correspondant à la clé pour cette opération.
 
-Next, we access each key-value pair of the dictionary using the `items` method of the dictionary which returns a list of tuples where each tuple contains a pair of items - the key followed by the value. We retrieve this pair and assign it to the variables `name` and `address` correspondingly for each pair using the `for..in` loop and then print these values in the for-block.
+Ensuite, nous accédons chaque paire de valeur de clé du dictionnaire avec la méthode `items` du dictionnaire qui retourne une liste de tuples, chaque tuple contient une paire d'éléments - la clé suivie de la valeur. Nous retrouvons cette paire et nous l'assignons aux variables `name` et `address` correspondantes pour chaque paire en utilisant la boucle `for..in` et nous affichons ces valeurs dans le block for.
 
-We can add new key-value pairs by simply using the indexing operator to access a key and assign that value, as we have done for Guido in the above case.
+Nous pouvons ajouter des nouvelles paires de valeurs de clés en utilisant juste l'opérateur d'indexation pour accéder une clé et lui  assigner cette valeur, comme nous l'avons fait pour Guido dans le cas précédent.
 
-We can check if a key-value pair exists using the `in` operator.
+Nous pouvons tester si une clé existe avec l'opérateur `in` .
 
-For the list of methods of the `dict` class, see `help(dict)`.
+Pour la liste des méthodes de la classe `dict` , voyez `help(dict)`.
 
-> **Keyword Arguments and Dictionaries**
-> 
-> If you have used keyword arguments in your functions, you have already used dictionaries! Just think about it - the key-value pair is specified by you in the parameter list of the function definition and when you access variables within your function, it is just a key access of a dictionary (which is called the _symbol table_ in compiler design terminology).
+> **Paramètres nommés et dictionnaires**
+>
+> Si vous avez utilisé des paramètres nommés dans vos fonctions, vous avez déjà utilisé des dictionnaires! Voyez-le ainsi  - la paire de valeurs est indiquée par vous dans la liste des paramètres de la définition de la fonction et quand vous accédez les variables à l'intérieur de votre fonction, cela revient juste à accéder une clé dans un dictionnaire (qui est appelé la _table des symboles_ dans la terminologie de conception des compilateurs).
 
-## Sequence
+## Séquence
 
-Lists, tuples and strings are examples of sequences, but what are sequences and what is so special about them?
+Les listes, tuples et chaînes de caractères sont des exemples de séquences, mais que sont les séquences et qu'il y a-t-il de tellement particulier à leur sujet ?
 
-The major features are *membership tests*, (i.e. the `in` and `not in` expressions) and *indexing operations*, which allow us to fetch a particular item in the sequence directly.
+La principale fonctionnalité est qu'elles ont des test d'appartenance (c'est-à-dire les expressions `in` et `not in`) et les opérations d'indexage. L'opération d'*indexage* nous permet de rechercher directement un élément particulier dans la séquence.
 
-The three types of sequences mentioned above - lists, tuples and strings, also have a *slicing* operation which allows us to retrieve a slice of the sequence i.e. a part of the sequence.
+Les trois types de séquences mentionnées au-dessus - listes, tuples et chaînes de caractères, ont aussi une opération de *tranchage* (ndlt: *slicing*) qui nous permet de retrouver une partie de la séquence.
 
 Exemple (sauvegarder sous `ds_seq.py`):
 
-<pre><code class="lang-python">{% include "./programs/ds_seq.py" %}</code></pre>
+```python
+shoplist = ['pomme', 'mangue', 'carotte', 'banane']
+name = 'swaroop'
+
+# Indexation ou opération 'Subscription' operation
+print("L'élément 0 est", shoplist[0])
+print("L'élément 1 est", shoplist[1])
+print("L'élément 2 est", shoplist[2])
+print("L'élément 3 est", shoplist[3])
+print("L'élément -1 est", shoplist[-1])
+print("L'élément -2 est", shoplist[-2])
+print("Le caractère 0 est", name[0])
+
+# Slicing sur une liste
+print("L'élément 1 à 3 est", shoplist[1:3])
+print("L'élément 2 jusqu\'à la fin est", shoplist[2:])
+print("L'élément 1 à -1 est", shoplist[1:-1])
+print("Les éléments du début à la fin sont", shoplist[:])
+
+# Slicing sur une chaîne
+print("Les caractères 1 to 3 sont", name[1:3])
+print("Les caractères 2 à la fin sont", name[2:])
+print("Les caractères 1 à -1 sont", name[1:-1])
+print("Les caractères du début à la fin sont", name[:])
+```
 
 Résultat:
 
-<pre><code>{% include "./programs/ds_seq.txt" %}</code></pre>
+```
+L'élément 0 est pomme
+L'élément 1 est mangue
+L'élément 2 est carotte
+L'élément 3 est banane
+L'élément -1 est banane
+L'élément -2 est carotte
+Le caractère 0 est s
+L'élément 1 à 3 est ['mangue', 'carotte']
+L'élément 2 jusqu'à la fin est ['carotte', 'banane']
+L'élément 1 à -1 est ['mangue', 'carotte']
+Les éléments du début à la fin sont ['pomme', 'mangue', 'carotte', 'banane']
+Les caractères 1 to 3 sont wa
+Les caractères 2 à la fin sont aroop
+Les caractères 1 à -1 sont waroo
+Les caractères du début à la fin sont swaroop
+```
 
 **Comment ça marche**
 
-First, we see how to use indexes to get individual items of a sequence. This is also referred to as the _subscription operation_. Whenever you specify a number to a sequence within square brackets as shown above, Python will fetch you the item corresponding to that position in the sequence. Remember that Python starts counting numbers from 0. Hence, `shoplist[0]` fetches the first item and `shoplist[3]` fetches the fourth item in the `shoplist`sequence.
+D'abord, nous voyons comment utiliser des index pour récupérer des éléments d'une séquence. On appelle aussi cela _operation de souscription_. Quand vous indiquez un nombre dans une séquence avec des square brackets comme montré au-dessus, Python va rechercher l'élément correspondant à la position dans cette séquence. Souvenez-vous que Python compte à partir de 0. En conséquence, `shoplist[0]` cherche le premier élément et `shoplist[3]` cherche le quatrième élément dans la séquence `shoplist` .
 
-The index can also be a negative number, in which case, the position is calculated from the end of the sequence. Therefore, `shoplist[-1]` refers to the last item in the sequence and `shoplist[-2]` fetches the second last item in the sequence.
+L'index peut être une valeur négative à partir de la fin de la séquence. Donc, `shoplist[-1]` fait référence au dernier élément de la séquence et `shoplist[-2]` récupère l'avant-dernier élément de la séquence.
 
-The slicing operation is used by specifying the name of the sequence followed by an optional pair of numbers separated by a colon within square brackets. Note that this is very similar to the indexing operation you have been using till now. Remember the numbers are optional but the colon isn't.
+L'opération de tranchage est utilisée en indiquant le nom de la séquence suivi par une paire optionnelle de nombres séparés par un caractère deux-points à l'intérieur des square brackets. Notez que ceci est très similaire à l'opération d'indexation utilisée jusque-là . Souvenez-vous que les nombres sont optionnels mais pas le caractère deux-points.
 
-The first number (before the colon) in the slicing operation refers to the position from where the slice starts and the second number (after the colon) indicates where the slice will stop at. If the first number is not specified, Python will start at the beginning of the sequence. If the second number is left out, Python will stop at the end of the sequence. Note that the slice returned _starts_ at the start position and will end just before the _end_ position i.e. the start position is included but the end position is excluded from the sequence slice.
+Le premier nombre (avant le deux-points) dans l'opération de tranchage fait référence à la position où démarre la tranche et le deuxième nombre (après le caractère deux-points) indique où s'arrête la tranche. Si le premier nombre n'est pas indiqué, Python va commencer au début de la séquence. Si le deuxième nombre est absent, Python va arrêter à ma fin de la séquence. Notez que la tranche renvoyé _démarre_ à ma position de début et va se terminer juste avant la position _fin_ c'est-à-dire que la position de début est incluse dans la tranche et la position de fin est exclue de la séquence de tranchage.
 
-Thus, `shoplist[1:3]` returns a slice of the sequence starting at position 1, includes position 2 but stops at position 3 and therefore a *slice* of two items is returned.  Similarly, `shoplist[:]` returns a copy of the whole sequence.
+Ainsi, `shoplist[1:3]` renvoie une tranche de la séquence en partant de la position 1, inclut la position 2 mais s'arrête à la position 3 et donc une *tranche* de deux éléments est retourné.  De la même manière, `shoplist[:]` renvoie une copie de la séquence complète.
 
-You can also do slicing with negative positions. Negative numbers are used for positions from the end of the sequence. For example, `shoplist[:-1]` will return a slice of the sequence which excludes the last item of the sequence but contains everything else.
+Vous pouvez aussi faire du tranchage avec des positions négatives. Les nombres négatifs sont utilisés pour des positions à partir de la fin de la séquence.  Par exemple, `shoplist[:-1]` va renvoyer une tranche de la séquence qui exclut le dernier élément de la séquence mais contient tout le reste.
 
-You can also provide a third argument for the slice, which is the _step_ for the slicing (by default, the step size is 1):
+Vous pouvez aussi fournir un troisième argument pour la tranche, qui est le _pas_ du tranchage (par défaut, le pas est de 1):
 
 ```python
->>> shoplist = ['apple', 'mango', 'carrot', 'banana']
+>>> shoplist = ['pomme', 'mangue', 'carotte', 'banane']
 >>> shoplist[::1]
-['apple', 'mango', 'carrot', 'banana']
+['pomme', 'mangue', 'carotte', 'banane']
 >>> shoplist[::2]
-['apple', 'carrot']
+['pomme', 'carotte']
 >>> shoplist[::3]
-['apple', 'banana']
+['pomme', 'banane']
 >>> shoplist[::-1]
-['banana', 'carrot', 'mango', 'apple']
+['banane', 'carotte', 'mangue', 'pomme']
 ```
 
-Notice that when the step is 2, we get the items with position 0, 2,... When the step size is 3, we get the items with position 0, 3, etc.
+Notez que quand le pas est de 2, nous obtenons les éléments en positions 0, 2, ... Quand le pas est de 3, nous obtenons les éléments en position 0, 3, etc.
 
-Try various combinations of such slice specifications using the Python interpreter interactively i.e. the prompt so that you can see the results immediately. The great thing about sequences is that you can access tuples, lists and strings all in the same way!
+Essayez diverses combinaisons de tranchage en utilisant l'interpréteur intéractif Python, c'est-à-dire l'invite de commandes, afin de voir immédiatement les résultats. Ce qui est chouette avec les séquences, c'est que vous pouvez manipuler des tuples, des listes et des chaînes de caractères de la même manière !
 
 ## Set
 
@@ -241,10 +334,10 @@ Résultat:
 
 Most of the explanation is available in the comments.
 
-Remember that if you want to make a copy of a list or such kinds of sequences or complex objects (not simple _objects_ such as integers), then you have to use the slicing operation to make a copy. If you just assign the variable name to another name, both of them will ''refer'' to the same object and this could be trouble if you are not careful.
+Remember that if you want to make a copy of a list or such kinds of sequences or complex objects (not simple _objects_ such as integers), then you have to use the slicing operation to make a copy. If you just assign the variable name to another name, both of them will _refer_ to the same object and this could be trouble if you are not careful.
 
 > **Note for Perl programmers**
-> 
+>
 > Remember that an assignment statement for lists does **not** create a copy. You have to use slicing operation to make a copy of the sequence.
 
 ## More About Strings {#more-strings}
