@@ -10,7 +10,7 @@ Je parlerai plus en détail de ces fonctionnalités dans le paragraphe suivant.
 
 ## Histoire derrière le nom
 
-Guido van Rossum, le créateur du langage, l'a appelé en référence à la série télévisée de la BBC "Monty Python's Flying Circus". Il n'aime pas particulièrement les serpents qui tuent des animaux pour manger en les étouffant et les écrasant.
+Guido van Rossum, le créateur du langage, l'a appelé en référence à la série télévisée de la BBC « Monty Python's Flying Circus ». Il n'aime pas particulièrement les serpents qui tuent des animaux pour manger en les étouffant et les écrasant.
 
 ## Fonctionnalités de Python
 
@@ -71,7 +71,7 @@ Python est vraiment un langage puissant et formidable. Il possède la bonne comb
 
 ## Python 3 par rapport à 2
 
-Vous pouvez ignorer cette section si la différence entre "Python version 2" et "Python version 3" ne vous intéresse pas. Mais soyez conscient de la version que vous utilisez. Ce livre est écrit pour Python version 3.
+Vous pouvez ignorer cette section si la différence entre _Python version 2_ et _Python version 3_ ne vous intéresse pas. Mais soyez conscient de la version que vous utilisez. Ce livre est écrit pour Python version 3.
 
 N'oubliez pas qu'une fois que vous avez bien compris et appris à utiliser une version, vous pouvez facilement apprendre les différences et utiliser l'autre. Le plus difficile est d’apprendre à programmer et à comprendre les bases du langage Python lui-même. C’est notre objectif dans ce livre, et une fois que vous avez atteint cet objectif, vous pouvez facilement utiliser Python 2 ou Python 3 en fonction de votre situation.
 
@@ -86,6 +86,6 @@ Pour plus de détails sur les différences entre Python 2 et Python 3, voir:
 
 Vous trouverez intéressant de lire ce que des grands hackers comme ESR disent à propos de Python:
 
-- _Eric S. Raymond_ est l'auteur de [La Cathédrale et le Bazar](http://fr.wikipedia.org/wiki/La_Cath%C3%A9drale_et_le_Bazar) et aussi la personne qui a créé le terme ''Open Source''. Il dit que [Python est devenu son langage de programmation préféré](http://www.linuxjournal.com/article.php?sid=3882). Cet article a été la vraie inspiration pour mon premier contact avec Python.
+- _Eric S. Raymond_ est l'auteur de [La Cathédrale et le Bazar](http://fr.wikipedia.org/wiki/La_Cath%C3%A9drale_et_le_Bazar) et aussi la personne qui a créé le terme « Open Source ». Il dit que [Python est devenu son langage de programmation préféré](http://www.linuxjournal.com/article.php?sid=3882). Cet article a été la vraie inspiration pour mon premier contact avec Python.
 - _Bruce Eckel_ est l'auteur des livres célèbres _Thinking in Java_ et _Thinking in C++_. Il dit qu'aucun langage ne l'a rendu plus productif que Python. Il dit que Python est peut-être le seul langage qui se concentre sur le fait simplifier le travail du programmeur. Lisez  [l'interview complète](http://www.artima.com/intv/aboutme.html) pour plus de détails.
 - _Peter Norvig_ est un auteur Lisp et directeur de Search Quality chez Google (merci à Guido van Rossum pour l'avoir signalé). Il dit que Python a toujours fait partie de Google. Vous pouvez vérifier cela en recherchant sur la page [Google Jobs](http://www.google.com/jobs/index.html) qui indique Python comme un pré-requis pour les ingénieurs logiciels.

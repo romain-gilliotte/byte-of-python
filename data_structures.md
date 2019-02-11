@@ -1,34 +1,68 @@
 # Data Structures {#data-structures}
 
-Data structures are basically just that - they are *structures* which can hold some *data* together. In other words, they are used to store a collection of related data.
+Les structures de données sont juste cela - ce sont des *structures* qui peuvent contenir des *données*. En d'autres termes, elles sont utilisées pour stocker un ensemble de données liées entre elles.
 
-There are four built-in data structures in Python - _list, tuple, dictionary and set_. We will see how to use each of them and how they make life easier for us.
+Il y a quatre structures de données fournies dans Python - _les listes, les tuples, les dictionnaires et les sets_. Nous verrons maintenant comment utiliser chacune et comment nous simplifier la vie.
 
-## List
+## Liste
 
-A `list` is a data structure that holds an ordered collection of items i.e. you can store a *sequence* of items in a list. This is easy to imagine if you can think of a shopping list where you have a list of items to buy, except that you probably have each item on a separate line in your shopping list whereas in Python you put commas in between them.
+Une `liste` est une structure de données qui contient un ensemble ordonné d'objets, c'est-à-dire que vous pouvez stocker une *séquence* d'objets dans une liste. C'est facile à imaginer si vous pensez à une liste de commissions qui est une liste de choses à acheter, sauf que vous avez une chose par ligne, mais Python les présentera séparées par des virgules.
 
-The list of items should be enclosed in square brackets so that Python understands that you are specifying a list. Once you have created a list, you can add, remove or search for items in the list. Since we can add and remove items, we say that a list is a *mutable* data type i.e. this type can be altered.
+La liste de choses à acheter doit être entourée de crochets afin que Python comprenne que vous créez une liste. Une fois que vous avez créé une liste, vous pouvez ajouter, enlever ou rechercher un élément dans la liste. Comme nous pouvons ajouter ou enlever un élément , nous disons qu'une liste est un type de données modifiable (ndlt: *mutable* en anglais) c'est-à-dire que ce type peut être modifié.
 
-## Quick Introduction To Objects And Classes
+## Introduction rapide aux objets et classes
 
-Although I've been generally delaying the discussion of objects and classes till now, a little explanation is needed right now so that you can understand lists better. We will explore this topic in detail in a [later chapter](./oop.md#oop).
+Bien que j'aie retardé jusqu'à maintenant la discussion sur les objets et les classes, quelques explications vont vous permettre de mieux comprendre les listes. Nous verrons cela en détail plus tard dans [le chapitre dédié](./oop.md#oop).
 
-A list is an example of usage of objects and classes. When we use a variable `i` and assign a value to it, say integer `5` to it, you can think of it as creating an *object* (i.e. instance) `i` of *class* (i.e. type) `int`. In fact, you can read `help(int)` to understand this better.
+Une liste est un exemple de l'utilisation des objets et des classes. Quand nous utilisons une variable `i` et lui donnons une valeur, disons un entier `5`, nous pouvons voir cela comme créer un *objet* (c'est-à-dire une instance) `i` de *classe* (c'est-à-dire de type) `int`. En fait, vous pouvez lire `help(int)` pour mieux comprendre cela.
 
-A class can also have *methods* i.e. functions defined for use with respect to that class only. You can use these pieces of functionality only when you have an object of that class. For example, Python provides an `append` method for the `list` class which allows you to add an item to the end of the list. For example, `mylist.append('an item')` will add that string to the list `mylist`. Note the use of dotted notation for accessing methods of the objects.
+Une classe peut aussi avoir des *méthodes* c'est-à-dire des fonctions définies pour être utilisées seulement avec cette classe. Vous pouvez utiliser ces fonctionnalités seulement avec un objet de cette classe. Par exemple, Python fournit une méthode `append` pour la classe `list` ce qui vous permet d'ajouter un objet à la fin de la liste. Par exemple, `mylist.append('un objet')` va ajouter cette chaîne de caractères à la liste `mylist`. Notez l'utilisation de la notation pointée pour accéder aux méthodes des objets.
 
-A class can also have *fields* which are nothing but variables defined for use with respect to that class only. You can use these variables/names only when you have an object of that class. Fields are also accessed by the dotted notation, for example, `mylist.field`.
+Une classe peut aussi avoir des *champs* qui sont juste des variables définies pour être utilisées dans le cadre de cette classe uniquement. Vous pouvez utiliser ces variables/noms seulement quand vous avez un objet de cette classe. Les champs sont aussi accédés avec la notation pointée, par exemple, `mylist.field`.
 
-Example (save as `ds_using_list.py`):
+Exemple (sauvegarder sous `ds_using_list.py`):
 
-<pre><code class="lang-python">{% include "./programs/ds_using_list.py" %}</code></pre>
+```python
+# Voici ma liste de commissions
+shoplist = ['pomme', 'mangue', 'carotte', 'banane']
 
-Output:
+print('J\'ai', len(shoplist), 'objets à acheter.')
 
-<pre><code>{% include "./programs/ds_using_list.txt" %}</code></pre>
+print('Ces objets sont :', end=' ')
+for item in shoplist:
+    print(item, end=' ')
 
-**How It Works**
+print('\nJe dois acheter du riz.')
+shoplist.append('riz')
+print('Ma liste de commissions contient maintenant ', shoplist)
+
+print('Je vais trier ma liste maintenant')
+shoplist.sort()
+print('Ma liste triée  est', shoplist)
+
+print('Le premier objet que je vais acheter est', shoplist[0])
+olditem = shoplist[0]
+del shoplist[0]
+print('J\'ai acheté', olditem)
+print('Ma liste de commissions est', shoplist)
+```
+
+Résultat:
+
+```
+$ python using_list.py
+J'ai 4 objets à acheter.
+Ces objets sont : pomme mangue carotte banane
+Je dois acheter du riz.
+Ma liste de commissions contient maintenant  ['pomme', 'mangue', 'carotte', 'banane', 'riz']
+Je vais trier ma liste maintenant
+Ma liste triée  est ['banane', 'carotte', 'mangue', 'pomme', 'riz']
+Le premier objet que je vais acheter est banane
+J'ai acheté banane
+Ma liste de commissions est ['carotte', 'mangue', 'pomme', 'riz']
+```
+
+**Comment ça marche**
 
 The variable `shoplist` is a shopping list for someone who is going to the market. In `shoplist`, we only store strings of the names of the items to buy but you can add _any kind of object_ to a list including numbers and even other lists.
 
@@ -52,15 +86,15 @@ Tuples are defined by specifying items separated by commas within an optional pa
 
 Tuples are usually used in cases where a statement or a user-defined function can safely assume that the collection of values (i.e. the tuple of values used) will not change.
 
-Example (save as `ds_using_tuple.py`):
+Exemple (sauvegarder sous `ds_using_tuple.py`):
 
 <pre><code class="lang-python">{% include "./programs/ds_using_tuple.py" %}</code></pre>
 
-Output:
+Résultat:
 
 <pre><code>{% include "./programs/ds_using_tuple.txt" %}</code></pre>
 
-**How It Works**
+**Comment ça marche**
 
 The variable `zoo` refers to a tuple of items. We see that the `len` function can be used to get the length of the tuple. This also indicates that a tuple is a [sequence](#sequence) as well.
 
@@ -90,15 +124,15 @@ Remember that key-value pairs in a dictionary are not ordered in any manner. If 
 
 The dictionaries that you will be using are instances/objects of the `dict` class.
 
-Example (save as `ds_using_dict.py`):
+Exemple (sauvegarder sous `ds_using_dict.py`):
 
 <pre><code class="lang-python">{% include "./programs/ds_using_dict.py" %}</code></pre>
 
-Output:
+Résultat:
 
 <pre><code>{% include "./programs/ds_using_dict.txt" %}</code></pre>
 
-**How It Works**
+**Comment ça marche**
 
 We create the dictionary `ab` using the notation already discussed. We then access key-value pairs by specifying the key using the indexing operator as discussed in the context of lists and tuples. Observe the simple syntax.
 
@@ -124,15 +158,15 @@ The major features are *membership tests*, (i.e. the `in` and `not in` expressio
 
 The three types of sequences mentioned above - lists, tuples and strings, also have a *slicing* operation which allows us to retrieve a slice of the sequence i.e. a part of the sequence.
 
-Example (save as `ds_seq.py`):
+Exemple (sauvegarder sous `ds_seq.py`):
 
 <pre><code class="lang-python">{% include "./programs/ds_seq.py" %}</code></pre>
 
-Output:
+Résultat:
 
 <pre><code>{% include "./programs/ds_seq.txt" %}</code></pre>
 
-**How It Works**
+**Comment ça marche**
 
 First, we see how to use indexes to get individual items of a sequence. This is also referred to as the _subscription operation_. Whenever you specify a number to a sequence within square brackets as shown above, Python will fetch you the item corresponding to that position in the sequence. Remember that Python starts counting numbers from 0. Hence, `shoplist[0]` fetches the first item and `shoplist[3]` fetches the fourth item in the `shoplist`sequence.
 
@@ -185,7 +219,7 @@ True
 {'brazil', 'india'}
 ```
 
-**How It Works**
+**Comment ça marche**
 
 If you remember basic set theory mathematics from school, then this example is fairly self-explanatory.  But if not, you can google "set theory" and "Venn diagram" to better understand our use of sets in Python.
 
@@ -195,15 +229,15 @@ When you create an object and assign it to a variable, the variable only _refers
 
 Generally, you don't need to be worried about this, but there is a subtle effect due to references which you need to be aware of:
 
-Example (save as `ds_reference.py`):
+Exemple (sauvegarder sous `ds_reference.py`):
 
 <pre><code class="lang-python">{% include "./programs/ds_reference.py" %}</code></pre>
 
-Output:
+Résultat:
 
 <pre><code>{% include "./programs/ds_reference.txt" %}</code></pre>
 
-**How It Works**
+**Comment ça marche**
 
 Most of the explanation is available in the comments.
 
@@ -219,15 +253,15 @@ We have already discussed strings in detail earlier. What more can there be to k
 
 The strings that you use in programs are all objects of the class `str`.  Some useful methods of this class are demonstrated in the next example. For a complete list of such methods, see `help(str)`.
 
-Example (save as `ds_str_methods.py`):
+Exemple (sauvegarder sous `ds_str_methods.py`):
 
 <pre><code class="lang-python">{% include "./programs/ds_str_methods.py" %}</code></pre>
 
-Output:
+Résultat:
 
 <pre><code>{% include "./programs/ds_str_methods.txt" %}</code></pre>
 
-**How It Works**
+**Comment ça marche**
 
 Here, we see a lot of the string methods in action. The `startswith` method is used to find out whether the string starts with the given string. The `in` operator is used to check if a given string is a part of the string.
 

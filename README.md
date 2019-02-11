@@ -1,10 +1,10 @@
 # A Byte of Python
 
-"A Byte of Python" est un livre libre sur la programmation avec le langage Python. Il peut être vu comme un tutoriel ou un guide sur le langage Python pour les débutants. Si tout ce que vous savez sur l'informatique se résume à enregistrer des fichiers, alors ce livre est fait pour vous.
+"A Byte of Python" est un livre libre de droits sur la programmation avec le langage Python. Il peut être vu comme un tutoriel ou un guide sur le langage Python pour les débutants. Si tout ce que vous savez sur l'informatique se résume à enregistrer des fichiers, alors ce livre est fait pour vous.
 
 ## Pour Python version 3
 
-Ce livre vous apprendra à utiliser Python version 3. Ce guide vous aidera également dans votre adaptation à la version 2 de Python, plus ancienne et plus courante.
+Ce livre vous apprendra à utiliser Python version 3. Il vous aidera également dans votre adaptation à la version 2 de Python, plus ancienne et plus courante.
 
 ## Qui lit A Byte of Python? {#who-reads-bop}
 
@@ -50,7 +50,7 @@ Voilà ce que disent les lecteurs à propos du livre:
 
 <!-- -->
 
-> A Byte of Python, écrit par Swaroop. (c'est le livre que je lis actuellement). Probablement le meilleur pour commencer, et probablement le meilleur au monde pour chaque débutant ou même pour un utilisateur plus expérimenté.
+> A Byte of Python, écrit par Swaroop (c'est le livre que je lis actuellement). Probablement le meilleur pour commencer, et probablement le meilleur au monde pour chaque débutant ou même pour un utilisateur plus expérimenté.
 > -- [Apostolos](http://apas.gr/2010/04/27/learning-python/)
 
 <!-- -->
@@ -231,17 +231,17 @@ Le livre est même utilisé par la NASA! Il est utilisé au [Jet Propulsion Labo
 
 Ce livre est ou à été utilisé comme support dans différentes institutions:
 
-- 'Principes des langages de programmation' [Vrije Universiteit, Amsterdam](http://www.few.vu.nl/~nsilvis/PPL/2007/index.html)
-- 'Concepts de base de l'informatique' [Université de California, Davis](http://www.cs.ucdavis.edu/courses/exp_course_desc/10.html)
-- 'Programmer avec Python' [Université de Harvard](http://www.people.fas.harvard.edu/~preshman/python_winter.html)
-- 'Introduction à la programmation' [Université de Leeds](http://www.comp.leeds.ac.uk/acom1900/)
-- 'Introduction à la programmation d'applications' [Université de Boston](http://www.cs.bu.edu/courses/cs108/materials.html)
-- 'Compétences informatiques pour la météorologie' [Université d'Oklahoma](http://gentry.metr.ou.edu/byteofpython/)
-- 'Géotraitement' [Université d'État du Michigan](http://www.msu.edu/~ashton/classes/825/index.html)
-- 'Systèmes Web sémantiques multi-agents' [Université d'Édimbourg](http://homepages.inf.ed.ac.uk/ewan/masws/)
-- 'Introduction à l'informatique et à la programmation' [MIT OpenCourseWare](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00sc-introduction-to-computer-science-and-programming-spring-2011/references/)
-- 'Programmation de base à la Faculté des sciences sociales, Université de Ljubljana, Slovénie' -- [Aleš Žiberna](mailto:ales.ziberna@fdv.uni-lj.si) dit _"J'ai (ainsi que mon prédécesseur) utilisé votre livre comme littérature principale pour ce cours"_
--  'Introduction à la programmation', Département des sciences de l'information, Université de Zadar, Croatie -- Krešimir Zauder dit _"J'aimerais vous informer que la lecture de A Byte of Python est une lecture obligatoire de mon cours"_
+- « Principes des langages de programmation » [Vrije Universiteit, Amsterdam](http://www.few.vu.nl/~nsilvis/PPL/2007/index.html)
+- « Concepts de base de l'informatique » [Université de California, Davis](http://www.cs.ucdavis.edu/courses/exp_course_desc/10.html)
+- « Programmer avec Python » [Université de Harvard](http://www.people.fas.harvard.edu/~preshman/python_winter.html)
+- « Introduction à la programmation » [Université de Leeds](http://www.comp.leeds.ac.uk/acom1900/)
+- « Introduction à la programmation d'applications » [Université de Boston](http://www.cs.bu.edu/courses/cs108/materials.html)
+- « Compétences informatiques pour la météorologie » [Université d'Oklahoma](http://gentry.metr.ou.edu/byteofpython/)
+- « Géotraitement » [Université d'État du Michigan](http://www.msu.edu/~ashton/classes/825/index.html)
+- « Systèmes Web sémantiques multi-agents » [Université d'Édimbourg](http://homepages.inf.ed.ac.uk/ewan/masws/)
+- « Introduction à l'informatique et à la programmation » [MIT OpenCourseWare](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00sc-introduction-to-computer-science-and-programming-spring-2011/references/)
+- « Programmation de base à la Faculté des sciences sociales, Université de Ljubljana, Slovénie » -- [Aleš Žiberna](mailto:ales.ziberna@fdv.uni-lj.si) dit _"J'ai (ainsi que mon prédécesseur) utilisé votre livre comme littérature principale pour ce cours"_
+- « Introduction à la programmation », Département des sciences de l'information, Université de Zadar, Croatie -- Krešimir Zauder dit _"J'aimerais vous informer que la lecture de A Byte of Python est une lecture obligatoire de mon cours"_
 
 ## License
 
@@ -255,9 +255,9 @@ Cela signifie que:
 
 Notez cependant:
 
-- S'il vous plaît, ne vendez *pas* de copies électroniques ou imprimées du livre à moins que vous n'ayez clairement indiqué dans la description que ces copies ne sont *pas* de l'auteur original de ce livre.
-- L'attribution *doit* être indiquée dans la description d'introduction et la page de couverture du document en renvoyant à {{book.officialUrl}} et en indiquant clairement que le texte original peut être récupéré à partir de cet emplacement.
-- Tout code/script offert dans ce livre est licencié sous la licence [3-clause BSD](http://www.opensource.org/licenses/bsd-license.php) sauf avis contraire.
+- S'il vous plaît, ne vendez *pas* de copies électroniques ou imprimées du livre à moins que vous n'ayez clairement indiqué dans la description que ces copies ne sont *pas* de l'auteur original du livre.
+- L'attribution *doit* être indiquée dans la description d'introduction et la page de couverture du document en renvoyant à https://python.swaroopch.com/ et en indiquant clairement que le texte original peut être récupéré à cet emplacement.
+- Sauf avis contraire, tout le code compris dans ce livre est licencié sous la licence [BSD à 3-clause](http://www.opensource.org/licenses/bsd-license.php).
 
 ## Lire maintenant
 
@@ -265,7 +265,7 @@ Vous pouvez lire le livre en ligne à l'adresse suivante https://python.swaroopc
 
 ## Acheter le livre
 
-Une copie papier du livre peut être achetée à l'adresse {{ book.buyBookUrl }}, pour le plaisir de lire hors-ligne, et pour soutenir le développement permanent et l'amélioration continue de ce livre.
+Une copie papier du livre peut être achetée à l'adresse https://www.swaroopch.com/buybook/, pour le plaisir de lire hors-ligne, et pour soutenir le développement permanent et l'amélioration continue de ce livre.
 
 ## Téléchargement
 
@@ -279,4 +279,4 @@ Rendez-vous sur https://github.com/swaroopch/byte-of-python pour accéder au con
 
 ## Lire le livre dans votre langue maternelle
 
-Si vous souhaitez lire ou contribuer à la traduction de ce livre dans d'autres langues, consultez la section [Translations](./translations.md#translations).
+Si vous souhaitez lire ou contribuer à la traduction de ce livre dans d'autres langues, consultez la section [Traductions](./translations.md#translations).

@@ -1,6 +1,6 @@
 # Les Bases
 
-Afficher seulement 'Hello World' n'est pas assez, n'est-ce pas ? Vous voulez faire plus que cela - vous voulez prendre des choses en entrée, les manipuler et en sortir quelque chose. Nous pouvons réussir cela  avec Python en utilisant des constantes et des variables.
+Afficher seulement « Hello World » n'est pas assez, n'est-ce pas ? Vous voulez faire plus que cela - vous voulez prendre des choses en entrée, les manipuler et en sortir quelque chose. Nous pouvons réussir cela avec Python en utilisant des constantes et des variables.
 
 ## Commentaires
 
@@ -40,15 +40,15 @@ Cela s'appelle un littéral parce que c'est _littéral_ - vous pouvez utiliser l
 Les nombres dans Python sont principalement divisés en deux types - entiers, nombres en virgule flottante.
 
 * Un exemple d'un entier est `2` qui est juste un nombre entier.
-* Des exemples de nombres en virgule flottante (ou ''floats''  en abrégé) sont `3.23` et `52.3E-4`. La notation `E`  indique des puissances de 10. Dans ce cas, `52.3E-4` signifie `52.3 * 10^-4`.
+* Des exemples de nombres en virgule flottante (ou *floats* en abrégé) sont `3.23` et `52.3E-4`. La notation `E`  indique des puissances de 10. Dans ce cas, `52.3E-4` signifie `52.3 * 10^-4`.
 
 > **Note pour les programmeurs expérimentés**
 >
-> Il n'y a pas de type 'long int' à part. Le type entier par défaut  peut être une valeur de n'importe quelle longueur.
+> Il n'y a pas de type « long int » à part. Le type entier par défaut peut être une valeur de n'importe quelle longueur.
 
 ## Chaînes de caractères
 
-Une chaîne de caractères est une ''suite'' de ''caractères''. Les chaînes de caractères sont juste un groupe de mots.
+Une chaîne de caractères est une *suite* de *caractères*. Les chaînes de caractères sont juste un groupe de mots.
 
 Vous utiliserez des chaînes de caractères dans pratiquement chaque programme que vous écrirez, donc soyez attentifs à ce qui suit.
 
@@ -67,10 +67,10 @@ Les chaînes de caractères entre doubles guillemets fonctionnent exactement de 
 Vous pouvez déclarer les chaînes de caractères sur plusieurs lignes en utilisant des triples guillemets - (`"""` ou `'''`). Vous pouvez utiliser des guillemets simples et des doubles guillemets librement à l'intérieur des triples guillemets. Un exemple est:
 
 ```python
-'''This is a multi-line string. This is the first line.
-This is the second line.
-"What's your name?," I asked.
-He said "Bond, James Bond."
+'''Ceci est une chaîne multi-lignes. Ceci est la première ligne.
+Ceci est la deuxième ligne.
+« Quel est votre nom? », Ai-je demandé.
+Il a dit « Bond, James Bond. »
 '''
 ```
 
@@ -78,15 +78,15 @@ He said "Bond, James Bond."
 
 Cela signifie que quand vous avez créé une chaîne, vous ne pouvez pas la changer. Bien que cela semble être une mauvaise chose, ce n'est pas le cas. Nous verrons pourquoi cela n'est pas une limitation dans les différents programmes à venir.
 
-> **Note for C/C++ Programmers**
-> 
-> There is no separate `char` data type in Python. There is no real need for it and I am sure you won't miss it.
+> **Note pour les développeurs C/C++**
+>
+> Il n'y a pas de type de données `char` dans Python. Cela n’est pas vraiment nécessaire, et sûr qu'il ne vous manquera pas.
 
 <!-- -->
 
-> **Note for Perl/PHP Programmers**
-> 
-> Remember that single-quoted strings and double-quoted strings are the same - they do not differ in any way.
+> **Note pour les développeurs Perl/PHP**
+>
+> Rappelez-vous que les chaînes entre guillemets simples et les chaînes à guillemets doubles sont équivalentes. Elles ne diffèrent en aucune manière.
 
 ### La méthode format
 
@@ -102,7 +102,7 @@ print('{0} avait {1} ans quand il a écrit ce livre'.format(name, age))
 print('Pourquoi {0} joue avec ce python?'.format(name))
 ```
 
-Output:
+Résultat:
 
 ```
 $ python str_format.py
@@ -112,7 +112,7 @@ Pourquoi Swaroop joue avec ce python?
 
 **Comment cela marche**
 
-Une chaîne de caractères peut utiliser certaines spécifications et par la suite, la méthode ''format'' peut être appelée pour remplacer ces spécifications avec les arguments correspondants à la méthode `format`. 
+Une chaîne de caractères peut utiliser certaines spécifications et par la suite, la méthode ''format'' peut être appelée pour remplacer ces spécifications avec les arguments correspondants à la méthode `format`.
 
 Observez le premier usage dans lequel nous utilisons `{0}` et cela correspond à la variable `name` qui est le premier argument de la méthode format. De la même manière, la deuxième spécification est `{1}` qui correspond à `age` qui est le deuxième argument de la méthode format.
 
@@ -147,7 +147,7 @@ print('Pourquoi {name} joue avec ce python?'.format(name=name))
 
 qui donnera également le même résultat que le programme précédent.
 
-Python 3.6 a introduit un moyen plus court de nommer les paramètres, appelé "f-strings":
+Python 3.6 a introduit un moyen plus court de nommer les paramètres, appelé « f-strings »:
 
 ```python
 age = 20
@@ -171,7 +171,7 @@ print('{0:_^11}'.format('hello'))
 print('{name} a écrit {book}'.format(name='Swaroop', book='A Byte of Python'))
 ```
 
-donne:
+donne :
 
 ```
 0.333
@@ -179,7 +179,7 @@ ___hello___
 Swaroop a écrit A Byte of Python
 ```
 
-Puisque nous discutons formatage, notez que `print` se termine toujours par un caractère invisible de "nouvelle ligne" (`\n`), de sorte que des appels répétés à `print` s’imprimeront sur des lignes distinctes. Pour empêcher l'impression de ce caractère de nouvelle ligne, vous pouvez spécifier vouloir finir avec une chaîne vide:
+Puisque nous discutons formatage, notez que `print` se termine toujours par un caractère invisible de « nouvelle ligne » (`\n`), de sorte que des appels répétés à `print` s’imprimeront sur des lignes distinctes. Pour empêcher l'impression de ce caractère de nouvelle ligne, vous pouvez spécifier vouloir finir avec une chaîne vide:
 
 ```python
 print('a', end='')
@@ -234,7 +234,7 @@ est équivalent à
 "Ceci est la première phrase. Ceci est la deuxième phrase."
 ```
 
-### Chaînes "brutes"
+### Chaînes « brutes »
 
 Si vous devez spécifier des chaînes pour lesquelles aucun traitement spécial, tel que les caractère d'échappement et de contrôle, ne sont traités, vous devez spécifier une chaîne _brute_ (_raw_) en préfixant `r` ou` R` à la chaîne. Un exemple est:
 
@@ -243,12 +243,12 @@ r"Les retours à la ligne sont indiqués par \n"
 ```
 
 > **Remarque pour les utilisateurs d'expressions régulières**
-> 
+>
 > Utilisez toujours des chaînes brutes lorsque vous utilisez des expressions régulières. Sinon, vous aurez besoin de beaucoup de caractères d'échappements. Par exemple, les références arrières peuvent être appelées `'\\1'` ou `r'\1'`.
 
 ## Variables
 
-Utiliser seulement des constantes littérales peut rapidement devenir ennuyeux - nous avons besoin de solutions pour ranger n'importe quelles informations et les manipuler. C'est là que les ''variables'' interviennent. Les variables sont exactement ce que leur nom implique - leur valeur peut changer, vous pouvez stocker n'importe quoi avec une variable. Les variables sont juste des endroits où vous rangez de l'information dans la mémoire de l'ordinateur. Contrairement aux constantes littérales, vous avez besoin d'une méthode pour accéder à ces variables et donc vous leur donnez des noms.
+Utiliser seulement des constantes littérales peut rapidement devenir ennuyeux - nous avons besoin de solutions pour ranger n'importe quelles informations et les manipuler. C'est là que les *variables* interviennent. Les variables sont exactement ce que leur nom implique - leur valeur peut changer, vous pouvez stocker n'importe quoi avec une variable. Les variables sont juste des endroits où vous rangez de l'information dans la mémoire de l'ordinateur. Contrairement aux constantes littérales, vous avez besoin d'une méthode pour accéder à ces variables et donc vous leur donnez des noms.
 
 ## Nommage D'Identifiants
 
@@ -265,7 +265,7 @@ Les variables peuvent contenir des valeurs de différents types appelés _types 
 
 ## Objets
 
-Rappelez-vous, Python fait référence à tout ce qui est utilisé dans un programme en tant que _objet_. Cela est compris dans le sens générique. Au lieu de dire "le _quelque chose_", nous disons "l'_objet_".
+Rappelez-vous, Python fait référence à tout ce qui est utilisé dans un programme en tant que _objet_. Cela est compris dans le sens générique. Au lieu de dire « le _quelque chose_ », nous disons « l'_objet_ ».
 
 
 > **Note pour les utilisateurs de la Programmation Orientée Objet**
@@ -274,9 +274,9 @@ Rappelez-vous, Python fait référence à tout ce qui est utilisé dans un progr
 
 Nous allons voir comment utiliser des variables avec des constantes littérales. Enregistrez l'exemple suivant et lancez le programme.
 
-## How to write Python programs
+## Comment écrire des programmes Python
 
-Henceforth, the standard procedure to save and run a Python program is as follows:
+Désormais, la procédure standard pour enregistrer et exécuter un programme Python est la suivante:
 
 ### Pour PyCharm
 
@@ -285,9 +285,13 @@ Henceforth, the standard procedure to save and run a Python program is as follow
 3. Tapez le code du programme donné dans l'exemple.
 4. Cliquez avec le bouton droit et exécutez le fichier actuel.
 
-REMARQUE: Si vous devez fournir des [arguments de ligne de commande](./modules.md#modules), cliquez sur `Run` -> `Edit Configurations` et tapez les arguments dans la section `Script parameters:` puis cliquez sur le bouton `OK`:
-
-![Arguments en ligne de commande PyCharm](./img/pycharm_command_line_arguments.png)
+> **Note**
+>
+> Si vous devez fournir des [arguments de ligne de commande](./modules.md#modules).
+>
+> Cliquez sur `Run` -> `Edit Configurations` et tapez les arguments dans la section `Script parameters:` puis cliquez sur le bouton `OK`:
+>
+>![Arguments en ligne de commande PyCharm](./img/pycharm_command_line_arguments.png)
 
 ### Pour les autres éditeurs
 
@@ -330,7 +334,7 @@ Ensuite nous ajoutons `1` à la valeur stockée dans `i` et nous la stockons à 
 De la même manière, nous assignons la chaîne littérale à la variable `s` et nous l'affichons.
 
 > **Note pour les programmeurs dans des langages statiques**
-> 
+>
 > Les variables sont créées en leur donnant juste une valeur. Il n'y a pas de déclaration ou de définition de type de données.
 
 ## Lignes Physiques Et Lignes Logiques
@@ -348,7 +352,7 @@ i = 5
 print(i)
 ```
 
-est la même chose que 
+est la même chose que
 
 ```python
 i = 5;
@@ -424,13 +428,13 @@ IndentationError: unexpected indent
 Notez qu'il y a un espace au début de la deuxième ligne. L'erreur indiquée par Python nous dit que la syntaxe est invalide, c'est-à-dire que le programme n'est pas correctement écrit. Cela vous dit que _vous ne pouvez pas commencer des nouveaux blocs n'importe où_ (à part pour le bloc principal par défaut que vous avez constamment utilisé, bien sûr). Les cas dans lesquels vous pouvez utiliser des nouveaux blocs seront détaillés dans les chapitres suivants comme le chapitre sur le [contrôle de flux](./control_flow.md#control_flow)..
 
 > **Comment indenter**
-> 
+>
 > Utilisez quatre espaces pour indenter. C'est la recommendation officiele du language Python. Les bons éditeurs le feront automatiquement pour vous. Soyez sûr d'utiliser un nombre cohérent d'espaces pour indenter, sinon votre programme ne fonctionnera pas, ou aura des comportements inattendus.
 
 <!-- -->
 
 > **Note pour les programmeurs en langage statique**
-> 
+>
 > Python utilisera l'indentation pour les blocs et n'utilisera jamais les accolades. Lancez `from __future__ import braces` pour en savoir plus.
 
 ## Récapitulatif

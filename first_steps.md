@@ -1,6 +1,6 @@
 # Premiers pas
 
-Nous allons maintenant voir comment exécuter le traditionnel programme 'Hello World' en Python. Cela vous apprendra comment écrire, enregistrer et exécuter un programme Python.
+Nous allons maintenant voir comment exécuter le traditionnel programme « Hello World » en Python. Cela vous apprendra comment écrire, enregistrer et exécuter un programme Python.
 
 Il y a deux façons d'utiliser Python pour lancer votre programme - utiliser le l'interpréteur interactif ou un fichier source. Nous allons maintenant voir comment utiliser ces deux méthodes.
 
@@ -85,7 +85,7 @@ Cliquez avec le bouton droit de la souris sur le `helloworld` dans la barre lat�
 
 Il vous sera demandé de taper le nom, tapez `hello`:
 
-![PyCharm Dialogue "New File"](./img/pycharm_new_file_input.png)
+![PyCharm Dialogue « New File »](./img/pycharm_new_file_input.png)
 
 Vous pouvez maintenant voir un fichier ouvert pour vous:
 
@@ -114,10 +114,10 @@ Pour plus d'informations sur PyCharm, consultez la page [Démarrage rapide PyCha
 
 1. Installez [Vim](http://www.vim.org)
      * Les utilisateurs de Mac OS X doivent installer le paquet `macvim` via [HomeBrew](http://brew.sh/)
-     * Les utilisateurs Windows doivent télécharger l'"installeur executable" depuis le [site Web Vim](http://www.vim.org/download.php).
+     * Les utilisateurs Windows doivent télécharger l'_installeur executable_ depuis le [site Web Vim](http://www.vim.org/download.php).
      * Les utilisateurs de GNU/Linux doivent obtenir Vim à partir du gestionnaire de paquets de leur distribution, par exemple, les utilisateurs de Debian et Ubuntu peuvent installer le paquet `vim`.
 2. Installez le plug-in [jedi-vim](https://github.com/davidhalter/jedi-vim) pour l'auto-complétion.
-3. Installez le paquet python `jedi` correspondant:` pip install -U jedi`
+3. Installez le paquet python `jedi` correspondant: `pip install -U jedi`
 
 ## Emacs
 
@@ -129,7 +129,7 @@ Pour plus d'informations sur PyCharm, consultez la page [Démarrage rapide PyCha
 
 ## Utiliser un fichier source
 
-Revenons à la programmation. La tradition veut que, lors de l'apprentissage d'un nouveau langage, le premier programme écrit et lancé est le programme 'Hello World' - tout ce qu'il fait est d'afficher 'Hello World' quand vous le lancez. Comme le dit Simon Cozens[^1], c'est la "traditionnelle incantation aux dieux de la programmation pour vous aider à mieux apprendre le langage."
+Revenons à la programmation. La tradition veut que, lors de l'apprentissage d'un nouveau langage, le premier programme écrit et lancé est le programme « Hello World ». Tout ce qu'il fait est d'afficher « Hello World » quand vous le lancez. Comme le dit Simon Cozens[^1], c'est la « traditionnelle incantation aux dieux de la programmation pour vous aider à mieux apprendre le langage ».
 
 Lancez l'éditeur de votre choix, saisissez le programme suivant et enregistrez-le en tant que `hello.py`
 
@@ -170,7 +170,7 @@ Au cas où vous auriez une erreur, veuillez taper votre programme _exactement_ c
 
 **Comment ça marche**
 
-Un programme Python est composé d'_instructions_. Dans notre premier programme, nous n’avons qu’une instruction. Dans cette instruction, nous appelons l'_instruction_ `print` à laquelle nous fournissons le texte "hello world".
+Un programme Python est composé d'_instructions_. Dans notre premier programme, nous n’avons qu’une instruction. Dans cette instruction, nous appelons l'_instruction_ `print` à laquelle nous fournissons le texte « hello world ».
 
 ## Obtenir de l'aide
 
@@ -190,4 +190,4 @@ Maintenant que vous êtes un utilisateur Python, apprenons quelques concepts Pyt
 
 ---
 
-[^1]: L'auteur de l'incroyable livre 'Beginning Perl'
+[^1]: L'auteur de l'incroyable livre « Beginning Perl »
