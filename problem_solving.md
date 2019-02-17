@@ -376,12 +376,12 @@ Pouvez-vous essayer d'écrire la cinquième version qui utilise le module [zipfi
 
 Nous avons parcouru les différentes *phases* de l'écriture d'un logiciel. Ces phases peuvent être résumées comme suit :
 
-# Quoi (Analyse)
-# Comment (Conception)
-# Le faire (Implémentation)
-# Test (Test et Débogage)
-# Utilisation (Opération ou Déploiement)
-# Maintenance (Amélioration)
+* Quoi (Analyse)
+* Comment (Conception)
+* Le faire (Implémentation)
+* Test (Test et Débogage)
+* Utilisation (Opération ou Déploiement)
+* Maintenance (Amélioration)
 
 Une manière recommandée d'écrire un programme est la procédure que nous avons suivie en créant le script backup : faire l'analyse et la conception. Commencer à implémenter une version simple. Tester et déboguer. L'utiliser pour s'assurer qu'il fonctionne comme prévu. Maintenant, ajouter les fonctionnalités que vous voulez et continuer le cycle Créer-Tester-Utiliser autant de fois que nécessaire.
 

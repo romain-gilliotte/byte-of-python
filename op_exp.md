@@ -1,4 +1,4 @@
-# Opérateurs Et Expressions {#op-exp}
+# Opérateurs et expressions {#op-exp}
 
 La plupart des instructions (lignes logiques) que vous écrierez contiendront _des expressions_. Un exemple simple d'une expression est `2 + 3`. Une expression peut être décomposée en opérateurs et opérandes.
 
