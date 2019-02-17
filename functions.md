@@ -34,7 +34,7 @@ Notez que nous pouvons appeler la même fonction deux fois ce qui implique que n
 
 ## Paramètres de fonction
 
-Une fonction peut prendre des paramètres, qui sont des valeurs fournies à la fonction afin que la fonction *fasse* quelque chose en utilisant ces valeurs. Ces paramètres sont comme des variables, sauf que les valeurs de ces variables sont définies quand nous appelons la fonction et ont déjà des valeurs assignées quand la fonction est exécutée.
+Une fonction peut prendre des paramètres, qui sont des valeurs fournies à la fonction afin que la fonction *fasse* quelque chose en utilisant ces valeurs. Ces paramètres sont comme des variables, sauf que les valeurs de ces variables sont définies quand nous appelons la fonction et ont déjà des valeurs affectées quand la fonction est exécutée.
 
 Les paramètres sont spécifiés à l'intérieur de la paire de parenthèses de la définition de la fonction, séparées par des virgules. Quand nous appelons la fonction, nous fournissons les valeurs de la même manière. Notez la terminologie utilisée - les noms donnés dans la définition de la fonction sont appelés des  *paramètres* quand les valeurs que vous fournissez à l'appel de la fonction sont des *arguments*.
 
@@ -71,7 +71,7 @@ $ python func_param.py
 
 Ici, nous définissons une fonction appelée  `print_max` qui prend deux paramètres appelés `a` et `b`.  Nous trouvons le nombre le plus grand en utilisant une simple instruction `if..else` et nous l'affichons.
 
-Dans la première utilisation de `print_max`, nous fournissons directement les nombres, c'est-à-dire les arguments. Dans la deuxième utilisation, nous appelons la fonction en utilisant des variables. `print_max(x, y)` fait que la valeur de l'argument `x` est assignée au paramètre `a` et la valeur de l'argument `y` assignée au paramètre `b`. La fonction print_max agit de la même manière dans les deux cas.
+Dans la première utilisation de `print_max`, nous fournissons directement les nombres, c'est-à-dire les arguments. Dans la deuxième utilisation, nous appelons la fonction en utilisant des variables. `print_max(x, y)` fait que la valeur de l'argument `x` est affectée au paramètre `a` et la valeur de l'argument `y` affectée au paramètre `b`. La fonction print_max agit de la même manière dans les deux cas.
 
 ## Variables locales
 
@@ -108,13 +108,13 @@ x est toujours 50
 
 La première fois que nous imprimons la *valeur* du nom *x* avec la première ligne du corps de la fonction, Python utilise la valeur du paramètre déclaré dans le bloc principal, au-dessus de la définition de la fonction.
 
-Ensuite, nous assignons la valeur `2` à `x`. Le nom `x` est local dans notre fonction. Ainsi, lorsque nous changeons la valeur de `x` dans la fonction, le `x` défini dans le bloc principal reste inchangé.
+Ensuite, nous affectons la valeur `2` à `x`. Le nom `x` est local dans notre fonction. Ainsi, lorsque nous changeons la valeur de `x` dans la fonction, le `x` défini dans le bloc principal reste inchangé.
 
 Avec la dernière instruction `print`, nous affichons la valeur de `x` telle que définie dans le bloc principal, confirmant ainsi qu'elle n'est en réalité pas affectée par l'affectation locale dans la fonction précédemment appelée.
 
 ## L'instruction `global` {#global-statement}
 
-Si vous voulez assigner une valeur à un nom défini au niveau supérieur de votre programme (c'est-à-dire en dehors de la portée de n'importe quelle fonction ou classe), alors vous devez indiquer à Python que ce nom n'est pas local, mais qu'il est *global*. Vous faites cela avec l'instruction `global` . Il est impossible d'assigner une valeur à une variable définie en dehors d'une fonction sans l'instruction `global` .
+Si vous voulez affecter une valeur à un nom défini au niveau supérieur de votre programme (c'est-à-dire en dehors de la portée de n'importe quelle fonction ou classe), alors vous devez indiquer à Python que ce nom n'est pas local, mais qu'il est *global*. Vous faites cela avec l'instruction `global` . Il est impossible d'affecter une valeur à une variable définie en dehors d'une fonction sans l'instruction `global` .
 
 Vous pouvez utiliser les valeurs de telles variables définies en dehors d'une fonction (en supposant qu'il n'existe pas de variable avec le même nom à l'intérieur de la fonction). Cependant, cela est déconseillé et devrait être évité car le programme devient confus et le lecteur ne sait plus où est la définition de la variable. Utiliser l'instruction `global` indique clairement que la variable est définie dans un bloc éloigné.
 
@@ -145,7 +145,7 @@ x vaut 2
 
 **Comment ça marche**
 
-L'instruction `global` est utilisée pour déclarer que `x` est une variable globale - d'où, quand nous assignons une valeur à `x` à l'intérieur de la fonction, ce changement est mis en évidence quand nous utilisons la valeur de `x` dans le bloc principal .
+L'instruction `global` est utilisée pour déclarer que `x` est une variable globale - d'où, quand nous affectons une valeur à `x` à l'intérieur de la fonction, ce changement est mis en évidence quand nous utilisons la valeur de `x` dans le bloc principal .
 
 Vous pouvez déclarer plusieurs variables globales en utilisant la même instruction `global`. Par exemple, `global x, y, z`.
 
@@ -183,7 +183,7 @@ Au premier appel de `say`, nous fournissons seulement la chaîne de caractères 
 >
 > Seuls les paramètres à la fin de la liste de paramètres peuvent recevoir une valeur par défaut, c'est-à-dire que vous ne pouvez avoir un paramètre avec une valeur par défaut avant un paramètre sans valeur par défaut dans la liste des paramètres de la fonction.
 >
-> La raison est que les valeurs sont assignées aux paramètres par position. Par exemple, `def func(a, b=5)` est valide, mais `def func(a=5, b)` n'est *pas valide*.
+> La raison est que les valeurs sont affectées aux paramètres par position. Par exemple, `def func(a, b=5)` est valide, mais `def func(a=5, b)` n'est *pas valide*.
 
 ## Paramètres nommés
 

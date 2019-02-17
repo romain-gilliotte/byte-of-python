@@ -115,7 +115,7 @@ Voici un aperçu rapide des opérateurs disponibles:
     - Si x est `True`, il renvoie True, sinon il rencoir l'évaluation de y
     - `x = True; y = False; x or y` vaut `True`. La _short-circuit evaluation_ s'applique ici aussi.
 
-## Raccourci pour les opérations mathématiques et les assignations
+## Raccourci pour les opérations mathématiques et les affectations
 
 Il est fréquent de faire une opération mathématique avec une variable et ensuite affecter à nouveau le résultat de l'opération à la variable, et donc il y a un raccourci pour de telles expressions:
 
@@ -137,7 +137,7 @@ Notez que `variable = variable operation expression` devient `variable operation
 
 Si vous avez une expression comme `2 + 3 * 4`, fait-on d'abord l'addition ou la multiplication? Nos souvenirs de maths à l'école nous disent qu'il faut d'abord faire la multiplication. Cela signifie que l'opérateur de  multiplication est prioritaire par rapport à l'opérateur d'addition.
 
-Le tableau suivant donne les priorités pour Python, de la plus basse (least binding) à la plus élevée (most binding). Cela signifie que dans une expression donnée, Python va d'abord évaluer les opérateurs et expressions les plus bas dans ce tableau, avant ceux placés plus en haut.
+Le tableau suivant donne les priorités pour Python, de la moins liante (ndlt: _least binding_) à la plus liante (ndlt: _most binding_). Cela signifie que dans une expression donnée, Python va d'abord évaluer les opérateurs et expressions les plus bas dans ce tableau, avant ceux placés plus en haut.
 
 Le tableau suivant, extrait du [Manuel de référence de Python](http://docs.python.org/3/reference/expressions.html#operator-precedence), est fourni afin d'être complet. Il est bien meilleur d'utiliser les parenthèses pour grouper correctement les opérateurs et les opérandes afin d'indiquer explicitement la précédence. Cela rend le programme plus lisible. Voyez [Changer l'ordre d'évaluation](#changing-order-of-evaluation) pour plus de détails.
 

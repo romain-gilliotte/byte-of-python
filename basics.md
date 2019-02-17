@@ -78,13 +78,13 @@ Il a dit « Bond, James Bond. »
 
 Cela signifie que quand vous avez créé une chaîne, vous ne pouvez pas la changer. Bien que cela semble être une mauvaise chose, ce n'est pas le cas. Nous verrons pourquoi cela n'est pas une limitation dans les différents programmes à venir.
 
-> **Note pour les développeurs C/C++**
+> **Note pour les programmeurs C/C++**
 >
 > Il n'y a pas de type de données `char` dans Python. Cela n’est pas vraiment nécessaire, et sûr qu'il ne vous manquera pas.
 
 <!-- -->
 
-> **Note pour les développeurs Perl/PHP**
+> **Note pour les programmeurs Perl/PHP**
 >
 > Rappelez-vous que les chaînes entre guillemets simples et les chaînes à guillemets doubles sont équivalentes. Elles ne diffèrent en aucune manière.
 
@@ -327,11 +327,11 @@ Voici la deuxième ligne.
 
 **Comment cela fonctionne**
 
-D'abord, nous assignons la valeur littérale constante `5` à la variable `i` en utilisant l'opérateur d'assignation (`=`). Cette ligne est appelée une instruction parce qu'elle indique qu'une action doit être faite, et dans ce cas, nous connectons la variable nommée `i` à la valeur `5`.  Ensuite, nous affichons la valeur de  `i` en utilisant l'instruction `print` qui, sans surprise, affiche juste la valeur de la variable à l'écran.
+D'abord, nous affectons la valeur littérale constante `5` à la variable `i` en utilisant l'opérateur d'affectation (`=`). Cette ligne est appelée une instruction parce qu'elle indique qu'une action doit être faite, et dans ce cas, nous connectons la variable nommée `i` à la valeur `5`.  Ensuite, nous affichons la valeur de  `i` en utilisant l'instruction `print` qui, sans surprise, affiche juste la valeur de la variable à l'écran.
 
 Ensuite nous ajoutons `1` à la valeur stockée dans `i` et nous la stockons à nouveau. Nous l'affichons et comme prévu, nous obtenons la valeur `6`.
 
-De la même manière, nous assignons la chaîne littérale à la variable `s` et nous l'affichons.
+De la même manière, nous affectons la chaîne littérale à la variable `s` et nous l'affichons.
 
 > **Note pour les programmeurs dans des langages statiques**
 >

@@ -171,7 +171,7 @@ Nous fournissons ici deux nombres et `range` renvoie une séquence de nombres en
 
 Notez que range() génère une séquence de nombres, mais il va générer seulement un nombre à la fois, quand la boucle for demande l'item suivant. Si vous voulez voir la séquence complète des nombres immédiatement, utilisez list(range()). les listes sont expliquées dans le [chapitre des structures de données](./data_structures.md#data-structures).
 
-La boucle `for` itère dans cet intervalle - `for i in range(1,5)` est équivalent à `for i in [1, 2, 3, 4]` ce qui est comme assigner chaque nombre (ou objet) dans la séquence à i, un à la fois, et ensuite exécuter le bloc d'instructions pour chaque valeur de `i`.  Dans ce cas, nous affichons juste la valeur dans le bloc d'instructions.
+La boucle `for` itère dans cet intervalle - `for i in range(1,5)` est équivalent à `for i in [1, 2, 3, 4]` ce qui est comme affecter chaque nombre (ou objet) dans la séquence à i, un à la fois, et ensuite exécuter le bloc d'instructions pour chaque valeur de `i`.  Dans ce cas, nous affichons juste la valeur dans le bloc d'instructions.
 
 Souvenez-vous que la partie `else` est optionnelle.  Quand elle existe, elle est toujours exécutée une fois après la fin de la boucle `for` à moins qu'une instruction [break](#break-statement) ne soit présente.
 
