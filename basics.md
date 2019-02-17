@@ -325,7 +325,7 @@ Voici une chaîne multi-ligne.
 Voici la deuxième ligne.
 ```
 
-**Comment cela fonctionne**
+**Comment ça marche**
 
 D'abord, nous affectons la valeur littérale constante `5` à la variable `i` en utilisant l'opérateur d'affectation (`=`). Cette ligne est appelée une instruction parce qu'elle indique qu'une action doit être faite, et dans ce cas, nous connectons la variable nommée `i` à la valeur `5`.  Ensuite, nous affichons la valeur de  `i` en utilisant l'instruction `print` qui, sans surprise, affiche juste la valeur de la variable à l'écran.
 

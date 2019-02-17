@@ -193,7 +193,7 @@ L'aire vaut 10
 Le périmètre vaut 14
 ```
 
-**Comment cela fonctionne**
+**Comment ça marche**
 
 La longueur et la largeur du rectangle sont rangées dans des variables du même nom (length et breadth). Nous les utilisons pour calculer la surface et le périmètre du rectangle avec l'aide des expressions. Nous rangeons le résultat de l'expression `length * breadth` dans la variable `area` et ensuite nous l'affichons en utilisant la fonction `print`. Dans le deuxième cas, nous utilisons directement la valeur de l'expression `2 * (length + breadth)` dans la fonction print.
 
