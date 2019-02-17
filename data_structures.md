@@ -2,13 +2,13 @@
 
 Les structures de données sont juste cela - ce sont des *structures* qui peuvent contenir des *données*. En d'autres termes, elles sont utilisées pour stocker un ensemble de données liées entre elles.
 
-Il y a quatre structures de données fournies dans Python - _les listes, les tuples, les dictionnaires et les sets_. Nous verrons maintenant comment utiliser chacune et comment nous simplifier la vie.
+Il y a quatre structures de données fournies dans Python - _les listes, les tuples, les dictionnaires et les emsembles_. Nous verrons maintenant comment utiliser chacune et comment nous simplifier la vie.
 
 ## Liste
 
 Une `liste` est une structure de données qui contient un ensemble ordonné d'objets, c'est-à-dire que vous pouvez stocker une *séquence* d'objets dans une liste. C'est facile à imaginer si vous pensez à une liste de commissions qui est une liste de choses à acheter, sauf que vous avez une chose par ligne, mais Python les présentera séparées par des virgules.
 
-La liste de choses à acheter doit être entourée de crochets afin que Python comprenne que vous créez une liste. Une fois que vous avez créé une liste, vous pouvez ajouter, enlever ou rechercher un élément dans la liste. Comme nous pouvons ajouter ou enlever un élément , nous disons qu'une liste est un type de données modifiable (ndlt: *mutable* en anglais) c'est-à-dire que ce type peut être modifié.
+La liste de choses à acheter doit être entourée de crochets afin que Python comprenne que vous créez une liste. Une fois que vous avez créé une liste, vous pouvez ajouter, enlever ou rechercher un élément dans la liste. Comme nous pouvons ajouter ou enlever un élément , nous disons qu'une liste est un type de données modifiable (ndlt: *mutable* en anglais).
 
 ## Introduction rapide aux objets et classes
 
@@ -191,9 +191,9 @@ Nous créons le dictionnaire `ab` en utilisant la notation déjà vue. Puis nous
 
 Nous pouvons détruire les paires de valeurs de clés en utilisant notre vieil ami, l'instruction `del` . Nous indiquons simplement le dictionnaire et l'opérateur d'indexation pour la clé à enlever et nous la passons à l'instruction `del` . Il n'y a pas besoin de connaître la valeur correspondant à la clé pour cette opération.
 
-Ensuite, nous accédons chaque paire de valeur de clé du dictionnaire avec la méthode `items` du dictionnaire qui retourne une liste de tuples, chaque tuple contient une paire d'éléments - la clé suivie de la valeur. Nous retrouvons cette paire et nous l'assignons aux variables `name` et `address` correspondantes pour chaque paire en utilisant la boucle `for..in` et nous affichons ces valeurs dans le block for.
+Ensuite, nous accédons chaque paire de valeur de clé du dictionnaire avec la méthode `items` du dictionnaire qui retourne une liste de tuples, chaque tuple contient une paire d'éléments - la clé suivie de la valeur. Nous retrouvons cette paire et nous l'affectons aux variables `name` et `address` correspondantes pour chaque paire en utilisant la boucle `for..in` et nous affichons ces valeurs dans le bloc `for`.
 
-Nous pouvons ajouter des nouvelles paires de valeurs de clés en utilisant juste l'opérateur d'indexation pour accéder une clé et lui  assigner cette valeur, comme nous l'avons fait pour Guido dans le cas précédent.
+Nous pouvons ajouter des nouvelles paires de valeurs de clés en utilisant juste l'opérateur d'indexation pour accéder une clé et lui  affecter cette valeur, comme nous l'avons fait pour Guido dans le cas précédent.
 
 Nous pouvons tester si une clé existe avec l'opérateur `in` .
 
@@ -291,77 +291,130 @@ Notez que quand le pas est de 2, nous obtenons les éléments en positions 0, 2,
 
 Essayez diverses combinaisons de tranchage en utilisant l'interpréteur intéractif Python, c'est-à-dire l'invite de commandes, afin de voir immédiatement les résultats. Ce qui est chouette avec les séquences, c'est que vous pouvez manipuler des tuples, des listes et des chaînes de caractères de la même manière !
 
-## Set
+## Ensemble
 
-Sets are _unordered_ collections of simple objects. These are used when the existence of an object in a collection is more important than the order or how many times it occurs.
+Les ensembles (ndlt: `set` en anglais) sont des collections d'objets _sans ordre_ . Ils sont utilisés quand l'existence d'un objet dans une collection est plus importante que l'ordre ou le nombre de fois qu'il y est.
 
-Using sets, you can test for membership, whether it is a subset of another set, find the intersection between two sets, and so on.
+En utilisant un ensemble, vous pouvez tester si un objet y est déjà présent, si c'est un sous-ensemble d'un autre ensemble, trouver son intersection avec un autre ensemble, et ainsi de suite.
 
 ```python
->>> bri = set(['brazil', 'russia', 'india'])
->>> 'india' in bri
+>>> bri = set(['brésil', 'russie', 'inde'])
+>>> 'inde' in bri
 True
 >>> 'usa' in bri
 False
 >>> bric = bri.copy()
->>> bric.add('china')
+>>> bric.add('chine')
 >>> bric.issuperset(bri)
 True
->>> bri.remove('russia')
->>> bri & bric # OR bri.intersection(bric)
-{'brazil', 'india'}
+>>> bri.remove('russie')
+>>> bri & bric # OU bri.intersection(bric)
+{'brésil', 'inde'}
 ```
 
 **Comment ça marche**
 
-If you remember basic set theory mathematics from school, then this example is fairly self-explanatory.  But if not, you can google "set theory" and "Venn diagram" to better understand our use of sets in Python.
+Si vous vous souvenez des bases de la théorie des ensembles mathématiques, cet exemple s’explique par lui même. Dans le cas contraire, cherchez "théorie des ensembles" et "diagramme de Venn" sur google pour mieux comprendre l'utilisation des ensembles en Python.
 
-## References
+## Références
 
-When you create an object and assign it to a variable, the variable only _refers_ to the object and does not represent the object itself!  That is, the variable name points to that part of your computer's memory where the object is stored. This is called *binding* the name to the object.
+Lorsque vous créez un objet et l'affectez à une variable, celle-ci ne fait que _référence_ à l'objet et ne représente pas l'objet lui-même ! C'est-à-dire que le nom de la variable pointe vers la partie de la mémoire de votre ordinateur où l'objet est stocké. Cela s'appelle *lier* le nom à l'objet.
 
-Generally, you don't need to be worried about this, but there is a subtle effect due to references which you need to be aware of:
+Généralement, vous n'avez pas à vous inquiéter à ce sujet, mais il existe un effet subtil dû aux références que vous devez connaître:
 
 Exemple (sauvegarder sous `ds_reference.py`):
 
-<pre><code class="lang-python">{% include "./programs/ds_reference.py" %}</code></pre>
+```python
+print('Affectation Simple')
+shoplist = ['pomme', 'mangue', 'carotte', 'banane']
+# mylist est juste un autre nom pointant sur le même objet!
+mylist = shoplist
+
+# J'ai acheté le premier élément, donc je l'enlève de la liste
+del shoplist[0]
+
+print('La liste de commissions contient', shoplist)
+print('maliste contient', mylist)
+# notez que shoplist et maliste affichent
+# la même liste la 'pomme', ce qui confirme
+# qu'ils pointent sur le même objet
+
+print('Copie en faisant une tranche complète')
+# Copie en réalisant une tranche complète
+mylist = shoplist[:]
+# Retire le premier élément
+del mylist[0]
+
+print('La liste de commissions contient', shoplist)
+print('maliste contient', mylist)
+# Notez que maintenant les deux listes sont différentes
+```
 
 Résultat:
 
-<pre><code>{% include "./programs/ds_reference.txt" %}</code></pre>
+```
+$ python reference.py
+Affectation Simple
+La liste de commissions contient ['mangue', 'carotte', 'banane']
+maliste contient ['mangue', 'carotte', 'banane']
+Copie en faisant un slice complet
+La liste de commissions contient ['mangue', 'carotte', 'banane']
+maliste contient ['carotte', 'banane']
+```
 
 **Comment ça marche**
 
-Most of the explanation is available in the comments.
+L'essentiel des explications est disponible dans les commentaires.
 
-Remember that if you want to make a copy of a list or such kinds of sequences or complex objects (not simple _objects_ such as integers), then you have to use the slicing operation to make a copy. If you just assign the variable name to another name, both of them will _refer_ to the same object and this could be trouble if you are not careful.
+Souvenez-vous que si vous voulez faire une copie d'une liste ou autre séquence ou d'objets complexes (pas des _objets_ simples comme des entiers), alors vous devez utiliser l'opération de tranchage pour faire une copie. Si affectez juste une séquence à une nouvelle variable, les deux font faire _référence_ au même objet, et cela peut poser problème si vous n'y êtes pas attentifs.
 
-> **Note for Perl programmers**
+> **Note pour les programmeurs Perl**
 >
-> Remember that an assignment statement for lists does **not** create a copy. You have to use slicing operation to make a copy of the sequence.
+> N'oubliez pas qu'une instruction d'affectation pour une liste ne crée **pas** une copie. Vous devez utiliser l’opération de tranchage pour copier la séquence.
 
-## More About Strings {#more-strings}
+## Complément sur les chaînes de caractères {#more-strings}
 
-We have already discussed strings in detail earlier. What more can there be to know?  Well, did you know that strings are also objects and have methods which do everything from checking part of a string to stripping spaces?  In fact, you've already been using a string method... the `format` method!
+Nous avons déjà étudié les chaînes de caractères en détail plus tôt. Que pouvons-nous apprendre de plus ? Et bien, savez-vous que les chaînes de caractères sont aussi des objets et ont des méthodes qui font tout, depuis la vérification d'une partie d'une chaîne jusqu'à enlever des espaces ! En fait, vous utilisez déjà une méthode de chaîne ... la méthode `format`!
 
-The strings that you use in programs are all objects of the class `str`.  Some useful methods of this class are demonstrated in the next example. For a complete list of such methods, see `help(str)`.
+Les chaînes de caractères que vous utilisez dans les programmes sont toutes des objets de la classe `str`.  Quelques méthodes de cette classe sont mises en évidence dans l'exemple suivant. Pour une liste complète de ces méthodes, voyez `help(str)`.
 
 Exemple (sauvegarder sous `ds_str_methods.py`):
 
-<pre><code class="lang-python">{% include "./programs/ds_str_methods.py" %}</code></pre>
+```python
+nom = 'Swaroop' # Ceci est un objet de type chaîne
+
+if nom.startswith('Swa'):
+    print('Oui, la chaîne commence par "Swa"')
+
+if 'a' in nom:
+    print('Oui, elle contient la chaîne "a"')
+
+if nom.find('war') != -1:
+    print('Oui, elle contient la chaîne "war"')
+
+delimiter = '_*_'
+maliste = ['Brésil', 'Russie', 'Inde', 'Chine']
+print(delimiter.join(maliste))
+```
 
 Résultat:
 
-<pre><code>{% include "./programs/ds_str_methods.txt" %}</code></pre>
+```
+$ python str_methods.py
+Oui, la chaîne commence par &quot;Swa&quot;
+Oui, elle contient la chaîne &quot;a&quot;
+Oui, elle contient la chaîne &quot;war&quot;
+Brésil_*_Russie_*_Inde_*_Chine
+```
 
 **Comment ça marche**
 
-Here, we see a lot of the string methods in action. The `startswith` method is used to find out whether the string starts with the given string. The `in` operator is used to check if a given string is a part of the string.
+Ici, nous voyons en action de nombreuses méthodes des chaînes de caractères. La méthode `startswith` est utilisée pour trouver si une chaîne de caractères commence avec la chîne indiquée. L'opérateur `in` est utilisé pour vérifier si une chaîne donnée fait partie de la chaîne de caractères.
 
-The `find` method is used to locate the position of the given substring within the string; `find` returns -1 if it is unsuccessful in finding the substring. The `str` class also has a neat method to `join` the items of a sequence with the string acting as a delimiter between each item of the sequence and returns a bigger string generated from this.
+La méthode `find` est utilisée pour trouver la position d'une chaîne donnée dans la chaîne, ou retourne -1 si elle ne trouve pas sous-chaîne. La classe `str` a aussi une méthode pour `join` (joindre) les items d'une séquence, avec la chaîne jouant le rôle de délimiteur entre chaque item de la séquence et retournant une chaîne plus longue.
 
-## Summary
+## Récapitulatif
 
-We have explored the various built-in data structures of Python in detail. These data structures will be essential for writing programs of reasonable size.
+Nous avons étudié les différentes structures de données disponibles dans Python en détail. Ces structures de données seront essentielles pour écrire des programmes de taille raisonnable.
 
-Now that we have a lot of the basics of Python in place, we will next see how to design and write a real-world Python program.
+Maintenant que nous possédons l'essentiel des bases de Python, nous allons concevoir et écrire un vrai programme Python.
