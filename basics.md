@@ -259,7 +259,7 @@ Les variables sont des exemples d'identifiants. Les _identifiants_ sont des noms
 - Les noms des Identifiers sont sensibles à la casse. Par exemple, `myname` et `myName` ne sont _pas_ identiques. Notez la minuscule `n` dans le premier cas et la majuscule `N` ensuite.
 - Des exemples de noms d'identifiers _valides_ sont `i`, `name_2_3`. Des exemples _invalides_ sont `2things`, `this is spaced out`, `my-name`, et `>a1b2_c3`.
 
-## Types De données
+## Types de données
 
 Les variables peuvent contenir des valeurs de différents types appelés _types de données_. Les types de base sont les nombres et les chaînes de caractères, dont nous avons déjà parlé. Dans les chapitres suivants, nous verrons comment créer nos propres types de données en utilisant les [classes](./oop.md#classes).
 
