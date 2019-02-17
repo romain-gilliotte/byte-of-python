@@ -1,157 +1,398 @@
-﻿# Problem Solving
+﻿# Résolution de problème
 
-We have explored various parts of the Python language and now we will take a look at how all these parts fit together, by designing and writing a program which _does_ something useful. The idea is to learn how to write a Python script on your own.
+Nous avons étudié diverses parties du langage Python et nous allons maintenant voir comment ces parties s'assemblent ensemble, en concevant et en écrivant un programme qui _fait_ quelque chose d'utile. L'idée est d'apprendre à écrire un script Python.
 
-## The Problem
+## Le problème
 
-The problem we want to solve is:
+Le problème que nous voulons résoudre est :
 
-> I want a program which creates a backup of all my important files.
+> je veux un programme qui fasse une sauvegarde de tous mes fichiers importants.
 
-Although, this is a simple problem, there is not enough information for us to get started with the solution. A little more *analysis* is required. For example, how do we specify _which_ files are to be backed up? _How_ are they stored? _Where_ are they stored?
+Bien que cela soit un problème simple, il n'y a pas assez d'information pour nous permettre de travailler à une solution. Nous avons besoin d'un peu plus d'*analyse*. Par exemple, comment choisir _quels_ fichiers vont être sauvegardés ? _Comment_ les stocker ? _Où_ les stocker ?
 
-After analyzing the problem properly, we *design* our program. We make a list of things about how our program should work. In this case, I have created the following list on how _I_ want it to work. If you do the design, you may not come up with the same kind of analysis since every person has their own way of doing things, so that is perfectly okay.
+Après une analyse du problème, nous *concevons* notre programme. Nous écrivons une liste de choses que notre programme doit faire. Dans ce cas, j'ai créé la liste suivante sur la manière dont _je_ veux qu'il fonctionne. Si vous concevez ce programme, vous fairez sans doute une analyse différente, car chaque personne a sa manière de faire, et ce sera tout aussi juste.
 
-- The files and directories to be backed up are specified in a list.
-- The backup must be stored in a main backup directory.
-- The files are backed up into a zip file.
-- The name of the zip archive is the current date and time.
-- We use the standard `zip` command available by default in any standard GNU/Linux or Unix distribution. Note that you can use any archiving command you want as long as it has a command line interface.
+- Les fichiers et répertoires à sauvegarder seront dans une liste.
+- La sauvegarde doit être stocké dans un répertoire contenant toutes les sauvegardes.
+- Les fichiers seront sauvegardés dans une archive _zip_.
+- Le nom de l'archive zip sera la date et l'heure courante.
+- Nous utilisons la commande standard `zip` disponible par défaut dans toute distribution GNU/Linux ou Unix standard. Notez que vous pouvez utiliser n’importe quelle commande d’archivage à condition qu’elle dispose d’une interface en ligne de commande.
 
-> **For Windows users**
-> 
-> Windows users can [install](http://gnuwin32.sourceforge.net/downlinks/zip.php) the `zip` command from the [GnuWin32 project page](http://gnuwin32.sourceforge.net/packages/zip.htm) and add `C:\Program Files\GnuWin32\bin` to your system `PATH` environment variable, similar to [what we did for recognizing the python command itself](./installation.md#dos-prompt).
+> **Pour les utilisateurs Windows**
+>
+> Les utilisateurs Windows peuvent [installer](http://gnuwin32.sourceforge.net/downlinks/zip.php) la commande `zip` à partir de [la page projet de GnuWin32](http://gnuwin32.sourceforge.net/packages/zip.htm) et ajouter `C:\Program Files\GnuWin32\bin` à la variable d'environnement `PATH` de leur système, semblable à [ce que nous avons fait pour la commande python elle-même](./installation.md#dos-prompt).
 
-## The Solution
+## La solution
 
-As the design of our program is now reasonably stable, we can write the code which is an *implementation* of our solution.
+Comme la conception de notre programme est maintenant suffisamment stable, nous pouvons écrire le code qui est une *implémentation* de notre solution.
 
-Save as `backup_ver1.py`:
+Sauvegardez sous `backup_ver1.py`:
 
-<pre><code class="lang-python">{% include "./programs/backup_ver1.py" %}</code></pre>
+```python
+import os
+import time
 
-Output:
+# 1. Les fichiers et répertoires à sauvegarder sont indiqués dans une liste.
+# Notez que nous devons utiliser des guillemets doubles dans une chaîne
+# pour les noms avec des espaces.
+# Par exemple sous Windows:
+# source = ['"C:\\My Documents"']
+# Nous aurions pu aussi utiliser une chaîne brute en écrivant [r'"C:\My Documents"'].
+# Par exemple sous Mac OS X et Linux:
+source = ['/Users/swa/notes']
 
-<pre><code>{% include "./programs/backup_ver1.txt" %}</code></pre>
+# 2. La sauvegarde est stockée dans un répertoire
+# Par exemple sous Windows:
+# target_dir = 'E:\\Backup'
+# Par exemple sous Mac OS X et Linux:
+target_dir = '/Users/swa/backup'
+# N'oubliez pas de changer le dossier que vous voudrez utiliser
 
-Now, we are in the *testing* phase where we test that our program works properly. If it doesn't behave as expected, then we have to *debug* our program i.e. remove the *bugs* (errors) from the program.
+# 3. Les fichiers sauvegardés sont mis dans une archive zip.
+# 4. Le nom de l'archive zip contient la date et l'heure courante
+target = target_dir + os.sep + \
+         time.strftime('%Y%m%d%H%M%S') + '.zip'
 
-If the above program does not work for you, copy the line printed after the `Zip command is` line in the output, paste it in the shell (on GNU/Linux and Mac OS X) / `cmd` (on Windows), see what the error is and try to fix it. Also check the zip command manual on what could be wrong. If this command succeeds, then the problem might be in the Python program itself, so check if it exactly matches the program written above.
+# Crée le répertoire de destination, s'il n'existe pas
+if not os.path.exists(target_dir):
+    os.mkdir(target_dir)  # Creation répertoire
 
-**How It Works**
+# 5. Nous utilisons la commande zip pour mettre les fichiers dans une archive zip
+zip_command = 'zip -r {0} {1}'.format(target,
+                                      ' '.join(source))
 
-You will notice how we have converted our *design* into *code* in a step-by-step manner.
+# Lancement de la sauvegarde
+print('La commande zip est :')
+print(zip_command)
+print('En cours :')
+if os.system(zip_command) == 0:
+    print('Sauvegarde réussie dans', target)
+else:
+    print('Sauvegarde ÉCHOUÉE')
+```
 
-We make use of the `os` and `time` modules by first importing them. Then, we specify the files and directories to be backed up in the `source` list. The target directory is where we store all the backup files and this is specified in the `target_dir` variable. The name of the zip archive that we are going to create is the current date and time which we generate using the `time.strftime()` function. It will also have the `.zip` extension and will be stored in the `target_dir` directory.
+Résultat:
 
-Notice the use of the `os.sep` variable - this gives the directory separator according to your operating system, i.e. it will be `'/'` in GNU/Linux, Unix, macOS, and will be `'\\'` in Windows. Using `os.sep` instead of these characters directly will make our program portable and work across all of these systems.
+```
+$ python backup_ver1.py
+La commande zip est :
+zip -r /Users/swa/backup/20140328084844.zip /Users/swa/notes
+En cours :
+  adding: Users/swa/notes/ (stored 0%)
+  adding: Users/swa/notes/blah1.txt (stored 0%)
+  adding: Users/swa/notes/blah2.txt (stored 0%)
+  adding: Users/swa/notes/blah3.txt (stored 0%)
+Sauvegarde réussie dans /Users/swa/backup/20140328084844.zip
+```
 
-The `time.strftime()` function takes a specification such as the one we have used in the above program. The `%Y` specification will be replaced by the year with the century. The `%m` specification will be replaced by the month as a decimal number between `01` and `12` and so on. The complete list of such specifications can be found in the [Python Reference Manual](http://docs.python.org/3/library/time.html#time.strftime).
+Maintenant, nous sommes dans la phase de *test*, où nous testons notre programme. S'il ne se comporte pas comme prévu, nous allons le *deboguer* c'est-à-dire enlever les *bugs* (erreurs) dans le programme.
 
-We create the name of the target zip file using the addition operator which _concatenates_ the strings i.e. it joins the two strings together and returns a new one. Then, we create a string `zip_command` which contains the command that we are going to execute. You can check if this command works by running it in the shell (GNU/Linux terminal or DOS prompt).
+Si le programme ci-dessus ne fonctionne pas pour vous, copiez la ligne imprimée après la ligne `La commande zip est :` dans la sortie, collez-la dans le shell (sous GNU/Linux et Mac OS X) / `cmd` (sous Windows), voyez quelle est l'erreur et essayez de la réparer. Consultez également le manuel de commande zip sur ce qui pourrait ne pas être correct. Si cette commande réussit, le problème peut provenir du programme Python lui-même. Vérifiez donc s'il correspond exactement au programme écrit ci-dessus.
 
-The `zip` command that we are using has some options available, and one of these options is `-r`.  The `-r` option specifies that the zip command should work **r**ecursively for directories, i.e. it should include all the subdirectories and files. Options are followed by the name of the zip archive to create, followed by the list of files and directories to backup. We convert the `source` list into a string using the `join` method of strings which we have already seen how to use.
+**Comment ça marche**
 
-Then, we finally *run* the command using the `os.system` function which runs the command as if it was run from the *system* i.e. in the shell - it returns `0` if the command was successfully, else it returns an error number.
+Vous noterez comment nous avons converti notre *conception* en *code* en l'écrivant pas à pas.
 
-Depending on the outcome of the command, we print the appropriate message that the backup has failed or succeeded.
+Nous utilisons les modules `os` et `time` en commençant par les importer. Puis, nous indiquons les fichiers et répertoires à sauvegarder dans la liste `source`. Le répertoire de destination est l'endroit où nous stockons tous les fichiers sauvegardés, et ceci est indiqué dans la variable `target_dir`. Le nom de l'archive zip que nous allons créer est la date et l'heure courante, que nous générons avec la fonction `time.strftime()`. L'archive aura une extension `.zip` et sera stockée dans le répertoire `target_dir` .
 
-That's it, we have created a script to take a backup of our important files!
+Notez l'utilisation de la variable `os.sep` - cela donne le nom du séparateur de répertoire en fonction du système d'exploitation, c'est-à-dire que cela sera `'/'` avec Linux et Unix, `'\\'` avec Windows et `':'` avec Mac OS. Le fait d'utiliser directement `os.sep` au lieu de ces caractères rend notre programme portable et il fonctionnera sous ces trois systèmes d'exploitation.
 
-> **Note to Windows Users**
-> 
-> Instead of double backslash escape sequences, you can also use raw strings. For example, use `'C:\\Documents'` or `r'C:\Documents'`. However, do *not* use `'C:\Documents'` since you end up using an unknown escape sequence `\D`.
+La fonction `time.strftime()` prend des arguments comme ceux utilisés dans le programme ci-dessus. La spécification `%Y` sera remplacée par l'année dans le siècle. La spécification `%m` sera remplacée par le mois en tant que nombre compris entre `01` et `12` et ainsi de suite. La liste  complète de ces spécifications peut être trouvée dans le [manuel de référence Python](http://docs.python.org/3/library/time.html#time.strftime).
 
-Now that we have a working backup script, we can use it whenever we want to take a backup of the files. This is called the *operation* phase or the *deployment* phase of the software.
+Nous créons le nom du fichier zip cible en utilisant l'opérateur d'addition qui *concatène* les chaînes de caractère, c'est-à-dire qu'il assemble les deux chaînes ensemble et en renvoie une nouvelle. Ensuite, nous créons une chaîne `zip_command` qui contient la commande que nous allons exécuter. Vous pouvez vérifier si votre commande fonctionne en la lançant dans le shell (terminal Linux ou invite de commandes DOS).
 
-The above program works properly, but (usually) first programs do not work exactly as you expect. For example, there might be problems if you have not designed the program properly or if you have made a mistake when typing the code, etc. Appropriately, you will have to go back to the design phase or you will have to debug your program.
+La commande `zip` que nous utilisons a quelques options disponibles, et l’une de ces options est `-r`. L’option `-r` indique que la commande zip doit fonctionner de manière **r**écursive sur les répertoires, c’est-à-dire qu’elle doit inclure tous les sous-répertoires et fichiers. Les options sont suivies du nom de l’archive zip à créer, puis de la liste des fichiers et répertoires à sauvegarder. Nous convertissons la liste `source` en une chaîne avec la méthode `join` que nous avons déjà vue.
 
-## Second Version
+Ensuite, nous *exécutons* la commande en utilisant la fonction `os.system` qui lance la commande comme si elle était lancée à partir du *système* c'est-à-dire dans une invite de commandes - il retourne `0` si la commande s'est exécutée avec succès, sinon il renvoie un numéro d'erreur.
 
-The first version of our script works. However, we can make some refinements to it so that it can work better on a daily basis. This is called the *maintenance* phase of the software.
+En fonction du résultat de la commande, nous affichons le message approprié indiquant que la sauvegarde a échouée ou réussie.
 
-One of the refinements I felt was useful is a better file-naming mechanism - using the _time_ as the name of the file within a directory with the current _date_ as a directory within the main backup directory. The first advantage is that your backups are stored in a hierarchical manner and therefore it is much easier to manage. The second advantage is that the filenames are much shorter. The third advantage is that separate directories will help you check if you have made a backup for each day since the directory would be created only if you have made a backup for that day.
+Ca y est, nous avons créé un script pour faire une sauvegarde de nos fichiers importants !
 
-Save as `backup_ver2.py`:
+> **Note pour les utilisateurs Windows**
+>
+> À la place d'echapper les backslash (`\`), vous pouvez utiliser des chaînes brutes. Par exemple, utilisez `'C:\\Documents'` ou `r'C:\Documents'`. Cependant, n'utilisez *pas* `'C:\Documents'` car vous vous retrouveriez avec un caractère d'échappement inconnu `\D`.
 
-<pre><code class="lang-python">{% include "./programs/backup_ver2.py" %}</code></pre>
+Maintenant que nous avons un script de sauvegarde qui fonctionne, nous pouvons l'utiliser quand nous voulons une sauvegarde de nos fichiers. Cela est appelé la phase d'*opération* ou la phase de *déploiement* du logiciel.
 
-Output:
+Le programme ci-dessus fonctionne correctement, mais (en général) la première version d'un programme ne fonctionne pas comme prévu. Par exemple, il peut y avoir des problèmes si vous n'avez pas réfléchi correctement à votre programme ou si vous avez fait une faute de frappe en rentrant le code, etc. Dans ce cas, il vous faudra revenir à la phase de conception ou déboguer votre programme.
 
-<pre><code>{% include "./programs/backup_ver2.txt" %}</code></pre>
+## Deuxième version
 
-**How It Works**
+La première version de notre script fonctionne. Cependant, nous pouvons faire quelques améliorations, afin qu'il soit plus adapté pour une utilisation journalière. Ceci est appelé la phase de *maintenance* du logiciel.
 
-Most of the program remains the same. The changes are that we check if there is a directory with the current day as its name inside the main backup directory using the `os.path.exists` function. If it doesn't exist, we create it using the `os.mkdir` function.
+Une amélioration que je trouvais utile était un meilleur nommage des fichiers - utiliser l'*heure* en tant que nom de fichier dans un répertoire nommé en fonction de la *date* dans le répertoire principal contenant les sauvegardes. Le premier avantage est que vos sauvegardes sont stockés de façon hiérarchique et donc plus faciles à gérer. Le deuxième avantage est que les noms de fichiers sont plus courts. Le troisième avantage est que des répertoires séparés vous aideront à vérifier si vous avez fait des sauvegardes pour chaque jour, vu que le répertoire ne sera créé que si vous avez réalisé une sauvegarde pour cette journée.
 
-## Third Version
+Sauvegardez sous `backup_ver2.py`:
 
-The second version works fine when I do many backups, but when there are lots of backups, I am finding it hard to differentiate what the backups were for! For example, I might have made some major changes to a program or presentation, then I want to associate what those changes are with the name of the zip archive. This can be easily achieved by attaching a user-supplied comment to the name of the zip archive.
+```python
+import os
+import time
 
-WARNING: The following program does not work, so do not be alarmed, please follow along because there's a lesson in here.
+# 1. Les fichiers et répertoires à sauvegarder sont indiqués dans une liste.
+# Notez que nous devons utiliser des guillemets doubles dans une chaîne
+# pour les noms avec des espaces.
+# Par exemple sous Windows:
+# source = ['"C:\\My Documents"']
+# Nous aurions pu aussi utiliser une chaîne brute en écrivant [r'"C:\My Documents"'].
+# Par exemple sous Mac OS X et Linux:
+source = ['/Users/swa/notes']
 
-Save as `backup_ver3.py`:
-
-<pre><code class="lang-python">{% include "./programs/backup_ver3.py" %}</code></pre>
-
-Output:
-
-<pre><code>{% include "./programs/backup_ver3.txt" %}</code></pre>
-
-**How This (does not) Work**
-
-*This program does not work!* Python says there is a syntax error which means that the script does not satisfy the structure that Python expects to see. When we observe the error given by Python, it also tells us the place where it detected the error as well. So we start *debugging* our program from that line.
-
-On careful observation, we see that the single logical line has been split into two physical lines but we have not specified that these two physical lines belong together. Basically, Python has found the addition operator (`+`) without any operand in that logical line and hence it doesn't know how to continue. Remember that we can specify that the logical line continues in the next physical line by the use of a backslash at the end of the physical line. So, we make this correction to our program. This correction of the program when we find errors is called *bug fixing*.
-
-## Fourth Version
-
-Save as `backup_ver4.py`:
-
-<pre><code class="lang-python">{% include "./programs/backup_ver4.py" %}</code></pre>
-
-Output:
-
-<pre><code>{% include "./programs/backup_ver4.txt" %}</code></pre>
-
-**How It Works**
-
-This program now works! Let us go through the actual enhancements that we had made in version 3. We take in the user's comments using the `input` function and then check if the user actually entered something by finding out the length of the input using the `len` function. If the user has just pressed `enter` without entering anything (maybe it was just a routine backup or no special changes were made), then we proceed as we have done before.
-
-However, if a comment was supplied, then this is attached to the name of the zip archive just before the `.zip` extension.  Notice that we are replacing spaces in the comment with underscores - this is because managing filenames without spaces is much easier.
-
-## More Refinements
-
-The fourth version is a satisfactorily working script for most users, but there is always room for improvement. For example, you can include a _verbosity_ level for the zip command by specifying a `-v` option to make your program become more talkative or a `-q` option to make it _quiet_.
-
-Another possible enhancement would be to allow extra files and directories to be passed to the script at the command line. We can get these names from the `sys.argv` list and we can add them to our `source` list using the `extend` method provided by the `list` class.
-
-The most important refinement would be to not use the `os.system` way of creating archives and instead using the [zipfile](http://docs.python.org/3/library/zipfile.html) or [tarfile](http://docs.python.org/3/library/tarfile.html) built-in modules to create these archives. They are part of the standard library and available already for you to use without external dependencies on the zip program to be available on your computer.
-
-However, I have been using the `os.system` way of creating a backup in the above examples purely for pedagogical purposes, so that the example is simple enough to be understood by everybody but real enough to be useful.
-
-Can you try writing the fifth version that uses the [zipfile](http://docs.python.org/3/library/zipfile.html) module instead of the `os.system` call?
-
-## The Software Development Process
-
-We have now gone through the various *phases* in the process of writing a software. These phases can be summarised as follows:
-
-1. What (Analysis)
-2. How (Design)
-3. Do It (Implementation)
-4. Test (Testing and Debugging)
-5. Use (Operation or Deployment)
-6. Maintain (Refinement)
-
-A recommended way of writing programs is the procedure we have followed in creating the backup script: Do the analysis and design. Start implementing with a simple version. Test and debug it. Use it to ensure that it works as expected. Now, add any features that you want and continue to repeat the Do It-Test-Use cycle as many times as required.
-
-Remember:
-
-> Software is grown, not built.
-> -- [Bill de hÓra](http://97things.oreilly.com/wiki/index.php/Great_software_is_not_built,_it_is_grown)
-
-## Summary
-
-We have seen how to create our own Python programs/scripts and the various stages involved in writing such programs. You may find it useful to create your own program just like we did in this chapter so that you become comfortable with Python as well as problem-solving.
-
-Next, we will discuss object-oriented programming.
+# 2. La sauvegarde est stockée dans un répertoire
+# Par exemple sous Windows:
+# target_dir = 'E:\\Backup'
+# Par exemple sous Mac OS X et Linux:
+target_dir = '/Users/swa/backup'
+# N'oubliez pas de changer le dossier que vous voudrez utiliser
+
+# Crée le répertoire de destination, s'il n'existe pas
+if not os.path.exists(target_dir):
+    os.mkdir(target_dir)  # Creation répertoire
+
+# 3. Les fichiers sont placés dans une archive zip.
+# 4. Le jour courant est le nom du sous-répertoire dans le répertoire principal
+today = target_dir + os.sep + time.strftime('%Y%m%d')
+# L'heure courante est le nom de l'archive zip
+now = time.strftime('%H%M%S')
+
+# Le nom du fichier zip
+target = today + os.sep + now + '.zip'
+
+# Créer le sous-répertoire s'il n'existe pas
+if not os.path.exists(today):
+    os.mkdir(today)
+    print('Création réussie du répertoire', today)
+
+# 5. Nous utilisons la commande zip pour créer une archive
+zip_command = 'zip -r {0} {1}'.format(target,
+                                      ' '.join(source))
+
+# Lancement de la sauvegarde
+print('La commande zip est :')
+print(zip_command)
+print('En cours :')
+if os.system(zip_command) == 0:
+    print('Sauvegarde réussie dans', target)
+else:
+    print('Sauvegarde ÉCHOUÉE')
+```
+
+Résultat:
+
+```
+$ python backup_ver2.py
+Création réussie du répertoire /Users/swa/backup/20140329
+La commande zip est :
+zip -r /Users/swa/backup/20140329/073201.zip /Users/swa/notes
+En cours :
+  adding: Users/swa/notes/ (stored 0%)
+  adding: Users/swa/notes/blah1.txt (stored 0%)
+  adding: Users/swa/notes/blah2.txt (stored 0%)
+  adding: Users/swa/notes/blah3.txt (stored 0%)
+Sauvegarde réussie dans /Users/swa/backup/20140329/073201.zip
+```
+
+**Comment ça marche**
+
+L'essentiel du programme reste le même. Les changements sont que nous vérifions si un répertoire avec le jour courant dans le répertoire principal des sauvegardes existe, en utilisant la fonction `os.path.exists`. S'il n'existe pas, nous le créons avec la fonction `os.mkdir` .
+
+## Troisième version
+
+La deuxième version fonctionne bien quand je veux de nombreux backups, mais dans ce cas, j'ai du mal à savoir pourquoi j'ai fait ces sauvegardes ! Par exemple, si j'ai fait des modifications importantes dans un programme ou une présentation, je veux pouvoir associer ces changements avec le nom de l'archive. Cela peut être facilement obtenu en ajoutant un commentaire de l'utilisateur au nom de l'archive zip.
+
+ATTENTION: Ce programme ne fonctionne pas, mais ne vous inquiétez pas, continuez, il y a une leçon à en tirer.
+
+Sauvegardez sous `backup_ver3.py`:
+
+```python
+import os
+import time
+
+# 1. Les fichiers et répertoires à sauvegarder sont indiqués dans une liste.
+# Notez que nous devons utiliser des guillemets doubles dans une chaîne
+# pour les noms avec des espaces.
+# Par exemple sous Windows:
+# source = ['"C:\\My Documents"']
+# Nous aurions pu aussi utiliser une chaîne brute en écrivant [r'"C:\My Documents"'].
+# Par exemple sous Mac OS X et Linux:
+source = ['/Users/swa/notes']
+
+# 2. La sauvegarde est stockée dans un répertoire
+# Par exemple sous Windows:
+# target_dir = 'E:\\Backup'
+# Par exemple sous Mac OS X et Linux:
+target_dir = '/Users/swa/backup'
+# N'oubliez pas de changer le dossier que vous voudrez utiliser
+
+# Crée le répertoire de destination, s'il n'existe pas
+if not os.path.exists(target_dir):
+    os.mkdir(target_dir)  # Creation répertoire
+
+# 3. Les fichiers sont placés dans une archive zip.
+# 4. Le jour courant est le nom du sous-répertoire dans le répertoire principal
+today = target_dir + os.sep + time.strftime('%Y%m%d')
+# L'heure courante est le nom de l'archive zip
+now = time.strftime('%H%M%S')
+
+# Un commentaire de l'utilisateur est ajouté au nom du fichier zip
+comment = input('Saisissez un commentaire --> ')
+# Vérifie si un commentaire a été saisi
+if len(comment) == 0:
+    target = today + os.sep + now + '.zip'
+else:
+    target = today + os.sep + now + '_' +
+        comment.replace(' ', '_') + '.zip'
+
+# Crée le sous-répertoire s'il n'existe pas déjà.
+if not os.path.exists(today):
+    os.mkdir(today)
+    print('Successfully created directory', today)
+
+# 5. Nous utilisons la commande zip pour créer une archive
+zip_command = 'zip -r {0} {1}'.format(target,
+                                      ' '.join(source))
+
+# Lancement de la sauvegarde
+print('La commande zip est :')
+print(zip_command)
+print('En cours :')
+if os.system(zip_command) == 0:
+    print('Sauvegarde réussie dans', target)
+else:
+    print('Sauvegarde ÉCHOUÉE')
+```
+
+Résultat:
+
+```
+$ python backup_ver3.py
+  File "backup_ver3.py", line 39
+    target = today + os.sep + now + '_' +
+                                        ^
+SyntaxError: invalid syntax
+```
+
+**Comment ça (ne) marche (pas)**
+
+*Ce programme ne fonctionne pas !* Python dit qu'il y a une erreur de syntaxe, ce qui signifie que le script ne respecte pas les règles que Python s'attend à trouver. Quand nous regardons l'erreur indiquée par Python, il nous indique l'endroit où a été trouvée l'erreur. Donc nous commençons le *débogage* de notre programme à partir de cette ligne.
+
+En regardant attentivement, nous voyons que la seule ligne logique a été coupée en deux lignes physiques, mais nous n'avons pas indiqué que les deux lignes physiques vont ensemble. Fondamentalement, Python a trouvé l'opérateur d'addition (`+`) sans aucune opérande dans cette ligne logique et en conséquence ne sait pas comment continuer. Souvenez-vous que nous indiquons que la ligne logique continue sur la prochaine ligne physique en utilisant un backslash à la fin de la ligne physique. Donc, nous faisons cette correction à notre programme. Cette correction du programme quand nous trouvons des erreurs est appelée *correction de bugs*.
+
+## Quatrième version
+
+Sauvegardez sous `backup_ver4.py`:
+
+```python
+import os
+import time
+
+# 1. Les fichiers et répertoires à sauvegarder sont indiqués dans une liste.
+# Notez que nous devons utiliser des guillemets doubles dans une chaîne
+# pour les noms avec des espaces.
+# Par exemple sous Windows:
+# source = ['"C:\\My Documents"']
+# Nous aurions pu aussi utiliser une chaîne brute en écrivant [r'"C:\My Documents"'].
+# Par exemple sous Mac OS X et Linux:
+source = ['/Users/swa/notes']
+
+# 2. La sauvegarde est stockée dans un répertoire
+# Par exemple sous Windows:
+# target_dir = 'E:\\Backup'
+# Par exemple sous Mac OS X et Linux:
+target_dir = '/Users/swa/backup'
+# N'oubliez pas de changer le dossier que vous voudrez utiliser
+
+# Crée le répertoire de destination, s'il n'existe pas
+if not os.path.exists(target_dir):
+    os.mkdir(target_dir)  # Creation répertoire
+
+# 3. Les fichiers sont placés dans une archive zip.
+# 4. Le jour courant est le nom du sous-répertoire dans le répertoire principal
+today = target_dir + os.sep + time.strftime('%Y%m%d')
+# L'heure courante est le nom de l'archive zip
+now = time.strftime('%H%M%S')
+
+# Un commentaire de l'utilisateur est ajouté au nom du fichier zip
+comment = input('Saisissez un commentaire --> ')
+# Vérifie si un commentaire a été saisi
+if len(comment) == 0:
+    target = today + os.sep + now + '.zip'
+else:
+    target = today + os.sep + now + '_' + \
+        comment.replace(' ', '_') + '.zip'
+
+# Crée le sous-répertoire s'il n'existe pas déjà.
+if not os.path.exists(today):
+    os.mkdir(today)
+    print('Successfully created directory', today)
+
+# 5. Nous utilisons la commande zip pour créer une archive
+zip_command = 'zip -r {0} {1}'.format(target,
+                                      ' '.join(source))
+
+# Lancement de la sauvegarde
+print('La commande zip est :')
+print(zip_command)
+print('En cours :')
+if os.system(zip_command) == 0:
+    print('Sauvegarde réussie dans', target)
+else:
+    print('Sauvegarde ÉCHOUÉE')
+```
+
+Résultat:
+
+```
+$ python backup_ver4.py
+Saisissez un commentaire --> ajout de nouveaux exemples
+La commande zip est :
+zip -r /Users/swa/backup/20140329/074122_ajout_de_nouveaux_exemples.zip /Users/swa/notes
+En cours :
+  adding: Users/swa/notes/ (stored 0%)
+  adding: Users/swa/notes/blah1.txt (stored 0%)
+  adding: Users/swa/notes/blah2.txt (stored 0%)
+  adding: Users/swa/notes/blah3.txt (stored 0%)
+Sauvegarde réussie dans /Users/swa/backup/20140329/074122_ajout_de_nouveaux_exemples.zip
+```
+
+**Comment ça marche**
+
+Maintenant le programme fonctionne ! Regardons les améliorations que nous avons ajoutées dans la version 3. Nous saisissons les commentaires de l'utilisateur avec la fonction `input` et nous vérifions si quelque chose a été saisi en trouvant la longueur de l'entrée avec la fonction `len` . Si l'utilisateur a juste tapé `enter` sans rien saisir (c'était peut-être une sauvegarde quelconque ou sans modification), alors nous faisons comme avant.
+
+Cependant, si un commentaire a été saisi, alors il est ajouté au nom de l'archive zip juste avant l'extension `.zip`. Notez que nous remplaçons les espaces dans le commentaire par des underscores - parce qu'il est plus facile de gérer des noms de fichiers sans des espaces.
+
+## Possibilités d'améliorations
+
+La quatrième version est un script qui fonctionne de manière satisfaisante pour la plupart des utilisateurs, mais il y a toujours place à amélioration. Par exemple, vous pouvez inclure un niveau _verbosité_ pour la commande zip en spécifiant l'option `-v` pour que votre programme devienne plus bavard ou l'option `-q` pour le rendre _silencieux_ (ndlt: **q**uiet).
+
+Une autre amélioration possible serait de permettre de passer au script en ligne de commande des fichiers et répertoires en plus. Nous pouvons récupérer ces noms à partir de la liste `sys.argv` et nous pouvons les ajouter à notre liste `source` en utilisant la méthode `extend` fournie par la classe `list`.
+
+L'améliorations la plus importante serait de ne pas utiliser la méthode `os.system` pour créer les archives, mais plutôt les modules intégrés [zipfile](http://docs.python.org/3/library/zipfile.html) ou [tarfile]( http://docs.python.org/3/library/tarfile.html). Ils font partie de la bibliothèque standard et sont déjà disponibles pour que vous puissiez utiliser le script sans la dépendance externe envers le programme zip installé sur votre ordinateur.
+
+J’ai utilisé la méthode `os.system` pour créer une sauvegarde dans les exemples ci-dessus à des fins purement pédagogiques, de sorte que cet exemple soit suffisamment simple pour être compris par tout le monde, mais suffisamment réel pour être utile.
+
+Pouvez-vous essayer d'écrire la cinquième version qui utilise le module [zipfile] (http://docs.python.org/3/library/zipfile.html) à la place de l'appel `os.system` ?
+
+## Le cycle de développement
+
+Nous avons parcouru les différentes *phases* de l'écriture d'un logiciel. Ces phases peuvent être résumées comme suit :
+
+# Quoi (Analyse)
+# Comment (Conception)
+# Le faire (Implémentation)
+# Test (Test et Débogage)
+# Utilisation (Opération ou Déploiement)
+# Maintenance (Amélioration)
+
+Une manière recommandée d'écrire un programme est la procédure que nous avons suivie en créant le script backup : faire l'analyse et la conception. Commencer à implémenter une version simple. Tester et déboguer. L'utiliser pour s'assurer qu'il fonctionne comme prévu. Maintenant, ajouter les fonctionnalités que vous voulez et continuer le cycle Créer-Tester-Utiliser autant de fois que nécessaire.
+
+Souvenez-vous:
+
+> Un logiciel ne se fabrique pas, il se cultive.
+> -- [Bill de hÓra](https://web.archive.org/web/20150216004032/http://97things.oreilly.com/wiki/index.php/Great_software_is_not_built,_it_is_grown)
+
+## Récapitulatif
+
+Nous avons vu comment créer notre programme/script Python et les différentes étapes dans l'écriture d'un tel programme. Vous trouverez utile de créer vos programmes comme nous l'avons fait dans ce chapitre, ainsi vous serez plus à l'aise avec Python comme dans la résolution de problèmes.
+
+Ensuite, nous allons parler de programmation orientée objet.
