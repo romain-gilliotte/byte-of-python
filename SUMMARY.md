@@ -1,12 +1,11 @@
 # Sommaire
 
-## Introduction
+## Avant-propos
 
-* [Introduction](README.md)
 * [Dédicace](dedication.md)
+* [Préface](preface.md)
 
 ## A byte of Python
-* [Préface](preface.md)
 * [À propos de Python](about_python.md)
 * [Installation](installation.md)
 * [Premiers pas](first_steps.md)

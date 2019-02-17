@@ -1,5 +1,4 @@
-﻿# Résolution de problème
-
+﻿
 Nous avons étudié diverses parties du langage Python et nous allons maintenant voir comment ces parties s'assemblent ensemble, en concevant et en écrivant un programme qui _fait_ quelque chose d'utile. L'idée est d'apprendre à écrire un script Python.
 
 ## Le problème
