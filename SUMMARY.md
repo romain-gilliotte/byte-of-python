@@ -1,12 +1,13 @@
 # Sommaire
 
-## A byte of Python
 * [Dédicace](dedication.md)
+
+## A byte of Python
 * [Préface](preface.md)
 * [À propos de Python](about_python.md)
 * [Installation](installation.md)
 * [Premiers pas](first_steps.md)
-* [Les Bases](basics.md)
+* [Les bases](basics.md)
 * [Opérateurs et expressions](op_exp.md)
 * [Structures de contrôle](control_flow.md)
 * [Fonctions](functions.md)
