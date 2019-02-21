@@ -314,7 +314,7 @@ True
 
 **Comment ça marche**
 
-Si vous vous souvenez des bases de la théorie des ensembles mathématiques, cet exemple s’explique par lui même. Dans le cas contraire, cherchez "théorie des ensembles" et "diagramme de Venn" sur google pour mieux comprendre l'utilisation des ensembles en Python.
+Si vous vous souvenez des bases de la théorie des ensembles mathématiques, cet exemple s’explique par lui même. Dans le cas contraire, cherchez « théorie des ensembles » et « diagramme de Venn » sur google pour mieux comprendre l'utilisation des ensembles en Python.
 
 ## Références
 

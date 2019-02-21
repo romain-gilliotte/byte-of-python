@@ -349,7 +349,7 @@ Si vous avez utilisé `help()` en Python, alors vous avez déjà utilisé les do
 
 Des outils automatiques peuvent récupérer la documentation de votre programme de cette manière. Par conséquent, je *recommande fortement* que vous utilisiez les docstrings pour tout fonction non-triviale que vous écrivez. La commande `pydoc` fournie avec Python fonctionne de manière similaire au `help()` en utilisant les docstrings.
 
-## Summary
+## Récapitulatif
 
 Nous avons couvert de nombreux aspects des fonctions mais il nous reste des choses à voir. Cependant nous avons vu l'essentiel de ce que vous utiliserez couramment concernant les fonctions dans Python.
 
