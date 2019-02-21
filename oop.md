@@ -1,145 +1,248 @@
-# Object Oriented Programming {#oop}
+# Programmation orientée objet {#oop}
 
-In all the programs we wrote till now, we have designed our program around functions i.e. blocks of statements which manipulate data. This is called the _procedure-oriented_ way of programming. There is another way of organizing your program which is to combine data and functionality and wrap it inside something called an object. This is called the _object oriented_ programming paradigm. Most of the time you can use procedural programming, but when writing large programs or have a problem that is better suited to this method, you can use object oriented programming techniques.
+Dans tous les programmes que nous avons écrits jusque-là, nous avons conçu notre programme autour des fonctions, c'est-à-dire des blocs d'instructions qui manipulent des données. C'est ce qu'on appelle la programmation _orientée procédure_. Il y a une autre façon d'organiser votre programme, qui est de combiner les données et les fonctionnalités et de tout emballer à l'intérieur de quelque chose qu'on appelle un objet. C'est ce qu'on appelle le paradigme de la programmation _orientée objet_. La plupart du temps vous pouvez utiliser la programmation procédurale, mais quand vous écrivez des programmes de taille importante, ou avez un problème qui se résoud mieux avec cette méthode, vous pouvez utiliser les techniques de la programmation orientée objet.
 
-Classes and objects are the two main aspects of object oriented programming. A **class** creates a new _type_ where **objects** are **instances** of the class. An analogy is that you can have variables of type `int` which translates to saying that variables that store integers are variables which are instances (objects) of the `int` class.
+Les classes et les objets sont les deux principaux aspects de la programmation orientée objet. Une  **classe** crée un nouveau _type_ où les **objets** sont des **instances** de la classe. Une analogie est que vous pouvez avoir des variables de type `int` ce qui revient à dire que les variables qui stockent des entiers sont des variables qui sont des instances (des objets) de la classe `int`.
 
-> **Note for Static Language Programmers**
-> 
-> Note that even integers are treated as objects (of the `int` class). This is unlike C++ and Java (before version 1.5) where integers are primitive native types.
-> 
-> See `help(int)` for more details on the class.
-> 
-> C# and Java 1.5 programmers will find this similar to the _boxing and unboxing_ concept.
+> **Note pour les programmeurs en langages statiques**
+> Notez que même les entiers sont traités en tant qu'objets (de la classe `int`). Cela est le contraire de C++ et Java (avant la version 1.5) où les entiers sont des types primitifs natifs.
+>
+> Voyez `help(int)` pour plus de détails sur cette classe.
+>
+> Les programeurs C# et Java 1.5 trouveront cela similaire au concept de _boxing_ et _unboxing_.
 
-Objects can store data using ordinary variables that _belong_ to the object. Variables that belong to an object or class are referred to as **fields**. Objects can also have functionality by using functions that _belong_ to a class. Such functions are called **methods** of the class. This terminology is important because it helps us to differentiate between functions and variables which are independent and those which belong to a class or object. Collectively, the fields and methods can be referred to as the **attributes** of that class.
+Les objets peuvent stocker des données en utilisant des variables ordinaires qui _appartiennent_ à l'objet. Les variables qui appartiennent à un objet ou à une classe sont appelés des **champs**. Les objets peuvent aussi avoir des fonctionnalités en utilisant des fonctions qui *appartiennent* à une classe. De telles fonctions sont appelées les **méthodes** de la classe. Cette terminologie est importante parce qu'elle nous aide à différencier les fonctions et variables qui sont indépendantes et celles qui appartiennent à une classe ou un objet. Collectivement, on fait référence aux champs et méthodes en tant qu'**attributs** de cette classe.
 
-Fields are of two types - they can belong to each instance/object of the class or they can belong to the class itself. They are called **instance variables** and **class variables** respectively.
+Les champs sont de deux types, ils peuvent appartenir à chaque instance/objet de la classe ou ils peuvent appartenir à la classe elle-même. On les appelle respectivement les **variables d'instance** et les **variables de classe** .
 
-A class is created using the `class` keyword. The fields and methods of the class are listed in an indented block.
+Une classe est créée en utilisant le mot-clé `class`. Les champs et méthodes de la classe sont listés dans un bloc indenté.
 
-## The `self` {#self}
+## Le paramètre `self` {#self}
 
-Class methods have only one specific difference from ordinary functions - they must have an extra first name that has to be added to the beginning of the parameter list, but you **do not** give a value for this parameter when you call the method, Python will provide it. This particular variable refers to the object _itself_, and by convention, it is given the name `self`.
 
-Although, you can give any name for this parameter, it is _strongly recommended_ that you use the name `self` - any other name is definitely frowned upon. There are many advantages to using a standard name - any reader of your program will immediately recognize it and even specialized IDEs (Integrated Development Environments) can help you if you use `self`.
+Les méthodes d'une classe ont une seule différence avec les fonctions ordinaires - elles ont un nom en plus qui doit être ajouté au début de la liste des paramètres, mais vous ne devez **pas** donner une valeur à ce paramètre quand vous appelez la méthode, Python le fournira. Cette variable particulière fait référence à l'objet _lui-même_, et par convention on lui donne le nom de `self`.
 
-> **Note for C++/Java/C# Programmers**
-> 
-> The `self` in Python is equivalent to the `this` pointer in C++ and the `this` reference in Java and C#.
+Vous pouvez donner n'importe quel nom à ce paramètre, mais il est _fortement recommandé_ d'utiliser le nom `self`, tout autre nom est mal vu. Il y a de nombreux avantages à utiliser un nom standard: n'importe quelle personne lisant votre programme le reconnaîtra immediatement et même des EDIs spécialisés (Environnement de Développement Intégré) vous aideront si vous utilisez `self`.
 
-You must be wondering how Python gives the value for `self` and why you don't need to give a value for it. An example will make this clear. Say you have a class called `MyClass` and an instance of this class called `myobject`. When you call a method of this object as `myobject.method(arg1, arg2)`, this is automatically converted by Python into `MyClass.method(myobject, arg1, arg2)` - this is all the special `self` is about.
+> **Note pour les programmeurs C++/Java/C#**
+>
+> Le `self` en Python est équivalent au pointeur `this` en C++ et à la référence `this` en Java et C#.
 
-This also means that if you have a method which takes no arguments, then you still have to have one argument - the `self`.
+Vous vous demandez comment Python donne une valeur à `self` et pourquoi vous n'avez pas besoin de lui en fournir une. Un exemple va clarifier cela. Disons que vous avez une classe appelée `MyClass` et une instance de cette classe appelée `myobject`. Quand vous appelez une méthode de cet objet en tant que `myobject.method(arg1, arg2)`, cela est automatiquement converti par Python en `MyClass.method(myobject, arg1, arg2)`, c'est tout ce qu'il y a à dire sur le `self`.
+
+Cela signifie aussi que si vous avez une méthode qui ne prend pas d'argument, alors elle a quand même un argument: `self`.
 
 ## Classes {#class}
 
-The simplest class possible is shown in the following example (save as `oop_simplestclass.py`).
+La classe la plus simple possible est montrée dans l'exemple suivant (sauvegardez sous `oop_simplestclass.py`).
 
-<pre><code class="lang-python">{% include "./programs/oop_simplestclass.py" %}</code></pre>
+```python
+class Person:
+    pass  # Un bloc vide
 
-Output:
+p = Person()
+print(p)
+```
 
-<pre><code>{% include "./programs/oop_simplestclass.txt" %}</code></pre>
+Résultat:
 
-**How It Works**
+```
+$ python simplestclass.py
+<__main__.Person object at 0x019F85F0>
+```
 
-We create a new class using the `class` statement and the name of the class. This is followed by an indented block of statements which form the body of the class. In this case, we have an empty block which is indicated using the `pass` statement.
+**Comment ça marche**
 
-Next, we create an object/instance of this class using the name of the class followed by a pair of parentheses. (We will learn [more about instantiation](#init) in the next section). For our verification, we confirm the type of the variable by simply printing it. It tells us that we have an instance of the `Person` class in the `__main__` module.
+Nous créons une nouvelle classe avec l'instruction `class` et le nom de la classe. Suit un bloc indenté d'instructions qui forment le corps de la classe. Dans ce cas, nous avons un bloc vide qui est indiqué par l'instruction `pass` .
 
-Notice that the address of the computer memory where your object is stored is also printed. The address will have a different value on your computer since Python can store the object wherever it finds space.
+Ensuite, nous créons un objet/instance de cette classe en utilisant le nom de la classe suivi d'une paire de parenthèses. (nous en apprendrons [plus sur les instanciations](#init) dans la prochaine section). Pour vérifier, nous confirmons le type de la variable en l'affichant. Cela nous dit que nous avons une instance de la classe `Person` dans le module `__main__`.
 
-## Methods
+Notez que l'adresse de la mémoire de l'ordinateur où l'objet est stocké est affichée. Cette adresse aura une autre valeur sur votre ordinateur car Python va stocker l'objet n'importe où, là où il trouvera de la place.
 
-We have already discussed that classes/objects can have methods just like functions except that we have an extra `self` variable. We will now see an example (save as `oop_method.py`).
+## Méthodes
 
-<pre><code class="lang-python">{% include "./programs/oop_method.py" %}</code></pre>
+Nous avons déjà vu que les classes/objets peuvent avoir des méthodes comme les fonctions, avec la différence que nous avons une variable `self` en plus. Voyons avec un exemple (sauvegardez sous `oop_method.py`).
 
-Output:
+```python
+class Person:
+    def say_hi(self):
+        print('Bonjour, ça va ?')
 
-<pre><code>{% include "./programs/oop_method.txt" %}</code></pre>
+p = Person()
+p.say_hi()
+# Ce court exemple peut aussi s'écrire
+# Person().say_hi()
+```
 
-**How It Works**
+Résultat:
 
-Here we see the `self` in action. Notice that the `say_hi` method takes no parameters but still has the `self` in the function definition.
+```
+$ python method.py
+Bonjour, ça va ?
+```
 
-## The `__init__` method {#init}
+**Comment ça marche**
 
-There are many method names which have special significance in Python classes. We will see the significance of the `__init__` method now.
+Nous voyons ici `self` en action. Notez que la méthode `say_hi` ne prend pas de paramètres, mais possède `self` dans la définition de la fonction.
 
-The `__init__` method is run as soon as an object of a class is instantiated (i.e. created). The method is useful to do any *initialization* (i.e. passing initial values to your object) you want to do with your object. Notice the double underscores both at the beginning and at the end of the name.
+## La méthode `__init__` {#init}
 
-Example (save as `oop_init.py`):
+De nombreuses méthodes ont une signification particulière pour les classes Python. Nous allons voir la signification de la méthode `__init__` maintenant.
 
-<pre><code class="lang-python">{% include "./programs/oop_init.py" %}</code></pre>
+La méthode `__init__` est exécutée dès qu'un objet d'une classe est instancié. Cette méthode est utile pour exécuter n'importe quelle *initialisation* que vous voulez exécuter pour votre objet. Notez les double underscores à la fois au début et à la fin du nom.
 
-Output:
+Exemple (sauvegardez sous `oop_init.py`):
 
-<pre><code>{% include "./programs/oop_init.txt" %}</code></pre>
+```python
+class Person:
+    def __init__(self, name):
+        self.name = name
 
-**How It Works**
+    def say_hi(self):
+        print("Bonjour, je m'appelle", self.name)
 
-Here, we define the `__init__` method as taking a parameter `name` (along with the usual `self`). Here, we just create a new field also called `name`. Notice these are two different variables even though they are both called 'name'. There is no problem because the dotted notation `self.name` means that there is something called "name" that is part of the object called "self" and the other `name` is a local variable. Since we explicitly indicate which name we are referring to, there is no confusion.
+p = Person('Swaroop')
+p.say_hi()
+# Ce court exemple peut aussi s'écrire
+# Person().say_hi()
+```
 
-When creating new instance `p`, of the class `Person`, we do so by using the class name, followed by the arguments in the parentheses: p = Person('Swaroop').
+Résultat:
 
-We do not explicitly call the `__init__` method.
-This is the special significance of this method.
+```
+$ python class_init.py
+Bonjour, je m'appelle Swaroop
+```
 
-Now, we are able to use the `self.name` field in our methods which is demonstrated in the `say_hi` method.
+**Comment ça marche**
 
-## Class And Object Variables {#class-obj-vars}
+Ici, nous définissons la méthode `__init__` comme prenant un paramètre `name` (avec l'habituel `self`). Puis, nous créons un nouveau champ également appelé `name`. Notez que ce sont deux variables différentes même si elles sont toutes les deux appelées « name ». Grâce à la notation pointée `self.name`, il n'y a pas de problème, il y a quelque chose appelé "name" qui fait partie de l'objet appelé "self" et l'autre `name` est une variable locale. Comme nous indiquons explicitement à quel name nous faisons référence, il n'y a pas de confusion possible.
 
-We have already discussed the functionality part of classes and objects (i.e. methods), now let us learn about the data part. The data part, i.e. fields, are nothing but ordinary variables that are _bound_ to the **namespaces** of the classes and objects. This means that these names are valid within the context of these classes and objects only. That's why they are called _name spaces_.
+Quand nous créons une nouvelle instance `p` de la classe `Person`, nous utilisons le nom de la classe, suivi des arguments entre parenthèses: `p = Person('Swaroop')`
 
-There are two types of _fields_ - class variables and object variables which are classified depending on whether the class or the object _owns_ the variables respectively.
+Nous n'appelons pas explicitement la méthode `__init__`.
+C'est la signification spéciale de cette méthode.
 
-**Class variables** are shared - they can be accessed by all instances of that class. There is only one copy of the class variable and when any one object makes a change to a class variable, that change will be seen by all the other instances.
+Maintenant, nous pouvons utiliser le champ `self.name` dans nos méthodes, ce qui est démontré dans la méthode `say_hi`.
 
-**Object variables** are owned by each individual object/instance of the class. In this case, each object has its own copy of the field i.e. they are not shared and are not related in any way to the field by the same name in a different instance. An example will make this easy to understand (save as `oop_objvar.py`):
+## Classe et variable d'objets {#class-obj-vars}
 
-<pre><code class="lang-python">{% include "./programs/oop_objvar.py" %}</code></pre>
+Nous avons déjà vu la partie fonctionnalité des classes et objets (c'est-à-dire les méthodes), apprenons maintenant la partie données. La partie données, c'est-à-dire les champs, n'est rien d'autre que des variables ordinaires qui sont _liées_ à **l'espace de noms** des classes et objets. Cela veut dire que ces noms sont valides seulement à l'intérieur du contexte de ces classes et objets. Voilà pourquoi on les appelle des _espaces de noms_.
 
-Output:
+Il y a deux types de _champs_, les variables de classe et les variables objets qui sont classées en fonction de la classe ou de l'objet qui les _possèdent_ respectivement.
 
-<pre><code>{% include "./programs/oop_objvar.txt" %}</code></pre>
+Les **variables de classe** sont partagées, elles peuvent être accédées par toutes les instances de cette classe. Il n'y a qu'une seule copie de la variable de classe et quand n'importe quel objet modifie une variable de classe, ce changement est vu par toutes les autres instances.
 
-**How It Works**
+**Les variables d'objets** appartiennent à chaque objet/instance individuel de la classe. Dans ce cas, chaque objet a sa propre copie du champ, c'est-à-dire que ces copies ne sont pas partagées et n'ont aucun rapport avec le champ portant le même nom dans un instance différente. Un exemple va nous aider à comprendre cela (sauvegardez sous `oop_objvar.py`) :
 
-This is a long example but helps demonstrate the nature of class and object variables. Here, `population` belongs to the `Robot` class and hence is a class variable. The `name` variable belongs to the object (it is assigned using `self`) and hence is an object variable.
+```python
+class Robot:
+    """Représente un robot, avec un nom."""
 
-Thus, we refer to the `population` class variable as `Robot.population` and not as `self.population`. We refer to the object variable `name` using `self.name` notation in the methods of that object. Remember this simple difference between class and object variables. Also note that an object variable with the same name as a class variable will hide the class variable!
+    # Une variable de classe, qui compte le nombre de robots
+    population = 0
 
-Instead of `Robot.population`, we could have also used `self.__class__.population` because every object refers to its class via the `self.__class__` attribute.
+    def __init__(self, name):
+        """Initialise les données."""
+        self.name = name
+        print('(Initialisation {})'.format(self.name))
 
-The `how_many` is actually a method that belongs to the class and not to the object. This means we can define it as either a `classmethod` or a `staticmethod` depending on whether we need to know which class we are part of. Since we refer to a class variable, let's use `classmethod`.
+        # Quand ce robot est créé, il est ajouté à la population
+        Robot.population += 1
 
-We have marked the `how_many` method as a class method using a [decorator](./more.md#decorator).
+    def die(self):
+        """Je meurs."""
+        print('{} est détruit !'.format(self.name))
 
-Decorators can be imagined to be a shortcut to calling a wrapper function (i.e. a function that "wraps" around another function so that it can do something before or after the inner function), so applying the `@classmethod` decorator is the same as calling:
+        Robot.population -= 1
+
+        if Robot.population == 0:
+            print('{} était le dernier.'.format(self.name))
+        else:
+            print('Il y a encore {:d} robots au travail.'.format(Robot.population))
+
+    def say_hi(self):
+        """Bonjour du robot.
+
+        Oui, ils peuvent faire cela."""
+        print('Bonjour, mes maîtres m\'appellent {}.'.format(self.name))
+
+    @classmethod
+    def how_many(cls):
+        """Affiche la population actuelle."""
+        print('Nous avons {:d} robots.'.format(cls.population))
+
+droid1 = Robot('R2-D2')
+droid1.say_hi()
+Robot.how_many()
+
+droid2 = Robot('C-3PO')
+droid2.say_hi()
+Robot.how_many()
+
+print("\nLes robots peuvent faire un travail ici.\n")
+
+print("Les robots ont terminé leur travail. Donc détruisons-les.")
+droid1.die()
+droid2.die()
+
+Robot.how_many()
+```
+
+Résultat:
+
+```
+(Initialisation R2-D2)
+Bonjour, mes maîtres m'appellent R2-D2.
+Nous avons 1 robots.
+(Initialisation C-3PO)
+Bonjour, mes maîtres m'appellent C-3PO.
+Nous avons 2 robots.
+
+Les robots peuvent faire un travail ici.
+
+Les robots ont terminé leur travail. Donc détruisons-les.
+R2-D2 est détruit !
+Il y a encore 1 robots au travail.
+C-3PO est détruit !
+C-3PO était le dernier.
+Nous avons 0 robots.
+```
+**Comment ça marche**
+
+Cet exemple est long, mais nous aide à démontrer la nature des variables et objets de classe. Ici, `population` appartient à la classe `Robot` et est donc une variable de classe. La variable `name` appartient à l'objet (il est assigné en utilisant le `self`) et est donc une variable de l'objet.
+
+Ensuite, nous faisons référence à la variable de classe `population` en tant que `Robot.population` et pas en tant que `self.population`. Nous faisons référence à la variable objet `name` avec la notation `self.name` dans les méthodes de cet objet. Souvenez-vous de cette simple différence entre variable de classe et variable objet. Notez aussi qu'une variable objet avec le même nom qu'une variable de classe va cacher la variable de classe !
+
+À la place d'écrire `Robot.population`, nous aurions aussi pu utiliser `self.__class__.population` car tout objet peut référer à sa classe à travers l'attribut `self.__class__`.
+
+`how_many` est en fait une méthode qui appartient à la classe et pas à l'objet. Cela veut dire que nous pouvons le définir soit en tant que `classmethod` ou `staticmethod` selon que nous avons besoin de savoir de quelle classe nous faisons partie. Comme nous faisons référence à une variable de classe, utilisons `classmethod`.
+
+Nous avons annoté la méthode `how_many` en tant que méthode de classe utilisant un [décorateur](./more.md#decorator).
+
+On peut imaginer que les décorateurs sont un raccourci pour appeler une fonction enveloppante (c.-à-d. Une fonction qui en « enveloppe » une autre fonction afin qu'elle puisse faire quelque chose avant ou après la fonction interne), appliquer le décorateur `@classmethod` est donc identique à appel:
 
 ```python
 how_many = classmethod(how_many)
 ```
 
-Observe that the `__init__` method is used to initialize the `Robot` instance with a name. In this method, we increase the `population` count by 1 since we have one more robot being added. Also observe that the values of `self.name` is specific to each object which indicates the nature of object variables.
+Notez que la méthode `__init__` est utilisée pour initialiser l'instance `Robot` avec un nom. Dans cette méthode, nous augmentons le compteur `population` de 1, vu que nous avons ajouté un robot. Notez aussi que la valeur de `self.name` est spécifique à chaque objet de par sa nature de variable d'object.
 
-Remember, that you must refer to the variables and methods of the same object using the `self` *only*. This is called an *attribute reference*.
+Souvenez-vous, vous devez vous référer aux variables et méthodes du même objet en utilisant *uniquement* `self`. Cela s'appelle une *référence d'attribut*.
 
-In this program, we also see the use of *docstrings* for classes as well as methods. We can access the class docstring at runtime using `Robot.__doc__` and the method docstring as `Robot.say_hi.__doc__`
+Dans ce programme, nous voyons aussi l'utilisation des *docstrings* pour les classes et les méthodes. Nous pouvons accéder la docstring de la classe à l'exécution en utilisant `Robot.__doc__` et à celles des méthodes avec `Robot.sayHi.__doc__`.
 
-In the `die` method, we simply decrease the `Robot.population` count by 1.
+Dans la méthode `die`, nous nous contentons de décrémenter `Robot.population` de 1.
 
-All class members are public. One exception: If you use data members with names using the _double underscore prefix_ such as `__privatevar`, Python uses name-mangling to effectively make it a private variable.
+Tous les attributs de classe sont publics. Une exception: si vous nommez un attribut avec le _préfixe double underscore_ tel que `__privatevar`, Python utilise le « charcutage de nom » pour la rendre privée dans la pratique.
 
-Thus, the convention followed is that any variable that is to be used only within the class or object should begin with an underscore and all other names are public and can be used by other classes/objects. Remember that this is only a convention and is not enforced by Python (except for the double underscore prefix).
+Ainsi, la convention suivie est que toute variable devant être utilisée uniquement dans la classe ou l'objet doit commencer par un underscore et que tous les autres noms sont publics et peuvent être utilisés par d'autres classes/objets. Rappelez-vous qu'il ne s'agit que d'une convention et que Python ne bloque pas l'accès (à l'exception du préfixe du double underscore).
 
-> **Note for C++/Java/C# Programmers**
-> 
-> All class members (including the data members) are _public_ and all the methods are _virtual_ in Python.
+> **Note pour les programmeurs C++/Java/C#**
+>
+> Tous les membres de classe (en incluant les variables) sont *publics* et toutes les méthodes sont *virtuelles* en Python.
 
-## Inheritance
+## Héritage
 
 One of the major benefits of object oriented programming is **reuse** of code and one of the ways this is achieved is through the **inheritance** mechanism. Inheritance can be best imagined as implementing a **type and subtype** relationship between classes.
 
@@ -155,15 +258,15 @@ Also observe that we reuse the code of the parent class and we do not need to re
 
 The `SchoolMember` class in this situation is known as the **base class** or the **superclass**. The `Teacher` and `Student` classes are called the **derived classes** or **subclasses**.
 
-We will now see this example as a program (save as `oop_subclass.py`):
+We will now see this example as a program (sauvegardez sous `oop_subclass.py`):
 
 <pre><code class="lang-python">{% include "./programs/oop_subclass.py" %}</code></pre>
 
-Output:
+Résultat:
 
 <pre><code>{% include "./programs/oop_subclass.txt" %}</code></pre>
 
-**How It Works**
+**Comment ça marche**
 
 To use inheritance, we specify the base class names in a tuple following the class name in the class definition (for example, `class Teacher(SchoolMember)`).   Next, we observe that the `__init__` method of the base class is explicitly called using the  `self`  variable so that we can initialize the base class part of an instance in the subclass. This is very important to remember- Since we are defining a  `__init__`  method in `Teacher`  and  `Student`  subclasses, Python does not automatically call the constructor of the base class  `SchoolMember`, you have to explicitly call it yourself.
 
