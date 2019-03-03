@@ -20,7 +20,7 @@
 * [Entrées et sorties](io.md)
 * [Exceptions](exceptions.md)
 * [Bibliothèque standard](stdlib.md)
-* [Aller plus loin](more.md)
+* [Pour aller plus loin](more.md)
 * [Et ensuite](what_next.md)
 
 ## Annexes

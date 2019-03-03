@@ -1,10 +1,10 @@
-# More
+# Pour aller plus loin
 
-So far we have covered a majority of the various aspects of Python that you will use. In this chapter, we will cover some more aspects that will make our knowledge of Python more well-rounded.
+Nous avons couvert les principaux aspects de Python que vous utiliserez. Dans ce chapitre, nous verrons quelques autres points qui complèteront notre connaissance de Python.
 
-## Passing tuples around
+## Passer des tuples
 
-Ever wished you could return two different values from a function? You can. All you have to do is use a tuple.
+Vous avez déjà voulu renvoyer deux valeurs d'une fonction ? C'est possible. Il vous suffit d'utiliser un tuple.
 
 ```python
 >>> def get_error_details():
@@ -17,9 +17,9 @@ Ever wished you could return two different values from a function? You can. All 
 'details'
 ```
 
-Notice that the usage of `a, b = <some expression>` interprets the result of the expression as a tuple with two values.
+Notez que l'usage de `a, b = <une expression>` interprète le résultat de l'expression en tant que tuple avec deux valeurs.
 
-This also means the fastest way to swap two variables in Python is:
+De cette manière, la méthode la plus rapide pour échanger deux variables en Python est:
 
 ```python
 >>> a = 5; b = 8
@@ -30,58 +30,66 @@ This also means the fastest way to swap two variables in Python is:
 (8, 5)
 ```
 
-## Special Methods
+## Méthodes spéciales
 
-There are certain methods such as the `__init__` and `__del__` methods which have special significance in classes.
+Certaines méthodes comme `__init__` et `__del__` ont une signification spéciale dans les classes.
 
-Special methods are used to mimic certain behaviors of built-in types. For example, if you want to use the `x[key]` indexing operation for your class (just like you use it for lists and tuples), then all you have to do is implement the `__getitem__()` method and your job is done. If you think about it, this is what Python does for the `list` class itself!
+Les méthodes spéciales sont utilisées pour imiter certains comportements des types intégrés. Par exemple, si vous voulez utiliser l'opération d'indexation `x[key]` pour votre classe (comme vous le faite avec les listes et les tuples), alors il vous suffit d'implémenter la méthode `__getitem__()` et c'est fait. Si vous y réfléchissez, c'est ce que fait Python pour la classe `list` elle-même !
 
-Some useful special methods are listed in the following table. If you want to know about all the special methods, [see the manual](http://docs.python.org/3/reference/datamodel.html#special-method-names).
+Quelques méthodes spéciales utiles sont listées dans le tableau suivant. Si vous voulez tout savoir sur les méthodes spéciales, [référez-vous à la documentation](http://docs.python.org/3/reference/datamodel.html#special-method-names).
 
 - `__init__(self, ...)`
-    - This method is called just before the newly created object is returned for usage.
+    - Cette méthode est appelée juste avant que l'objet nouvellement créé ne soit retourné pour être utilisé.
 
 - `__del__(self)`
-    - Called just before the object is destroyed (which has unpredictable timing, so avoid using this)
+    - Appelée juste avant que l'objet ne soit détruit par Python (ce moment est imprévisible, donc évitez de vous en servir)
 
 - `__str__(self)`
-    - Called when we use the `print` function or when `str()` is used.
+    - Appelée quand nous appelons la fonction `print` ou quand `str()` est utilisé.
 
 - `__lt__(self, other)`
-    - Called when the _less than_ operator (<) is used. Similarly, there are special methods for all the operators (+, >, etc.)
+    - Appelée quand l'opérateur _inférieur à_ (`<`) est utilisé. De la même manière, il y a des méthodes spéciales pour tous les  opérateurs (`+`, `>`, etc...)
 
 - `__getitem__(self, key)`
-    - Called when `x[key]` indexing operation is used.
+    - Appelée quand l'opération d'indexation `x[clef]` est utilisée.
 
 - `__len__(self)`
-    - Called when the built-in `len()` function is used for the sequence object.
+    - Appelée quand la fonction intégrée `len()` est utilisée sur un objet séquence.
 
-## Single Statement Blocks
+## Blocs d'instructions a une ligne
 
-We have seen that each block of statements is set apart from the rest by its own indentation level. Well, there is one caveat. If your block of statements contains only one single statement, then you can specify it on the same line of, say, a conditional statement or looping statement. The following example should make this clear:
+Nous avons vu que chaque bloc d'instructions se démarque des autres par son niveau d'indentation. Il y a une mise en garde. Si votre bloc d'instructions ne contient qu'une instruction, vous pouvez l'écrire sur la même ligne que, disons, une instruction de condition ou de boucle. L'exemple suivant devrait clarifier cela :
 
 ```python
 >>> flag = True
->>> if flag: print('Yes')
+>>> if flag: print('Oui')
 ...
-Yes
+Oui
 ```
 
-Notice that the single statement is used in-place and not as a separate block.  Although, you can use this for making your program _smaller_, I strongly recommend avoiding this short-cut method, except for error checking, mainly because it will be much easier to add an extra statement if you are using proper indentation.
+Notez que l'unique instruction est utilisée sur place et pas en tant que bloc séparé. Bien qu'il soit possible d'utiliser cela pour _raccourcir_ votre programme, je recommande fortement d'éviter cette méthode, à part pour rechercher des erreurs, principalement parce qu'il sera beaucoup plus facile d'ajouter une instruction supplémentaire si vous utilisez une indentation correcte.
 
-## Lambda Forms
+## Fonctions lambda
 
 A `lambda` statement is used to create new function objects. Essentially, the `lambda` takes a parameter followed by a single expression. Lambda becomes the body of the function. The value of this expression is returned by the new function.
 
-Example (save as `more_lambda.py`):
+Exemple (sauvegardez sous `more_lambda.py`):
 
-<pre><code class="lang-python">{% include "./programs/more_lambda.py" %}</code></pre>
+```python
+points = [{'x': 2, 'y': 3},
+          {'x': 4, 'y': 1}]
+points.sort(key=lambda i: i['y'])
+print(points)
+```
 
-Output:
+Résultat:
 
-<pre><code>{% include "./programs/more_lambda.txt" %}</code></pre>
+```
+$ python more_lambda.py
+[{'y': 1, 'x': 4}, {'y': 3, 'x': 2}]
+```
 
-**How It Works**
+**Comment ça marche**
 
 Notice that the `sort` method of a `list` can take a `key` parameter which determines how the list is sorted (usually we know only about ascending or descending order). In our case, we want to do a custom sort, and for that we need to write a function. Instead of writing a separate `def` block for a function that will get used in only this one place, we use a lambda expression to create a new function.
 
@@ -89,15 +97,22 @@ Notice that the `sort` method of a `list` can take a `key` parameter which deter
 
 List comprehensions are used to derive a new list from an existing list. Suppose you have a list of numbers and you want to get a corresponding list with all the numbers multiplied by 2 only when the number itself is greater than 2. List comprehensions are ideal for such situations.
 
-Example (save as `more_list_comprehension.py`):
+Exemple (sauvegardez sous `more_list_comprehension.py`):
 
-<pre><code class="lang-python">{% include "./programs/more_list_comprehension.py" %}</code></pre>
+```python
+listone = [2, 3, 4]
+listtwo = [2*i for i in listone if i > 2]
+print(listtwo)
+```
 
-Output:
+Résultat:
 
-<pre><code>{% include "./programs/more_list_comprehension.txt" %}</code></pre>
+```
+$ python more_list_comprehension.py
+[6, 8]
+```
 
-**How It Works**
+**Comment ça marche**
 
 Here, we derive a new list by specifying the manipulation to be done (`2*i`) when some condition is satisfied (`if i > 2`). Note that the original list remains unmodified.
 
@@ -145,17 +160,74 @@ The `assert` statement should be used judiciously. Most of the time, it is bette
 
 Decorators are a shortcut to applying wrapper functions. This is helpful to "wrap" functionality with the same code over and over again. For example, I created a `retry` decorator for myself that I can just apply to any function and if any exception is thrown during a run, it is retried again, till a maximum of 5 times and with a delay between each retry. This is especially useful for situations where you are trying to make a network call to a remote computer:
 
-<pre><code class="lang-python">{% include "./programs/more_decorator.py" %}</code></pre>
+```python
+from time import sleep
+from functools import wraps
+import logging
+logging.basicConfig()
+log = logging.getLogger("retry")
 
-Output:
 
-<pre><code>{% include "./programs/more_decorator.txt" %}</code></pre>
+def retry(f):
+    @wraps(f)
+    def wrapper_function(*args, **kwargs):
+        MAX_ATTEMPTS = 5
+        for attempt in range(1, MAX_ATTEMPTS + 1):
+            try:
+                return f(*args, **kwargs)
+            except Exception:
+                log.exception("Attempt %s/%s failed : %s",
+                              attempt,
+                              MAX_ATTEMPTS,
+                              (args, kwargs))
+                sleep(10 * attempt)
+        log.critical("All %s attempts failed : %s",
+                     MAX_ATTEMPTS,
+                     (args, kwargs))
+    return wrapper_function
 
-**How It Works**
+
+counter = 0
+
+
+@retry
+def save_to_database(arg):
+    print("Write to a database or make a network call or etc.")
+    print("This will be automatically retried if exception is thrown.")
+    global counter
+    counter += 1
+    # This will throw an exception in the first call
+    # And will work fine in the second call (i.e. a retry)
+    if counter < 2:
+        raise ValueError(arg)
+
+
+if __name__ == '__main__':
+    save_to_database("Some bad value")
+```
+
+Résultat:
+
+```
+$ python more_decorator.py
+Write to a database or make a network call or etc.
+This will be automatically retried if exception is thrown.
+ERROR:retry:Attempt 1/5 failed : (('Some bad value',), {})
+Traceback (most recent call last):
+  File "more_decorator.py", line 14, in wrapper_function
+    return f(*args, **kwargs)
+  File "more_decorator.py", line 39, in save_to_database
+    raise ValueError(arg)
+ValueError: Some bad value
+Write to a database or make a network call or etc.
+This will be automatically retried if exception is thrown.
+```
+
+**Comment ça marche**
 
 See:
 
-- [Video : Python Decorators Made Easy](https://youtu.be/MYAEv3JoenI) 
+- [Video : Python Decorators Made Easy](https://youtu.be/MYAEv3JoenI)
 - http://www.ibm.com/developerworks/linux/library/l-cpdecor.html
 - http://toumorokoshi.github.io/dry-principles-through-python-decorators.html
 
