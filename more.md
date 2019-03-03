@@ -56,7 +56,7 @@ Quelques méthodes spéciales utiles sont listées dans le tableau suivant. Si v
 - `__len__(self)`
     - Appelée quand la fonction intégrée `len()` est utilisée sur un objet séquence.
 
-## Blocs d'instructions a une ligne
+## Blocs d'instructions à une ligne
 
 Nous avons vu que chaque bloc d'instructions se démarque des autres par son niveau d'indentation. Il y a une mise en garde. Si votre bloc d'instructions ne contient qu'une instruction, vous pouvez l'écrire sur la même ligne que, disons, une instruction de condition ou de boucle. L'exemple suivant devrait clarifier cela :
 
@@ -227,7 +227,7 @@ This will be automatically retried if exception is thrown.
 
 See:
 
-- [Video : Python Decorators Made Easy](https://youtu.be/MYAEv3JoenI)
+- [Vidéo: Comprendre facilement les décorateurs Python](https://youtu.be/MYAEv3JoenI)
 - http://www.ibm.com/developerworks/linux/library/l-cpdecor.html
 - http://toumorokoshi.github.io/dry-principles-through-python-decorators.html
 
