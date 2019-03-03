@@ -1,12 +1,12 @@
 # Exceptions
 
-Exceptions occur when _exceptional_ situations occur in your program. For example, what if you are going to read a file and the file does not exist? Or what if you accidentally deleted it when the program was running? Such situations are handled using **exceptions**.
+Les exceptions se produisent quand une situation _exceptionnelle_ arrive dans votre programme. Par exemple, que se passe-t-il quand vous voulez lire un fichier et que ce fichier n'existe pas ? Ou quand vous le détruisez par erreur pendant l'exécution du programme ? De telles situations sont gérées en utilisant des **exceptions**.
 
-Similarly, what if your program had some invalid statements? This is handled by Python which **raises** its hands and tells you there is an **error**.
+De la même manière, que se passe-t-il si votre programme contient des instructions incorrectes ? Cela est géré par Python qui **lève** la main et vous dit qu'il y a une **erreur**.
 
-## Errors
+## Erreurs
 
-Consider a simple `print` function call. What if we misspelt `print` as `Print`? Note the capitalization. In this case, Python _raises_ a syntax error.
+Considérez un simple appel à la fonction `print`. Que se passe-t-il si nous faisons une faute de frappe et écrivons `Print` à la place de `print` ? Notez la lettre majuscule. Dans ce cas, Python _lève_ une erreur de syntaxe.
 
 ```python
 >>> Print("Hello World")
@@ -17,109 +17,197 @@ NameError: name 'Print' is not defined
 Hello World
 ```
 
-Observe that a `NameError` is raised and also the location where the error was detected is printed. This is what an **error handler** for this error does.
+Observez qu'une `NameError` est levée et que l'emplacement où l'erreur a été détectée est affiché. C'est le travail du **gestionnaire d'erreur** de cette erreur.
 
 ## Exceptions
 
-We will **try** to read input from the user.  Enter the first line below and hit the `Enter` key.  When your computer prompts you for input, instead press `[ctrl-d]` on a Mac or `[ctrl-z]` with Windows and see what happens.  (If you're using Windows and neither option works, you can try `[ctrl-c]` in the Command Prompt to generate a KeyboardInterrupt error instead).
+Nous allons **essayer** de lire la saisie de l'utilisateur. Entrez la première ligne ci-dessous et appuyez sur la touche `Entrée`. Lorsque votre ordinateur vous invite à saisir, faites à la place `[ctrl-d]` sur Mac ou `[ctrl-z]` sous Windows pour voir ce qui se passe. (Si vous utilisez Windows et qu'aucune des deux options ne fonctionne, essayez `[ctrl-c]` dans l'invite de commande pour générer une erreur `KeyboardInterrupt` à la place).
 
 ```python
->>> s = input('Enter something --> ')
-Enter something --> Traceback (most recent call last):
+>>> s = input('Saisissez quelque chose --> ')
+Saisissez quelque chose --> Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 EOFError
 ```
 
-Python raises an error called `EOFError` which basically means it found an *end of file* symbol (which is represented by `ctrl-d`) when it did not expect to see it.
+Python lève une erreur appelée `EOFError` qui signifie en gros qu’il a trouvé un symbole de fin de fichier (*E*nd *O*f *F*ile) (représenté par `[ctrl-d]`) alors qu’il ne s’attendait pas à le voir.
 
-## Handling Exceptions
+## Gérer les exceptions
 
 We can handle exceptions using the `try..except` statement.  We basically put our usual statements within the try-block and put all our error handlers in the except-block.
 
-Example (save as `exceptions_handle.py`):
+Exemple (sauvegardez sous `exceptions_handle.py`):
 
-<pre><code class="lang-python">{% include "./programs/exceptions_handle.py" %}</code></pre>
+```python
+try:
+    text = input('Saisissez quelque chose --> ')
+except EOFError:
+    print('Pourquoi m\'avez-vous envoyé une fin de fichier ?')
+except KeyboardInterrupt:
+    print('Vous avez annulé l\'opération.')
+else:
+    print('Vous avez saisi {0}'.format(text))
+```
 
-Output:
+Résultat:
 
-<pre><code>{% include "./programs/exceptions_handle.txt" %}</code></pre>
+```
+# Tapez ctrl + d
+$ python exceptions_handle.py
+Saisissez quelque chose -->
+Pourquoi m'avez-vous envoyé une fin de fichier ?
 
-**How It Works**
+# Tapez ctrl + c
+$ python exceptions_handle.py
+Saisissez quelque chose --> ^CVous avez annulé l'opération.
 
-We put all the statements that might raise exceptions/errors inside the `try` block and then put handlers for the appropriate errors/exceptions in the `except` clause/block. The `except` clause can handle a single specified error or exception, or a parenthesized list of errors/exceptions. If no names of errors or exceptions are supplied, it will handle _all_ errors and exceptions.
+$ python exceptions_handle.py
+Saisissez quelque chose --> Pas d'exception
+Vous avez saisi Pas d'exception
+```
 
-Note that there has to be at least one `except` clause associated with every `try` clause. Otherwise, what's the point of having a try block?
+**Comment ça marche**
 
-If any error or exception is not handled, then the default Python handler is called which just stops the execution of the program and prints an error message. We have already seen this in action above.
+Nous mettons toutes les instructions qui peuvent lever des exceptions/erreurs à l'intérieur du bloc `try` et gérons les erreurs/exceptions prévues dans la clause (ou bloc) `except`. La clause `except` peut gérer une seule erreur ou exception spécifiée, ou une liste d'erreurs ou d'exceptions entre parenthèses. Si le nom des erreurs ou exceptions à gérer n'est pas specifié, le bloc gérera *toutes* les erreurs et exceptions.
 
-You can also have an `else` clause associated with a `try..except` block. The `else` clause is executed if no exception occurs.
+Notez qu'il faut avoir au moins une clause `except` associée à chaque clause `try`. Sinon, quel serait l'intérêt d'avoir un bloc try ?
 
-In the next example, we will also see how to get the exception object so that we can retrieve additional information.
+Si une erreur ou exception n'est pas gérée, alors le gestionnaire par default de Python est appelé, il arrête l'exécution du programme et affiche un message d'erreur. Nous avons déjà testé cela plus haut.
 
-## Raising Exceptions
+Vous pouvez aussi avoir une clause `else` associée à un bloc `try..except`. La clause `else` est exécutée lorsqu'on ne rencontre pas d'exception.
 
-You can _raise_ exceptions using the `raise` statement by providing the name of the error/exception and the exception object that is to be _thrown_.
+Dans l'exemple suivant, nous verrons comment récupérer l'objet d'exception afin d'obtenir des informations supplémentaires.
 
-The error or exception that you can raise should be a class which directly or indirectly must be a derived class of the `Exception` class.
+## Lever des exceptions
 
-Example (save as `exceptions_raise.py`):
+Vous pouvez _lever_ des exceptions avec l'instruction `raise` en fournissant le nom de l'erreur/exception et l'objet exception qui sera *lancé*.
 
-<pre><code class="lang-python">{% include "./programs/exceptions_raise.py" %}</code></pre>
+L'erreur ou exception que vous levez doit être une classe qui doit être dérivée directement ou indirectement de la classe `Exception`.
 
-Output:
+Exemple (sauvegardez sous `exceptions_raise.py`):
 
-<pre><code>{% include "./programs/exceptions_raise.txt" %}</code></pre>
+```python
+class ShortInputException(Exception):
+    '''Une exception définie par l'utilisateur.'''
+    def __init__(self, length, atleast):
+        Exception.__init__(self)
+        self.length = length
+        self.atleast = atleast
 
-**How It Works**
+try:
+    text = input('Saisissez quelque chose --> ')
+    if len(text) < 3:
+        raise ShortInputException(len(text), 3)
+    # On pourrait continuer de manière normale ici
+except EOFError:
+    print('Pourquoi m\'avez-vous envoyé une fin de fichier ?')
+except ShortInputException as ex:
+    print(('ShortInputException: La saisie avait une longueur de ' +
+           '{0}, et on attendait au moins {1}')
+          .format(ex.length, ex.atleast))
+else:
+    print('Pas d\'exception levée.')
+```
 
-Here, we are creating our own exception type. This new exception type is called `ShortInputException`. It has two fields - `length` which is the length of the given input, and `atleast` which is the minimum length that the program was expecting.
+Résultat:
 
-In the `except` clause, we mention the class of error which will be stored `as` the variable name to hold the corresponding error/exception object. This is analogous to parameters and arguments in a function call. Within this particular `except` clause, we use the `length` and `atleast` fields of the exception object to print an appropriate message to the user.
+```
+$ python exceptions_raise.py
+Saisissez quelque chose --> a
+ShortInputException: La saisie avait une longueur de 1, et on attendait au moins 3
+
+$ python exceptions_raise.py
+Saisissez quelque chose --> abc
+Pas d'exception levée.
+```
+
+**Comment ça marche**
+
+
+Nous créons ici notre propre type d'exception. Ce nouveau type d'exception est appelé `ShortInputException`. Il possède deux champs: `length` qui est la longueur saisie, et `atleast` qui est la longueur minimum attendue par le programme.
+
+Dans la clause `except`, nous indiquons la classe de l'erreur qui sera stockée en tant que `ex` (`as ex`), le nom de variable qui va contenir l'objet d'erreur/exception correspondant. Cela est comparable aux paramètres et arguments dans un appel de fonction. A l'intérieur de cet clause `except`, nous utilisons les champs `length` et `atleast` de l'objet exception pour afficher le message approprié à l'utilisateur.
 
 ## Try ... Finally {#try-finally}
 
-Suppose you are reading a file in your program. How do you ensure that the file object is closed properly whether or not an exception was raised? This can be done using the `finally` block.
+Supposons, vous lisez un fichier dans votre programme. Comment être certain que l'objet fichier est fermé proprement, indépendament du fait qu'une exception soit levée ou non dans le code qui le manipule ? Cela se fait à l'aide d'un bloc `finally`.
 
-Save this program as `exceptions_finally.py`:
+Sauvegardez ce programme sous `exceptions_finally.py`:
 
-<pre><code class="lang-python">{% include "./programs/exceptions_finally.py" %}</code></pre>
+```python
+import sys
+import time
 
-Output:
+f = None
+try:
+    f = open("poem.txt")
+    # Notre idiome habituel pour lire un fichier
+    while True:
+        line = f.readline()
+        if len(line) == 0:
+            break
+        print(line, end='')
+        sys.stdout.flush()
+        print("Tapez ctrl+c maintenant")
+        # Pour être certain que cela dure un peu
+        time.sleep(2)
+except IOError:
+    print("Le fichier poem.txt n'existe pas")
+except KeyboardInterrupt:
+    print("!! Vous avez annulé la lecture du fichier")
+finally:
+    if f:
+        f.close()
+    print("(Nettoyage : fermeture du fichier)")
+```
 
-<pre><code>{% include "./programs/exceptions_finally.txt" %}</code></pre>
+Résultat:
 
-**How It Works**
+```
+$ python exceptions_finally.py
+Programming is fun
+Press ctrl+c now
+^C!! You cancelled the reading from the file.
+(Cleaning up: Closed the file)
+```
 
-We do the usual file-reading stuff, but we have arbitrarily introduced sleeping for 2 seconds after printing each line using the `time.sleep` function so that the program runs slowly (Python is very fast by nature). When the program is still running, press `ctrl + c` to interrupt/cancel the program.
+**Comment ça marche**
 
-Observe that the `KeyboardInterrupt` exception is thrown and the program quits. However, before the program exits, the finally clause is executed and the file object is always closed.
+Nous faisons notre lecture de fichier habituelle, mais nous avons introduit de manière arbitraire une pause de 2 secondes après l’impression de chaque ligne à l’aide de la fonction `time.sleep` afin que le programme s’exécute lentement (Python est très rapide par nature). Pendant que le programme est en cours d'exécution, appuyez sur `ctrl + c` pour l'interrompre.
 
-Notice that a variable assigned a value of 0 or `None` or a variable which is an empty sequence or collection is considered `False` by Python.  This is why we can use `if: f` in the code above.
+Notez que l'exception `KeyboardInterrupt` est levée et que le programme se ferme. Cependant, avant sa fermeture, la clause `finally` est exécutée et l'objet fichier est fermé.
 
-Also note that we use `sys.stdout.flush()` after `print` so that it prints to the screen immediately.
+Notez également qu'une variable affectée d'une valeur de 0 ou `None` ou d'une variable qui contient séquence ou une collection vide est considérée comme `False` par Python. C'est pourquoi nous pouvons utiliser `if: f` dans le code ci-dessus.
 
-## The with statement {#with}
+Notez également que nous utilisons `sys.stdout.flush()` après `print` pour nous garantir que le message soit immédiatement affiché à l'écran.
 
-Acquiring a resource in the `try` block and subsequently releasing the resource in the `finally` block is a common pattern. Hence, there is also a `with` statement that enables this to be done in a clean manner:
+## L'instruction `with` {#with}
 
-Save as `exceptions_using_with.py`:
+Acquérir une ressource dans le bloc`try` et la relâcher dans le bloc `finally` arrive très fréquement. Par conséquent, il y a aussi une instruction `with` qui permet de faire cela de manière plus lisible :
 
-<pre><code class="lang-python">{% include "./programs/exceptions_using_with.py" %}</code></pre>
+Sauvegardez sous `exceptions_using_with.py`:
 
-**How It Works**
+```python
+with open("poem.txt") as f:
+    for line in f:
+        print(line, end='')
+```
 
-The output should be same as the previous example. The difference here is that we are using the `open` function with the `with` statement - we leave the closing of the file to be done automatically by `with open`.
+**Comment ça marche**
 
-What happens behind the scenes is that there is a protocol used by the `with` statement. It fetches the object returned by the `open` statement, let's call it "thefile" in this case.
 
-It _always_ calls the `thefile.__enter__` function before starting the block of code under it and _always_ calls `thefile.__exit__` after finishing the block of code.
+Le résultat devrait être le même que dans l'exemple précédent. La différence est que nous utilisons la fonction `open` avec l'instruction `with` et nous laissons la fermeture du fichier se faire automatiquement avec `with open`.
 
-So the code that we would have written in a `finally` block should be taken care of automatically by the `__exit__` method. This is what helps us to avoid having to use explicit `try..finally` statements repeatedly.
+Ce qui se passe en arrière-plan est qu'un protocole est utilisé par l'instruction `with`. Il recherche l'objet retourné par l'instruction `open`, appelons-le "thefile" dans ce cas.
 
-More discussion on this topic is beyond scope of this book, so please refer [PEP 343](http://www.python.org/dev/peps/pep-0343/) for a comprehensive explanation.
+Il appelle _toujours_ la fonction `thefile.__enter__` avant de commencer le bloc de code en dessous et appelle _toujours_ `thefile.__exit__` après avoir terminé le bloc de code.
 
-## Summary
+Donc la méthode `__exit__` prendra en charge le code que nous aurions écrit dans un bloc `finally`. C'est ce qui nous aide à éviter d'utiliser des instructions `try..finally` de manière répétitive.
 
-We have discussed the usage of the `try..except` and `try..finally` statements. We have seen how to create our own exception types and how to raise exceptions as well.
+Une discussion plus approfondie sur ce sujet est au-delà de l'objectif de ce livre, consultez [PEP 343](http://www.python.org/dev/peps/pep-0343/) pour une explication détaillée.
 
-Next, we will explore the Python Standard Library.
+## Récapitulatif
+
+Nous avons vu comment utiliser les instructions `try..except` et `try..finally`. Nous avons vu comment créer nos propres types d'exceptions et comment lever des exceptions.
+
+Ensuite, nous allons explorer la bibliothèque standard de Python.
