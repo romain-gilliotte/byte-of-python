@@ -55,7 +55,7 @@ $ python simplestclass.py
 
 Nous créons une nouvelle classe avec l'instruction `class` et le nom de la classe. Suit un bloc indenté d'instructions qui forment le corps de la classe. Dans ce cas, nous avons un bloc vide qui est indiqué par l'instruction `pass` .
 
-Ensuite, nous créons un objet/instance de cette classe en utilisant le nom de la classe suivi d'une paire de parenthèses. (nous en apprendrons [plus sur les instanciations](#init) dans la prochaine section). Pour vérifier, nous confirmons le type de la variable en l'affichant. Cela nous dit que nous avons une instance de la classe `Person` dans le module `__main__`.
+Ensuite, nous créons un objet/instance de cette classe en utilisant le nom de la classe suivi d'une paire de parenthèses (nous en apprendrons [plus sur les instanciations](#init) dans la prochaine section). Pour vérifier, nous confirmons le type de la variable en l'affichant. Cela nous dit que nous avons une instance de la classe `Person` dans le module `__main__`.
 
 Notez que l'adresse de la mémoire de l'ordinateur où l'objet est stocké est affichée. Cette adresse aura une autre valeur sur votre ordinateur car Python va stocker l'objet n'importe où, là où il trouvera de la place.
 
@@ -244,43 +244,93 @@ Ainsi, la convention suivie est que toute variable devant être utilisée unique
 
 ## Héritage
 
-One of the major benefits of object oriented programming is **reuse** of code and one of the ways this is achieved is through the **inheritance** mechanism. Inheritance can be best imagined as implementing a **type and subtype** relationship between classes.
+Un des avantages majeurs de la programmation orientée objet est la **re-utilisation** de code et une des manières d'y arriver est par le mécanisme d'**héritage**. On peut voir l'héritage comme le fait d'implémenter une relation **type et sous-type** entre classes.
 
-Suppose you want to write a program which has to keep track of the teachers and students in a college. They have some common characteristics such as name, age and address. They also have specific characteristics such as salary, courses and leaves for teachers and, marks and fees for students.
+Supposons que vous voulez écrire un programme qui mémorise les professeurs et les élèves d'une école. Ils ont des caractéristiques en commun, comme le nom, l'âge et l'adresse. Ils ont aussi des caractéristiques spécifiques comme le salaire, les cours et les congés pour les professeurs, et les notes et les bourses pour les élèves.
 
-You can create two independent classes for each type and process them but adding a new common characteristic would mean adding to both of these independent classes. This quickly becomes unwieldy.
+Vous pouvez créer deux classes indépendantes pour chaque type, et les traiter à part, mais ajouter une nouvelle caractéristique commune impliquera de l'ajouter à chacune de ces classes. Cela devient vite lourd.
 
-A better way would be to create a common class called `SchoolMember` and then have the teacher and student classes _inherit_ from this class, i.e. they will become sub-types of this type (class) and then we can add specific characteristics to these sub-types.
+Une meilleure approche consiste à créer une classe commune appelée `SchoolMember` et que le professeur et l'élève _héritent_ de cette classe, c'est-à-dire qu'ils deviennent un sous-type de ce type (cette classe), et nous pouvons ajouter des caractéristiques spécifiques à ces sous-types.
 
-There are many advantages to this approach. If we add/change any functionality in `SchoolMember`, this is automatically reflected in the subtypes as well. For example, you can add a new ID card field for both teachers and students by simply adding it to the SchoolMember class. However, changes in the subtypes do not affect other subtypes. Another advantage is that you can refer to a teacher or student object as a `SchoolMember` object which could be useful in some situations such as counting of the number of school members. This is called **polymorphism** where a sub-type can be substituted in any situation where a parent type is expected, i.e. the object can be treated as an instance of the parent class.
+Cette approche présente de nombreux avantages. Si nous changeons n'importe quelle fonctionnalité dans `SchoolMember`, cela est automatiquement répercuté dans les sous-types. Par exemple, vous pouvez ajouter une nouveau champ carte d'identité pour les professeurs et les élèves en l'ajoutant à la classe SchoolMember. Cependant, les changements dans les sous-types ne modifient pas les autres sous-types. Un autre avantage est que vous pouvez faire référence à l'objet professeur ou élève, ce qui peut être utile, par exemple si vous voulez compter le nombre de personnes dans cette école. Cela est appelé le *polymorphisme*, où un sous-type peut être substitué dans n'importe quelle situation dans laquelle un type parent est attendu, c'est-à-dire que l'objet peut être traité comme une instance de la classe parent.
 
-Also observe that we reuse the code of the parent class and we do not need to repeat it in the different classes as we would have had to in case we had used independent classes.
+Notez aussi que nous re-utilisons le code de la classe parent et nous n'avons pas besoin de la répéter dans les différentes classes, comme il aurait fallu le faire si nous avions utilisé des classes indépendantes.
 
-The `SchoolMember` class in this situation is known as the **base class** or the **superclass**. The `Teacher` and `Student` classes are called the **derived classes** or **subclasses**.
+La classe `SchoolMember` dans ce cas est vue comme la **classe de base** ou la *superclasse*. Les classes `Teacher` et `Student` sont appelées les **classes dérivées** ou **sous-classes**.
 
-We will now see this example as a program (sauvegardez sous `oop_subclass.py`):
+Voyons cela avec un programme (sauvegardez sous `oop_subclass.py`):
 
-<pre><code class="lang-python">{% include "./programs/oop_subclass.py" %}</code></pre>
+```python
+class SchoolMember:
+    """Représente n'\importe quel personne de l\'école."""
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        print('(Personne de l\'école initialisée : {0})'.format(self.name))
+
+    def tell(self):
+        """Donnez-moi des détails."""
+        print('Nom :"{0}" Age:"{1}"'.format(self.name, self.age), end=" ")
+
+class Teacher(SchoolMember):
+    """Représente un professeur."""
+    def __init__(self, name, age, salary):
+        SchoolMember.__init__(self, name, age)
+        self.salary = salary
+        print('(Professeur initialisé : {0})'.format(self.name))
+
+    def tell(self):
+        SchoolMember.tell(self)
+        print('Salaire: "{0:d}"'.format(self.salary))
+
+class Student(SchoolMember):
+    """Représente un étudiant."""
+    def __init__(self, name, age, marks):
+        SchoolMember.__init__(self, name, age)
+        self.marks = marks
+        print('(Etudiant initialisé : {0})'.format(self.name))
+
+    def tell(self):
+        SchoolMember.tell(self)
+        print('Note : "{0:d}"'.format(self.marks))
+
+t = Teacher('Mrs. Shrividya', 40, 30000)
+s = Student('Swaroop', 25, 75)
+
+print() # imprime une ligne vide
+
+members = [t, s]
+for member in members:
+    member.tell() # marche à la fois pour les étudiants et les professeurs.
+```
 
 Résultat:
 
-<pre><code>{% include "./programs/oop_subclass.txt" %}</code></pre>
+```
+$ python inherit.py
+(Personne de l'école initialisée : Mrs. Shrividya)
+(Professeur initialisé : Mrs. Shrividya)
+(Personne de l'école initialisée : Swaroop)
+(Etudiant initialisé : Swaroop)
+
+Nom :"Mrs. Shrividya" Age:"40" Salaire: "30000"
+Nom :"Swaroop" Age:"25" Note : "75"
+```
 
 **Comment ça marche**
 
-To use inheritance, we specify the base class names in a tuple following the class name in the class definition (for example, `class Teacher(SchoolMember)`).   Next, we observe that the `__init__` method of the base class is explicitly called using the  `self`  variable so that we can initialize the base class part of an instance in the subclass. This is very important to remember- Since we are defining a  `__init__`  method in `Teacher`  and  `Student`  subclasses, Python does not automatically call the constructor of the base class  `SchoolMember`, you have to explicitly call it yourself.
+Pour utiliser l'héritage, nous spécifions les noms des classes de base dans un tuple qui suit le nom de classe dans sa définition (par exemple, `class Teacher (SchoolMember)`). Ensuite, notons que la méthode `__init__` de la classe de base est appelée explicitement à l'aide de la variable `self` afin que nous puissions initialiser la partie de la classe de base d'une instance de la sous-classe. Ceci est très important à retenir. Comme nous définissons une méthode `__init__` dans les sous-classes `Teacher` et `Student`, Python n'appelle pas automatiquement le constructeur de la classe de base `SchoolMember`, vous devez l'appeler explicitement vous-même.
 
-In contrast, if we have not defined an  `__init__`  method in a subclass, Python will call the constructor of the base class automatically.
+En revanche, si nous n’avons pas défini de méthode `__init__` dans une sous-classe, Python appellera automatiquement le constructeur de la classe de base.
 
-While we could treat instances of `Teacher` or `Student` as we would an instance of `SchoolMember` and access the `tell` method of `SchoolMember` by simply typing `Teacher.tell` or `Student.tell`, we instead define another `tell` method in each subclass (using the `tell` method of `SchoolMember` for part of it) to tailor it for that subclass.  Because we have done this, when we write `Teacher.tell` Python uses the `tell` method for that subclass vs the superclass.  However, if we did not have a `tell` method in the subclass, Python would use the `tell` method in the superclass.  Python always starts looking for methods in the actual subclass type first, and if it doesnt find anything, it starts looking at the methods in the subclasss base classes, one by one in the order they are specified in the tuple (here we only have 1 base class, but you can have multiple base classes) in the class definition.
+Bien que nous puissions traiter les instances de `Teacher` ou `Student` comme une instance de `SchoolMember` et accéder à la méthode `tell` de `SchoolMember` en tapant simplement `Teacher.tell` ou `Student.tell`, nous définissons une autre méthode `tell` dans chaque sous-classe (en utilisant la méthode `tell` de `SchoolMember` pour une partie de celle-ci) afin de l'adapter à cette sous-classe. Comme nous avons fait ça, lorsque nous écrivons `Teacher.tell`, Python utilise la méthode `tell` de cette sous-classe au lieu de celle de la classe parente. Cependant, si nous n'avions pas de méthode `tell` dans la sous-classe, Python utiliserait la méthode `tell` dans la classe parente. Python commence toujours par rechercher d'abord les méthodes du type de sous-classe réel, et s'il ne trouve rien, il examine les méthodes des classes parentes de la sous-classe, une par une, dans l'ordre dans lequel elles sont spécifiées dans le tuple dans la définition de classe (ici nous n'avons qu'une seule classe parent, mais il est possible d'en avoir plusieurs).
 
-A note on terminology - if more than one class is listed in the inheritance tuple, then it is called **multiple inheritance**.
+Une note de terminologie: si plus d'une classe est présente dans le tuple d'héritage, alors cela s'appelle **l'héritage multiple**.
 
-The `end` parameter is used in the `print` function in the superclass's `tell()` method to print a line and allow the next print to continue on the same line. This is a trick to make `print` not print a `\n` (newline) symbol at the end of the printing.
+Le paramètre `end` est utilisé dans la fonction `print` de la méthode `tell()` de la classe parente pour imprimer une ligne et permettre à l'impression suivante de continuer sur la même ligne. C'est une astuce pour que `print` n'imprime pas un symbole `\n` (nouvelle ligne) à la fin de l'impression.
 
+## Récapitulatif
 
-## Summary
+Nous avons maintenant exploré les différents aspects des classes et objets, et aussi les différentes terminologies associées. Nous avons également vu les bénéfices et les écueils de la programmation orientée objet. Python est extrêmement orienté objet et comprendre complètement ces concepts vous aidera beaucoup à long terme.
 
-We have now explored the various aspects of classes and objects as well as the various terminologies associated with it. We have also seen the benefits and pitfalls of object-oriented programming. Python is highly object-oriented and understanding these concepts carefully will help you a lot in the long run.
-
-Next, we will learn how to deal with input/output and how to access files in Python.
+Ensuite, nous apprendrons à gérer des entrées/sorties et à accéder des fichiers en Python.
