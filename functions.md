@@ -6,7 +6,7 @@ Le concept de fonction est probablement *le* plus important bloc de base de n'im
 
 Les fonctions sont définies en utilisant le mot-clé `def`. Cela est suivi par un *identifiant* pour la fonction suivi d'une paire de parenthèses qui peuvent inclure des noms de variables et par un caractère deux-points qui termine la ligne. Puis suit un bloc d'instructions qui font partie de la fonction. Un exemple va montrer que cela est en fait très simple:
 
-Exemple (sauvegarder sous `function1.py`):
+Exemple (sauvegardez sous `function1.py`):
 
 ```python
 def say_hello():
@@ -38,7 +38,7 @@ Une fonction peut prendre des paramètres, qui sont des valeurs fournies à la f
 
 Les paramètres sont spécifiés à l'intérieur de la paire de parenthèses de la définition de la fonction, séparées par des virgules. Quand nous appelons la fonction, nous fournissons les valeurs de la même manière. Notez la terminologie utilisée - les noms donnés dans la définition de la fonction sont appelés des  *paramètres* quand les valeurs que vous fournissez à l'appel de la fonction sont des *arguments*.
 
-Exemple (sauvegarder sous `function_param.py`):
+Exemple (sauvegardez sous `function_param.py`):
 
 ```python
 def print_max(a, b):
