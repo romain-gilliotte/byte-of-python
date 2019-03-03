@@ -1,82 +1,168 @@
-# Input and Output {#io}
+# Entrées Sorties {#io}
 
-There will be situations where your program has to interact with the user. For example, you would want to take input from the user and then print some results back. We can achieve this using the `input()` function and `print` function respectively.
+Il y a des cas où votre programme va interagir avec l'utilisateur. Par exemple, vous voulez faire saisir des valeurs à l'utilisateur et afficher ensuite des résultats. Nous pouvons faire cela en utilisant les fonctions `input()` et `print()` respectivement.
 
-For output, we can also use the various methods of the `str` (string) class. For example, you can use the `rjust` method to get a string which is right justified to a specified width. See `help(str)` for more details.
+Pour l'affichage, nous pouvons utiliser les différentes méthodes de la classe `str` (chaîne de caractère). Par exemple, vous pouvez utiliser la méthode `rjust` pour justifier à droite une chaîne de caractère avec une largeur donnée. Voyez `help(str)` pour plus de détails.
 
-Another common type of input/output is dealing with files. The ability to create, read and write files is essential to many programs and we will explore this aspect in this chapter.
+Une autre type d'entrée/sortie est de traiter des fichiers. La possibilité de créer, lire et écrire des fichiers est essentielle dans de nombreux programmes et nous verrons cela dans ce chapitre.
 
-## Input from user
+## Entrée de l'utilisateur
 
-Save this program as `io_input.py`:
+Sauvegardez sous `io_input.py`:
 
-<pre><code class="lang-python">{% include "./programs/io_input.py" %}</code></pre>
+```python
+def reverse(text):
+    return text[::-1]
 
-Output:
+def is_palindrome(text):
+    return text == reverse(text)
 
-<pre><code>{% include "./programs/io_input.txt" %}</code></pre>
+something = input('Entrez votre texte : ')
+if (is_palindrome(something)):
+    print("Oui, c'est un palindrome")
+else:
+    print("Non, ce n'est pas un palindrome")
+```
 
-**How It Works**
+Résultat:
 
-We use the slicing feature to reverse the text. We've already seen how we can make [slices from sequences](./data_structures.md#sequence) using the `seq[a:b]` code starting from position `a` to position `b`. We can also provide a third argument that determines the _step_ by which the slicing is done. The default step is `1` because of which it returns a continuous part of the text. Giving a negative step, i.e., `-1` will return the text in reverse.
+```
+$ python user_input.py
+Entrez votre texte : monsieur
+Non, ce n'est pas un palindrome
 
-The `input()` function takes a string as argument and displays it to the user. Then it waits for the user to type something and press the return key. Once the user has entered and pressed the return key, the `input()` function will then return that text the user has entered.
+$ python user_input.py
+Entrez votre texte : kayak
+Oui, c'est un palindrome
 
-We take that text and reverse it. If the original text and reversed text are equal, then the text is a [palindrome](http://en.wiktionary.org/wiki/palindrome).
+$ python user_input.py
+Entrez votre texte : ressasser
+Oui, c'est un palindrome
+```
 
-### Homework exercise
+**Comment ça marche**
 
-Checking whether a text is a palindrome should also ignore punctuation, spaces and case. For example, "Rise to vote, sir." is also a palindrome but our current program doesn't say it is. Can you improve the above program to recognize this palindrome?
+Nous utilisons le tranchage pour renverser le texte. Nous avons déjà vu comment trancher des [séquences](./data_structures.md#sequence) en utilisant le code `seq[a:b]` qui va de la position `a` à la position `b`. Nous pouvons aussi fournir un troisième argument qui détermine le _pas_ de tranchage. Le pas par défaut est de `1` ainsi il renvoie une partie continue du texte. Donner un pas négatif, c'est-à-dire `-1` va inverser le texte.
 
-If you need a hint, the idea is that...[^1]
+La fonction `input()` prend une chaine de caractères en tant qu'argument et l'affiche à l'utilisateur. Ensuite elle attend une saisie de l'utilisateur terminée par la touche entrée. Quand l'utilisateur a fait cela, la fonction `input()` renvoie le texte saisi.
 
-## Files
+Nous prenons un texte et le renversons. Si le texte renversé est le même que l'original, alors ce texte est un [palindrome](http://en.wiktionary.org/wiki/palindrome).
 
-You can open and use files for reading or writing by creating an object of the `file` class and using its `read`, `readline` or `write` methods appropriately to read from or write to the file. The ability to read or write to the file depends on the mode you have specified for the file opening. Then finally, when you are finished with the file, you call the `close` method to tell Python that we are done using the file.
+### Devoir maison
 
-Example (save as `io_using_file.py`):
+Vérifier si un texte est un palindrome devrait ignorer la ponctuation, les espaces et la casse. Par exemple, "Karine alla en Irak" est un palindrome mais la version actuelle de notre programme dit le contraire. Pouvez-vous améliorer le programme ci-dessus pour qu'il reconnaisse ce palindrome?
 
-<pre><code class="lang-python">{% include "./programs/io_using_file.py" %}</code></pre>
+Si vous avez besoin d'un indice, vous pouvez ...[^1]
 
-Output:
+## Fichiers
 
-<pre><code>{% include "./programs/io_using_file.txt" %}</code></pre>
 
-**How It Works**
+Vous pouvez ouvrir et utiliser des fichiers en lecture ou en écriture en créant un objet de la classe `file` et en utilisant ses méthodes `read`, `readline` ou `write` de manière appropriée pour lire ou écrire dans un fichier. La capacité de lire ou d'écrire dans un fichier dépend de la manière dont il a été ouvert. Enfin, quand vous avez fini de manipuler un fichier, vous pouvez utiliser la méthode `close` pour dire à Python que vous avez fini.
 
-Note that we can create a new file object simply by using the `open` method.  We open (or create it if it doesn't already exist) this file by using the built-in `open` function and specifying the name of the file and the mode in which we want to open the file. The mode can be a read mode (`'r'`), write mode (`'w'`) or append mode (`'a'`). We can also specify whether we are reading, writing, or appending in text mode (`'t'`) or binary mode (`'b'`). There are actually many more modes available and `help(open)` will give you more details about them. By default, `open()` considers the file to be a 't'ext file and opens it in 'r'ead mode.
+Exemple (sauvegardez sous `io_using_file.py`):
 
-In our example, we first open/create the file in write text mode and use the `write` method of the file object to write  our string variable `poem` to the file and then we finally `close` the file.
+```python
+poem = '''\
+La programmation est drole
+Quand le travail est fait
+si vous voulez rendre votre travail drole:
+    utiliser Python sera parfait!
+'''
 
-Next, we open the same file again for reading. We don't need to specify a mode because 'read text file' is the default mode. We read in each line of the file using the `readline` method in a loop. This method returns a complete line including the newline character at the end of the line. When an _empty_ string is returned, it means that we have reached the end of the file and we 'break' out of the loop.
+# Ouvre le fichier en écriture ('w'riting)
+f = open('poem.txt', 'w')
+# Écrit du texte dans le fichier
+f.write(poem)
+# Ferme le fichier
+f.close()
 
-In the end, we finally `close` the file.
+# Si le mode n'est pas indiqué,
+# le mode lecture est utilisé par défaut ('r'ead)
+f = open('poem.txt')
+while True:
+    line = f.readline()
+    # Une longueur de zéro indique fin de fichier
+    if len(line) == 0:
+        break
+    # `line` contient déjà un caractère de
+    # retour à la ligne à la fin de chaque ligne
+    # car nous lisons un fichier.
+    print(line, end='')
+# Ferme le fichier
+f.close()
+```
 
-We can see from our `readline` output that this program has indeed written to and read from our new `poem.txt` file.
+Résultat:
+
+```
+$ python using_file.py
+La programmation est drole
+Quand le travail est fait
+si vous voulez rendre votre travail drole:
+    utiliser Python sera parfait!
+```
+
+**Comment ça marche**
+
+Notez que nous pouvons créer un nouvel objet `file` en utilisant simplement la méthode `open`. Nous ouvrons ce fichier (ou le créons s'il n'existe pas déjà) en utilisant la fonction intégrée `open` et en spécifiant le nom du fichier et le mode dans lequel nous voulons ouvrir le fichier. Le mode peut être un mode de lecture (`r`ead), un mode écriture (`w`rite) ou un mode ajout (`a`ppend). Nous pouvons également spécifier si nous lisons, écrivons ou ajoutons en mode texte (`t`) ou en mode binaire (`b`). Il existe en fait beaucoup plus de modes disponibles et `help(open)` vous donnera les détails. Par défaut, `open()` considère le fichier comme un fichier texte et l'ouvre en mode lecture.
+
+Dans notre exemple, nous ouvrons/créons en premier lieu le fichier en mode texte et écriture, puis nous utilisons la méthode `write` de l'objet `f` de type `file` pour écrire le contenu de notre variable `poem` dans le fichier, puis nous le fermons avec sa méthode `close`.
+
+Ensuite, nous rouvrons le même fichier pour le lire. Nous n'avons pas besoin de spécifier un mode car « lire un fichier texte » est le mode par défaut. Nous lisons chaque ligne du fichier en utilisant la méthode `readline` dans une boucle. Cette méthode retourne une ligne complète incluant le caractère de retour à la ligne à la fin de la ligne. Quand une chaîne _vide_ nous est renvoyée, cela signifie que nous avons atteint la fin du fichier et nous « sortons » de la boucle avec l'instruction `break`.
+
+Enfin, nous fermons le fichier avec sa méthode `close`.
+
+Nous pouvons voir dans le résultat, que ce programme a bien créé le fichier `poem.txt`, y a écrit le poème, puis l'a réouvert et lu à nouveau.
 
 ## Pickle
 
-Python provides a standard module called `pickle` which you can use to store _any_ plain Python object in a file and then get it back later. This is called storing the object *persistently*.
+Python fournit un module standard appelé `pickle` qui permet d'enregistrer _n'importe quel_ objet Python dans un fichier pour y accéder plus tard. On appelle cela enregistrer l'objet *de manière persistante*.
 
-Example (save as `io_pickle.py`):
+Exemple (sauvegardez sous `io_pickle.py`):
 
-<pre><code class="lang-python">{% include "./programs/io_pickle.py" %}</code></pre>
+```python
+import pickle
 
-Output:
+# Le nom du fichier dans lequel nous stockerons l'objet
+shoplistfile = 'shoplist.data'
+# Notre liste de courses
+shoplist = ['pomme', 'mangue', 'carotte']
 
-<pre><code>{% include "./programs/io_pickle.txt" %}</code></pre>
+# Ouvre le fichier en écriture
+f = open(shoplistfile, 'wb')
+# Écrit l'objet dans le fichier
+pickle.dump(shoplist, f)
+f.close()
 
-**How It Works**
+# Détruit la variable shoplist
+del shoplist
 
-To store an object in a file, we have to first `open` the file in __w__rite __b__inary mode and then call the `dump` function of the `pickle` module. This process is called _pickling_.
+# Ouvre le fichier
+f = open(shoplistfile, 'rb')
+# Charge l'objet à partir du fichier
+storedlist = pickle.load(f)
+print(storedlist)
+f.close()
+```
 
-Next, we retrieve the object using the `load` function of the `pickle` module which returns the object. This process is called _unpickling_.
+Résultat:
+
+```
+$ python pickling.py
+['pomme', 'mangue', 'carotte']
+```
+
+**Comment ça marche**
+
+Pour enregistrer un objet dans un fichier, nous devons d'abord ouvrir (`open`) le fichier avec le mode écriture binaire (`wb` pour _write binary_) et ensuite appeler la fonction `dump` du module`pickle`. Cette procédure est appelé _pickling_.
+
+Ensuite, nous récupérons l'objet en utilisant la fonction `load` du module `pickle` qui renvoie l'objet. Ce procédé est appelé _unpickling_.
 
 ## Unicode
 
-So far, when we have been writing and using strings, or reading and writing to a file, we have used simple English characters only.  Both English and non-English characters can be represented in Unicode (please see the articles at the end of this section for more info), and Python 3 by default stores string variables (think of all that text we wrote using single or double or triple quotes) in Unicode.  
+Jusqu'à présent, lorsque nous écrivions et utilisions des chaînes de caractères, ou lisions et écrivions dans un fichier, nous n'utilisions que des caractères non accentués de l'alphabet latin. Les caractères accentués, non accentués ou d'autres alphabets peuvent être représentés en Unicode (voir les articles à la fin de cette section pour plus d’informations), que Python 3 utilise par défaut pour les chaînes de caractères (tout le texte que nous avons écrit en utilisant simple, double ou triple guillemets).
 
-> NOTE: If you are using Python 2, and we want to be able to read and write other non-English languages, we need to use the `unicode` type, and it all starts with the character `u`, e.g. `u"hello world"`
+> NOTE: Si vous utilisez Python 2 et que vous voulez pouvoir lire et écrire des langues non anglaises, vous devez utiliser le type `unicode`, en préfixant vos chaînes par le caractère `u`. Par exemple: `u"hello world"`
 
 ```python
 >>> "hello world"
@@ -89,28 +175,38 @@ So far, when we have been writing and using strings, or reading and writing to a
 <class 'str'>
 ```
 
-When data is sent over the Internet, we need to send it in bytes... something your computer easily understands.  The rules for translating Unicode (which is what Python uses when it stores a string) to bytes is called encoding.  A popular encoding to use is UTF-8.  We can read and write in UTF-8 by using a simple keyword argument in our `open` function.
+Lorsque des données sont envoyées sur Internet, nous devons les envoyer en octets... pour que votre ordinateur puisse comprendre facilement. Les règles de conversion d'Unicode (utilisé par Python lorsqu'il stocke une chaîne) en octets sont appelées encodage. Un encodage populaire à utiliser est UTF-8. Nous pouvons lire et écrire en UTF-8 en utilisant un simple paramètre nommé dans notre fonction `open`.
 
-<pre><code class="lang-python">{% include "./programs/io_unicode.py" %}</code></pre>
+```python
+# encoding=utf-8
+import io
 
-**How It Works**
+f = io.open("abc.txt", "wt", encoding="utf-8")
+f.write(u"こんにちは世界")
+f.close()
 
-We use `io.open` and then use the `encoding` argument in the first open statement to encode the message, and then again in the second open statement when decoding the message.  Note that we should only use encoding in the open statement when in text mode.
+text = io.open("abc.txt", encoding="utf-8").read()
+print(text)
+```
 
-Whenever we write a program that uses Unicode literals (by putting a `u` before the string) like we have used above, we have to make sure that Python itself is told that our program uses UTF-8, and we have to put  `# encoding=utf-8`  comment at the top of our program.  
+**Comment ça marche**
 
-You should learn more about this topic by reading:
+Nous utilisons `io.open` puis le paramètre `encoding` dans le premier `open` pour encoder le message, puis de nouveau dans le deuxième lors du décodage du message. Notez que le paramètre `encoding` ne fait sens que lorsque nous manipulons des fichiers en mode texte.
 
-- ["The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets"](http://www.joelonsoftware.com/articles/Unicode.html)
-- [Python Unicode Howto](http://docs.python.org/3/howto/unicode.html)
-- [Pragmatic Unicode talk by Nat Batchelder](http://nedbatchelder.com/text/unipain.html)
+Chaque fois que nous écrivons un programme qui utilise des constantes littérales Unicode (en plaçant un "u" avant la chaîne de caractères) comme nous l'avons fait ci-dessus, nous devons nous assurer que Python lui-même est informé que notre programme est en UTF-8, et nous devons mettre le commentaire `#encoding=utf-8` en haut de notre programme.
 
-## Summary
+Vous devriez en apprendre plus sur ce sujet en lisant:
 
-We have discussed various types of input/output, about file handling, about the pickle module and about Unicode.
+- ["Le minimum absolu que tout  programmeur doit absolument connaître sur Unicode et les jeux de caractères"](http://www.joelonsoftware.com/articles/Unicode.html)
+- [Guide sur Unicode avec Python](https://docs.python.org/fr/3/howto/unicode.html)
+- [Discussion pragmatique sur Unicode par Nat Batchelder](http://nedbatchelder.com/text/unipain.html)
 
-Next, we will explore the concept of exceptions.
+## Récapitulatif
+
+Nous avons vu différents types d'entrées sorties, comment gérer des fichiers, l'utilisation du module pickle et mentionné Unicode.
+
+Nous allons maintenant travailler sur le concept d'exception.
 
 ---
 
-[^1]: Use a tuple (you can find a list of _all_ [punctuation marks here](http://grammar.ccc.commnet.edu/grammar/marks/marks.htm)) to hold all the forbidden characters, then use the membership test to determine whether a character should be removed or not, i.e. forbidden = (`!`, `?`, `.`, ...).
+[^1]: Utilisez un tuple contenant tous les caractères interdits (vous trouverez la liste de _tous_ les [caractères de ponctuation ici](http://grammar.ccc.commnet.edu/grammar/marks/marks.htm)), puis utilisez le test d'appartenance pour déterminer si un caractère doit être supprimé ou non. Par exemple: `forbidden = ('!', '?', '.', ...)`.
