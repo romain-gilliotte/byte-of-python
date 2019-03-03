@@ -1,18 +1,18 @@
-# Standard Library {#stdlib}
+# Bibliothèque standard {#stdlib}
 
-The Python Standard Library contains a huge number of useful modules and is part of every standard Python installation. It is important to become familiar with the Python Standard Library since many problems can be solved quickly if you are familiar with the range of things that these libraries can do.
+La bibliothèque standard de Python contient de très nombreux modules et fait partie de l'installation standard de Python. Il est important de se familiariser avec la bibliothèque standard de Python, car de nombreux problèmes peuvent être résolu rapidement si vous savez ce qu'elle propose.
 
-We will explore some of the commonly used modules in this library. You can find complete details for all of the modules in the Python Standard Library in the ['Library Reference' section](http://docs.python.org/3/library/) of the documentation that comes with your Python installation.
+Nous étudierons quelques modules couramment utilisés dans cette librarie. Vous pouvez trouver tous les détails de tous les modules de la bibliothèque standard dans la section [bibliothèque standard](http://docs.python.org/3/library/) de la documentation fournie par votre installation de Python.
 
-Let us explore a few useful modules.
+Explorons quelques modules utiles.
 
-> CAUTION: If you find the topics in this chapter too advanced, you may skip this chapter. However, I highly recommend coming back to this chapter when you are more comfortable with programming using Python.
+> ATTENTION: Si vous trouvez les sujets de ce chapitre trop difficiles, je vous conseille de passer au suivant. Cependant, je vous recommande de revenir ensuite à ce chapitre quand vous serez plus à l'aise en programmation Python.
 
-## `sys` module {#sys}
+## Le module `sys` {#sys}
 
-The `sys` module contains system-specific functionality. We have already seen that the `sys.argv` list contains the command-line arguments.
+Le module `sys` contient des fonctionnalités spécifiques au système utilisé. Nous avons déjà vu que la liste `sys.argv` contient les arguments passés en ligne de commande.
 
-Suppose we want to check the version of the Python software being used, the `sys` module gives us that information.
+Supposons que nous voulions tester la version de Python, pour vérifier que nous utilisons une version supérieure ou égale à la version 3. Le module `sys` nous offre cette fonctionnalité.
 
 <!-- The output should match pythonVersion variable in book.json -->
 ```python
@@ -23,45 +23,78 @@ sys.version_info(major=3, minor=6, micro=0, releaselevel='final', serial=0)
 True
 ```
 
-**How It Works**
+**Comment ça marche**
 
-The `sys` module has a `version_info` tuple that gives us the version information. The first entry is the major version. We can pull out this information to use it.
+Le module `sys` possède un tuple `version_info` qui nous informe sur la version. La première entrée est la version majeure. Nous pouvons accéder à cette information et l'utiliser.
 
-## `logging` module {#logging}
+## Le module `logging` {#logging}
 
-What if you wanted to have some debugging messages or important messages to be stored somewhere so that you can check whether your program has been running as you would expect it? How do you "store somewhere" these messages? This can be achieved using the `logging` module.
+Et si vous voulez stocker quelque part des messages de débogage ou d'autres messages importants, afin de vérifier que votre programme s'est comporté comme vous l'espériez ? Comment "stocker quelque part" ces messages ? Cela peut être réalisé avec le module `logging`.
 
-Save as `stdlib_logging.py`:
+Sauvegardez sous `stdlib_logging.py`:
 
-<pre><code class="lang-python">{% include "./programs/stdlib_logging.py" %}</code></pre>
+```python
+import os
+import platform
+import logging
 
-Output:
+if platform.platform().startswith('Windows'):
+    logging_file = os.path.join(os.getenv('HOMEDRIVE'),
+                                os.getenv('HOMEPATH'),
+                                'test.log')
+else:
+    logging_file = os.path.join(os.getenv('HOME'),
+                                'test.log')
 
-<pre><code>{% include "./programs/stdlib_logging.txt" %}</code></pre>
+print("Écriture du journal dans", logging_file)
 
-The `cat` command is used in the command line to read the 'test.log' file.  If the `cat` command is not available, you can open the `test.log` file in a text editor instead.
+logging.basicConfig(
+    level=logging.DEBUG,
+    format='%(asctime)s : %(levelname)s : %(message)s',
+    filename=logging_file,
+    filemode='w',
+)
 
-**How It Works**
+logging.debug("Début du programme")
+logging.info("En train de faire quelque chose")
+logging.warning("Terminé")
+```
 
-We use three modules from the standard library - the `os` module for interacting with the operating system, the `platform` module for information about the platform i.e. the operating system and the `logging` module to *log* information.
+Résultat:
 
-First, we check which operating system we are using by checking the string returned by `platform.platform()` (for more information, see `import platform; help(platform)`). If it is Windows, we figure out the home drive, the home folder and the filename where we want to store the information. Putting these three parts together, we get the full location of the file. For other platforms, we need to know just the home folder of the user and we get the full location of the file.
+```
+$ python stdlib_logging.py
+Écriture du journal dans /Users/swa/test.log
 
-We use the `os.path.join()` function to put these three parts of the location together. The reason to use a special function rather than just adding the strings together is because this function will ensure the full location matches the format expected by the operating system.  Note: the `join()' method we use here that's part of the `os` module is different from the string method `join()` that we've used elsewhere in this book.
+$ cat /Users/swa/test.log
+2014-03-29 09:27:36,660 : DEBUG : Début du programme
+2014-03-29 09:27:36,660 : INFO : En train de faire quelque chose
+2014-03-29 09:27:36,660 : WARNING : Terminé
+```
 
-We configure the `logging` module to write all the messages in a particular format to the file we have specified.
+La commande `cat` est utilisée en la ligne de commande pour lire le fichier 'test.log'. Si la commande `cat` n'est pas disponible, vous pouvez ouvrir le fichier `test.log` dans un éditeur de texte.
 
-Finally, we can put messages that are either meant for debugging, information, warning or even critical messages. Once the program has run, we can check this file and we will know what happened in the program, even though no information was displayed to the user running the program.
+**Comment ça marche**
 
-## Module of the Week Series {#motw}
+Nous utilisons trois modules de la librairie standard: le module `os` pour interagir avec le système d'exploitation, le module `platform` pour accéder à des informations sur la plate-forme, c'est-à-dire le système d'exploitation et le module `logging` pour écrire des informations dans un journal.
 
-There is much more to be explored in the standard library such as [debugging](http://docs.python.org/3/library/pdb.html),
-[handling command line options](http://docs.python.org/3/library/argparse.html), [regular expressions](http://docs.python.org/3/library/re.html) and so on.
+D'abord nous vérifions quel système d'exploitation nous utilisons en regardant la chaîne de caractères renvoyée par `platform.platform()` (pour plus d'informations, voyez `import platform; help(platform)`). Si c'est Windows, nous en déduisons le disque et le répertoire par défaut et le nom du fichier où nous stockons l'information. En mettant bout à bout ces trois informations, nous obtenons l'emplacement complet du fichier. Pour les autres plate-formes, nous avons juste besoin de connaître le répertoire par défaut de l'utilisateur et nous avons l'emplacement complet du fichier.
 
-The best way to further explore the standard library is to read Doug Hellmann's excellent [Python Module of the Week](http://pymotw.com/2/contents.html) series (also available as a [book](http://amzn.com/0321767349)) and reading the [Python documentation](http://docs.python.org/3/).
+Nous utilisons la fonction `os.path.join()` pour concaténer ces trois parties de l'emplacement. Nous utilisons une fonction spéciale plutôt qu'un simple ajout de chaînes de caractères, parce que cette fonction va s'assurer que l'emplacement complet correspond au format attendu par le système d'exploitation. Note: la methode `join()` que nous utilisons ici fait partie du module `os`, ce n'est pas la même que de la méthode `join()` disponible sur les chaînes de caractères que nous avons utilisé ailleur dans ce livre.
 
-## Summary
+Nous configurons le module `logging` pour écrire nos messages avec un format particulier dans le fichier que nous spécifions.
 
-We have explored some of the functionality of many modules in the Python Standard Library. It is highly recommended to browse through the [Python Standard Library documentation](http://docs.python.org/3/library/) to get an idea of all the modules that are available.
+Enfin, nous écrivons les messages prévus pour le débogage, l'information, les avertissements ou les messages critiques. Après l'exécution du programme, nous pouvons regarder ce fichier et voir ce qu'il s'est passé, bien qu'aucune information n'ait été affichée à l'utilisateur pendant l'exécution du programme.
 
-Next, we will cover various aspects of Python that will make our tour of Python more _complete_.
+## Série « Le module de la semaine » {#motw}
+
+Il reste beaucoup de choses à découvrir dans la bibliothèque standard, comme le [débogage](http://docs.python.org/3/library/pdb.html),
+la [la gestion des options en ligne de commande](http://docs.python.org/3/library/argparse.html), les [expressions régulières](http://docs.python.org/3/library/re.html) et bien plus.
+
+La meilleure façon de continuer à explorer la bibliothèque standard est de lire l'excellente série de Doug Hellmann [Le module Python de la semaine](https://pymotw.com/3/) (également disponible en [format papier](https://doughellmann.com/blog/the-python-3-standard-library-by-example/)) et de lire la [documentation de Python](http://docs.python.org/3/).
+
+## Récapitulatif
+
+Nous avons exploré quelques fonctionnalités des nombreux modules de la Librairie Standard Python. Il est fortement recommandé de naviguer dans la [documentation de la bibliothèque standard de Python](http://docs.python.org/3/library/) pour se faire une idée de tous les modules disponibles.
+
+Ensuite, nous allons voir différents aspects de Python afin que notre voyage dans Python soit plus _complet_.
