@@ -256,7 +256,7 @@ Cette approche présente de nombreux avantages. Si nous changeons n'importe quel
 
 Notez aussi que nous re-utilisons le code de la classe parent et nous n'avons pas besoin de la répéter dans les différentes classes, comme il aurait fallu le faire si nous avions utilisé des classes indépendantes.
 
-La classe `SchoolMember` dans ce cas est vue comme la **classe de base** ou la *superclasse*. Les classes `Teacher` et `Student` sont appelées les **classes dérivées** ou **sous-classes**.
+La classe `SchoolMember` dans ce cas est vue comme la **classe parente** ou la *superclasse*. Les classes `Teacher` et `Student` sont appelées les **classes dérivées** ou **sous-classes**.
 
 Voyons cela avec un programme (sauvegardez sous `oop_subclass.py`):
 
@@ -319,9 +319,9 @@ Nom :"Swaroop" Age:"25" Note : "75"
 
 **Comment ça marche**
 
-Pour utiliser l'héritage, nous spécifions les noms des classes de base dans un tuple qui suit le nom de classe dans sa définition (par exemple, `class Teacher (SchoolMember)`). Ensuite, notons que la méthode `__init__` de la classe de base est appelée explicitement à l'aide de la variable `self` afin que nous puissions initialiser la partie de la classe de base d'une instance de la sous-classe. Ceci est très important à retenir. Comme nous définissons une méthode `__init__` dans les sous-classes `Teacher` et `Student`, Python n'appelle pas automatiquement le constructeur de la classe de base `SchoolMember`, vous devez l'appeler explicitement vous-même.
+Pour utiliser l'héritage, nous spécifions les noms des classes parentes dans un tuple qui suit le nom de classe dans sa définition (par exemple, `class Teacher (SchoolMember)`). Ensuite, notons que la méthode `__init__` de la classe parente est appelée explicitement à l'aide de la variable `self` afin que nous puissions initialiser la partie de la classe parente d'une instance de la sous-classe. Ceci est très important à retenir. Comme nous définissons une méthode `__init__` dans les sous-classes `Teacher` et `Student`, Python n'appelle pas automatiquement le constructeur de la classe parente `SchoolMember`, vous devez l'appeler explicitement vous-même.
 
-En revanche, si nous n’avons pas défini de méthode `__init__` dans une sous-classe, Python appellera automatiquement le constructeur de la classe de base.
+En revanche, si nous n’avons pas défini de méthode `__init__` dans une sous-classe, Python appellera automatiquement le constructeur de la classe parente.
 
 Bien que nous puissions traiter les instances de `Teacher` ou `Student` comme une instance de `SchoolMember` et accéder à la méthode `tell` de `SchoolMember` en tapant simplement `Teacher.tell` ou `Student.tell`, nous définissons une autre méthode `tell` dans chaque sous-classe (en utilisant la méthode `tell` de `SchoolMember` pour une partie de celle-ci) afin de l'adapter à cette sous-classe. Comme nous avons fait ça, lorsque nous écrivons `Teacher.tell`, Python utilise la méthode `tell` de cette sous-classe au lieu de celle de la classe parente. Cependant, si nous n'avions pas de méthode `tell` dans la sous-classe, Python utiliserait la méthode `tell` dans la classe parente. Python commence toujours par rechercher d'abord les méthodes du type de sous-classe réel, et s'il ne trouve rien, il examine les méthodes des classes parentes de la sous-classe, une par une, dans l'ordre dans lequel elles sont spécifiées dans le tuple dans la définition de classe (ici nous n'avons qu'une seule classe parent, mais il est possible d'en avoir plusieurs).
 
