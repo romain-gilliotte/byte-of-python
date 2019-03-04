@@ -31,7 +31,7 @@ Le module `sys` possède un tuple `version_info` qui nous informe sur la version
 
 Et si vous voulez stocker quelque part des messages de débogage ou d'autres messages importants, afin de vérifier que votre programme s'est comporté comme vous l'espériez ? Comment "stocker quelque part" ces messages ? Cela peut être réalisé avec le module `logging`.
 
-Sauvegardez sous `stdlib_logging.py`:
+Enregistrez sous `stdlib_logging.py`:
 
 ```python
 import os

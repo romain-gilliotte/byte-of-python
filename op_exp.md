@@ -174,7 +174,7 @@ Les opérateurs sont en général associés de gauche à droite, c'est-à-dire q
 
 ## Expressions
 
-Exemple (sauvegardez en nommant le fichier `expression.py`):
+Exemple (enregistrez en nommant le fichier `expression.py`):
 
 ```python
 length = 5

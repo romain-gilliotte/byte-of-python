@@ -20,7 +20,7 @@ Une classe peut aussi avoir des *méthodes* c'est-à-dire des fonctions définie
 
 Une classe peut aussi avoir des *champs* qui sont juste des variables définies pour être utilisées dans le cadre de cette classe uniquement. Vous pouvez utiliser ces variables/noms seulement quand vous avez un objet de cette classe. Les champs sont aussi accédés avec la notation pointée, par exemple, `mylist.field`.
 
-Exemple (sauvegardez sous `ds_using_list.py`):
+Exemple (enregistrez sous `ds_using_list.py`):
 
 ```python
 # Voici ma liste de commissions
@@ -85,7 +85,7 @@ Les tuples sont définis en indiquant des éléments séparés par des virgules,
 
 Les tuples sont en général utilisés dans des cas où une instruction ou une fonction définie par l'utilisateur peut légitimement supposer que la liste de valeurs, c'est-à-dire le tuple de valeurs, ne changera pas.
 
-Exemple (sauvegardez sous `ds_using_tuple.py`):
+Exemple (enregistrez sous `ds_using_tuple.py`):
 
 ```python
 zoo = ('python', 'éléphant', 'pingouin')
@@ -143,7 +143,7 @@ Souvenez-vous que les paires de valeurs de clé dans un dictionnaire ne sont pas
 
 Les dictionnaires que vous utiliserez sont des instances/objets de la classe `dict` .
 
-Exemple (sauvegardez sous `ds_using_dict.py`):
+Exemple (enregistrez sous `ds_using_dict.py`):
 
 ```python
 ab = {
@@ -211,7 +211,7 @@ La principale fonctionnalité est qu'elles ont des test d'appartenance (c'est-à
 
 Les trois types de séquences mentionnées au-dessus - listes, tuples et chaînes de caractères, ont aussi une opération de *tranchage* (ndlt: *slicing*) qui nous permet de retrouver une partie de la séquence.
 
-Exemple (sauvegardez sous `ds_seq.py`):
+Exemple (enregistrez sous `ds_seq.py`):
 
 ```python
 shoplist = ['pomme', 'mangue', 'carotte', 'banane']
@@ -322,7 +322,7 @@ Lorsque vous créez un objet et l'affectez à une variable, celle-ci ne fait que
 
 Généralement, vous n'avez pas à vous inquiéter à ce sujet, mais il existe un effet subtil dû aux références que vous devez connaître:
 
-Exemple (sauvegardez sous `ds_reference.py`):
+Exemple (enregistrez sous `ds_reference.py`):
 
 ```python
 print('Affectation Simple')
@@ -378,7 +378,7 @@ Nous avons déjà étudié les chaînes de caractères en détail plus tôt. Que
 
 Les chaînes de caractères que vous utilisez dans les programmes sont toutes des objets de la classe `str`.  Quelques méthodes de cette classe sont mises en évidence dans l'exemple suivant. Pour une liste complète de ces méthodes, voyez `help(str)`.
 
-Exemple (sauvegardez sous `ds_str_methods.py`):
+Exemple (enregistrez sous `ds_str_methods.py`):
 
 ```python
 nom = 'Swaroop' # Ceci est un objet de type chaîne

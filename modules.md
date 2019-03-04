@@ -8,7 +8,7 @@ Une autre méthode est d'écrire les modules dans le langage natif de l'interpr�
 
 Un module peut être *importé* par un autre programme pour utiliser ses fonctionnalités. De la même manière, nous pouvons utiliser la bibliothèque Python standard. Nous allons d'abord voir comment utiliser les modules de la bibliothèque standard.
 
-Exemple (sauvegardez sous `module_using_sys.py`):
+Exemple (enregistrez sous `module_using_sys.py`):
 
 ```python
 import sys
@@ -83,7 +83,7 @@ print("La racine carré de 16 vaut", sqrt(16))
 
 Chaque module a un nom et les instructions dans un module peuvent retrouver le nom du module. Cela est pratique pour déterminer si le module s'exécute tout seul ou s'il est importé. Comme précédemment indiqué, quand un module est importé pour la première fois, le code dans ce module est exécuté. Nous pouvons utiliser ce concept pour modifier le comportement du module selon que  le programme s'exécute tout seul ou qu'il est importé à partir d'un autre module. Cela est obtenu avec l'attribut `__name__` du module.
 
-Exemple (sauvegardez sous `module_using_name.py`):
+Exemple (enregistrez sous `module_using_name.py`):
 
 ```python
 if __name__ == '__main__':
@@ -112,7 +112,7 @@ Chaque module Python a son `__name__` défini et si c'est son `'__main__'`, cela
 
 Créer vos propres modules est facile, vous l'avez déjà fait ! C'est parce que chaque programme Python est aussi un module. Vérifiez juste que son extension est `.py`. L'exemple suivant devrait clarifier cela.
 
-Exemple (sauvegardez sous `mymodule.py`):
+Exemple (enregistrez sous `mymodule.py`):
 
 ```
 def sayhi():
@@ -147,7 +147,7 @@ Version 0.1
 Notez que nous utilisons la notation pointée pour accéder les membres du module. Python re-utilise cette notation pour donner un aspect  'Pythonique' pour nous simplifier la vie.
 
 Voici une version utilisant la syntaxe `from..import` :
- (sauvegardez sous `mymodule_demo2.py`):
+ (enregistrez sous `mymodule_demo2.py`):
 
 ```python
 from mymodule import say_hi, __version__

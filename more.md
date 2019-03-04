@@ -73,7 +73,7 @@ Notez que l'unique instruction est utilisée sur place et pas en tant que bloc s
 
 A `lambda` statement is used to create new function objects. Essentially, the `lambda` takes a parameter followed by a single expression. Lambda becomes the body of the function. The value of this expression is returned by the new function.
 
-Exemple (sauvegardez sous `more_lambda.py`):
+Exemple (enregistrez sous `more_lambda.py`):
 
 ```python
 points = [{'x': 2, 'y': 3},
@@ -97,7 +97,7 @@ Notice that the `sort` method of a `list` can take a `key` parameter which deter
 
 List comprehensions are used to derive a new list from an existing list. Suppose you have a list of numbers and you want to get a corresponding list with all the numbers multiplied by 2 only when the number itself is greater than 2. List comprehensions are ideal for such situations.
 
-Exemple (sauvegardez sous `more_list_comprehension.py`):
+Exemple (enregistrez sous `more_list_comprehension.py`):
 
 ```python
 listone = [2, 3, 4]

@@ -34,7 +34,7 @@ Cela signifie aussi que si vous avez une méthode qui ne prend pas d'argument, a
 
 ## Classes {#class}
 
-La classe la plus simple possible est montrée dans l'exemple suivant (sauvegardez sous `oop_simplestclass.py`).
+La classe la plus simple possible est montrée dans l'exemple suivant (enregistrez sous `oop_simplestclass.py`).
 
 ```python
 class Person:
@@ -61,7 +61,7 @@ Notez que l'adresse de la mémoire de l'ordinateur où l'objet est stocké est a
 
 ## Méthodes
 
-Nous avons déjà vu que les classes/objets peuvent avoir des méthodes comme les fonctions, avec la différence que nous avons une variable `self` en plus. Voyons avec un exemple (sauvegardez sous `oop_method.py`).
+Nous avons déjà vu que les classes/objets peuvent avoir des méthodes comme les fonctions, avec la différence que nous avons une variable `self` en plus. Voyons avec un exemple (enregistrez sous `oop_method.py`).
 
 ```python
 class Person:
@@ -91,7 +91,7 @@ De nombreuses méthodes ont une signification particulière pour les classes Pyt
 
 La méthode `__init__` est exécutée dès qu'un objet d'une classe est instancié. Cette méthode est utile pour exécuter n'importe quelle *initialisation* que vous voulez exécuter pour votre objet. Notez les double underscores à la fois au début et à la fin du nom.
 
-Exemple (sauvegardez sous `oop_init.py`):
+Exemple (enregistrez sous `oop_init.py`):
 
 ```python
 class Person:
@@ -133,7 +133,7 @@ Il y a deux types de _champs_, les variables de classe et les variables objets q
 
 Les **variables de classe** sont partagées, elles peuvent être accédées par toutes les instances de cette classe. Il n'y a qu'une seule copie de la variable de classe et quand n'importe quel objet modifie une variable de classe, ce changement est vu par toutes les autres instances.
 
-**Les variables d'objets** appartiennent à chaque objet/instance individuel de la classe. Dans ce cas, chaque objet a sa propre copie du champ, c'est-à-dire que ces copies ne sont pas partagées et n'ont aucun rapport avec le champ portant le même nom dans un instance différente. Un exemple va nous aider à comprendre cela (sauvegardez sous `oop_objvar.py`) :
+**Les variables d'objets** appartiennent à chaque objet/instance individuel de la classe. Dans ce cas, chaque objet a sa propre copie du champ, c'est-à-dire que ces copies ne sont pas partagées et n'ont aucun rapport avec le champ portant le même nom dans un instance différente. Un exemple va nous aider à comprendre cela (enregistrez sous `oop_objvar.py`) :
 
 ```python
 class Robot:
@@ -258,7 +258,7 @@ Notez aussi que nous re-utilisons le code de la classe parent et nous n'avons pa
 
 La classe `SchoolMember` dans ce cas est vue comme la **classe parente** ou la *superclasse*. Les classes `Teacher` et `Student` sont appelées les **classes dérivées** ou **sous-classes**.
 
-Voyons cela avec un programme (sauvegardez sous `oop_subclass.py`):
+Voyons cela avec un programme (enregistrez sous `oop_subclass.py`):
 
 ```python
 class SchoolMember:

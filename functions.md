@@ -6,7 +6,7 @@ Le concept de fonction est probablement *le* plus important bloc de base de n'im
 
 Les fonctions sont définies en utilisant le mot-clé `def`. Cela est suivi par un *identifiant* pour la fonction suivi d'une paire de parenthèses qui peuvent inclure des noms de variables et par un caractère deux-points qui termine la ligne. Puis suit un bloc d'instructions qui font partie de la fonction. Un exemple va montrer que cela est en fait très simple:
 
-Exemple (sauvegardez sous `function1.py`):
+Exemple (enregistrez sous `function1.py`):
 
 ```python
 def say_hello():
@@ -38,7 +38,7 @@ Une fonction peut prendre des paramètres, qui sont des valeurs fournies à la f
 
 Les paramètres sont spécifiés à l'intérieur de la paire de parenthèses de la définition de la fonction, séparées par des virgules. Quand nous appelons la fonction, nous fournissons les valeurs de la même manière. Notez la terminologie utilisée - les noms donnés dans la définition de la fonction sont appelés des  *paramètres* quand les valeurs que vous fournissez à l'appel de la fonction sont des *arguments*.
 
-Exemple (sauvegardez sous `function_param.py`):
+Exemple (enregistrez sous `function_param.py`):
 
 ```python
 def print_max(a, b):
@@ -81,7 +81,7 @@ Quand vous déclarez des variables à l'intérieur de la définition d'une fonct
 >
 > Le terme anglais *scope* est très utilisé, et à le même sens que *portée*.
 
-Exemple (sauvegardez sous `function_local.py`):
+Exemple (enregistrez sous `function_local.py`):
 
 ```python
 x = 50
@@ -118,7 +118,7 @@ Si vous voulez affecter une valeur à un nom défini au niveau supérieur de vot
 
 Vous pouvez utiliser les valeurs de telles variables définies en dehors d'une fonction (en supposant qu'il n'existe pas de variable avec le même nom à l'intérieur de la fonction). Cependant, cela est déconseillé et devrait être évité car le programme devient confus et le lecteur ne sait plus où est la définition de la variable. Utiliser l'instruction `global` indique clairement que la variable est définie dans un bloc éloigné.
 
-Exemple (sauvegardez sous `function_global.py`):
+Exemple (enregistrez sous `function_global.py`):
 
 ```python
 x = 50
@@ -155,7 +155,7 @@ Pour certaines fonctions, vous voudrez que certains des arguments soient *option
 
 Notez que la valeur d'argument par défaut doit être une constante. Plus précisément, la valeur d'argument par défaut doit être immuable - cela est expliqué en détail dans des chapitres ultérieurs. Pour l'instant, retenez juste ce qui précède.
 
-Exemple (sauvegardez sous `function_default.py`):
+Exemple (enregistrez sous `function_default.py`):
 
 ```python
 def say(message, times = 1):
@@ -191,7 +191,7 @@ Si vous avez des fonctions avec de nombreux paramètres et que vous en spécifie
 
 Il y a deux avantages - un, utiliser la fonction est plus facile car nous n'avons pas à nous soucier de l'ordre des paramètres. Deux, nous pouvons donner des valeurs seulement aux paramètres que nous voulons, en supposant que les autres paramètres ont des valeurs par défaut.
 
-Exemple (sauvegardez sous `function_keyword.py`):
+Exemple (enregistrez sous `function_keyword.py`):
 
 ```python
 def func(a, b=5, c=10):
@@ -223,7 +223,7 @@ Dans le troisième cas, `func(c=50, a=100)`, nous utilisons le mot-clé argument
 
 ## Nombre d'arguments arbitraire
 
-Vous voudrez parfois définir une fonction qui peut prendre  _n'importe quel_ nombre de paramètres, cela peut être obtenu en utilisant les étoiles (sauvegardez sous `function_varargs.py`):
+Vous voudrez parfois définir une fonction qui peut prendre  _n'importe quel_ nombre de paramètres, cela peut être obtenu en utilisant les étoiles (enregistrez sous `function_varargs.py`):
 
 ```python
 def total(a=5, *numbers, **phonebook):
@@ -265,7 +265,7 @@ Nous explorerons les tuples et les dictionnaires dans un [chapitre suivant](./da
 
 L'instruction `return` est utilisée pour *revenir* d'une fonction, c'est à dire sortir de la fonction. Vous pouvez optionnellement *retourner une valeur* de la fonction.
 
-Exemple (sauvegardez sous `function_return.py`):
+Exemple (enregistrez sous `function_return.py`):
 
 ```python
 def maximum(x, y):
@@ -307,7 +307,7 @@ L'instruction `pass` est utilisée en Python pour indiquer un bloc d'instruction
 
 Python a une chic fonctionnalité appelée *documentation strings*, communément appelée *docstrings*. Les DocStrings sont un outil important que vous devriez utiliser, car cela vous aide à mieux documenter le programme et le rend plus facile à comprendre. Etonnament, nous pouvons même récuperer les docstrings en revenant, disons d'une fonction, pendant que le programme s'exécute!
 
-Exemple (sauvegardez sous `function_docstring.py`):
+Exemple (enregistrez sous `function_docstring.py`):
 
 ```python
 def print_max(x, y):

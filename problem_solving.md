@@ -25,7 +25,7 @@ Après une analyse du problème, nous *concevons* notre programme. Nous écrivon
 
 Comme la conception de notre programme est maintenant suffisamment stable, nous pouvons écrire le code qui est une *implémentation* de notre solution.
 
-Sauvegardez sous `backup_ver1.py`:
+Enregistrez sous `backup_ver1.py`:
 
 ```python
 import os
@@ -122,7 +122,7 @@ La première version de notre script fonctionne. Cependant, nous pouvons faire q
 
 Une amélioration que je trouvais utile était un meilleur nommage des fichiers - utiliser l'*heure* en tant que nom de fichier dans un répertoire nommé en fonction de la *date* dans le répertoire principal contenant les sauvegardes. Le premier avantage est que vos sauvegardes sont stockés de façon hiérarchique et donc plus faciles à gérer. Le deuxième avantage est que les noms de fichiers sont plus courts. Le troisième avantage est que des répertoires séparés vous aideront à vérifier si vous avez fait des sauvegardes pour chaque jour, vu que le répertoire ne sera créé que si vous avez réalisé une sauvegarde pour cette journée.
 
-Sauvegardez sous `backup_ver2.py`:
+Enregistrez sous `backup_ver2.py`:
 
 ```python
 import os
@@ -201,7 +201,7 @@ La deuxième version fonctionne bien quand je veux de nombreux backups, mais dan
 
 ATTENTION: Ce programme ne fonctionne pas, mais ne vous inquiétez pas, continuez, il y a une leçon à en tirer.
 
-Sauvegardez sous `backup_ver3.py`:
+Enregistrez sous `backup_ver3.py`:
 
 ```python
 import os
@@ -279,7 +279,7 @@ En regardant attentivement, nous voyons que la seule ligne logique a été coup�
 
 ## Quatrième version
 
-Sauvegardez sous `backup_ver4.py`:
+Enregistrez sous `backup_ver4.py`:
 
 ```python
 import os

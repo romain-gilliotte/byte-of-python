@@ -36,7 +36,7 @@ Python lève une erreur appelée `EOFError` qui signifie en gros qu’il a trouv
 
 We can handle exceptions using the `try..except` statement.  We basically put our usual statements within the try-block and put all our error handlers in the except-block.
 
-Exemple (sauvegardez sous `exceptions_handle.py`):
+Exemple (enregistrez sous `exceptions_handle.py`):
 
 ```python
 try:
@@ -84,7 +84,7 @@ Vous pouvez _lever_ des exceptions avec l'instruction `raise` en fournissant le 
 
 L'erreur ou exception que vous levez doit être une classe qui doit être dérivée directement ou indirectement de la classe `Exception`.
 
-Exemple (sauvegardez sous `exceptions_raise.py`):
+Exemple (enregistrez sous `exceptions_raise.py`):
 
 ```python
 class ShortInputException(Exception):
@@ -132,7 +132,7 @@ Dans la clause `except`, nous indiquons la classe de l'erreur qui sera stockée 
 
 Supposons, vous lisez un fichier dans votre programme. Comment être certain que l'objet fichier est fermé proprement, indépendament du fait qu'une exception soit levée ou non dans le code qui le manipule ? Cela se fait à l'aide d'un bloc `finally`.
 
-Sauvegardez ce programme sous `exceptions_finally.py`:
+Enregistrez ce programme sous `exceptions_finally.py`:
 
 ```python
 import sys
@@ -185,7 +185,7 @@ Notez également que nous utilisons `sys.stdout.flush()` après `print` pour nou
 
 Acquérir une ressource dans le bloc`try` et la relâcher dans le bloc `finally` arrive très fréquement. Par conséquent, il y a aussi une instruction `with` qui permet de faire cela de manière plus lisible :
 
-Sauvegardez sous `exceptions_using_with.py`:
+Enregistrez sous `exceptions_using_with.py`:
 
 ```python
 with open("poem.txt") as f:

@@ -8,7 +8,7 @@ Une autre type d'entrée/sortie est de traiter des fichiers. La possibilité de 
 
 ## Entrée de l'utilisateur
 
-Sauvegardez sous `io_input.py`:
+Enregistrez sous `io_input.py`:
 
 ```python
 def reverse(text):
@@ -59,7 +59,7 @@ Si vous avez besoin d'un indice, vous pouvez ...[^1]
 
 Vous pouvez ouvrir et utiliser des fichiers en lecture ou en écriture en créant un objet de la classe `file` et en utilisant ses méthodes `read`, `readline` ou `write` de manière appropriée pour lire ou écrire dans un fichier. La capacité de lire ou d'écrire dans un fichier dépend de la manière dont il a été ouvert. Enfin, quand vous avez fini de manipuler un fichier, vous pouvez utiliser la méthode `close` pour dire à Python que vous avez fini.
 
-Exemple (sauvegardez sous `io_using_file.py`):
+Exemple (enregistrez sous `io_using_file.py`):
 
 ```python
 poem = '''\
@@ -118,7 +118,7 @@ Nous pouvons voir dans le résultat, que ce programme a bien créé le fichier `
 
 Python fournit un module standard appelé `pickle` qui permet d'enregistrer _n'importe quel_ objet Python dans un fichier pour y accéder plus tard. On appelle cela enregistrer l'objet *de manière persistante*.
 
-Exemple (sauvegardez sous `io_pickle.py`):
+Exemple (enregistrez sous `io_pickle.py`):
 
 ```python
 import pickle
