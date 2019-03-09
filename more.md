@@ -2,9 +2,9 @@
 
 Nous avons couvert les principaux aspects de Python que vous utiliserez. Dans ce chapitre, nous verrons quelques autres points qui complèteront notre connaissance de Python.
 
-## Passer des tuples
+## Retourner des tuples
 
-Vous avez déjà voulu renvoyer deux valeurs d'une fonction ? C'est possible. Il vous suffit d'utiliser un tuple.
+Vous avez déjà voulu retourner deux valeurs depuis une fonction ? C'est possible. Il vous suffit d'utiliser un tuple.
 
 ```python
 >>> def get_error_details():
@@ -71,7 +71,7 @@ Notez que l'unique instruction est utilisée sur place et pas en tant que bloc s
 
 ## Fonctions lambda
 
-A `lambda` statement is used to create new function objects. Essentially, the `lambda` takes a parameter followed by a single expression. Lambda becomes the body of the function. The value of this expression is returned by the new function.
+Une instruction `lambda` est utilisée pour créer de nouveaux objets de type fonction. En résumé, une `lambda` prend un paramètre suivi d'une seule expression. La valeur de cette expression est retournée par la nouvelle fonction.
 
 Exemple (enregistrez sous `more_lambda.py`):
 
@@ -91,17 +91,17 @@ $ python more_lambda.py
 
 **Comment ça marche**
 
-Notice that the `sort` method of a `list` can take a `key` parameter which determines how the list is sorted (usually we know only about ascending or descending order). In our case, we want to do a custom sort, and for that we need to write a function. Instead of writing a separate `def` block for a function that will get used in only this one place, we use a lambda expression to create a new function.
+Notez que la méthode `sort` d'une liste peut prendre un paramètre `key` qui détermine le mode de tri de la liste (en général, nous ne trions que par ordre croissant ou décroissant). Dans notre cas, nous voulons faire un tri personnalisé, pour cela nous devons écrire une fonction. Au lieu d'écrire un bloc `def` distinct pour une fonction qui ne sera utilisée qu'à cet endroit, nous utilisons une expression lambda pour créer une nouvelle fonction.
 
-## List Comprehension
+## Compréhension de liste
 
-List comprehensions are used to derive a new list from an existing list. Suppose you have a list of numbers and you want to get a corresponding list with all the numbers multiplied by 2 only when the number itself is greater than 2. List comprehensions are ideal for such situations.
+Les compréhension de liste sont utilisées pour créer une nouvelle liste à partir d'une liste existante. Supposons, vous avez une liste de nombres et vous voulez obtenir la liste correspondante dont chaque valeur est multipliée par 2, mais uniquement nombre supérieurs à 2. Les compréhension de liste sont idéales pour ces situations.
 
 Exemple (enregistrez sous `more_list_comprehension.py`):
 
 ```python
 listone = [2, 3, 4]
-listtwo = [2*i for i in listone if i > 2]
+listtwo = [2 * i for i in listone if i > 2]
 print(listtwo)
 ```
 
@@ -114,17 +114,17 @@ $ python more_list_comprehension.py
 
 **Comment ça marche**
 
-Here, we derive a new list by specifying the manipulation to be done (`2*i`) when some condition is satisfied (`if i > 2`). Note that the original list remains unmodified.
+Ici, nous créons une nouvelle liste en indiquant la manipulation à effectuer (`2 * i`) et la condition a satisfaire (`if i > 2`). Notez que la liste originale n'est pas modifiée.
 
-The advantage of using list comprehensions is that it reduces the amount of boilerplate code required when we use loops to process each element of a list and store it in a new list.
+L'avantage des list comprehensions est que cela réduit la quantité de code passe-partout nécessaire quand on utilise une boucle pour traiter chaque élément d'une liste et le stocker dans une nouvelle liste.
 
-## Receiving Tuples and Dictionaries in Functions
+## Recevoir des tuples et des dictionnaires dans des fonctions
 
-There is a special way of receiving parameters to a function as a tuple or a dictionary using the `*` or `**` prefix respectively. This is useful when taking variable number of arguments in the function.
+Il existe une façon spéciale de recevoir des paramètres pour une fonction en tant que tuple ou dictionnaire en utilisant respectivement les préfixes `*` ou `**`. Cela est utile pour créer des fonctions prenant un un nombre variable de paramètres.
 
 ```python
 >>> def powersum(power, *args):
-...     '''Return the sum of each argument raised to the specified power.'''
+...     '''Renvoie la somme de chaque paramètre elevé à la puissance indiquée.'''
 ...     total = 0
 ...     for i in args:
 ...         total += pow(i, power)
@@ -136,12 +136,13 @@ There is a special way of receiving parameters to a function as a tuple or a dic
 100
 ```
 
-Because we have a `*` prefix on the `args` variable, all extra arguments passed to the function are stored in `args` as a tuple.  If a `**` prefix had been used instead, the extra parameters would be considered to be key/value pairs of a dictionary.
+Comme nous avons un préfixe `*` sur la variable `args`, tous les arguments supplémentaires passés à la fonction sont stockés dans le tuple `args`. Si un préfixe `**` avait été utilisé, les paramètres supplémentaires auraient été vus comme des paires clé/valeur d'un dictionnaire.
 
-## The assert statement {#assert}
+## L'instruction assert {#assert}
 
-The `assert` statement is used to assert that something is true. For example, if you are very sure that you will have at least one element in a list you are using and want to check this, and raise an error if it is not true, then `assert` statement is ideal in this situation. When the assert statement fails, an `AssertionError` is raised.
-The `pop()` method removes and returns the last item from the list.
+L'instruction `assert` est utilisée pour vérifier que quelque chose est vrai. Par exemple, si vous êtes persuadé qu'une liste contient au moins un élément, et que vous voulez lever une erreur dans le cas contraire, alors l'instruction `assert` est idéale. Quand une vérification avec assert échoue, une `AssertionError` est levée.
+
+La méthode `pop()` retire et retourne le dernier élément d'une liste.
 
 ```python
 >>> mylist = ['item']
@@ -154,11 +155,11 @@ Traceback (most recent call last):
 AssertionError
 ```
 
-The `assert` statement should be used judiciously. Most of the time, it is better to catch exceptions, either handle the problem or display an error message to the user and then quit.
+L'instruction `assert` doit être utilisée à bon escient. La plupart du temps, il vaut mieux gérer des exceptions puis, soit gérer le problème, soit afficher un message d'erreur à l'utilisateur et quitter le programme.
 
-## Decorators {#decorator}
+## Décorateurs {#decorator}
 
-Decorators are a shortcut to applying wrapper functions. This is helpful to "wrap" functionality with the same code over and over again. For example, I created a `retry` decorator for myself that I can just apply to any function and if any exception is thrown during a run, it is retried again, till a maximum of 5 times and with a delay between each retry. This is especially useful for situations where you are trying to make a network call to a remote computer:
+Les décorateurs sont un raccourci pour appliquer des fonctions autour d'une autre fonction. Ceci est utile pour "envelopper" une fonctionnalité avec le même code, encore et encore. Par exemple, j’ai créé un décorateur `retry` que je ne peux appliquer à n'importe quelle fonction. Si une exception est levée au cours d'une exécution, l'appel à la fonction sera retentée jusqu'à 5 fois avec un délai entre chaque nouvelle tentative. Ceci est particulièrement utile lorsque vous essayez de réaliser un appel réseau à un ordinateur distant:
 
 ```python
 from time import sleep
@@ -166,7 +167,6 @@ from functools import wraps
 import logging
 logging.basicConfig()
 log = logging.getLogger("retry")
-
 
 def retry(f):
     @wraps(f)
@@ -176,73 +176,71 @@ def retry(f):
             try:
                 return f(*args, **kwargs)
             except Exception:
-                log.exception("Attempt %s/%s failed : %s",
+                log.exception("La tentative %s/%s a échoué : %s",
                               attempt,
                               MAX_ATTEMPTS,
                               (args, kwargs))
                 sleep(10 * attempt)
-        log.critical("All %s attempts failed : %s",
+        log.critical("Les %s tentatives ont échoué : %s",
                      MAX_ATTEMPTS,
                      (args, kwargs))
     return wrapper_function
 
-
 counter = 0
-
 
 @retry
 def save_to_database(arg):
-    print("Write to a database or make a network call or etc.")
-    print("This will be automatically retried if exception is thrown.")
+    print("Écrit dans une base de données, réalise un appel réseau ou autres...")
+    print("Si une exception est levé, une nouvelle tentative sera automatiquement lancé.")
     global counter
     counter += 1
-    # This will throw an exception in the first call
-    # And will work fine in the second call (i.e. a retry)
+    # Ceci lancera une exception au premier appel
+    # mais marchera au deuxième (lors d'une nouvelle tentative)
     if counter < 2:
         raise ValueError(arg)
 
 
 if __name__ == '__main__':
-    save_to_database("Some bad value")
+    save_to_database("Une mauvaise valeur")
 ```
 
 Résultat:
 
 ```
 $ python more_decorator.py
-Write to a database or make a network call or etc.
-This will be automatically retried if exception is thrown.
-ERROR:retry:Attempt 1/5 failed : (('Some bad value',), {})
+Écrit dans une base de données, réalise un appel réseau ou autres...
+Si une exception est levé, une nouvelle tentative sera automatiquement lancé.
+ERROR:retry:La tentative 1/5 a échoué : (('Une mauvaise valeur',), {})
 Traceback (most recent call last):
   File "more_decorator.py", line 14, in wrapper_function
     return f(*args, **kwargs)
   File "more_decorator.py", line 39, in save_to_database
     raise ValueError(arg)
-ValueError: Some bad value
-Write to a database or make a network call or etc.
-This will be automatically retried if exception is thrown.
+ValueError: Une mauvaise valeur
+Écrit dans une base de données, réalise un appel réseau ou autres...
+Si une exception est levé, une nouvelle tentative sera automatiquement lancé.
 ```
 
 **Comment ça marche**
 
-See:
+Consultez:
 
 - [Vidéo: Comprendre facilement les décorateurs Python](https://youtu.be/MYAEv3JoenI)
 - http://www.ibm.com/developerworks/linux/library/l-cpdecor.html
 - http://toumorokoshi.github.io/dry-principles-through-python-decorators.html
 
-## Differences between Python 2 and Python 3 {#two-vs-three}
+## Differences entre Python 2 et Python 3 {#two-vs-three}
 
-See:
+Consultez:
 
-- ["Six" library](http://pythonhosted.org/six/)
-- [Porting to Python 3 Redux by Armin](http://lucumr.pocoo.org/2013/5/21/porting-to-python-3-redux/)
-- [Python 3 experience by PyDanny](http://pydanny.com/experiences-with-django-python3.html)
-- [Official Django Guide to Porting to Python 3](https://docs.djangoproject.com/en/dev/topics/python3/)
-- [Discussion on What are the advantages to python 3.x?](http://www.reddit.com/r/Python/comments/22ovb3/what_are_the_advantages_to_python_3x/)
+- [Bibliothèque "Six"](http://pythonhosted.org/six/)
+- [Porter du code en Python 3 Redux par Armin](http://lucumr.pocoo.org/2013/5/21/porting-to-python-3-redux/)
+- [Expérience avec Python 3 par PyDanny](http://pydanny.com/experiences-with-django-python3.html)
+- [Guide officiel de Django pour porter du code en Python 3](https://docs.djangoproject.com/en/dev/topics/python3/)
+- [Discussion sur: quels sont les avantages de python 3.x?](http://www.reddit.com/r/Python/comments/22ovb3/what_are_the_advantages_to_python_3x/)
 
-## Summary
+## Récapitulatif
 
-We have covered some more features of Python in this chapter and yet we haven't covered all the features of Python. However, at this stage, we have covered most of what you are ever going to use in practice. This is sufficient for you to get started with whatever programs you are going to create.
+Nous avons vu quelques autres fonctionnalités de Python dans ce chapitre, et pourtant, nous n'avons pas encore couvert toutes les fonctionnalités de Python. Cependant, nous avons vu maintenant l'essentiel de ce que vous utiliserez en pratique. C'est suffisant pour vous permettre de démarrer avec les programmes que vous allez créer.
 
-Next, we will discuss how to explore Python further.
+Il nous reste à discuter de comment vous y prendre pour approfondir vos connaissances en Python.
