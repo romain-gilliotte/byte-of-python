@@ -65,7 +65,7 @@ La Python Standard Library est immense. Cela peut vous aider à faire de nombreu
 
 En plus de la bibliothèque standard, il y a d'autres bibliothèques de grande qualité que vous pouvez trouver dans le [Python Package Index](http://pypi.python.org/pypi).
 
-### Résumé
+### Récapitulatif
 
 Python est vraiment un langage puissant et formidable. Il possède la bonne combinaison de performance et fonctionnalités, ce qui rend l'écriture de programmes Python à la fois amusante et aisée.
 
