@@ -1,4 +1,4 @@
-# Annexe: Leçon d'histoire {#history-lesson}
+# Leçon d'histoire {#history-lesson}
 
 J'ai commencé avec Python quand j'ai eu besoin d'écrire un installeur pour un logiciel que j'avais écrit appellé « Diamant » afin de faciliter l'installation. Je devais choisir entre les bindings Python et Perl pour la librairie Qt. J'ai cherché sur le web et je suis tombé sur [un article d'Eric S. Raymond](http://www.python.org/about/success/esr/), le hacker célèbre et respecté, qui expliquait comment Python était devenu son langage favori. J'ai également trouvé que les bindings PyQt étaient plus mature que Perl-Qt. Donc, je décidai de choisir Python.
 
@@ -14,7 +14,7 @@ Dans le véritable esprit de l'open source, j'ai reçu beaucoup de suggestions c
 
 Le livre a besoin de l’aide de ses lecteurs tels que vous pour indiquer les parties du livre qui ne sont pas bonnes, qui ne sont pas compréhensibles ou qui sont simplement fausses. Veuillez [écrire à l'auteur principal](https://www.swaroopch.com/contact/) ou aux [traducteurs](./translations.md#translations) respectifs avec vos commentaires et suggestions.
 
-# Annexe: Historique des révisions {#revision-history}
+# Historique des révisions {#revision-history}
 
 - 4.0
     - 19 janvier 2016
