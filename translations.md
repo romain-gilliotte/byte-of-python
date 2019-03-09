@@ -1,223 +1,222 @@
-# Translations
+# Traductions
 
-There are many translations of the book available in different human languages, thanks to many tireless volunteers!
+De nombreuses traductions du livre sont disponibles dans différentes langues, grâce à de nombreux bénévoles!
 
-If you want to help with these translations, please see the list of volunteers and languages below and decide if you want to start a new translation or help in existing translation projects.
+Si vous souhaitez aider avec ces traductions, veuillez consulter la liste des volontaires et des langues ci-dessous et décidez si vous souhaitez commencer une nouvelle traduction ou aider un projet de traduction existant.
 
-If you plan to start a new translation, please read the [Translation how-to](./translation_howto.md#translation-howto).
+Si vous envisagez de démarrer une nouvelle traduction, veuillez lire le [Guide de traduction](./translation_howto.md#translation-howto).
 
-## Arabic
+## Allemand
 
-Below is the link for the Arabic version. Thanks to Ashraf Ali Khalaf for translating the book, you can read the whole book online at <http://www.khaledhosny.org/byte-of-python/index.html> or you can download it from [sourceforge.net](http://downloads.sourceforge.net/omlx/byteofpython_arabic.pdf?use_mirror=osdn) for more info see <http://itwadi.com/byteofpython_arabi>.
+Lutz Horn (lutz.horn@gmx.de), Bernd Hengelein (bernd.hengelein@gmail.com) et Christoph Zwerschke (cito@online.de) se sont portés volontaires pour traduire le livre en allemand.
 
-## Azerbaijani
-
-Jahangir Shabiyev (c.shabiev@gmail.com) has volunteered to translate the book to Azerbaijani. The translation is in progress at https://www.gitbook.com/book/jahangir-sh/piton-sancmasi
-
-
-## Brazilian Portuguese
-
-There are two translations in various levels of completion and accessibility. The older translation is now missing/lost, and newer translation is incomplete.
-
-Samuel Dias Neto (samuel.arataca@gmail.com) made the first Brazilian Portuguese translation (older translation) of this book when Python was in 2.3.5 version. This is no longer publicly accessible.
-
-[Rodrigo Amaral](http://rodrigoamaral.net) (rodrigoamaral@gmail.com) has volunteered to translate the book to Brazilian Portuguese, (newer translation) which still remains to be completed.
-
-## Catalan
-
-Moises Gomez (moisesgomezgiron@gmail.com) has volunteered to translate the book to Catalan. The translation is in progress.
-
-> Moisès Gómez - I am a developer and also a teacher of programming (normally for people without any previous experience).
->
-> Some time ago I needed to learn how to program in Python, and Swaroop's work was really helpful. Clear, concise, and complete enough. Just what I needed.
->
-> After this experience, I thought some other people in my country could take benefit from it too. But English language can be a barrier.
->
-> So, why not try to translate it? And I did for a previous version of BoP.
->
-> I my country there are two official languages. I selected the Catalan language assuming that others will translate it to the more widespread Spanish.
-
-## Chinese
-
-In 2017 which is after 11 years, Mo Lun (i@molun.net) re-translated the book from the beginning based on Version 4.0. And the translation is storaged in GitHub and Gitbook. He is keeping follow this translated edition and ready to fix it if there is any wrong or mistake in the translated BoP.
-
-The 2017 translation edition is available in <https://bop.molun.net>.
-
-Mo Lun Says:
-
-> I am a common journalism student from CYU, Beijing. And actually, I am an absolute newbie in Python programming when I start to translate this book. Initially, it was just a whim, but when I done this work, I realized that a decision triggered by interest had prompted me to go so far.
->
-> With the help of my predecessors’ translations and the vast amount of information provided by the developed Internet, and with the help of my friends, I prudently presented this translation edition. I just hope my translation work will help other newcomers in learning Python.
->
-> At the same time, I am always waiting for my translation of the comments and suggestions, and ready to change or improve this superficial work.
-
-### Earlier Chinese translation
-
-In 2005, Shen Jieyuan translated this book with version 1.20 to Chinese and published it to the Internet. This is the first Chinese edition. In BoP official site, he was called Juan Shen, with Email adderss orion_val@163.com。This edition has been disseminated on the network widely, and the links provided by BoP official site are not available anymore, so that its original source is unable to find. Therefore in here can’t provide a certain address. But you can try to search keywords like “简明Python教程 沈洁元” to find a copy.
-
-Juan Shen says:
-
-> I am a postgraduate at Wireless Telecommunication Graduate School, Beijing University of Technology, China PR. My current research interest is on the synchronization, channel estimation and multi-user detection of multicarrier CDMA system. Python is my major programming language for daily simulation and research job, with the help of Python Numeric, actually. I learned Python just half a year before, but as you can see, it's really easy-understanding, easy-to-use and productive. Just as what is ensured in Swaroop's book, 'It's my favorite programming language now'.
->
-> 'A Byte of Python' is my tutorial to learn Python. It's clear and effective to lead you into a world of Python in the shortest time. It's not too long, but efficiently covers almost all important things in Python. I think 'A Byte of Python' should be strongly recommendable for newbies as their first Python tutorial. Just dedicate my translation to the potential millions of Python users in China.
-
-## Chinese Traditional
-
-Fred Lin (gasolin@gmail.com) has volunteered to translate the book to Chinese Traditional.
-
-It is available at <http://code.google.com/p/zhpy/wiki/ByteOfZhpy>.
-
-An exciting feature of this translation is that it also contains the _executable chinese python sources_ side by side with the original python sources.
-
-> Fred Lin - I'm working as a network firmware engineer at Delta Network, and I'm also a contributor of TurboGears web framework.
->
-> As a python evangelist (:-p), I need some material to promote python language. I found 'A Byte of Python' hit the sweet point for both newbies and experienced programmers. 'A Byte of Python' elaborates the python essentials with affordable size.
->
-> The translation are originally based on simplified chinese version, and soon a lot of rewrite were made to fit the current wiki version and the quality of reading.
->
-> The recent chinese traditional version also featured with executable chinese python sources, which are achieved by my new 'zhpy' (python in chinese) project (launch from Aug 07).
->
-> zhpy(pronounce (Z.H.?, or zippy) build a layer upon python to translate or interact with python in chinese(Traditional or Simplified). This project is mainly aimed for education.
-
-## French
-
-Gregory (coulix@ozforces.com.au) has volunteered to translate the book to French.
-
-Gérard Labadie (gerard.labadie@gmail.com) has completed to translate the book to French.
-
-## German
-
-Lutz Horn (lutz.horn@gmx.de), Bernd Hengelein (bernd.hengelein@gmail.com) and Christoph Zwerschke (cito@online.de) have volunteered to translate the book to German.
-
-Translation can be found at http://cito.github.io/byte_of_python/
+La traduction peut être trouvée à l'adresse http://cito.github.io/byte_of_python/
 
 <!-- Their translation was located at http://ftp.jaist.ac.jp/pub//sourceforge/a/ab/abop-german.berlios/ -->
 
-Lutz Horn says:
+Lutz Horn dit:
 
-> I'm 32 years old and have a degree of Mathematics from University of Heidelberg, Germany. Currently I'm working as a software engineer on a publicly funded project to build a web portal for all things related to computer science in Germany.The main language I use as a professional is Java, but I try to do as much as possible with Python behind the scenes. Especially text analysis and conversion is very easy with Python. I'm not very familiar with GUI toolkits, since most of my programming is about web applications, where the user interface is build using Java frameworks like Struts. Currently I try to make more use of the functional programming features of Python and of generators.  After taking a short look into Ruby, I was very impressed with the use of blocks in this language. Generally I like the dynamic nature of languages like Python and Ruby since it allows me to do things not possible in more static languages like Java.I've searched for some kind of introduction to programming, suitable to teach a complete non-programmer. I've found the book 'How to Think Like a Computer Scientist: Learning with Python', and 'Dive into Python'. The first is good for beginners but to long to translate. The second is not suitable for beginners. I think 'A Byte of Python' falls nicely between these, since it is not too long, written to the point, and at the same time verbose enough to teach a newbie. Besides this, I like the simple DocBook structure, which makes translating the text a generation the output in various formats a charm.
+> J'ai 32 ans et suis diplômé en mathématiques de l'Université de Heidelberg, en Allemagne. Je travaille actuellement en tant qu'ingénieur logiciel sur un projet financé par des fonds publics visant à créer un portail Web pour tout ce qui a trait à l'informatique en Allemagne. Le langage principal que j'utilise en tant que professionnel est Java, mais j'essaie de faire le maximum avec Python dans les coulisses. En particulier, l'analyse et la conversion de texte sont très faciles avec Python. Je ne connais pas très bien les boîtes à outils d'interface graphique, car la majeure partie de ma programmation concerne des applications Web, l'interface utilisateur étant construite à l'aide de frameworks Java tels que Struts. Actuellement, j'essaie de tirer davantage parti des fonctionnalités de programmation fonctionnelles de Python et des générateurs. Après avoir jeté un coup d’œil à Ruby, j’ai été très impressionné par l’utilisation des blocs dans ce langage. Généralement, j'aime les langages dynamiques comme Python et Ruby, car cela me permet de faire des choses impossibles dans des langages plus statiques comme Java. J'ai recherché une sorte d'initiation à la programmation, appropriée pour enseigner à un débutant. J'ai trouvé le livre "Penser comme un informaticien: apprendre avec Python" et "Plonger dans Python". Le premier est bon pour les débutants mais trop long à traduire. Le deuxième ne convient pas aux débutants. Je pense que « A Byte of Python » se situe bien entre ceux-ci, car il n'est pas trop long, écrit dans le bon ordre, et en même temps assez prolixe pour enseigner à un débutant. De plus, j'aime bien la structure simple de DocBook, qui fait que traduire le texte et générer les divers formats de sortie à éte un plaisir.
 
-Bernd Hengelein says:
+Bernd Hengelein dit:
 
-> Lutz and me are going to do the german translation together. We just started with the intro and preface but we will keep you informed about the progress we make. Ok, now some personal things about me. I am 34 years old and playing with computers since the 1980's, when the "Commodore C64" ruled the nurseries. After studying computer science I started working as a software engineer. Currently I am working in the field of medical imaging for a major german company. Although C++ is the main language I (have to) use for my daily work, I am constantly looking for new things to learn.Last year I fell in love with Python, which is a wonderful language, both for its possibilities and its beauty. I read somewhere in the net about a guy who said that he likes python, because the code looks so beautiful. In my opinion he's absolutly right. At the time I decided to learn python, I noticed that there is very little good documentation in german available. When I came across your book the spontaneous idea of a german translation crossed my mind. Luckily, Lutz had the same idea and we can now divide the work.I am looking forward to a good cooperation!
+> Lutz et moi allons faire la traduction allemande ensemble. Nous venons juste de commencer l'intro et la préface, mais nous vous tiendrons au courant des progrès réalisés. Ok, maintenant quelques choses personnelles. J'ai 34 ans et je joue avec des ordinateurs depuis les années 1980, lorsque le "Commodore C64" était le maître incontesté. Après des études en informatique, j'ai commencé à travailler comme ingénieur en logiciel. Actuellement, je travaille dans le domaine de l'imagerie médicale pour une grande entreprise allemande. Bien que C++ soit mon language principal que j'utilise (obligatoirement) pour mon travail quotidien, je suis constamment à la recherche de nouvelles choses à apprendre. L'année dernière, je suis tombée amoureus de Python, un langage merveilleuse, tant par ses possibilités que par sa beauté. J'ai lu quelque part sur le réseau un type qui disait qu'il aime le Python, parce que le code est si beau. À mon avis, il a absolument raison. A l'époque où j'ai décidé d'apprendre le Python, j'ai remarqué qu'il y avait très peu de bonne documentation disponible en allemand. Lorsque je suis tombé sur votre livre, l’idée spontanée d’une traduction en allemand m’a traversé l’esprit. Heureusement, Lutz a eu la même idée et nous pouvons maintenant nous diviser le travail. Je suis impatient de notre coopération!
 
-## Greek
+## Arabe
 
-The Greek Ubuntu Community [translated the book in Greek](http://wiki.ubuntu-gr.org/byte-of-python-el), for use in our on-line asynchronous Python lessons that take place in our forums. Contact [@savvasradevic](https://twitter.com/savvasradevic) for more information.
+Ci-dessous le lien pour la version arabe. Merci à Ashraf Ali Khalaf pour la traduction du livre, vous pouvez lire le livre en entier à l’adresse <http://www.khaledhosny.org/byte-of-python/index.html> ou le télécharger à partir de [sourceforge.net](http://downloads.sourceforge.net/omlx/byteofpython_arabic.pdf?use_mirror=osdn) pour plus d'informations, voir <http://itwadi.com/byteofpython_arabi>.
 
-## Indonesian
+## Azéri
 
-Daniel (daniel.mirror@gmail.com) is translating the book to Indonesian at <http://python.or.id/moin.cgi/ByteofPython>.
+Jahangir Shabiyev (c.shabiev@gmail.com) s'est porté volontaire pour traduire le livre en azéri. La traduction est en cours à l'adresse https://www.gitbook.com/book/jahangir-sh/piton-sancmasi
 
-Wisnu Priyambodo (cibermen@gmail.com) also has volunteered to translate the book to Indonesian.
+## Catalan
 
-Also, Bagus Aji Santoso (baguzzzaji@gmail.com) has volunteered.
+Moises Gomez (moisesgomezgiron@gmail.com) s'est porté volontaire pour traduire le livre en catalan. La traduction est en cours.
 
-## Italian (first)
-
-Enrico Morelli (mr.mlucci@gmail.com) and Massimo Lucci (morelli@cerm.unifi.it) have volunteered to translate the book to Italian.
-
-The Italian translation is present at <http://www.gentoo.it/Programmazione/byteofpython>.
-
-> _Massimo Lucci and Enrico Morelli_ - we are working at the University of Florence (Italy) - Chemistry Department. I (Massimo) as service engineer and system administrator for Nuclear Magnetic Resonance Spectrometers; Enrico as service engineer and system administrator for our CED and parallel / clustered systems. We are programming on python since about seven years, we had experience working with Linux platforms since ten years. In Italy we are responsible and administrator for www.gentoo.it web site for Gentoo/Linux distrubution and www.nmr.it (now under construction) for Nuclear Magnetic Resonance applications and Congress Organization and Managements.That's all! We are impressed by the smart language used on your Book and we think this is essential for approaching the Python to new users (we are thinking about hundred of students and researcher working on our labs).
-
-## Italian (second)
-
-An Italian translation has been created by
-[Calvina Bice](http://besthcgdropswebsite.com/translate) & colleagues at <http://besthcgdropswebsite.com/translate/a-byte-of-python/>.
-
-## Japanese
-
-Shunro Dozono (dozono@gmail.com) is translating the book to Japanese.
-
-## Korean
-
-Jeongbin Park (pjb7687@gmail.com) has translated the book to Korean - <https://github.com/pjb7687/byte_of_python>
-
-> I am Jeongbin Park, currently working as a Biophysics & Bioinformatics researcher in Korea.
+> Moisès Gómez - Je suis développeur et enseignant en programmation (normalement pour des personnes sans expérience préalable).
 >
-> A year ago, I was looking for a good tutorial/guide for Python to introduce it to my colleagues, because using Python in such research fields is becoming inevitable due to the user base is growing more and more.
+> Il y a quelque temps, j'avais besoin d'apprendre à programmer en Python et le travail de Swaroop était vraiment utile. Clair, concis et complet. Juste ce dont j'avais besoin.
 >
-> But at that time only few Python books are available in Korean, so I decided to translate your ebook because it looks like one of the best guides that I have ever read!
+> Après cette expérience, j’ai pensé que d’autres personnes de mon pays pourraient également en profiter. Mais la langue anglaise peut être un obstacle.
 >
-> Currently, the book is almost completely translated in Korean, except some of the text in introduction chapter and the appendixes.
+> Alors, pourquoi ne pas essayer de le traduire? Et je l'ai fait pour une version précédente de BoP.
 >
-> Thank you again for writing such a good guide!
+> Dans mon pays, il existe deux langues officielles. J'ai choisi la langue catalane en supposant que d'autres la traduiront en espagnol plus répandu.
 
-## Mongolian
+## Chinois
 
-Ariunsanaa Tunjin (luftballons2010@gmail.com) has volunteered to translate the book to Mongolian.
+En 2017, soit après 11 ans, Mo Lun (i@molun.net) a retraduit le livre depuis le début sur la base de la version 4.0. Et la traduction est stockée dans GitHub et Gitbook. Il continue de suivre cette édition traduite et est prêt à la corriger s'il y a une erreur ou une erreur dans le BoP traduit.
 
-_Update on Nov 22, 2009_ : Ariunsanaa is on the verge of completing the translation.
+L'édition 2017 de la traduction est disponible à l'adresse <https://bop.molun.net>.
 
-## Norwegian (bokmål)
+Mo Lun dit:
 
-Eirik Vågeskar is a high school student at [Sandvika videregående skole](http://no.wikipedia.org/wiki/Sandvika_videreg%C3%A5ende_skole) in Norway, a [blogger](http://forbedre.blogspot.com/) and currently translating the book to Norwegian (bokmål).
-
-> _Eirik Vågeskar_: I have always wanted to program, but because I speak a small language, the learning process was much harder. Most tutorials and books are written in very technical English, so most high school graduates will not even have the vocabulary to understand what the tutorial is about. When I discovered this book, all my problems were solved. "A Byte of Python" used simple non-technical language to explain a programming language that is just as simple, and these two things make learning Python fun. After reading half of the book, I decided that the book was worth translating. I hope the translation will help people who have found themself in the same situation as me (especially young people), and maybe help spread interest for the language among people with less technical knowledge.
-
-## Polish
-
-Dominik Kozaczko (dominik@kozaczko.info) has volunteered to translate the book to Polish. Translation is in progress and it's main page is available here: [Ukąś Pythona](http://python.edu.pl/byteofpython/).
-
-_Update_ : The translation is complete and ready as of Oct 2, 2009. Thanks to Dominik, his two students and their friend for their time and effort!
-
-> _Dominik Kozaczko_ - I'm a Computer Science and Information Technology teacher.
-
-## Portuguese
-
-Artur Weber (arturweberguimaraes@gmail.com) has completed a translation of this book to Portuguese (as of Feb 21, 2018) at <https://www.homeyou.com/~edu/introducao>.
-
-> _Artur Weber_: My students study at the Polytechnic faculty in Ecological University in the city of Curitiba (Brazil) and some of them are interested in different papers.
-> 
-> As they are writing course and academic papers, they always look for interesting articles and pages. I also do my best to find interesting materials which can be the sources for their university works.
+> Je suis un étudiant en journalisme de la CYU, à Beijing. Et en fait, j'étais un débutant absolu en programmation Python lorsque j'ai commencé à traduire ce livre. Au début, ce n’était qu’un caprice, mais lorsque j’ai effectué ce travail, j’ai réalisé qu’une décision prise par intérêt m’avait poussé à avancer autant.
 >
-> I found the materials from your site useful for some of my students who are writing papers based on programming on Python. Actually, that is why I made a decision to perform a Portuguese translation to let my students who don't know English read exciting articles in their mother tongue ( in Portuguese).
+> Avec l’aide des traductions de mes prédécesseurs et de la grande quantité d’informations fournie par Internet, et avec l’aide de mes amis, j’ai prudemment présenté cette édition traduite. J'espère juste que mon travail de traduction aidera d'autres nouveaux arrivants à apprendre Python.
+>
+> En même temps, j'attends des commentaires et suggestions et je suis prêt à changer ou à améliorer le travail superficiel réalisé sur cette traduction.
 
-## Romanian
+### Traduction antérieure en chinois
 
-Paul-Sebastian Manole (brokenthorn@gmail.com) has volunteered to translate this book to Romanian.
+En 2005, Shen Jieyuan a traduit la version 1.20 de ce livre en chinois et l'a publié sur Internet. Ceci est la première édition chinoise. Sur le site officiel de BoP, il s'appelait Juan Shen, avec comme adresse email orion_val@163.com. Cette édition a été largement diffusée sur le réseau mais les liens fournis sur le site officiel de BoP ne sont plus fonctionnels, et il n'a pas été possible de retrouver le document original. Vous pouvez essayer de rechercher des mots-clés tels que « 简明Python教程 沈洁元 » pour en trouver une copie.
 
-> _Paul-Sebastian Manole_ - I'm a second year Computer Science student at Spiru Haret University, here in Romania. I'm more of a self-taught programmer and decided to learn a new language, Python. The web told me there was no better way to do so but read ''A Byte of Python''. That's how popular this book is (congratulations to the author for writing such an easy to read book). I started liking Python so I decided to help translate the latest version of Swaroop's book in Romanian. Although I could be the one with the first initiative, I'm just one volunteer so if you can help, please join me.
+Juan Shen dit:
 
-## Russian
+> Je suis un étudiant de troisième cycle à la Wireless Telecommunication Graduate School de l’Université de Technologie de Beijing, en République populaire de Chine. Mon domaine de recherche actuel porte sur la synchronisation, l'estimation de canal et la détection multi-utilisateurs du système CDMA à porteuses multiples. Python est mon principal langage de programmation pour la simulation quotidienne et mon travail de recherche, avec l'aide de numpy. J'ai appris le python il y a à peine six mois, mais c'est, comme vous pouvez le constater, très facile à comprendre, facile à utiliser et productif. Tout comme ce qui est assuré dans le livre de Swaroop, « C'est mon langage de programmation préféré maintenant ».
+>
+> « A Byte of Python » est mon tutoriel pour apprendre le Python. C'est une moyen clair et efficace de vous attirer dans le monde de Python dans les plus brefs délais. Ce n'est pas trop long, mais couvre efficacement presque toutes les choses importantes. Je pense que "A Byte of Python" devrait être fortement recommandé aux débutants en tant que premier tutoriel sur Python. Je dédie ma traduction aux millions d'utilisateurs potentiels de Python en Chine.
 
-Vladimir Smolyar (v_2e@ukr.net) has completed a Russian translation at <http://wombat.org.ua/AByteOfPython/>.
+### Chinois traditionnel
 
-## Ukranian
+Fred Lin (gasolin@gmail.com) s'est porté volontaire pour traduire le livre en chinois traditionnel.
 
-Averkiev Andrey (averkiyev@ukr.net) has volunteered to translate the book to Russian, and perhaps Ukranian (time permitting).
+Il est disponible à l'adresse <http://code.google.com/p/zhpy/wiki/ByteOfZhpy>.
 
-## Serbian
+Une caractéristique intéressante de cette traduction est qu’elle contient également les sources _executable en python chinois_ côte à côte avec les sources python d’origine.
 
-"BugSpice" (amortizerka@gmail.com) has completed a Serbian translation:
+> Fred Lin - Je travaille en tant qu'ingénieur de micrologiciel réseau chez Delta Network, et je contribue également au framework Web TurboGears.
+>
+> En tant qu’évangéliste python (:-p), j’ai besoin de matériel pour promouvoir le langage python. J'ai trouvé que « A Byte of Python » est le bon compromis pour parler à des débutants et des programmeurs expérimentés. « A Byte of Python » élabore l'essentiel de Python pour une longueur abordable.
+>
+> Les traductions sont à l'origine basées sur la version chinoise simplifiée, mais rapidement beaucoup de réécritures ont été faites pour correspondre à la version actuelle du wiki et améliorer la qualité de la lecture.
+>
+> La version traditionnelle chinoise récente contient également des sources exécutables en python chinois, qui sont réalisées dans le cadre de mon nouveau projet «zhpy» (python en chinois) (lancement à partir du 07 août).
+>
+> zhpy (prononcez (Z.H.? ou zippy) construit une couche au dessus de Python pour traduire ou interagir avec python en chinois (traditionnel ou simplifié). Ce projet est principalement destiné au monde de l'éducation.
 
-> This download link is no longer accessible.
+## Coréen
 
-More details at <http://forum.ubuntu-rs.org/Thread-zagrljaj-pitona>.
+Jeongbin Park (pjb7687@gmail.com) a traduit le livre en coréen - <https://github.com/pjb7687/byte_of_python>
 
-## Slovak
+> Je suis Jeongbin Park, travaillant actuellement en tant que chercheur en biophysique et bioinformatique en Corée.
+>
+> Il y a un an, je cherchais un bon tutoriel/guide pour présenter Python à mes collègues, car l'utilisation de Python dans de tels domaines de recherche devient inévitable du fait que le nombre d'utilisateurs ne cesse de croître.
+>
+> Mais à cette époque, seuls quelques livres en Python étaient disponibles en coréen, j'ai donc décidé de traduire votre ebook, car c'est l'un des meilleurs guides que j'ai jamais lus!
+>
+> Actuellement, le livre est presque entièrement traduit en coréen, à l'exception d'une partie du texte du chapitre d'introduction et des annexes.
+>
+> Merci encore d'avoir écrit un si bon guide!
 
-Albertio Ward (albertioward@gmail.com) has translated the book to Slovak at <http://www.fatcow.com/edu/python-swaroopch-sl/> :
+## Espagnol
 
-> We are a non-profit organization called "Translation for education". We represent a group of people, mainly students and professors, of the Slavonic University. Here are students from different departments: linguistics, chemistry, biology, etc. We try to find interesting publications on the Internet that can be relevant for us and our university colleagues. Sometimes we find articles by ourselves; other times our professors help us choose the material for translation. After obtaining permission from authors we translate articles and post them in our blog which is available and accessible to our colleagues and friends. These translated publications often help students in their daily study routine.
+Alfonso de la Guarda Reyes (alfonsodg@ictechperu.net), Gustavo Echeverria (gustavo.echeverria@gmail.com), David Crespo Arroyo (davidcrespoarroyo@hotmail.com) et Cristian Bermudez Serna (crisbermud@hotmail.com) ont proposé de traduire le livre en espagnol.
 
-## Spanish
 
-Alfonso de la Guarda Reyes (alfonsodg@ictechperu.net), Gustavo Echeverria (gustavo.echeverria@gmail.com), David Crespo Arroyo (davidcrespoarroyo@hotmail.com) and Cristian Bermudez Serna (crisbermud@hotmail.com) have volunteered to translate the book to Spanish.
+Gustavo Echeverria dit:
 
-Gustavo Echeverria says:
+> Je travaille en tant qu'ingénieur logiciel en Argentine. J'utilise principalement les technologies C# et .NET au travail, mais n'utilise que Python ou en Ruby pour mes projets personnels. Je connaissais Python il y a de nombreuses années et je me suis retrouvé coincé immédiatement. Peu de temps après avoir découvert Python, j'ai découvert ce livre et cela m'a aidé à apprendre le language. Je me suis porté volontaire pour traduire le livre en espagnol. Maintenant, après avoir reçu quelques demandes, j'ai commencé à traduire « A Byte of Python » avec l'aide de Maximiliano Soler.
 
-> I work as a software engineer in Argentina. I use mostly C# and .Net technologies at work but strictly Python or Ruby in my personal projects. I knew Python many years ago and I got stuck inmediately. Not so long after knowing Python I discovered this book and it helped me to learn the language. Then I volunteered to translate the book to Spanish. Now, after receiving some requests, I've begun to translate "A Byte of Python" with the help of Maximiliano Soler.
+Cristian Bermudez Serna a déclaré:
 
-Cristian Bermudez Serna says:
+> Je suis étudiant en ingénierie des télécommunications à l'Université d'Antioquia (Colombie). Il y a quelques mois, j'ai commencé à apprendre le python et j'ai trouvé ce merveilleux livre. Je me suis donc porté volontaire pour arriver à une traduction en espagnol.
 
-> I am student of Telecommunications engineering at the University of Antioquia (Colombia). Months ago, i started to learn Python and found this wonderful book, so i volunteered to get the Spanish translation.
+## Français
 
-## Swedish
+Gregory (coulix@ozforces.com.au) s'est porté volontaire pour traduire le livre en français.
 
-Mikael Jacobsson (leochingkwake@gmail.com) has volunteered to translate the book to Swedish.
+Gérard Labadie (gerard.labadie@gmail.com) a terminé la traduction du livre en français.
 
-## Turkish
+Cette traduction n'a plus été disponible sur internet à la fin du wiki, puis a été portée au format gitbook, mise à jour, et remise en ligne par Romain Gilliotte (rgilliotte@gmail.com).
 
-Türker SEZER (tsezer@btturk.net) and Bugra Cakir (bugracakir@gmail.com) have volunteered to translate the book to Turkish. "Where is Turkish version? Bitse de okusak."
+Elle est maintenant hébergée sur gitbook à l'adresse https://rgilliotte.gitbook.io/byte-of-python/
+
+## Grec
+
+La communauté grecque Ubuntu [a traduit le livre en grec](http://wiki.ubuntu-gr.org/byte-of-python-el), pour l'utiliser dans nos leçons asynchrone de Python en ligne que nous proposons sur nos forums. Contactez [@savvasradevic](https://twitter.com/savvasradevic) pour plus d'informations.
+
+## Indonésien
+
+Daniel (daniel.mirror@gmail.com) traduit le livre en indonésien à l'adresse http://python.or.id/moin.cgi/ByteofPython>.
+
+Wisnu Priyambodo (cibermen@gmail.com) s'est également porté volontaire pour traduire le livre en indonésien.
+
+Bagus Aji Santoso (baguzzzaji@gmail.com) s'est porté volontaire.
+
+## Italien
+
+Enrico Morelli (mr.mlucci@gmail.com) et Massimo Lucci (morelli@cerm.unifi.it) se sont portés volontaires pour traduire le livre en italien.
+
+La traduction italienne est présente à l'adresse <http://www.gentoo.it/Programmazione/byteofpython>.
+
+> _Massimo Lucci et Enrico Morelli_: nous travaillons à l’Université de Florence (Italie) au département de chimie. Massimo en tant qu'ingénieur de service et administrateur système pour les spectromètres à résonance magnétique nucléaire; Enrico en tant qu'ingénieur de service et administrateur système pour notre CED et nos systèmes parallèles / en cluster. Nous programmons sur Python depuis environ sept ans et nous travaillons avec la plateforme Linux depuis dix ans. En Italie, nous sommes responsables et administrateurs du site Web www.gentoo.it pour la distribution Gentoo/Linux et du site www.nmr.it (en construction) pour les applications de la résonance magnétique nucléaire et l'organisation et la gestion du Congrès. C'est tout! Nous sommes impressionnés par le langage intelligent utilisé dans votre livre et estimons qu’il est essentiel pour amener Python à de nouveaux utilisateurs (nous pensons à une centaine d’étudiants et de chercheurs travaillant dans nos laboratoires).
+
+Une deuxième traduction en italien a été créée par [Calvina Bice](http://besthcgdropswebsite.com/translate) et ses collègues sur <http://besthcgdropswebsite.com/translate/a-byte-of-python/>.
+
+## Japonais
+
+Shunro Dozono (dozono@gmail.com) est en train de traduire le livre en japonais.
+
+## Mongol
+
+Ariunsanaa Tunjin (luftballons2010@gmail.com) s'est portée volontaire pour traduire le livre en mongol.
+
+Mise à jour le 22 novembre 2009: Ariunsanaa est sur le point de terminer la traduction.
+
+## Norvégien (bokmål)
+
+Eirik Vågeskar est élève du secondaire à [Sandvika videregående skole](http://no.wikipedia.org/wiki/Sandvika_videreg%C3%A5ende_skole) en Norvège, et un [blogueur](http://forbedre.blogspot.com/). Il traduit actuellement le livre en norvégien (bokmål).
+
+> _Eirik Vågeskar_: J'ai toujours voulu programmer, mais comme je parle une petite langue, le processus d'apprentissage a été beaucoup plus difficile. La plupart des didacticiels et des livres sont rédigés dans un anglais très technique. Par conséquent, la plupart des diplômés du secondaire n'ont pas le vocabulaire nécessaire pour comprendre le fond des didacticiels. Quand j'ai découvert ce livre, tous mes problèmes ont été résolus. « A Byte of Python » utilisait un langage simple, non technique, pour expliquer un langage de programmation tout aussi simple, ce qui rend l'apprentissage de Python amusant. Après avoir lu la moitié du livre, j'ai décidé qu'il valait la peine qu'on le traduise. J'espère que la traduction aidera les personnes qui se sont retrouvées dans la même situation que moi (en particulier les jeunes) et peut-être aussi de faire en sorte de susciter un intérêt envers ce language chez les personnes possédant un bagage technique plus limité.
+
+## Polonais
+
+Dominik Kozaczko (dominik@kozaczko.info) s'est porté volontaire pour traduire le livre en polonais. La traduction est en cours et sa page principale est disponible ici: [Ukąś Pythona](http://python.edu.pl/byteofpython/).
+
+_Mise à jour_: La traduction est terminée et prête depuis le 2 octobre 2009. Merci à Dominik, ses deux étudiants et leur ami pour leur temps et leurs efforts!
+
+> _Dominik Kozaczko_ - Je suis un enseignant en informatique et en technologies de l'information.
+
+## Portugais
+
+Il existe trois traductions à différents niveaux d’achèvement et d’accessibilité. L'ancienne traduction est maintenant manquante / perdue et la nouvelle traduction est incomplète.
+
+Samuel Dias Neto (samuel.arataca@gmail.com) a réalisé la première traduction en portugais brésilien (ancienne traduction) de ce livre lorsque Python était en version 2.3.5. Ce n'est plus accessible au public.
+
+Artur Weber (arturweberguimaraes@gmail.com) a achevé la traduction de ce livre en portugais (le 21 février 2018) à l'adresse <https://www.homeyou.com/~edu/introducao>.
+
+> _Artur Weber_: Mes étudiants étudient à la faculté polytechnique de l’Université écologique de la ville de Curitiba (Brésil) et certains d’entre eux s’intéressent à différents papiers.
+>
+> Comme ils écrivent des cours et des articles académiques, ils recherchent toujours des articles et des pages intéressants. Je fais aussi de mon mieux pour trouver des matériaux intéressants qui peuvent être la source de leurs travaux universitaires.
+>
+> J'ai trouvé le matériel de votre site utile pour certains de mes étudiants qui écrivent des articles qui nécessitent de la programmation en Python. En fait, c’est la raison pour laquelle j’ai décidé de faire une traduction en portugais pour permettre à mes étudiants qui ne maîtrisaient pas l’anglais de lire ce livre passionnants dans leur langue maternelle (en portugais).
+
+[Rodrigo Amaral](http://rodrigoamaral.net) (rodrigoamaral@gmail.com) s'est porté volontaire pour traduire le livre en portugais brésilien (nouvelle traduction), qui reste à compléter.
+
+## Roumain
+
+Paul-Sebastian Manole (brokenthorn@gmail.com) s'est porté volontaire pour traduire ce livre en roumain.
+
+> _Paul-Sebastian Manole_ - Je suis un étudiant de deuxième année en informatique à l'université Spiru Haret, ici en Roumanie. Je suis un programmeur autodidacte et j'ai décidé d'apprendre un nouveau langage, Python. Le Web m'a dit qu'il n'y avait pas de meilleur moyen de le faire que de lire « A Byte of Python ». C'est à quel point ce livre est populaire (félicitations à l'auteur pour avoir écrit un livre aussi facile à lire). J'ai commencé à aimer Python et j'ai donc décidé d'aider à traduire la dernière version du livre de Swaroop en roumain. Bien que je puisse être le premier à prendre l'initiative, je ne suis qu'un volontaire, alors si vous pouvez aider, rejoignez-moi s'il vous plaît.
+
+## Russe
+
+Vladimir Smolyar (v_2e@ukr.net) a terminé une traduction en russe à l'adresse <http://wombat.org.ua/AByteOfPython/>.
+
+## Serbe
+
+"BugSpice" (amortizerka@gmail.com) a achevé la traduction en serbe:
+
+> Ce lien de téléchargement n'est plus accessible.
+
+Plus de détails à l'adresse <http://forum.ubuntu-rs.org/Thread-zagrljaj-pitona>.
+
+## Slovaque
+
+Albertio Ward (albertioward@gmail.com) a traduit le livre en slovaque à l'adresse <http://www.fatcow.com/edu/python-swaroopch-sl/>:
+
+> Nous sommes une organisation à but non lucratif appelée "Traduction pour l'éducation". Nous représentons un groupe de personnes, principalement des étudiants et des professeurs, de la _Slavonic University_. Nous avons des étudiants de différents départements: linguistique, chimie, biologie, etc... Nous essayons de trouver sur Internet des publications intéressantes qui peuvent être pertinentes pour nous et nos collègues universitaires. Parfois, nous trouvons des articles par nous-mêmes; D'autres fois, nos professeurs nous aident à choisir le matériel à traduire. Après avoir obtenu l’autorisation des auteurs, nous traduisons des articles et les publions sur notre blog, qui est disponible et accessible à nos collègues et amis. Ces publications traduites aident souvent les étudiants dans leur études.
+
+## Suédois
+
+Mikael Jacobsson (leochingkwake@gmail.com) s'est porté volontaire pour traduire le livre en suédois.
+
+## Turc
+
+Türker Sezer (tsezer@btturk.net) et Bugra Cakir (bugracakir@gmail.com) se sont portés volontaires pour traduire le livre en turc. "Où est la version turque? Bitse de okusak."
+
+## Ukrainien
+
+Averkiev Andrey (averkiyev@ukr.net) s'est porté volontaire pour traduire le livre en russe et peut-être en ukrainien (si le temps le permet).
