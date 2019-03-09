@@ -52,10 +52,9 @@ Nous prenons un texte et le renversons. Si le texte renversé est le même que l
 
 Vérifier si un texte est un palindrome devrait ignorer la ponctuation, les espaces et la casse. Par exemple, "Karine alla en Irak" est un palindrome mais la version actuelle de notre programme dit le contraire. Pouvez-vous améliorer le programme ci-dessus pour qu'il reconnaisse ce palindrome?
 
-Si vous avez besoin d'un indice, vous pouvez ...[^1]
+Si vous avez besoin d'un indice, vous pouvez utiliser un tuple contenant tous les caractères interdits (vous trouverez la liste de _tous_ les [caractères de ponctuation ici](http://grammar.ccc.commnet.edu/grammar/marks/marks.htm)), puis utilisez le test d'appartenance pour déterminer si un caractère doit être supprimé ou non. Par exemple: `forbidden = ('!', '?', '.', ...)`.
 
 ## Fichiers
-
 
 Vous pouvez ouvrir et utiliser des fichiers en lecture ou en écriture en créant un objet de la classe `file` et en utilisant ses méthodes `read`, `readline` ou `write` de manière appropriée pour lire ou écrire dans un fichier. La capacité de lire ou d'écrire dans un fichier dépend de la manière dont il a été ouvert. Enfin, quand vous avez fini de manipuler un fichier, vous pouvez utiliser la méthode `close` pour dire à Python que vous avez fini.
 
@@ -206,7 +205,3 @@ Vous devriez en apprendre plus sur ce sujet en lisant:
 Nous avons vu différents types d'entrées sorties, comment gérer des fichiers, l'utilisation du module pickle et mentionné Unicode.
 
 Nous allons maintenant travailler sur le concept d'exception.
-
----
-
-[^1]: Utilisez un tuple contenant tous les caractères interdits (vous trouverez la liste de _tous_ les [caractères de ponctuation ici](http://grammar.ccc.commnet.edu/grammar/marks/marks.htm)), puis utilisez le test d'appartenance pour déterminer si un caractère doit être supprimé ou non. Par exemple: `forbidden = ('!', '?', '.', ...)`.

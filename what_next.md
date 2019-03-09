@@ -6,7 +6,7 @@ Je vous suggère de vous attaquer à ce problème :
 
 > Créer votre propre *carnet d'adresses* en ligne de commande avec lequel vous pourrez consulter, ajouter, modifier, détruire ou rechercher parmis vos contacts comme vos amis, les membres de votre famille et vos collègues, et retrouver des informations comme l'email et/ou le téléphone de chacun. Les détails doivent être enregistrés entre chaque utilisation du programme.
 
-Cela est assez facile si vous pensez à tout ce que l'on a vu précédemment. Si vous voulez des indications sur la manière de faire, voici un indice [^1].
+Cela est assez facile si vous pensez à tout ce que l'on a vu précédemment. Si vous voulez des indications sur la manière de faire, voici un indice: Créez une classe qui représente les informations relatives à une personne. Utilisez un dictionnaire pour enregistrer les objets d'une personne avec le nom en tant que clé. Utilisez le module pickle pour enregistrer les objets de manière persistente sur votre disque dur. Utilisez les méthodes fournies par le dictionnaire pour ajouter, détruire et modifier les personnes.
 
 Quand vous serez capable de faire cela, vous pourrez dire que vous êtes un programmeur Python. Maintenant, tout de suite [envoyez-moi un email](http://www.swaroopch.com/contact/) pour me remercier pour ce super livre ;-). Cette étape est bien-sûr optionnelle, mais recommandée. Aussi, pensez à [acheter une copie physique du livre](https://www.swaroopch.com/buybook/) pour contribuer à son développement continu.
 
@@ -142,7 +142,3 @@ Lorsque vous commencez à écrire des programmes plus volumineux, vous devez abs
 ## Récapitulatif
 
 Vous êtes maintenant arrivé à la fin de ce livre, mais comme on dit, c'est _le début de la fin_!. Vous êtes maintenant un utilisateur Python avide, prêt à résoudre de nombreux problèmes avec Python. Vous pouvez commencer à automatiser des tâches sur votre ordinateur ou faire de nombreuses choses auparavant inimaginables ou écrire vos propres jeux et bien plus. Donc allez-y !
-
----
-
-[^1]: Créez une classe qui représente les informations relatives à une personne. Utilisez un dictionnaire pour enregistrer les objets d'une personne avec le nom en tant que clé. Utilisez le module pickle pour enregistrer les objets de manière persistente sur votre disque dur. Utilisez les méthodes fournies par le dictionnaire pour ajouter, détruire et modifier les personnes.

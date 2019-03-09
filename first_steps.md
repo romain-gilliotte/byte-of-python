@@ -129,7 +129,7 @@ Pour plus d'informations sur PyCharm, consultez la page [Démarrage rapide PyCha
 
 ## Utiliser un fichier source
 
-Revenons à la programmation. La tradition veut que, lors de l'apprentissage d'un nouveau langage, le premier programme écrit et lancé est le programme «&nbsp;Hello World&nbsp;». Tout ce qu'il fait est d'afficher «&nbsp;Hello World&nbsp;» quand vous le lancez. Comme le dit Simon Cozens[^1], c'est la «&nbsp;traditionnelle incantation aux dieux de la programmation pour vous aider à mieux apprendre le langage&nbsp;».
+Revenons à la programmation. La tradition veut que, lors de l'apprentissage d'un nouveau langage, le premier programme écrit et lancé est le programme «&nbsp;Hello World&nbsp;». Tout ce qu'il fait est d'afficher «&nbsp;Hello World&nbsp;» quand vous le lancez. Comme le dit Simon Cozens (l'auteur de l'incroyable livre «&nbsp;Beginning Perl&nbsp;»), c'est la «&nbsp;traditionnelle incantation aux dieux de la programmation pour vous aider à mieux apprendre le langage&nbsp;».
 
 Lancez l'éditeur de votre choix, saisissez le programme suivant et enregistrez-le en tant que `hello.py`
 
@@ -187,7 +187,3 @@ Pour avoir de l'aide sur les opérateurs comme `return`, il faut mettre des quot
 Vous devriez être maintenant capable d'écrire, enregistrer et exécuter facilement des programmes Python.
 
 Maintenant que vous êtes un utilisateur Python, apprenons quelques concepts Python supplémentaires.
-
----
-
-[^1]: L'auteur de l'incroyable livre «&nbsp;Beginning Perl&nbsp;»
