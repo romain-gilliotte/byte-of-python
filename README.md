@@ -269,13 +269,15 @@ Une copie papier du livre peut être achetée à l'adresse https://www.swaroopch
 
 ## Téléchargement
 
-Visitez https://www.gitbook.com/book/swaroopch/byte-of-python/details pour accéder aux téléchargements suivants:
+En dehors de cette version en ligne, le livre est disponible au téléchargement dans différents formats:
 
-- [PDF (lecture hors ligne, etc.)](https://www.gitbook.com/download/pdf/book/swaroopch/byte-of-python)
-- [EPUB (pour iPhone/iPad, liseuse, etc.)](https://www.gitbook.com/download/epub/book/swaroopch/byte-of-python)
-- [Mobi (pour liseuse Kindle)](https://www.gitbook.com/download/mobi/book/swaroopch/byte-of-python)
+- [PDF (lecture hors ligne, etc.)](https://github.com/romain-gilliotte/byte-of-python/raw/master/downloads/byte-of-python.pdf)
+- [EPUB (pour iPhone/iPad, liseuse, etc.)](https://github.com/romain-gilliotte/byte-of-python/raw/master/downloads/byte-of-python.epub)
+- [Mobi (pour liseuse Kindle)](https://github.com/romain-gilliotte/byte-of-python/raw/master/downloads/byte-of-python.mobi)
 
-Rendez-vous sur https://github.com/swaroopch/byte-of-python pour accéder au contenu brut (pour suggérer des corrections, des modifications, traduire, etc.)
+Rendez-vous sur https://github.com/swaroopch/byte-of-python pour accéder au contenu brut en anglais (pour suggérer des corrections, des modifications, traduire, etc...)
+
+Vous pouvez suggérer des modifications sur cette traduction directement en utilisant le lien «&nbsp;Edit on GitHub&nbsp;» disponible en haut de chaque page.
 
 ## Lire le livre dans votre langue maternelle
 
