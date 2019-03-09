@@ -233,7 +233,7 @@ Consultez:
 
 Consultez:
 
-- [Bibliothèque "Six"](http://pythonhosted.org/six/)
+- [Bibliothèque «&nbsp;Six&nbsp;»](http://pythonhosted.org/six/)
 - [Porter du code en Python 3 Redux par Armin](http://lucumr.pocoo.org/2013/5/21/porting-to-python-3-redux/)
 - [Expérience avec Python 3 par PyDanny](http://pydanny.com/experiences-with-django-python3.html)
 - [Guide officiel de Django pour porter du code en Python 3](https://docs.djangoproject.com/en/dev/topics/python3/)

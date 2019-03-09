@@ -198,7 +198,7 @@ with open("poem.txt") as f:
 
 Le résultat devrait être le même que dans l'exemple précédent. La différence est que nous utilisons la fonction `open` avec l'instruction `with` et nous laissons la fermeture du fichier se faire automatiquement avec `with open`.
 
-Ce qui se passe en arrière-plan est qu'un protocole est utilisé par l'instruction `with`. Il recherche l'objet retourné par l'instruction `open`, appelons-le "thefile" dans ce cas.
+Ce qui se passe en arrière-plan est qu'un protocole est utilisé par l'instruction `with`. Il recherche l'objet retourné par l'instruction `open`, appelons-le `thefile` dans ce cas.
 
 Il appelle _toujours_ la fonction `thefile.__enter__` avant de commencer le bloc de code en dessous et appelle _toujours_ `thefile.__exit__` après avoir terminé le bloc de code.
 

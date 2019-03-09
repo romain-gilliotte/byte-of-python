@@ -197,7 +197,7 @@ Chaque fois que nous écrivons un programme qui utilise des constantes littéral
 
 Vous devriez en apprendre plus sur ce sujet en lisant:
 
-- ["Le minimum absolu que tout  programmeur doit absolument connaître sur Unicode et les jeux de caractères"](http://www.joelonsoftware.com/articles/Unicode.html)
+- [Le minimum absolu que tout programmeur doit absolument connaître sur Unicode et les jeux de caractères](http://www.joelonsoftware.com/articles/Unicode.html)
 - [Guide sur Unicode avec Python](https://docs.python.org/fr/3/howto/unicode.html)
 - [Discussion pragmatique sur Unicode par Nat Batchelder](http://nedbatchelder.com/text/unipain.html)
 

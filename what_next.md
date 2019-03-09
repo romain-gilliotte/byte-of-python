@@ -37,7 +37,7 @@ La meilleure façon d'apprendre un langage de programmation consiste à écrire 
 - [The Hitchhiker's Guide to Python!](http://docs.python-guide.org/en/latest/)
 - [The Elements of Python Style](https://github.com/amontalenti/elements-of-python-style)
 - [Python Big Picture](http://slott-softwarearchitect.blogspot.ca/2013/06/python-big-picture-whats-roadmap.html)
-- ["Writing Idiomatic Python" ebook](http://www.jeffknupp.com/writing-idiomatic-python-ebook/) (paid)
+- [«&nbsp;Writing Idiomatic Python&nbsp;» ebook](http://www.jeffknupp.com/writing-idiomatic-python-ebook/) (paid)
 
 ## Vidéos
 
