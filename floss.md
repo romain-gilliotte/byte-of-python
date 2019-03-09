@@ -2,7 +2,7 @@
 
 > NOTE: Veuillez noter que cette section a été écrite en 2003, elle vous semblera donc pittoresque :-)
 
-« Le logiciel libre et à code source ouvert », ou [FLOSS](https://fr.wikipedia.org/wiki/Free/Libre_Open_Source_Software) est basé sur le concept de communauté, qui lui-même basé sur le concept de partage, et en particulier partage des connaissances. Les logiciels libres sont gratuits à l’utilisation, mais aussi pour leur modification et redistribution.
+«&nbsp;Le logiciel libre et à code source ouvert&nbsp;», ou [FLOSS](https://fr.wikipedia.org/wiki/Free/Libre_Open_Source_Software) est basé sur le concept de communauté, qui lui-même basé sur le concept de partage, et en particulier partage des connaissances. Les logiciels libres sont gratuits à l’utilisation, mais aussi pour leur modification et redistribution.
 
 Si vous avez déjà lu ce livre, alors vous êtes déjà familier avec le logiciel libre car vous avez utilisé *Python* pendant la lecture et Python est un logiciel open source!
 

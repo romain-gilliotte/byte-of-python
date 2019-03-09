@@ -1,6 +1,6 @@
 # A Byte of Python
 
-« A Byte of Python » est un livre libre de droits sur la programmation avec le langage Python. Il peut être vu comme un tutoriel ou un guide sur le langage Python pour les débutants. Si tout ce que vous savez sur l'informatique se résume à enregistrer des fichiers, alors ce livre est fait pour vous.
+«&nbsp;A Byte of Python&nbsp;» est un livre libre de droits sur la programmation avec le langage Python. Il peut être vu comme un tutoriel ou un guide sur le langage Python pour les débutants. Si tout ce que vous savez sur l'informatique se résume à enregistrer des fichiers, alors ce livre est fait pour vous.
 
 ## Pour Python version 3
 
@@ -15,7 +15,7 @@ Voilà ce que disent les lecteurs à propos du livre:
 
 <!-- -->
 
-> La meilleure chose que j'ai trouvée est « A Byte of Python », qui est tout simplement un livre brillant pour un débutant. C'est bien écrit, les concepts sont bien expliqués avec des exemples évidents.
+> La meilleure chose que j'ai trouvée est «&nbsp;A Byte of Python&nbsp;», qui est tout simplement un livre brillant pour un débutant. C'est bien écrit, les concepts sont bien expliqués avec des exemples évidents.
 > -- [Joshua Robin](mailto:joshrob@poczta.onet.pl)
 
 <!-- -->
@@ -40,7 +40,7 @@ Voilà ce que disent les lecteurs à propos du livre:
 
 <!-- -->
 
-> Je devrais faire mon « vrai travail » mais je viens de trouver « A Byte of Python ». Un excellent guide avec d'excellents exemples.
+> Je devrais faire mon «&nbsp;vrai travail&nbsp;» mais je viens de trouver «&nbsp;A Byte of Python&nbsp;». Un excellent guide avec d'excellents exemples.
 > -- [Biologist John](https://twitter.com/BiologistJohn/statuses/194726001803132928)
 
 <!-- -->
@@ -65,12 +65,12 @@ Voilà ce que disent les lecteurs à propos du livre:
 
 <!-- -->
 
-> Je viens du Dayanandasagar College of Engineering (7ème semestre, CSE). Tout d'abord, je tiens à dire que votre livre « A Byte of Python » est un livre trop bon pour un débutant en python comme moi. Les concepts sont si bien expliqués à l'aide d'exemples simples qui m'ont aidé à apprendre facilement le python. Merci beaucoup.
+> Je viens du Dayanandasagar College of Engineering (7ème semestre, CSE). Tout d'abord, je tiens à dire que votre livre «&nbsp;A Byte of Python&nbsp;» est un livre trop bon pour un débutant en python comme moi. Les concepts sont si bien expliqués à l'aide d'exemples simples qui m'ont aidé à apprendre facilement le python. Merci beaucoup.
 > -- Madhura
 
 <!-- -->
 
-> Je suis un étudiant en informatique de 18 ans qui étudie à l’université irlandaise. Je tiens à vous exprimer ma gratitude pour avoir écrit votre livre « A Byte of Python ». Je connaissais déjà 3 langagues de programmation - C, Java et Javascript, et Python était de loin le langage le plus simple que j'ai jamais appris et que était principalement dû au fait que votre livre était fantastique et rendait l’apprentissage du python très simple et intéressant. C'est l'un des meilleurs livres de programmation écrits et faciles à suivre que j'ai jamais lus. Félicitations et continuez votre bon travail.
+> Je suis un étudiant en informatique de 18 ans qui étudie à l’université irlandaise. Je tiens à vous exprimer ma gratitude pour avoir écrit votre livre «&nbsp;A Byte of Python&nbsp;». Je connaissais déjà 3 langagues de programmation - C, Java et Javascript, et Python était de loin le langage le plus simple que j'ai jamais appris et que était principalement dû au fait que votre livre était fantastique et rendait l’apprentissage du python très simple et intéressant. C'est l'un des meilleurs livres de programmation écrits et faciles à suivre que j'ai jamais lus. Félicitations et continuez votre bon travail.
 > -- Matt
 
 <!-- -->
@@ -79,7 +79,7 @@ Voilà ce que disent les lecteurs à propos du livre:
 > -- [Pavel Simo](mailto:pavel.simo@gmail.com)
 
 <!-- -->
-> Je suis un étudiant originaire de Chine. J'ai lu votre livre « A Byte of Python ». Oh, c'est beau. Le livre est très simple mais peut aider tous les premiers apprenants. Vous savez que je suis intéressé par Java et par le cloud computing, je dois programmer un programme pour le serveur. Je pense donc que python est un bon choix. J'ai terminé votre livre. Je pense que ce n'est pas seulement un bon choix, il doit également utiliser le Python. Mon anglais n'est pas très bien, l'email à vous, je veux juste vous remercier! Meilleurs voeux pour vous et votre famille.
+> Je suis un étudiant originaire de Chine. J'ai lu votre livre «&nbsp;A Byte of Python&nbsp;». Oh, c'est beau. Le livre est très simple mais peut aider tous les premiers apprenants. Vous savez que je suis intéressé par Java et par le cloud computing, je dois programmer un programme pour le serveur. Je pense donc que python est un bon choix. J'ai terminé votre livre. Je pense que ce n'est pas seulement un bon choix, il doit également utiliser le Python. Mon anglais n'est pas très bien, l'email à vous, je veux juste vous remercier! Meilleurs voeux pour vous et votre famille.
 > -- Roy Lau
 
 <!-- -->
@@ -134,8 +134,8 @@ Voilà ce que disent les lecteurs à propos du livre:
 
 <!-- -->
 
-> « Byte of python » est le meilleur de loin mec
-> (en réponse à la question « Quelqu'un peut-il suggérer une bonne ressource bon marché pour apprendre les bases de Python? »)
+> «&nbsp;Byte of python&nbsp;» est le meilleur de loin mec
+> (en réponse à la question «&nbsp;Quelqu'un peut-il suggérer une bonne ressource bon marché pour apprendre les bases de Python?&nbsp;»)
 > -- [Justin LoveTrue](http://www.facebook.com/pythonlang/posts/406873916788)
 
 <!-- -->
@@ -170,7 +170,7 @@ Voilà ce que disent les lecteurs à propos du livre:
 <!-- -->
 
 > Je tiens simplement à vous remercier d'avoir écrit le premier livre sur la programmation que j'ai jamais vraiment lu. Python est maintenant ma langue maternelle et je peux imaginer toutes les possibilités. Je vous remercie donc de m'avoir donné les outils pour créer des choses que je n'aurais jamais imaginé pouvoir faire auparavant.
-> -- « The Walrus »
+> -- «&nbsp;The Walrus&nbsp;»
 
 <!-- -->
 
@@ -181,12 +181,12 @@ Voilà ce que disent les lecteurs à propos du livre:
 
 <!-- -->
 
-> Je vous ai écrit en 2011 et je commençais tout juste à utiliser Python. Je souhaitais vous remercier pour votre tutoriel « A Byte of Python ». Sans cela, j’aurais abandonné en chemin. Depuis lors, j'ai programmé un certain nombre de fonctions dans ma societé avec ce langage, et ce n'est pas fini. Je n'oserais pas m'appeller « programmeur avancé », mais je remarque les demandes d'aide occasionnelles de la part d'autres personnes depuis que je l'utilise. En lisant « Byte », j’ai découvert pourquoi j’avais cessé d’étudier le C et le C\++ et c’est parce que le livre qui m’a été donné a commencé avec un exemple contenant une affectation augmentée (`+=`). Bien sûr, il n'y avait aucune explication à cet arrangement d'opérateurs et je me suis arraché les cheveux en essayant de comprendre ce qui était sur la page écrite. Si je me souviens bien, c’était un exercice des plus frustrants et j'ai fini par abandonner. Cela ne veut pas dire que C ou C++ soit impossible à apprendre, ou même que je sois stupide, mais cela signifie que la documentation à partir de laquelle j'ai travaillé n'a pas défini les symboles et les mots, ce qui est une partie essentielle de toute instruction. Tout comme les ordinateurs ne pourront pas comprendre un mot ou un symbole d'ordinateur qui ne soit pas conforme à la syntaxe du langage utilisé, un étudiant débutant dans un domaine donné ne comprendra pas son sujet s'il rencontre des mots ou des symboles pour lesquels il n'y a pas de définition. Vous obtenez un « écran bleu » pour ainsi dire dans les deux cas. La solution est simple: rechercher le mot ou le symbole et obtenir la définition ou le symbole approprié et voilà, l'ordinateur ou l'étudiant peut procéder. Votre livre est si bien rédigé que je n’y ai trouvé que très peu de choses que je ne comprenais pas. Alors merci. Je vous encourage à continuer à inclure des définitions complètes des termes. La documentation de Python est bonne, une fois que vous avez déjà compris (les exemples font sa force de ce que je vois), mais dans de nombreux cas, il semble que vous ayez à savoir en avance pour comprendre la documentation, ce qui, à mon avis, ne devrait pas être le cas. Les didacticiels tiers indiquent la nécessité de clarifier la documentation et leur succès dépend en grande partie des mots utilisés pour décrire le jargon. J'ai recommandé votre livre à beaucoup d'autres. Certains en Australie, certains dans les Caraïbes et d'autres encore aux États-Unis. Il remplit un créneau qu'aucun autre livre ne couvre. J'espère que vous allez bien et je vous souhaite tout le succès possible à l'avenir.
+> Je vous ai écrit en 2011 et je commençais tout juste à utiliser Python. Je souhaitais vous remercier pour votre tutoriel «&nbsp;A Byte of Python&nbsp;». Sans cela, j’aurais abandonné en chemin. Depuis lors, j'ai programmé un certain nombre de fonctions dans ma societé avec ce langage, et ce n'est pas fini. Je n'oserais pas m'appeller «&nbsp;programmeur avancé&nbsp;», mais je remarque les demandes d'aide occasionnelles de la part d'autres personnes depuis que je l'utilise. En lisant «&nbsp;Byte&nbsp;», j’ai découvert pourquoi j’avais cessé d’étudier le C et le C\++ et c’est parce que le livre qui m’a été donné a commencé avec un exemple contenant une affectation augmentée (`+=`). Bien sûr, il n'y avait aucune explication à cet arrangement d'opérateurs et je me suis arraché les cheveux en essayant de comprendre ce qui était sur la page écrite. Si je me souviens bien, c’était un exercice des plus frustrants et j'ai fini par abandonner. Cela ne veut pas dire que C ou C++ soit impossible à apprendre, ou même que je sois stupide, mais cela signifie que la documentation à partir de laquelle j'ai travaillé n'a pas défini les symboles et les mots, ce qui est une partie essentielle de toute instruction. Tout comme les ordinateurs ne pourront pas comprendre un mot ou un symbole d'ordinateur qui ne soit pas conforme à la syntaxe du langage utilisé, un étudiant débutant dans un domaine donné ne comprendra pas son sujet s'il rencontre des mots ou des symboles pour lesquels il n'y a pas de définition. Vous obtenez un «&nbsp;écran bleu&nbsp;» pour ainsi dire dans les deux cas. La solution est simple: rechercher le mot ou le symbole et obtenir la définition ou le symbole approprié et voilà, l'ordinateur ou l'étudiant peut procéder. Votre livre est si bien rédigé que je n’y ai trouvé que très peu de choses que je ne comprenais pas. Alors merci. Je vous encourage à continuer à inclure des définitions complètes des termes. La documentation de Python est bonne, une fois que vous avez déjà compris (les exemples font sa force de ce que je vois), mais dans de nombreux cas, il semble que vous ayez à savoir en avance pour comprendre la documentation, ce qui, à mon avis, ne devrait pas être le cas. Les didacticiels tiers indiquent la nécessité de clarifier la documentation et leur succès dépend en grande partie des mots utilisés pour décrire le jargon. J'ai recommandé votre livre à beaucoup d'autres. Certains en Australie, certains dans les Caraïbes et d'autres encore aux États-Unis. Il remplit un créneau qu'aucun autre livre ne couvre. J'espère que vous allez bien et je vous souhaite tout le succès possible à l'avenir.
 > -- Nick
 
 <!-- -->
 
-> hé, c'est ankush(19). Je faisais face à une grande difficulté pour commencer avec python. J'ai essayé beaucoup de livres, mais ils étaient tous plus volumineux et n'étaient pas orienté objectif. et puis j'ai trouvé cette adorable livre, qui m'a fait aimer le python en un rien de temps. Merci beaucoup pour ce « beau morceau de livre ».
+> hé, c'est ankush(19). Je faisais face à une grande difficulté pour commencer avec python. J'ai essayé beaucoup de livres, mais ils étaient tous plus volumineux et n'étaient pas orienté objectif. et puis j'ai trouvé cette adorable livre, qui m'a fait aimer le python en un rien de temps. Merci beaucoup pour ce «&nbsp;beau morceau de livre&nbsp;».
 > -- Ankush
 
 <!-- -->
@@ -198,11 +198,11 @@ Voilà ce que disent les lecteurs à propos du livre:
 <!-- -->
 
 > Étant donné que ce sera le premier language que vous apprendrez, vous pourriez utiliser A Byte of Python. Il donne vraiment une bonne introduction à la programmation en Python et est bien rythmé pour le débutant moyen. Dès lors, le plus important sera de commencer à vous entraîner à créer vos propres petits programmes.
-> -- [« {Unregistered} »](http://www.overclock.net/t/1177951/want-to-learn-programming-where-do-i-start#post_15837176)
+> -- [«&nbsp;{Unregistered}&nbsp;»](http://www.overclock.net/t/1177951/want-to-learn-programming-where-do-i-start#post_15837176)
 
 <!-- -->
 
-> Juste pour dire un fort et joyeux merci beaucoup pour la publication de « A Byte of Python » et « A Byte of Vim ». Ces livres m'ont été très utiles il y a quatre ou cinq ans lorsque j'ai commencé à apprendre la programmation. En ce moment, je développe un projet qui a été un rêve pendant très longtemps et je veux juste dire merci. Continuez dans cette direction. Vous êtes une source de motivation. Bonne chance.
+> Juste pour dire un fort et joyeux merci beaucoup pour la publication de «&nbsp;A Byte of Python&nbsp;» et «&nbsp;A Byte of Vim&nbsp;». Ces livres m'ont été très utiles il y a quatre ou cinq ans lorsque j'ai commencé à apprendre la programmation. En ce moment, je développe un projet qui a été un rêve pendant très longtemps et je veux juste dire merci. Continuez dans cette direction. Vous êtes une source de motivation. Bonne chance.
 > -- Jocimar
 
 <!-- -->
@@ -212,7 +212,7 @@ Voilà ce que disent les lecteurs à propos du livre:
 
 <!-- -->
 
-> Salut, « A byte of python » est vraiment une bonne lecture pour les débutants en python. Donc, encore une fois, BEAU TRAVAIL!
+> Salut, «&nbsp;A byte of python&nbsp;» est vraiment une bonne lecture pour les débutants en python. Donc, encore une fois, BEAU TRAVAIL!
 > Je suis un programmeur chinois expérimenté en Java & C depuis 4 ans. Récemment, je souhaitais travailler sur le projet de note zim-wiki qui utilise pygtk.
 > J'ai lu votre livre en 6 jours et je peux maintenant lire et écrire des exemples de code Python.
 > Merci pour votre contribution.
@@ -231,17 +231,17 @@ Le livre est même utilisé par la NASA! Il est utilisé au [Jet Propulsion Labo
 
 Ce livre est ou à été utilisé comme support dans différentes institutions:
 
-- « Principes des langages de programmation » [Vrije Universiteit, Amsterdam](http://www.few.vu.nl/~nsilvis/PPL/2007/index.html)
-- « Concepts de base de l'informatique » [Université de California, Davis](http://www.cs.ucdavis.edu/courses/exp_course_desc/10.html)
-- « Programmer avec Python » [Université de Harvard](http://www.people.fas.harvard.edu/~preshman/python_winter.html)
-- « Introduction à la programmation » [Université de Leeds](http://www.comp.leeds.ac.uk/acom1900/)
-- « Introduction à la programmation d'applications » [Université de Boston](http://www.cs.bu.edu/courses/cs108/materials.html)
-- « Compétences informatiques pour la météorologie » [Université d'Oklahoma](http://gentry.metr.ou.edu/byteofpython/)
-- « Géotraitement » [Université d'État du Michigan](http://www.msu.edu/~ashton/classes/825/index.html)
-- « Systèmes Web sémantiques multi-agents » [Université d'Édimbourg](http://homepages.inf.ed.ac.uk/ewan/masws/)
-- « Introduction à l'informatique et à la programmation » [MIT OpenCourseWare](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00sc-introduction-to-computer-science-and-programming-spring-2011/references/)
-- « Programmation de base à la Faculté des sciences sociales, Université de Ljubljana, Slovénie » -- [Aleš Žiberna](mailto:ales.ziberna@fdv.uni-lj.si) dit _« J'ai (ainsi que mon prédécesseur) utilisé votre livre comme littérature principale pour ce cours »_
-- « Introduction à la programmation », Département des sciences de l'information, Université de Zadar, Croatie -- Krešimir Zauder dit _« J'aimerais vous informer que la lecture de A Byte of Python est une lecture obligatoire de mon cours »_
+- «&nbsp;Principes des langages de programmation&nbsp;» [Vrije Universiteit, Amsterdam](http://www.few.vu.nl/~nsilvis/PPL/2007/index.html)
+- «&nbsp;Concepts de base de l'informatique&nbsp;» [Université de California, Davis](http://www.cs.ucdavis.edu/courses/exp_course_desc/10.html)
+- «&nbsp;Programmer avec Python&nbsp;» [Université de Harvard](http://www.people.fas.harvard.edu/~preshman/python_winter.html)
+- «&nbsp;Introduction à la programmation&nbsp;» [Université de Leeds](http://www.comp.leeds.ac.uk/acom1900/)
+- «&nbsp;Introduction à la programmation d'applications&nbsp;» [Université de Boston](http://www.cs.bu.edu/courses/cs108/materials.html)
+- «&nbsp;Compétences informatiques pour la météorologie&nbsp;» [Université d'Oklahoma](http://gentry.metr.ou.edu/byteofpython/)
+- «&nbsp;Géotraitement&nbsp;» [Université d'État du Michigan](http://www.msu.edu/~ashton/classes/825/index.html)
+- «&nbsp;Systèmes Web sémantiques multi-agents&nbsp;» [Université d'Édimbourg](http://homepages.inf.ed.ac.uk/ewan/masws/)
+- «&nbsp;Introduction à l'informatique et à la programmation&nbsp;» [MIT OpenCourseWare](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00sc-introduction-to-computer-science-and-programming-spring-2011/references/)
+- «&nbsp;Programmation de base à la Faculté des sciences sociales, Université de Ljubljana, Slovénie&nbsp;» -- [Aleš Žiberna](mailto:ales.ziberna@fdv.uni-lj.si) dit _«&nbsp;J'ai (ainsi que mon prédécesseur) utilisé votre livre comme littérature principale pour ce cours&nbsp;»_
+- «&nbsp;Introduction à la programmation&nbsp;», Département des sciences de l'information, Université de Zadar, Croatie -- Krešimir Zauder dit _«&nbsp;J'aimerais vous informer que la lecture de A Byte of Python est une lecture obligatoire de mon cours&nbsp;»_
 
 ## License
 

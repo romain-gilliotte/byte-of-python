@@ -1,6 +1,6 @@
 # Installation {#installation}
 
-Lorsque nous nous référons à « Python 3 » dans ce livre, nous ferons référence à toute version de Python égale ou supérieure à la version [Python 3.6.0](https://www.python.org/downloads/).
+Lorsque nous nous référons à «&nbsp;Python 3&nbsp;» dans ce livre, nous ferons référence à toute version de Python égale ou supérieure à la version [Python 3.6.0](https://www.python.org/downloads/).
 
 ## Installation sous Windows
 
@@ -33,16 +33,16 @@ Pour les versions plus anciennes de Windows, ouvrez le fichier `C:\AUTOEXEC.BAT`
 Pour Windows Vista:
 
 - Cliquez sur Démarrer et choisissez `Panneau de configuration`
-- Cliquez sur Système. À droite, vous verrez « Afficher les informations de base sur votre ordinateur ».
+- Cliquez sur Système. À droite, vous verrez «&nbsp;Afficher les informations de base sur votre ordinateur&nbsp;».
 - A gauche, une liste de tâches dont la dernière est `Paramètres système avancés`. Cliquez dessus.
 - L'onglet `Avancé` de la boîte de dialogue `Propriétés système` est affiché. Cliquez sur le bouton `Variables d'environnement` en bas à droite.
-- Dans la zone inférieure intitulée `Variables système`, faites défiler jusqu'à « PATH » et cliquez sur le bouton `Modifier`.
+- Dans la zone inférieure intitulée `Variables système`, faites défiler jusqu'à «&nbsp;PATH&nbsp;» et cliquez sur le bouton `Modifier`.
 - Modifiez votre chemin au besoin.
 - Redémarrez votre système. Sur mon ordinateur, Vista n'a pas pris en compte la modification de la variable d'environnement avant mon redémarrage.
 
 Pour Windows 7 et 8:
 
-- Cliquez avec le bouton droit sur Ordinateur de votre bureau et sélectionnez `Propriétés` ou cliquez sur `Démarrer` et choisissez `Panneau de configuration` -> `Système et sécurité` -> `Système`. Cliquez sur `Paramètres système avancés` sur la gauche, puis sur l'onglet `Avancé`. En bas, cliquez sur « Variables d'environnement » et sous « Variables système », recherchez la variable `PATH`, sélectionnez-la, puis appuyez sur `Modifier`.
+- Cliquez avec le bouton droit sur Ordinateur de votre bureau et sélectionnez `Propriétés` ou cliquez sur `Démarrer` et choisissez `Panneau de configuration` -> `Système et sécurité` -> `Système`. Cliquez sur `Paramètres système avancés` sur la gauche, puis sur l'onglet `Avancé`. En bas, cliquez sur «&nbsp;Variables d'environnement&nbsp;» et sous «&nbsp;Variables système&nbsp;», recherchez la variable `PATH`, sélectionnez-la, puis appuyez sur `Modifier`.
 - Allez à la fin de la ligne sous `Valeur de la variable` et ajoutez `;C:\Python36` à la fin de ce qui existe déjà (veuillez vérifier que ce dossier existe, il sera différent pour les versions les plus récentes de Python). Bien sûr, utilisez le nom de dossier approprié.
 - Si la valeur était `%SystemRoot%\system32;` il deviendra maintenant `%SystemRoot%\system32;C:\Python36` <!-- Le répertoire doit correspondre à la variable pythonVersion de book.json -->
 - Cliquez sur `OK` et vous avez terminé. Aucun redémarrage n'est requis, mais vous devrez peut-être fermer et rouvrir la ligne de commande.

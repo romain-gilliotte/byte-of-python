@@ -1,6 +1,6 @@
 # Structures de contrôle {#control-flow}
 
-Dans les programmes que nous avons vus jusqu'à présent, il y a toujours eu une série d'instructions fidèlement exécutés par Python de haut en bas sans exceptions. Et si vous vouliez changer le flux de son fonctionnement? Par exemple, vous voulez que le programme prenne des décisions et fasse des choses différentes en fonction de situations différentes, comme afficher « Bonjour » ou « Bonsoir » en fonction de l’heure de la journée?
+Dans les programmes que nous avons vus jusqu'à présent, il y a toujours eu une série d'instructions fidèlement exécutés par Python de haut en bas sans exceptions. Et si vous vouliez changer le flux de son fonctionnement? Par exemple, vous voulez que le programme prenne des décisions et fasse des choses différentes en fonction de situations différentes, comme afficher «&nbsp;Bonjour&nbsp;» ou «&nbsp;Bonsoir&nbsp;» en fonction de l’heure de la journée?
 
 Comme vous l'avez peut-être deviné, ceci est réalisé à l'aide de structure de contrôle. Il existe trois instructions de structure de contrôle en Python - `if`,`for` et `while`.
 
@@ -58,7 +58,7 @@ Dans ce programme, nous prenons des conjectures de l'utilisateur et vérifions s
 
 Nous fournissons une chaîne à la fonction `input` intégrée, qui l'affiche à l'écran et attend l'entrée de l'utilisateur. Une fois que nous avons entré quelque chose et appuyé sur la touche [Entrée], la fonction `input()` renvoie ce que nous avons entré, sous forme de chaîne. Nous convertissons ensuite cette chaîne en un entier en utilisant `int`, puis nous l'enregistrons dans la variable `guess`. En fait, le `int` est une classe mais tout ce que vous devez savoir maintenant c’est que vous pouvez l’utiliser pour convertir une chaîne en entier (en supposant que la chaîne contienne un entier valide dans le texte).
 
-Ensuite, nous comparons la conjecture de l'utilisateur avec le nombre que nous avons choisi. S'ils sont égaux, nous imprimons un message de réussite. Notez que nous utilisons des niveaux d'indentation pour indiquer à Python quelles instructions appartiennent à quel bloc. C'est pourquoi l'indentation est si importante en Python. J'espère que vous vous en tenez à la règle de « l'indentation systématique ». Le faites-vous?
+Ensuite, nous comparons la conjecture de l'utilisateur avec le nombre que nous avons choisi. S'ils sont égaux, nous imprimons un message de réussite. Notez que nous utilisons des niveaux d'indentation pour indiquer à Python quelles instructions appartiennent à quel bloc. C'est pourquoi l'indentation est si importante en Python. J'espère que vous vous en tenez à la règle de «&nbsp;l'indentation systématique&nbsp;». Le faites-vous?
 
 Notez que l’instruction `if` contient deux points à la fin: nous indiquons à Python qu’un bloc d’instructions suit.
 
@@ -77,7 +77,7 @@ if True:
 
 Une fois que Python a fini d’exécuter l’instruction `if` complète ainsi que les clauses` elif` et `else` associées, il passe à l’instruction suivante du bloc contenant l’instruction `if`. Dans ce cas, il s’agit du bloc principal (où commence l’exécution du programme) et l’instruction suivante est l’instruction `print('Fini')`. Après cela, Python voit la fin du programme et finit simplement.
 
-Même s’il s’agit d’un programme très simple, j’ai souligné beaucoup de choses que vous devriez remarquer. Tout cela est assez simple (et étonnamment simple pour ceux d’entre vous qui programment en C/C\++). Vous aurez besoin d'appliquer tous ces éléments au début, mais après quelques exercices, vous vous sentirez à l'aise avec elles et elles vous paraîtrons « naturelles ».
+Même s’il s’agit d’un programme très simple, j’ai souligné beaucoup de choses que vous devriez remarquer. Tout cela est assez simple (et étonnamment simple pour ceux d’entre vous qui programment en C/C\++). Vous aurez besoin d'appliquer tous ces éléments au début, mais après quelques exercices, vous vous sentirez à l'aise avec elles et elles vous paraîtrons «&nbsp;naturelles&nbsp;».
 
 > **Remarque pour les programmeurs C/C++**
 >

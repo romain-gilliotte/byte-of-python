@@ -1,6 +1,6 @@
 # Et ensuite
 
-Si vous avez lu ce livre attentivement jusqu'ici et écrit de nombreux programmes, alors vous êtes à l'aise avec Python. Vous avez sans doute créé quelques programmes Python pour faire des tentatives et tester vos capacités en Python. Si vous ne l'avez pas encore fait, vous devriez. La question à se poser maintenant est « Et ensuite ? ».
+Si vous avez lu ce livre attentivement jusqu'ici et écrit de nombreux programmes, alors vous êtes à l'aise avec Python. Vous avez sans doute créé quelques programmes Python pour faire des tentatives et tester vos capacités en Python. Si vous ne l'avez pas encore fait, vous devriez. La question à se poser maintenant est «&nbsp;Et ensuite ?&nbsp;».
 
 Je vous suggère de vous attaquer à ce problème :
 
@@ -106,7 +106,7 @@ Pour plus de choix, voyez [la page GUI Programming sur le site officiel Python](
 
 Il n'y a, hélas, pas d'outil graphique standard pour Python. Je vous suggère de choisir l'un des outils pré-cités en fonction de vos besoins. Le premier critère est si vous êtes d'accord pour payer pour l'un de ces outils. Le deuxième critère est si vous voulez programmer sous Windows ou sous Mac et Linux ou sous tous. Le troisième critère, si vous choisissez Linux, est votre préférence utilisateur envers KDE ou GNOME.
 
-Pour une analyse plus détaillée, voyez la page 26 de [« The Python Papers, Volume 3, Issue 1 » (PDF)](http://archive.pythonpapers.org/ThePythonPapersVolume3Issue1.pdf).
+Pour une analyse plus détaillée, voyez la page 26 de [«&nbsp;The Python Papers, Volume 3, Issue 1&nbsp;» (PDF)](http://archive.pythonpapers.org/ThePythonPapersVolume3Issue1.pdf).
 
 ## Autres implémentations
 

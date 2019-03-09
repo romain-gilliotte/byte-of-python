@@ -174,7 +174,7 @@ Cela va importer tous les noms publics comme `sayhi` mais ne va pas importer `__
 
 > **Zen de Python**
 >
-> L'un des principes directeurs de Python est que « Explicite vaut mieux qu'implicite ». Exécutez `import this` en Python pour en savoir plus.
+> L'un des principes directeurs de Python est que «&nbsp;Explicite vaut mieux qu'implicite&nbsp;». Exécutez `import this` en Python pour en savoir plus.
 
 ## La fonction dir {#dir-function}
 
@@ -236,7 +236,7 @@ Maintenant, vous commencez à voir la hiérarchie pour organiser vos programmes.
 
 Les packages sont juste des dossiers de modules avec un fichier special `__init__.py` qui indique à Python que ce dossier est spécial parce qu'il contient des modules Python.
 
-Supposons que vous voulez créer un package appelé « world » avec des subpackages 'asia', 'africa', etc. et à leur tour ces subpackages contiennent des modules comme 'india', 'madagascar', etc.
+Supposons que vous voulez créer un package appelé «&nbsp;world&nbsp;» avec des subpackages 'asia', 'africa', etc. et à leur tour ces subpackages contiennent des modules comme 'india', 'madagascar', etc.
 
 Voici comment vous allez organiser les dossiers :
 

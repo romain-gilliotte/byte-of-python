@@ -1,6 +1,6 @@
 # Premiers pas
 
-Nous allons maintenant voir comment exécuter le traditionnel programme « Hello World » en Python. Cela vous apprendra comment écrire, enregistrer et exécuter un programme Python.
+Nous allons maintenant voir comment exécuter le traditionnel programme «&nbsp;Hello World&nbsp;» en Python. Cela vous apprendra comment écrire, enregistrer et exécuter un programme Python.
 
 Il y a deux façons d'utiliser Python pour lancer votre programme - utiliser le l'interpréteur interactif ou un fichier source. Nous allons maintenant voir comment utiliser ces deux méthodes.
 
@@ -85,7 +85,7 @@ Cliquez avec le bouton droit de la souris sur le `helloworld` dans la barre lat�
 
 Il vous sera demandé de taper le nom, tapez `hello`:
 
-![PyCharm Dialogue « New File »](./img/pycharm_new_file_input.png)
+![PyCharm Dialogue «&nbsp;New File&nbsp;»](./img/pycharm_new_file_input.png)
 
 Vous pouvez maintenant voir un fichier ouvert pour vous:
 
@@ -129,7 +129,7 @@ Pour plus d'informations sur PyCharm, consultez la page [Démarrage rapide PyCha
 
 ## Utiliser un fichier source
 
-Revenons à la programmation. La tradition veut que, lors de l'apprentissage d'un nouveau langage, le premier programme écrit et lancé est le programme « Hello World ». Tout ce qu'il fait est d'afficher « Hello World » quand vous le lancez. Comme le dit Simon Cozens[^1], c'est la « traditionnelle incantation aux dieux de la programmation pour vous aider à mieux apprendre le langage ».
+Revenons à la programmation. La tradition veut que, lors de l'apprentissage d'un nouveau langage, le premier programme écrit et lancé est le programme «&nbsp;Hello World&nbsp;». Tout ce qu'il fait est d'afficher «&nbsp;Hello World&nbsp;» quand vous le lancez. Comme le dit Simon Cozens[^1], c'est la «&nbsp;traditionnelle incantation aux dieux de la programmation pour vous aider à mieux apprendre le langage&nbsp;».
 
 Lancez l'éditeur de votre choix, saisissez le programme suivant et enregistrez-le en tant que `hello.py`
 
@@ -170,7 +170,7 @@ Au cas où vous auriez une erreur, veuillez taper votre programme _exactement_ c
 
 **Comment ça marche**
 
-Un programme Python est composé d'_instructions_. Dans notre premier programme, nous n’avons qu’une instruction. Dans cette instruction, nous appelons l'_instruction_ `print` à laquelle nous fournissons le texte « hello world ».
+Un programme Python est composé d'_instructions_. Dans notre premier programme, nous n’avons qu’une instruction. Dans cette instruction, nous appelons l'_instruction_ `print` à laquelle nous fournissons le texte «&nbsp;hello world&nbsp;».
 
 ## Obtenir de l'aide
 
@@ -190,4 +190,4 @@ Maintenant que vous êtes un utilisateur Python, apprenons quelques concepts Pyt
 
 ---
 
-[^1]: L'auteur de l'incroyable livre « Beginning Perl »
+[^1]: L'auteur de l'incroyable livre «&nbsp;Beginning Perl&nbsp;»

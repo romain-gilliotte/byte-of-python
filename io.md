@@ -108,7 +108,7 @@ Notez que nous pouvons créer un nouvel objet `file` en utilisant simplement la 
 
 Dans notre exemple, nous ouvrons/créons en premier lieu le fichier en mode texte et écriture, puis nous utilisons la méthode `write` de l'objet `f` de type `file` pour écrire le contenu de notre variable `poem` dans le fichier, puis nous le fermons avec sa méthode `close`.
 
-Ensuite, nous rouvrons le même fichier pour le lire. Nous n'avons pas besoin de spécifier un mode car « lire un fichier texte » est le mode par défaut. Nous lisons chaque ligne du fichier en utilisant la méthode `readline` dans une boucle. Cette méthode retourne une ligne complète incluant le caractère de retour à la ligne à la fin de la ligne. Quand une chaîne _vide_ nous est renvoyée, cela signifie que nous avons atteint la fin du fichier et nous « sortons » de la boucle avec l'instruction `break`.
+Ensuite, nous rouvrons le même fichier pour le lire. Nous n'avons pas besoin de spécifier un mode car «&nbsp;lire un fichier texte&nbsp;» est le mode par défaut. Nous lisons chaque ligne du fichier en utilisant la méthode `readline` dans une boucle. Cette méthode retourne une ligne complète incluant le caractère de retour à la ligne à la fin de la ligne. Quand une chaîne _vide_ nous est renvoyée, cela signifie que nous avons atteint la fin du fichier et nous «&nbsp;sortons&nbsp;» de la boucle avec l'instruction `break`.
 
 Enfin, nous fermons le fichier avec sa méthode `close`.
 

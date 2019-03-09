@@ -116,7 +116,7 @@ Bonjour, je m'appelle Swaroop
 
 **Comment ça marche**
 
-Ici, nous définissons la méthode `__init__` comme prenant un paramètre `name` (avec l'habituel `self`). Puis, nous créons un nouveau champ également appelé `name`. Notez que ce sont deux variables différentes même si elles sont toutes les deux appelées « name ». Grâce à la notation pointée `self.name`, il n'y a pas de problème, il y a quelque chose appelé "name" qui fait partie de l'objet appelé "self" et l'autre `name` est une variable locale. Comme nous indiquons explicitement à quel name nous faisons référence, il n'y a pas de confusion possible.
+Ici, nous définissons la méthode `__init__` comme prenant un paramètre `name` (avec l'habituel `self`). Puis, nous créons un nouveau champ également appelé `name`. Notez que ce sont deux variables différentes même si elles sont toutes les deux appelées «&nbsp;name&nbsp;». Grâce à la notation pointée `self.name`, il n'y a pas de problème, il y a quelque chose appelé "name" qui fait partie de l'objet appelé "self" et l'autre `name` est une variable locale. Comme nous indiquons explicitement à quel name nous faisons référence, il n'y a pas de confusion possible.
 
 Quand nous créons une nouvelle instance `p` de la classe `Person`, nous utilisons le nom de la classe, suivi des arguments entre parenthèses: `p = Person('Swaroop')`
 
@@ -220,7 +220,7 @@ Ensuite, nous faisons référence à la variable de classe `population` en tant 
 
 Nous avons annoté la méthode `how_many` en tant que méthode de classe utilisant un [décorateur](./more.md#decorator).
 
-On peut imaginer que les décorateurs sont un raccourci pour appeler une fonction enveloppante (c.-à-d. Une fonction qui en « enveloppe » une autre fonction afin qu'elle puisse faire quelque chose avant ou après la fonction interne), appliquer le décorateur `@classmethod` est donc identique à appel:
+On peut imaginer que les décorateurs sont un raccourci pour appeler une fonction enveloppante (c.-à-d. Une fonction qui en «&nbsp;enveloppe&nbsp;» une autre fonction afin qu'elle puisse faire quelque chose avant ou après la fonction interne), appliquer le décorateur `@classmethod` est donc identique à appel:
 
 ```python
 how_many = classmethod(how_many)
@@ -234,7 +234,7 @@ Dans ce programme, nous voyons aussi l'utilisation des *docstrings* pour les cla
 
 Dans la méthode `die`, nous nous contentons de décrémenter `Robot.population` de 1.
 
-Tous les attributs de classe sont publics. Une exception: si vous nommez un attribut avec le _préfixe double underscore_ tel que `__privatevar`, Python utilise le « charcutage de nom » pour la rendre privée dans la pratique.
+Tous les attributs de classe sont publics. Une exception: si vous nommez un attribut avec le _préfixe double underscore_ tel que `__privatevar`, Python utilise le «&nbsp;charcutage de nom&nbsp;» pour la rendre privée dans la pratique.
 
 Ainsi, la convention suivie est que toute variable devant être utilisée uniquement dans la classe ou l'objet doit commencer par un underscore et que tous les autres noms sont publics et peuvent être utilisés par d'autres classes/objets. Rappelez-vous qu'il ne s'agit que d'une convention et que Python ne bloque pas l'accès (à l'exception du préfixe du double underscore).
 

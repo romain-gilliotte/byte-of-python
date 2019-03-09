@@ -1,6 +1,6 @@
 # Les Bases
 
-Afficher seulement « Hello World » n'est pas assez, n'est-ce pas ? Vous voulez faire plus que cela - vous voulez prendre des choses en entrée, les manipuler et en sortir quelque chose. Nous pouvons réussir cela avec Python en utilisant des constantes et des variables.
+Afficher seulement «&nbsp;Hello World&nbsp;» n'est pas assez, n'est-ce pas ? Vous voulez faire plus que cela - vous voulez prendre des choses en entrée, les manipuler et en sortir quelque chose. Nous pouvons réussir cela avec Python en utilisant des constantes et des variables.
 
 ## Commentaires
 
@@ -44,7 +44,7 @@ Les nombres dans Python sont principalement divisés en deux types - entiers, no
 
 > **Note pour les programmeurs expérimentés**
 >
-> Il n'y a pas de type « long int » à part. Le type entier par défaut peut être une valeur de n'importe quelle longueur.
+> Il n'y a pas de type «&nbsp;long int&nbsp;» à part. Le type entier par défaut peut être une valeur de n'importe quelle longueur.
 
 ## Chaînes de caractères
 
@@ -69,8 +69,8 @@ Vous pouvez déclarer les chaînes de caractères sur plusieurs lignes en utilis
 ```python
 '''Ceci est une chaîne multi-lignes. Ceci est la première ligne.
 Ceci est la deuxième ligne.
-« Quel est votre nom? », Ai-je demandé.
-Il a dit « Bond, James Bond. »
+«&nbsp;Quel est votre nom?&nbsp;», Ai-je demandé.
+Il a dit «&nbsp;Bond, James Bond.&nbsp;»
 '''
 ```
 
@@ -147,7 +147,7 @@ print('Pourquoi {name} joue avec ce python?'.format(name=name))
 
 qui donnera également le même résultat que le programme précédent.
 
-Python 3.6 a introduit un moyen plus court de nommer les paramètres, appelé « f-strings »:
+Python 3.6 a introduit un moyen plus court de nommer les paramètres, appelé «&nbsp;f-strings&nbsp;»:
 
 ```python
 age = 20
@@ -179,7 +179,7 @@ ___hello___
 Swaroop a écrit A Byte of Python
 ```
 
-Puisque nous discutons formatage, notez que `print` se termine toujours par un caractère invisible de « nouvelle ligne » (`\n`), de sorte que des appels répétés à `print` s’imprimeront sur des lignes distinctes. Pour empêcher l'impression de ce caractère de nouvelle ligne, vous pouvez spécifier vouloir finir avec une chaîne vide:
+Puisque nous discutons formatage, notez que `print` se termine toujours par un caractère invisible de «&nbsp;nouvelle ligne&nbsp;» (`\n`), de sorte que des appels répétés à `print` s’imprimeront sur des lignes distinctes. Pour empêcher l'impression de ce caractère de nouvelle ligne, vous pouvez spécifier vouloir finir avec une chaîne vide:
 
 ```python
 print('a', end='')
@@ -234,7 +234,7 @@ est équivalent à
 "Ceci est la première phrase. Ceci est la deuxième phrase."
 ```
 
-### Chaînes « brutes »
+### Chaînes «&nbsp;brutes&nbsp;»
 
 Si vous devez spécifier des chaînes pour lesquelles aucun traitement spécial, tel que les caractère d'échappement et de contrôle, ne sont traités, vous devez spécifier une chaîne _brute_ (_raw_) en préfixant `r` ou` R` à la chaîne. Un exemple est:
 
@@ -265,7 +265,7 @@ Les variables peuvent contenir des valeurs de différents types appelés _types 
 
 ## Objets
 
-Rappelez-vous, Python fait référence à tout ce qui est utilisé dans un programme en tant que _objet_. Cela est compris dans le sens générique. Au lieu de dire « le _quelque chose_ », nous disons « l'_objet_ ».
+Rappelez-vous, Python fait référence à tout ce qui est utilisé dans un programme en tant que _objet_. Cela est compris dans le sens générique. Au lieu de dire «&nbsp;le _quelque chose_&nbsp;», nous disons «&nbsp;l'_objet_&nbsp;».
 
 
 > **Note pour les utilisateurs de la Programmation Orientée Objet**

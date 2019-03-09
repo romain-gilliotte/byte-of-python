@@ -86,7 +86,7 @@ Nous configurons le module `logging` pour écrire nos messages avec un format pa
 
 Enfin, nous écrivons les messages prévus pour le débogage, l'information, les avertissements ou les messages critiques. Après l'exécution du programme, nous pouvons regarder ce fichier et voir ce qu'il s'est passé, bien qu'aucune information n'ait été affichée à l'utilisateur pendant l'exécution du programme.
 
-## Série « Le module de la semaine » {#motw}
+## Série «&nbsp;Le module de la semaine&nbsp;» {#motw}
 
 Il reste beaucoup de choses à découvrir dans la bibliothèque standard, comme le [débogage](http://docs.python.org/3/library/pdb.html),
 la [la gestion des options en ligne de commande](http://docs.python.org/3/library/argparse.html), les [expressions régulières](http://docs.python.org/3/library/re.html) et bien plus.
