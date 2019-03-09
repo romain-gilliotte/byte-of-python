@@ -63,11 +63,11 @@ Ensuite, tapez `python` et assurez-vous qu'il n'y a pas d'erreur.
 
 Pour les utilisateurs de Mac OS X, utilisez [Homebrew](http://brew.sh): `brew install python3`.
 
-Pour vérifier, ouvrez le terminal en appuyant sur les touches `[Commande + Espace]` (pour ouvrir la recherche Spotlight), tapez `Terminal` et appuyez sur la touche `[Entrée] `. Maintenant, lancez `python3` et assurez-vous qu'il n'y a pas d'erreur.
+Pour vérifier, ouvrez le terminal en appuyant sur les touches `[Commande + Espace]` (pour ouvrir la recherche Spotlight), tapez `Terminal` et appuyez sur la touche `[Entrée]`. Maintenant, lancez `python3` et assurez-vous qu'il n'y a pas d'erreur.
 
 ## Installation sous GNU/Linux
 
-Pour les utilisateurs GNU / Linux, utilisez le gestionnaire de paquets de votre distribution pour installer Python 3, par exemple. sur Debian et Ubuntu: `sudo apt-get update && sudo apt-get install python3`.
+Pour les utilisateurs GNU/Linux, utilisez le gestionnaire de paquets de votre distribution pour installer Python 3, par exemple. sur Debian et Ubuntu: `sudo apt-get update && sudo apt-get install python3`.
 
 Pour vérifier, ouvrez le terminal en ouvrant l’application `Terminal` ou en appuyant sur `Alt + F2` et en entrant `gnome-terminal`. Si cela ne fonctionne pas, reportez-vous à la documentation de votre distribution GNU/Linux. Ensuite, lancez `python3` et assurez-vous qu'il n'y a pas d'erreur.
 
