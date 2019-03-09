@@ -119,9 +119,9 @@ Gregory (coulix@ozforces.com.au) s'est porté volontaire pour traduire le livre 
 
 Gérard Labadie (gerard.labadie@gmail.com) a terminé la traduction du livre en français.
 
-Cette traduction n'a plus été disponible sur internet à la fin du wiki, puis a été portée au format gitbook, mise à jour, et remise en ligne par Romain Gilliotte (rgilliotte@gmail.com).
+Cette traduction a été portée au format gitbook, mise à jour, et remise en ligne par Romain Gilliotte (rgilliotte@gmail.com).
 
-Elle est maintenant hébergée sur gitbook à l'adresse https://rgilliotte.gitbook.io/byte-of-python/
+Elle est maintenant hébergée sur GitBook à l'adresse https://rgilliotte.gitbook.io/byte-of-python/
 
 ## Grec
 
