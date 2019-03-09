@@ -70,13 +70,13 @@ Si vous voulez être au courant des dernières nouveautés dans le monde Python,
 
 ## Installation de bibliothèques
 
-Il y a de très nombreuses bibliothèques open source dans le [http://pypi.python.org/pypi Python Package Index] que vous pouvez utiliser dans vos programmes.
+Il y a de très nombreuses bibliothèques open source dans le [Python Package Index](http://pypi.python.org/pypi) que vous pouvez utiliser dans vos programmes.
 
 Pour les installer et les utiliser, utilisez [pip](http://www.pip-installer.org/en/latest/).
 
 ## Création de sites web
 
-Learn [Flask](http://flask.pocoo.org) to create your own website. Some resources to get started:
+Apprenez à utiliser [Flask](http://flask.pocoo.org) pour créer vos propres sites web. Quelques resources pour démarrer :
 
 - [Flask Official Quickstart](http://flask.pocoo.org/docs/quickstart/)
 - [The Flask Mega-Tutorial](http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
