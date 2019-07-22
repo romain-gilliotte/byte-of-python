@@ -69,8 +69,8 @@ Vous pouvez déclarer les chaînes de caractères sur plusieurs lignes en utilis
 ```python
 '''Ceci est une chaîne multi-lignes. Ceci est la première ligne.
 Ceci est la deuxième ligne.
-«&nbsp;Quel est votre nom?&nbsp;», Ai-je demandé.
-Il a dit «&nbsp;Bond, James Bond.&nbsp;»
+« Quel est votre nom? », Ai-je demandé.
+Il a dit « Bond, James Bond. »
 '''
 ```
 
