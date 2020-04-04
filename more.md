@@ -225,19 +225,20 @@ Si une exception est levé, une nouvelle tentative sera automatiquement lancé.
 
 Consultez:
 
-- [Vidéo: Comprendre facilement les décorateurs Python](https://youtu.be/MYAEv3JoenI)
-- http://www.ibm.com/developerworks/linux/library/l-cpdecor.html
-- http://toumorokoshi.github.io/dry-principles-through-python-decorators.html
+- [Vidéo: Comprendre facilement les décorateurs Python (anglais)](https://youtu.be/MYAEv3JoenI)
+- [Les décorateurs rendent la magie facile (anglais)](https://developer.ibm.com/articles/l-cpdecor/)
+- [Principes DRY grâce aux décorateurs Python (anglais)](http://toumorokoshi.github.io/dry-principles-through-python-decorators.html)
+- [Vidéo: Tutoriel Python - décorateurs (français)](https://www.youtube.com/watch?v=LiBsVCXAgXI)
 
 ## Differences entre Python 2 et Python 3 {#two-vs-three}
 
 Consultez:
 
-- [Bibliothèque «&nbsp;Six&nbsp;»](http://pythonhosted.org/six/)
-- [Porter du code en Python 3 Redux par Armin](http://lucumr.pocoo.org/2013/5/21/porting-to-python-3-redux/)
-- [Expérience avec Python 3 par PyDanny](http://pydanny.com/experiences-with-django-python3.html)
-- [Guide officiel de Django pour porter du code en Python 3](https://docs.djangoproject.com/en/dev/topics/python3/)
-- [Discussion sur: quels sont les avantages de python 3.x?](http://www.reddit.com/r/Python/comments/22ovb3/what_are_the_advantages_to_python_3x/)
+- [Bibliothèque «&nbsp;Six&nbsp;» (anglais)](http://pythonhosted.org/six/)
+- [Porter du code en Python 3 Redux par Armin (anglais)](http://lucumr.pocoo.org/2013/5/21/porting-to-python-3-redux/)
+- [Expérience avec Python 3 par PyDanny (anglais)](http://pydanny.com/experiences-with-django-python3.html)
+- [Guide officiel de Django pour porter du code en Python 3 (anglais)](https://docs.djangoproject.com/en/dev/topics/python3/)
+- [Discussion sur: quels sont les avantages de python 3.x? (anglais)](http://www.reddit.com/r/Python/comments/22ovb3/what_are_the_advantages_to_python_3x/)
 
 ## Récapitulatif
 
