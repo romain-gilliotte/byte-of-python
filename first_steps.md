@@ -1,6 +1,6 @@
 # Premiers pas
 
-Nous allons maintenant voir comment exécuter le traditionnel programme «&nbsp;Hello World&nbsp;» en Python. Cela vous apprendra comment écrire, enregistrer et exécuter un programme Python.
+Nous allons maintenant voir comment exécuter le traditionnel programme «&nbsp;Hello World&nbsp;» en Python. Cela vous apprendra comment écrire, enregistrer et exécuter un programme en Python.
 
 Il y a deux façons d'utiliser Python pour lancer votre programme - utiliser le l'interpréteur interactif ou un fichier source. Nous allons maintenant voir comment utiliser ces deux méthodes.
 

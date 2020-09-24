@@ -1,14 +1,14 @@
 # Préface
 
-Python est sans doute l'un des rares langages de programmation à être à la fois simple et puissant. C'est une bonne chose pour les débutants comme pour les experts, et plus important, c'est amusant de s'en servir. Ce livre a pour but de vous aider à apprendre ce formidable langage et de vous montrer comment faire des choses rapidement et facilement. En fait «&nbsp;Le Parfait Antidote à vos problèmes de programmation&nbsp;».
+Python est sans doute l'un des rares langages de programmation à la fois simple et puissant. C'est une bonne chose pour les débutants comme pour les experts; plus important encore, c'est un language de programmation amusant. Ce livre a pour but de vous aider à apprendre ce formidable langage et de vous montrer comment faire des choses rapidement et facilement - «&nbsp;Le Parfait Antidote à vos problèmes de programmation&nbsp;».
 
 ## Le public visé par ce livre
 
-Ce livre est un guide ou un tutoriel pour le langage de programmation Python. Le public visé est les débutants. Il est également utile aux programmeurs exprimentés.
+Ce livre est un guide ou tutoriel pour le langage de programmation Python. Il est principalement réservé aux débutants. Il est également utile aux programmeurs exprimentés.
 
-Le but est le suivant: si vos seules connaissances en informatique se limitent à enregistrer un fichier, vous pouvez apprendre Python à partir de ce livre. Si vous avez déjà une expérience en programmation, alors vous pouvez aussi apprendre Python à partir de ce livre.
+Si vos seules connaissances en informatique se limitent à enregistrer un fichier, vous pouvez apprendre Python à partir de ce livre. Si vous avez déjà une expérience en programmation, alors vous pouvez aussi apprendre Python à partir de ce livre.
 
-Si vous avez déjà programmé, vous serez intéressé par les différences entre Python et votre langage de programmation préféré, et j'ai mis en évidence ces différences. Un avertissement cependant, Python va devenir sous peu votre langage de programmation favori!
+Si vous avez déjà programmé, vous serez intéressé par les différences entre Python et votre langage de programmation préféré - j'ai mis en évidence ces différences. Un avertissement cependant, Python risque de devenir sous peu votre langage de programmation favori!
 
 ## Site officiel
 
@@ -20,4 +20,4 @@ Le site officiel du livre est https://python.swaroopch.com/ où vous pouvez lire
 
 <!-- -->
 
-> Le succès dans la vie ne dépend pas tant du talent et des opportunités que de la concentration et de la persévérance. -- C. W. Wendte
+> Dans la vie, le succès ne dépend pas tant du talent et des opportunités que de la concentration et de la persévérance. -- C. W. Wendte

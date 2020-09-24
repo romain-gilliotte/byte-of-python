@@ -1,10 +1,10 @@
 # A Byte of Python
 
-«&nbsp;A Byte of Python&nbsp;» est un livre libre de droits sur la programmation avec le langage Python. Il peut être vu comme un tutoriel ou un guide sur le langage Python pour les débutants. Si tout ce que vous savez sur l'informatique se résume à enregistrer des fichiers, alors ce livre est fait pour vous.
+«&nbsp;A Byte of Python&nbsp;» est un livre libre de droits sur le langage de programmation Python. Il peut être vu comme un tutoriel ou un guide sur le langage Python pour les débutants. Si tout ce que vous savez sur l'informatique se résume à enregistrer des fichiers, alors ce livre est fait pour vous.
 
 ## Pour Python version 3
 
-Ce livre vous apprendra à utiliser Python version 3. Il vous aidera également dans votre adaptation à la version 2 de Python, plus ancienne et plus courante.
+Ce livre vous apprendra à utiliser Python version 3. Il vous aidera également à utiliser la version 2 de Python, plus ancienne et plus courante.
 
 ## Qui lit A Byte of Python? {#who-reads-bop}
 
@@ -40,12 +40,12 @@ Voilà ce que disent les lecteurs à propos du livre:
 
 <!-- -->
 
-> Je devrais faire mon «&nbsp;vrai travail&nbsp;» mais je viens de trouver «&nbsp;A Byte of Python&nbsp;». Un excellent guide avec d'excellents exemples.
+> Je devrais être en train de faire mon «&nbsp;vrai travail&nbsp;» mais je viens de trouver «&nbsp;A Byte of Python&nbsp;». Un excellent guide avec d'excellents exemples.
 > -- [Biologist John](https://twitter.com/BiologistJohn/statuses/194726001803132928)
 
 <!-- -->
 
-> J'ai récemment commencé à lire A Byte of Python. Super travail. Et gratuitement. Fortement recommandé pour les pythonistes en herbe.
+> J'ai récemment commencé à lire A Byte of Python. Super travail. Et ce gratuitement. Fortement recommandé pour les pythonistes en herbe.
 > -- [Mangesh](https://twitter.com/mangeshnanoti/status/225680668867321857)
 
 <!-- -->
@@ -65,21 +65,21 @@ Voilà ce que disent les lecteurs à propos du livre:
 
 <!-- -->
 
-> Je viens du Dayanandasagar College of Engineering (7ème semestre, CSE). Tout d'abord, je tiens à dire que votre livre «&nbsp;A Byte of Python&nbsp;» est un livre trop bon pour un débutant en python comme moi. Les concepts sont si bien expliqués à l'aide d'exemples simples qui m'ont aidé à apprendre facilement le python. Merci beaucoup.
+> Je viens du Dayanandasagar College of Engineering (7ème semestre, CSE). Tout d'abord, je tiens à dire que votre livre «&nbsp;A Byte of Python&nbsp;» est un excellent livre pour un débutant en python comme moi. Les concepts sont si bien expliqués à l'aide d'exemples simples qui m'ont aidé à apprendre facilement le python. Merci beaucoup.
 > -- Madhura
 
 <!-- -->
 
-> Je suis un étudiant en informatique de 18 ans qui étudie à l’université irlandaise. Je tiens à vous exprimer ma gratitude pour avoir écrit votre livre «&nbsp;A Byte of Python&nbsp;». Je connaissais déjà 3 langagues de programmation - C, Java et Javascript, et Python était de loin le langage le plus simple que j'ai jamais appris et que était principalement dû au fait que votre livre était fantastique et rendait l’apprentissage du python très simple et intéressant. C'est l'un des meilleurs livres de programmation écrits et faciles à suivre que j'ai jamais lus. Félicitations et continuez votre bon travail.
+> Je suis un étudiant en informatique de 18 ans qui étudie à l’université irlandaise. Je tiens à vous exprimer ma gratitude pour avoir écrit votre livre «&nbsp;A Byte of Python&nbsp;». Je connaissais déjà 3 langagues de programmation - C, Java et Javascript, et Python était de loin le langage le plus simple que j'ai jamais appris, et ce principalement dû au fait que votre livre était fantastique et rendait l’apprentissage du python très simple et intéressant. C'est l'un des meilleurs livres de programmation écrits et faciles à suivre que j'ai jamais lus. Félicitations et continuez votre excellent travail.
 > -- Matt
 
 <!-- -->
 
-> Bonjour, je viens de la République Dominicaine. Mon nom est Pavel, j'ai récemment lu votre livre _A Byte of Python_ et je le considère comme excellent !! :) J'ai beaucoup appris de tous les exemples. Votre livre est d'une grande aide pour les débutants comme moi ...
+> Bonjour, je viens de la République Dominicaine. Mon nom est Pavel, j'ai récemment lu votre livre _A Byte of Python_ et je le trouve excellent !! :) J'ai beaucoup appris de tous les exemples. Votre livre est d'une grande aide pour les débutants comme moi ...
 > -- [Pavel Simo](mailto:pavel.simo@gmail.com)
 
 <!-- -->
-> Je suis un étudiant originaire de Chine. J'ai lu votre livre «&nbsp;A Byte of Python&nbsp;». Oh, c'est beau. Le livre est très simple mais peut aider tous les premiers apprenants. Vous savez que je suis intéressé par Java et par le cloud computing, je dois programmer un programme pour le serveur. Je pense donc que python est un bon choix. J'ai terminé votre livre. Je pense que ce n'est pas seulement un bon choix, il doit également utiliser le Python. Mon anglais n'est pas très bien, l'email à vous, je veux juste vous remercier! Meilleurs voeux pour vous et votre famille.
+> Je suis un étudiant originaire de Chine. J'ai lu votre livre «&nbsp;A Byte of Python&nbsp;». Oh, c'est beau. Le livre est très simple mais peut aider tous les premiers apprenants. Vous savez que je suis intéressé par Java et par le cloud computing, je dois programmer un programme pour le serveur. Je pense donc que python est un bon choix. J'ai terminé votre livre. Je pense que ce n'est pas seulement un bon choix, il doit utiliser le Python. Mon anglais n'est pas très bien, l'email à vous, je veux juste vous remercier! Meilleurs voeux pour vous et votre famille.
 > -- Roy Lau
 
 <!-- -->
@@ -229,7 +229,7 @@ Le livre est même utilisé par la NASA! Il est utilisé au [Jet Propulsion Labo
 
 ## Cours en Universités
 
-Ce livre est ou à été utilisé comme support dans différentes institutions:
+Ce livre est ou à été utilisé comme support de cours dans différentes institutions:
 
 - «&nbsp;Principes des langages de programmation&nbsp;» [Vrije Universiteit, Amsterdam](http://www.few.vu.nl/~nsilvis/PPL/2007/index.html)
 - «&nbsp;Concepts de base de l'informatique&nbsp;» [Université de California, Davis](http://www.cs.ucdavis.edu/courses/exp_course_desc/10.html)
@@ -249,8 +249,8 @@ Ce livre est sous la licence [Creative Commons Attribution-ShareAlike 4.0 Intern
 
 Cela signifie que:
 
-- Vous êtes libre de partager et donc copier, distribuer et transmettre ce livre.
-- Vous êtes libre de retoucher et adapter ce livre (en particulier translations)
+- Vous êtes libre de partager, c'est-à-dire de copier, distribuer et transmettre ce livre
+- Vous êtes libre de modifier et adapter ce livre (en particulier si vous souhaitez le traduire)
 - Vous êtes libre de l'utiliser à des fins commerciales
 
 Notez cependant:

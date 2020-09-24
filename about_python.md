@@ -1,34 +1,34 @@
 # À propos de Python
 
-Python est un des rares langages à être à la fois _simple_ et _puissant_.  Vous serez agréablement surpris de voir comme il est facile de se concentrer sur la solution d'un problème plutôt que sur la syntaxe et la structure du langage utilisé .
+Python est un des rares langages à la fois _simple_ et _puissant_.  Vous serez agréablement surpris de voir comme il est facile de se concentrer sur la solution d'un problème plutôt que sur la syntaxe et la structure du langage utilisé.
 
 L'introduction officielle à Python est :
 
-> Python est un langage de programmation puissant et facile à apprendre. Il possède des structures de données de haut niveau et une approche simple mais efficace à la programmation orientée objet. La syntaxe élégante de Python et le typage dynamique des données, avec la nature interprétée du langage, en font un langage idéal pour le scriptage et le développement rapide d'applications dans de nombreux domaines sur la plupart des plate-formes.
+> Python est un langage de programmation facile à apprendre et puissant. Il possède des structures de données de haut niveau et une approche simple mais efficace à la programmation orientée objet. La syntaxe élégante et le typage dynamique de Python, avec la nature interprétée du langage, en font un langage idéal pour l'écriture de script et le développement rapide d'applications dans de nombreux domaines sur la plupart des plate-formes.
 
 Je parlerai plus en détail de ces fonctionnalités dans le paragraphe suivant.
 
 ## Histoire derrière le nom
 
-Guido van Rossum, le créateur du langage, l'a appelé en référence à la série télévisée de la BBC «&nbsp;Monty Python's Flying Circus&nbsp;». Il n'aime pas particulièrement les serpents qui tuent des animaux pour manger en les étouffant et les écrasant.
+Guido van Rossum, le créateur du langage, l'a appelé en référence à la série télévisée de la BBC «&nbsp;Monty Python's Flying Circus&nbsp;». Il n'aime pas particulièrement les serpents qui tuent des animaux pour les manger en les étouffant et les écrasant.
 
 ## Fonctionnalités de Python
 
 ### Simple
 
-Python est un langage simple et minimal. Lire un bon progamme écrit en Python ressemble à lire de l'anglais, mais de l'anglais très strict ! La nature de pseudo-code de Python est une de ses plus grandes forces. Cela vous permet de vous concentrer sur la solution du problème plutôt que sur le langage lui-même.
+Python est un langage simple et minimaliste. Lire un bon progamme écrit en Python ressemble beaucoup à lire de l'anglais, mais de l'anglais très strict! La nature de pseudo-code de Python est une de ses plus grandes forces. Cela vous permet de vous concentrer sur la solution du problème plutôt que sur le langage lui-même.
 
 ### Facile à apprendre
 
-Comme vous le constaterez, il est très facile de démarrer avec Python. Python a une syntaxe extraordinairement simple, comme indiqué précédemment.
+Comme vous le constaterez, il est extrêmement facile de commencer à utiliser Python. Python a une syntaxe extraordinairement simple, comme indiqué précédemment.
 
 ### Libre et Open Source
 
-Python est un exemple de _FLOSS_ (Free/Libre et Open Source Software). En d'autres termes, vous pouvez librement distributer des copies de ce logiciel, lire son code source, le modifier, et en uiliser des morceaux dans un nouveau programme. FLOSS est basé sur le concept de communauté qui partage le savoir. C'est l'une des raisons pour lesquelles Python est tellement bien, il a été créé et est constamment amélioré par une communauté qui veut juste voir un meilleur Python.
+Python est un exemple de _FLOSS_ (_Free/Libre et Open Source Software_, ou Logiciel Libre et Open source). En d'autres termes, vous pouvez librement distributer des copies de ce logiciel, lire son code source, le modifier, et en uiliser des morceaux dans un nouveau programme. FLOSS est basé sur le concept de communauté qui partage ses connaissances. C'est l'une des raisons pour laquelle Python est si bien - il a été créé et est constamment amélioré par une communauté qui veut simplement un meilleur Python.
 
 ### Langage de haut niveau
 
-Quand vous écrivez des programmes en Python, vous n'avez pas besoin de vous préocupper de détails commme gérer la mémoire utilisée par votre programme, etc...
+Quand vous écrivez des programmes en Python, vous n'avez pas besoin de vous préocupper des détails commme gérer la mémoire utilisée par votre programme, etc...
 
 ### Portable
 
