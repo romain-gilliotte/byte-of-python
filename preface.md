@@ -4,7 +4,7 @@ Python est sans doute l'un des rares langages de programmation à la fois simple
 
 ## Le public visé par ce livre
 
-Ce livre est un guide ou tutoriel pour le langage de programmation Python. Il est principalement réservé aux débutants. Il est également utile aux programmeurs exprimentés.
+Ce livre est un guide ou tutoriel pour le langage de programmation Python. Il est principalement réservé aux débutants. Il est également utile aux programmeurs expérimentés.
 
 Si vos seules connaissances en informatique se limitent à enregistrer un fichier, vous pouvez apprendre Python à partir de ce livre. Si vous avez déjà une expérience en programmation, alors vous pouvez aussi apprendre Python à partir de ce livre.
 
