@@ -1,6 +1,6 @@
 # Préface
 
-Python est sans doute l'un des rares langages de programmation à la fois simple et puissant. C'est une bonne chose pour les débutants comme pour les experts; plus important encore, c'est un language de programmation amusant. Ce livre a pour but de vous aider à apprendre ce formidable langage et de vous montrer comment faire des choses rapidement et facilement - «&nbsp;Le Parfait Antidote à vos problèmes de programmation&nbsp;».
+Python est sans doute l'un des rares langages de programmation à la fois simple et puissant. C'est une bonne chose pour les débutants comme pour les experts; plus important encore, c'est un langage de programmation amusant. Ce livre a pour but de vous aider à apprendre ce formidable langage et de vous montrer comment faire des choses rapidement et facilement - «&nbsp;Le Parfait Antidote à vos problèmes de programmation&nbsp;».
 
 ## Le public visé par ce livre
 

@@ -9,10 +9,10 @@ Le problème que nous voulons résoudre est :
 
 Bien que cela soit un problème simple, il n'y a pas assez d'information pour nous permettre de travailler à une solution. Nous avons besoin d'un peu plus d'*analyse*. Par exemple, comment choisir _quels_ fichiers vont être sauvegardés ? _Comment_ les stocker ? _Où_ les stocker ?
 
-Après une analyse du problème, nous *concevons* notre programme. Nous écrivons une liste de choses que notre programme doit faire. Dans ce cas, j'ai créé la liste suivante sur la manière dont _je_ veux qu'il fonctionne. Si vous concevez ce programme, vous fairez sans doute une analyse différente, car chaque personne a sa manière de faire, et ce sera tout aussi juste.
+Après une analyse du problème, nous *concevons* notre programme. Nous écrivons une liste de choses que notre programme doit faire. Dans ce cas, j'ai créé la liste suivante sur la manière dont _je_ veux qu'il fonctionne. Si vous concevez ce programme, vous ferez sans doute une analyse différente, car chaque personne a sa manière de faire, et ce sera tout aussi juste.
 
 - Les fichiers et répertoires à sauvegarder seront dans une liste.
-- La sauvegarde doit être stocké dans un répertoire contenant toutes les sauvegardes.
+- La sauvegarde doit être stockée dans un répertoire contenant toutes les sauvegardes.
 - Les fichiers seront sauvegardés dans une archive _zip_.
 - Le nom de l'archive zip sera la date et l'heure courante.
 - Nous utilisons la commande standard `zip` disponible par défaut dans toute distribution GNU/Linux ou Unix standard. Notez que vous pouvez utiliser n’importe quelle commande d’archivage à condition qu’elle dispose d’une interface en ligne de commande.
@@ -84,7 +84,7 @@ En cours :
 Sauvegarde réussie dans /Users/swa/backup/20140328084844.zip
 ```
 
-Maintenant, nous sommes dans la phase de *test*, où nous testons notre programme. S'il ne se comporte pas comme prévu, nous allons le *deboguer* c'est-à-dire enlever les *bugs* (erreurs) dans le programme.
+Maintenant, nous sommes dans la phase de *test*, où nous testons notre programme. S'il ne se comporte pas comme prévu, nous allons le *déboguer* c'est-à-dire enlever les *bugs* (erreurs) dans le programme.
 
 Si le programme ci-dessus ne fonctionne pas pour vous, copiez la ligne imprimée après la ligne `La commande zip est :` dans la sortie, collez-la dans le shell (sous GNU/Linux et Mac OS X) / `cmd` (sous Windows), voyez quelle est l'erreur et essayez de la réparer. Consultez également le manuel de commande zip sur ce qui pourrait ne pas être correct. Si cette commande réussit, le problème peut provenir du programme Python lui-même. Vérifiez donc s'il correspond exactement au programme écrit ci-dessus.
 
@@ -104,13 +104,13 @@ La commande `zip` que nous utilisons a quelques options disponibles, et l’une 
 
 Ensuite, nous *exécutons* la commande en utilisant la fonction `os.system` qui lance la commande comme si elle était lancée à partir du *système* c'est-à-dire dans une invite de commandes - il retourne `0` si la commande s'est exécutée avec succès, sinon il renvoie un numéro d'erreur.
 
-En fonction du résultat de la commande, nous affichons le message approprié indiquant que la sauvegarde a échouée ou réussie.
+En fonction du résultat de la commande, nous affichons le message approprié indiquant que la sauvegarde a échoué ou réussi.
 
 Ca y est, nous avons créé un script pour faire une sauvegarde de nos fichiers importants !
 
 > **Note pour les utilisateurs Windows**
 >
-> À la place d'echapper les backslash (`\`), vous pouvez utiliser des chaînes brutes. Par exemple, utilisez `'C:\\Documents'` ou `r'C:\Documents'`. Cependant, n'utilisez *pas* `'C:\Documents'` car vous vous retrouveriez avec un caractère d'échappement inconnu `\D`.
+> À la place d'échapper les backslash (`\`), vous pouvez utiliser des chaînes brutes. Par exemple, utilisez `'C:\\Documents'` ou `r'C:\Documents'`. Cependant, n'utilisez *pas* `'C:\Documents'` car vous vous retrouveriez avec un caractère d'échappement inconnu `\D`.
 
 Maintenant que nous avons un script de sauvegarde qui fonctionne, nous pouvons l'utiliser quand nous voulons une sauvegarde de nos fichiers. Cela est appelé la phase d'*opération* ou la phase de *déploiement* du logiciel.
 
@@ -366,7 +366,7 @@ La quatrième version est un script qui fonctionne de manière satisfaisante pou
 
 Une autre amélioration possible serait de permettre de passer au script en ligne de commande des fichiers et répertoires en plus. Nous pouvons récupérer ces noms à partir de la liste `sys.argv` et nous pouvons les ajouter à notre liste `source` en utilisant la méthode `extend` fournie par la classe `list`.
 
-L'améliorations la plus importante serait de ne pas utiliser la méthode `os.system` pour créer les archives, mais plutôt les modules intégrés [zipfile](http://docs.python.org/3/library/zipfile.html) ou [tarfile]( http://docs.python.org/3/library/tarfile.html). Ils font partie de la bibliothèque standard et sont déjà disponibles pour que vous puissiez utiliser le script sans la dépendance externe envers le programme zip installé sur votre ordinateur.
+L'amélioration la plus importante serait de ne pas utiliser la méthode `os.system` pour créer les archives, mais plutôt les modules intégrés [zipfile](http://docs.python.org/3/library/zipfile.html) ou [tarfile]( http://docs.python.org/3/library/tarfile.html). Ils font partie de la bibliothèque standard et sont déjà disponibles pour que vous puissiez utiliser le script sans la dépendance externe envers le programme zip installé sur votre ordinateur.
 
 J’ai utilisé la méthode `os.system` pour créer une sauvegarde dans les exemples ci-dessus à des fins purement pédagogiques, de sorte que cet exemple soit suffisamment simple pour être compris par tout le monde, mais suffisamment réel pour être utile.
 

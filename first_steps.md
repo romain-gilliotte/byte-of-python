@@ -2,17 +2,17 @@
 
 Nous allons maintenant voir comment exécuter le traditionnel programme «&nbsp;Hello World&nbsp;» en Python. Cela vous apprendra comment écrire, enregistrer et exécuter un programme en Python.
 
-Il y a deux façons d'utiliser Python pour lancer votre programme - utiliser le l'interpréteur interactif ou un fichier source. Nous allons maintenant voir comment utiliser ces deux méthodes.
+Il y a deux façons d'utiliser Python pour lancer votre programme - utiliser l'interpréteur interactif ou un fichier source. Nous allons maintenant voir comment utiliser ces deux méthodes.
 
-## Utiliser l'interpréteur intéractif
+## Utiliser l'interpréteur interactif
 
-Démarrez l'interpréteur intéractif en entrant `python` dans l'invite de commande.
+Démarrez l'interpréteur interactif en entrant `python` dans l'invite de commande.
 
-Pour les utilisateurs Windows, vous pouvez lancer l'interpréteur intéractif si vous avez modifié la variable `PATH` correctement.
+Pour les utilisateurs Windows, vous pouvez lancer l'interpréteur interactif si vous avez modifié la variable `PATH` correctement.
 
-Ouvrez le terminal de votre système d'exploitation (comme indiqué précédemment dans le chapitre [Installation](./installation.md#installation)), puis ouvrez interpréteur intéractif Python en tapant `python3` et en appuyant sur la touche `[Entrée]`.
+Ouvrez le terminal de votre système d'exploitation (comme indiqué précédemment dans le chapitre [Installation](./installation.md#installation)), puis ouvrez interpréteur interactif Python en tapant `python3` et en appuyant sur la touche `[Entrée]`.
 
-Une fois que vous avez démarré Python, vous devriez voir `>>>` où vous pouvez commencer à taper des choses. Ceci s'appelle l'_invite de l'interpreteur Python_.
+Une fois que vous avez démarré Python, vous devriez voir `>>>` où vous pouvez commencer à taper des choses. Ceci s'appelle l'_invite de l'interpréteur Python_.
 
 A l'invite de l'interpréteur Python, tapez:
 
@@ -36,15 +36,15 @@ Hello World
 
 Notez que Python vous donne la sortie de la ligne immédiatement! Ce que vous venez de saisir est une seule _instruction_ Python. Nous utilisons `print` pour (sans surprise) imprimer toute valeur que nous lui fournissons. Ici, nous fournissons le texte `Hello World` et celui-ci est rapidement imprimé à l'écran.
 
-### Comment quitter l'interpréteur intéractif
+### Comment quitter l'interpréteur interactif
 
-Si vous utilisez un terminal GNU/Linux ou OS X, vous pouvez quitter interpréteur intéractif en appuyant sur `[Ctrl + d]` ou en entrant `exit ()` (note: n'oubliez pas d'inclure les parenthèses, `()`), puis en appuyant sur `[Entrée]`.
+Si vous utilisez un terminal GNU/Linux ou OS X, vous pouvez quitter interpréteur interactif en appuyant sur `[Ctrl + d]` ou en entrant `exit ()` (note: n'oubliez pas d'inclure les parenthèses, `()`), puis en appuyant sur `[Entrée]`.
 
 Si vous utilisez l'invite de commande Windows, appuyez sur les touches `[Ctrl + z]` puis sur `[Entrée]`.
 
 ## Choisir un éditeur
 
-Nous ne pouvons pas taper nos programmes dans l'interpréteur intéractif à chaque fois que nous voulons exécuter quelque chose. Nous devons donc les enregistrer dans des fichiers et pouvoir exécuter nos programmes autant de fois que nécessaire.
+Nous ne pouvons pas taper nos programmes dans l'interpréteur interactif à chaque fois que nous voulons exécuter quelque chose. Nous devons donc les enregistrer dans des fichiers et pouvoir exécuter nos programmes autant de fois que nécessaire.
 
 Pour créer nos fichiers source Python, nous avons besoin d’un logiciel d’édition où vous pouvez taper et enregistrer. Un bon éditeur de programmeur vous facilitera la tâche d'écrire les fichiers source. Par conséquent, le choix d'un éditeur est crucial. Vous devez choisir un éditeur comme vous choisiriez une voiture que vous achèteriez. Un bon éditeur vous aidera à écrire facilement des programmes Python, ce qui rendra votre voyage plus confortable et vous aidera à atteindre votre destination de manière beaucoup plus rapide et plus sûre.
 
@@ -52,7 +52,7 @@ Une des exigences de base est la _coloration syntaxique_, où toutes les différ
 
 Si vous ne savez pas par où commencer, je vous recommanderais d'utiliser le logiciel [PyCharm Educational Edition](https://www.jetbrains.com/pycharm-edu/) disponible sous Windows, Mac OS X et GNU/Linux. Détails dans la section suivante.
 
-Si vous utilisez Windows, *n'utilisez pas Notepad*. C'est un mauvais choix car il ne dispose pas de coloration syntaxique et, surtout, il ne prend pas en charge l'indentation du texte, ce qui est très important dans notre cas, comme nous le verrons plus tard. Les bons editeurs le feront automatiquement.
+Si vous utilisez Windows, *n'utilisez pas Notepad*. C'est un mauvais choix car il ne dispose pas de coloration syntaxique et, surtout, il ne prend pas en charge l'indentation du texte, ce qui est très important dans notre cas, comme nous le verrons plus tard. Les bons éditeurs le feront automatiquement.
 
 
 Si vous êtes un programmeur expérimenté, vous devez déjà utiliser [Vim](http://www.vim.org) ou [Emacs](http://www.gnu.org/software/emacs/). Il va sans dire que ce sont deux des éditeurs les plus puissants et qu’il vous sera utile de les utiliser pour écrire vos programmes Python. Personnellement, j'utilise les deux pour la plupart de mes programmes et j'ai même écrit un [livre entier sur Vim](https://vim.swaroopch.com/).
@@ -174,11 +174,11 @@ Un programme Python est composé d'_instructions_. Dans notre premier programme,
 
 ## Obtenir de l'aide
 
-Si vous besoin rapidement d'information sur n'importe quelle fonction ou instruction dans Python, alors vous pouvez utiliser la fonctionnalité `help`. Cela est très utile particulièrement quand on utilise l'interpréteur intéractif. Par exemple, tapez `help(print)` - cela affiche l'aide pour la fonction print qui est utilisée pour afficher des choses à l'écran.
+Si vous avez besoin rapidement d'information sur n'importe quelle fonction ou instruction dans Python, alors vous pouvez utiliser la fonctionnalité `help`. Cela est très utile particulièrement quand on utilise l'interpréteur interactif. Par exemple, tapez `help(print)` - cela affiche l'aide pour la fonction print qui est utilisée pour afficher des choses à l'écran.
 
 Note: Tapez `q` pour sortir de l'aide.
 
-De la même manière, vous pouvez obtenir de l'information sur pratiquement n'importe quoi dans Python. Utilisez `help()` pour appendre plus de choses sur le `help` lui-même !
+De la même manière, vous pouvez obtenir de l'information sur pratiquement n'importe quoi dans Python. Utilisez `help()` pour apprendre plus de choses sur le `help` lui-même !
 
 Pour avoir de l'aide sur les opérateurs comme `return`, il faut mettre des quotes à l'intérieur comme dans `help('return')` pour que Python comprenne ce que l'on veut faire.
 

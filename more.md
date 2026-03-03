@@ -95,7 +95,7 @@ Notez que la méthode `sort` d'une liste peut prendre un paramètre `key` qui d�
 
 ## Compréhension de liste
 
-Les compréhension de liste sont utilisées pour créer une nouvelle liste à partir d'une liste existante. Supposons, vous avez une liste de nombres et vous voulez obtenir la liste correspondante dont chaque valeur est multipliée par 2, mais uniquement nombre supérieurs à 2. Les compréhension de liste sont idéales pour ces situations.
+Les compréhension de liste sont utilisées pour créer une nouvelle liste à partir d'une liste existante. Supposons, vous avez une liste de nombres et vous voulez obtenir la liste correspondante dont chaque valeur est multipliée par 2, mais uniquement les nombres supérieurs à 2. Les compréhension de liste sont idéales pour ces situations.
 
 Exemple (enregistrez sous `more_list_comprehension.py`):
 
@@ -120,7 +120,7 @@ L'avantage des list comprehensions est que cela réduit la quantité de code pas
 
 ## Recevoir des tuples et des dictionnaires dans des fonctions
 
-Il existe une façon spéciale de recevoir des paramètres pour une fonction en tant que tuple ou dictionnaire en utilisant respectivement les préfixes `*` ou `**`. Cela est utile pour créer des fonctions prenant un un nombre variable de paramètres.
+Il existe une façon spéciale de recevoir des paramètres pour une fonction en tant que tuple ou dictionnaire en utilisant respectivement les préfixes `*` ou `**`. Cela est utile pour créer des fonctions prenant un nombre variable de paramètres.
 
 ```python
 >>> def powersum(power, *args):
@@ -159,7 +159,7 @@ L'instruction `assert` doit être utilisée à bon escient. La plupart du temps,
 
 ## Décorateurs {#decorator}
 
-Les décorateurs sont un raccourci pour appliquer des fonctions autour d'une autre fonction. Ceci est utile pour "envelopper" une fonctionnalité avec le même code, encore et encore. Par exemple, j’ai créé un décorateur `retry` que je ne peux appliquer à n'importe quelle fonction. Si une exception est levée au cours d'une exécution, l'appel à la fonction sera retentée jusqu'à 5 fois avec un délai entre chaque nouvelle tentative. Ceci est particulièrement utile lorsque vous essayez de réaliser un appel réseau à un ordinateur distant:
+Les décorateurs sont un raccourci pour appliquer des fonctions autour d'une autre fonction. Ceci est utile pour "envelopper" une fonctionnalité avec le même code, encore et encore. Par exemple, j’ai créé un décorateur `retry` que je peux appliquer à n'importe quelle fonction. Si une exception est levée au cours d'une exécution, l'appel à la fonction sera retentée jusqu'à 5 fois avec un délai entre chaque nouvelle tentative. Ceci est particulièrement utile lorsque vous essayez de réaliser un appel réseau à un ordinateur distant:
 
 ```python
 from time import sleep
@@ -191,7 +191,7 @@ counter = 0
 @retry
 def save_to_database(arg):
     print("Écrit dans une base de données, réalise un appel réseau ou autres...")
-    print("Si une exception est levé, une nouvelle tentative sera automatiquement lancé.")
+    print("Si une exception est levée, une nouvelle tentative sera automatiquement lancée.")
     global counter
     counter += 1
     # Ceci lancera une exception au premier appel
@@ -209,7 +209,7 @@ Résultat:
 ```
 $ python more_decorator.py
 Écrit dans une base de données, réalise un appel réseau ou autres...
-Si une exception est levé, une nouvelle tentative sera automatiquement lancé.
+Si une exception est levée, une nouvelle tentative sera automatiquement lancée.
 ERROR:retry:La tentative 1/5 a échoué : (('Une mauvaise valeur',), {})
 Traceback (most recent call last):
   File "more_decorator.py", line 14, in wrapper_function
@@ -218,7 +218,7 @@ Traceback (most recent call last):
     raise ValueError(arg)
 ValueError: Une mauvaise valeur
 Écrit dans une base de données, réalise un appel réseau ou autres...
-Si une exception est levé, une nouvelle tentative sera automatiquement lancé.
+Si une exception est levée, une nouvelle tentative sera automatiquement lancée.
 ```
 
 **Comment ça marche**
@@ -230,7 +230,7 @@ Consultez:
 - [Principes DRY grâce aux décorateurs Python (anglais)](http://toumorokoshi.github.io/dry-principles-through-python-decorators.html)
 - [Vidéo: Tutoriel Python - décorateurs (français)](https://www.youtube.com/watch?v=LiBsVCXAgXI)
 
-## Differences entre Python 2 et Python 3 {#two-vs-three}
+## Différences entre Python 2 et Python 3 {#two-vs-three}
 
 Consultez:
 

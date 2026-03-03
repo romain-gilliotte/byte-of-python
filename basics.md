@@ -92,7 +92,7 @@ Cela signifie que quand vous avez créé une chaîne, vous ne pouvez pas la chan
 
 Nous avons parfois besoin de fabriquer des chaînes de caractères à partir d'autres informations. Dans ce cas la méthode `format()` est utile.
 
-Save the following lines as a file `str_format.py`:
+Enregistrez les lignes suivantes dans un fichier `str_format.py`:
 
 ```python
 age = 20
@@ -219,7 +219,7 @@ Comment faire pour indiquer une chaîne de caractère sur deux lignes? Une faço
 'Ceci est la première ligne\nCeci est la deuxième ligne'
 ```
 
-Un autre _caractère de contrôle_ utile à connaître est la tabulation - `\t`. Il y a beaucoup d'autres _caractère de contrôle_ mais j'ai seulement mentionné les plus utiles ici.
+Un autre _caractère de contrôle_ utile à connaître est la tabulation - `\t`. Il y a beaucoup d'autres _caractères de contrôle_ mais j'ai seulement mentionné les plus utiles ici.
 
 Une chose à noter est que, dans une chaîne de caractères, un backslash unique à la fin de la ligne indique que la chaîne de caractères continue à la ligne suivante, mais une nouvelle ligne n'est pas ajoutée, par exemple:
 
@@ -254,10 +254,10 @@ Utiliser seulement des constantes littérales peut rapidement devenir ennuyeux -
 
 Les variables sont des exemples d'identifiants. Les _identifiants_ sont des noms donnés pour identifier _quelque chose_. Vous devez respecter quelques règles pour donner un nom aux identifiants:
 
-- Le premier caractère de l'identifier doit être une lettre de l'alphabet (majuscule ASCII ou minuscule ASCII ou caractère Unicode) ou un underscore ('_').
-- Le reste du nom de l'identifier peut être composé de lettres (majuscules ASCII ou minuscules ASCII ou caractère Unicode), underscores ('_') ou chiffres (0-9).
-- Les noms des Identifiers sont sensibles à la casse. Par exemple, `myname` et `myName` ne sont _pas_ identiques. Notez la minuscule `n` dans le premier cas et la majuscule `N` ensuite.
-- Des exemples de noms d'identifiers _valides_ sont `i`, `name_2_3`. Des exemples _invalides_ sont `2things`, `this is spaced out`, `my-name`, et `>a1b2_c3`.
+- Le premier caractère de l'identifiant doit être une lettre de l'alphabet (majuscule ASCII ou minuscule ASCII ou caractère Unicode) ou un underscore ('_').
+- Le reste du nom de l'identifiant peut être composé de lettres (majuscules ASCII ou minuscules ASCII ou caractère Unicode), underscores ('_') ou chiffres (0-9).
+- Les noms des identifiants sont sensibles à la casse. Par exemple, `myname` et `myName` ne sont _pas_ identiques. Notez la minuscule `n` dans le premier cas et la majuscule `N` ensuite.
+- Des exemples de noms d'identifiants _valides_ sont `i`, `name_2_3`. Des exemples _invalides_ sont `2things`, `this is spaced out`, `my-name`, et `>a1b2_c3`.
 
 ## Types de données
 
@@ -406,14 +406,14 @@ Parfois, il y a une supposition implicite quand vous n'avez pas besoin d'utilise
 
 Les espaces sont importants dans Python. En fait *les espaces au début de la ligne sont importants*. Cela s'appelle _l'indentation_. Les espaces (espaces et tabulations) au début de la ligne logique sont utilisés pour déterminer le niveau d'indentation de la ligne logique, qui est à son tour utilisée pour déterminer le groupement des instructions.
 
-Cela signifie que les intructions qui vont ensemble _doivent_ avoir la même indentation. Chaque jeu d'instructions est appelé un *bloc*. Nous verrons des exemples de l'importance des blocs dans les chapitres suivants.
+Cela signifie que les instructions qui vont ensemble _doivent_ avoir la même indentation. Chaque jeu d'instructions est appelé un *bloc*. Nous verrons des exemples de l'importance des blocs dans les chapitres suivants.
 
 Un chose à retenir est qu'une fausse indentation va mener à des erreurs. Par exemple:
 
 ```python
 i = 5
  print('La valeur est ', i) # Erreur! Notez l'espace en début de ligne
-print('Je repète, la valeur est ', i)
+print('Je répète, la valeur est ', i)
 ```
 
 A l'exécution, vous obtenez l'erreur suivante :
@@ -425,11 +425,11 @@ A l'exécution, vous obtenez l'erreur suivante :
 IndentationError: unexpected indent
 ```
 
-Notez qu'il y a un espace au début de la deuxième ligne. L'erreur indiquée par Python nous dit que la syntaxe est invalide, c'est-à-dire que le programme n'est pas correctement écrit. Cela vous dit que _vous ne pouvez pas commencer des nouveaux blocs n'importe où_ (à part pour le bloc principal par défaut que vous avez constamment utilisé, bien sûr). Les cas dans lesquels vous pouvez utiliser des nouveaux blocs seront détaillés dans les chapitres suivants comme le chapitre sur le [contrôle de flux](./control_flow.md#control_flow)..
+Notez qu'il y a un espace au début de la deuxième ligne. L'erreur indiquée par Python nous dit que la syntaxe est invalide, c'est-à-dire que le programme n'est pas correctement écrit. Cela vous dit que _vous ne pouvez pas commencer des nouveaux blocs n'importe où_ (à part pour le bloc principal par défaut que vous avez constamment utilisé, bien sûr). Les cas dans lesquels vous pouvez utiliser des nouveaux blocs seront détaillés dans les chapitres suivants comme le chapitre sur le [contrôle de flux](./control_flow.md#control_flow).
 
 > **Comment indenter**
 >
-> Utilisez quatre espaces pour indenter. C'est la recommendation officiele du language Python. Les bons éditeurs le feront automatiquement pour vous. Soyez sûr d'utiliser un nombre cohérent d'espaces pour indenter, sinon votre programme ne fonctionnera pas, ou aura des comportements inattendus.
+> Utilisez quatre espaces pour indenter. C'est la recommandation officielle du langage Python. Les bons éditeurs le feront automatiquement pour vous. Soyez sûr d'utiliser un nombre cohérent d'espaces pour indenter, sinon votre programme ne fonctionnera pas, ou aura des comportements inattendus.
 
 <!-- -->
 

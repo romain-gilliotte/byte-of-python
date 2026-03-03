@@ -10,7 +10,7 @@ Au départ, j’utilisais KWord pour écrire le livre (comme expliqué dans la [
 
 ## Adolescence
 
-Plus tard, je suis passé à DocBook XML en utilisant Kate, mais j’ai trouvé ça trop fastidieux. Je suis donc passé à OpenOffice, qui était parfais de part le niveau de contrôle qu'il offrait pour le formatage ainsi que pour la génération de PDF. Il produisait cependant un code HTML de mauvaise qualité.
+Plus tard, je suis passé à DocBook XML en utilisant Kate, mais j’ai trouvé ça trop fastidieux. Je suis donc passé à OpenOffice, qui était parfait de par le niveau de contrôle qu'il offrait pour le formatage ainsi que pour la génération de PDF. Il produisait cependant un code HTML de mauvaise qualité.
 
 Enfin, j'ai découvert XEmacs et j'ai réécrit le livre de zéro au format DocBook XML (encore une fois) après avoir décidé que ce format était la solution à long terme.
 

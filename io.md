@@ -2,7 +2,7 @@
 
 Il y a des cas où votre programme va interagir avec l'utilisateur. Par exemple, vous voulez faire saisir des valeurs à l'utilisateur et afficher ensuite des résultats. Nous pouvons faire cela en utilisant les fonctions `input()` et `print()` respectivement.
 
-Pour l'affichage, nous pouvons utiliser les différentes méthodes de la classe `str` (chaîne de caractère). Par exemple, vous pouvez utiliser la méthode `rjust` pour justifier à droite une chaîne de caractère avec une largeur donnée. Voyez `help(str)` pour plus de détails.
+Pour l'affichage, nous pouvons utiliser les différentes méthodes de la classe `str` (chaîne de caractères). Par exemple, vous pouvez utiliser la méthode `rjust` pour justifier à droite une chaîne de caractères avec une largeur donnée. Voyez `help(str)` pour plus de détails.
 
 Une autre type d'entrée/sortie est de traiter des fichiers. La possibilité de créer, lire et écrire des fichiers est essentielle dans de nombreux programmes et nous verrons cela dans ce chapitre.
 
@@ -153,7 +153,7 @@ $ python pickling.py
 
 **Comment ça marche**
 
-Pour enregistrer un objet dans un fichier, nous devons d'abord ouvrir (`open`) le fichier avec le mode écriture binaire (`wb` pour _write binary_) et ensuite appeler la fonction `dump` du module`pickle`. Cette procédure est appelé _pickling_.
+Pour enregistrer un objet dans un fichier, nous devons d'abord ouvrir (`open`) le fichier avec le mode écriture binaire (`wb` pour _write binary_) et ensuite appeler la fonction `dump` du module `pickle`. Cette procédure est appelé _pickling_.
 
 Ensuite, nous récupérons l'objet en utilisant la fonction `load` du module `pickle` qui renvoie l'objet. Ce procédé est appelé _unpickling_.
 
@@ -192,7 +192,7 @@ print(text)
 
 Nous utilisons `io.open` puis le paramètre `encoding` dans le premier `open` pour encoder le message, puis de nouveau dans le deuxième lors du décodage du message. Notez que le paramètre `encoding` ne fait sens que lorsque nous manipulons des fichiers en mode texte.
 
-Chaque fois que nous écrivons un programme qui utilise des constantes littérales Unicode (en plaçant un "u" avant la chaîne de caractères) comme nous l'avons fait ci-dessus, nous devons nous assurer que Python lui-même est informé que notre programme est en UTF-8, et nous devons mettre le commentaire `#encoding=utf-8` en haut de notre programme.
+Chaque fois que nous écrivons un programme qui utilise des constantes littérales Unicode (en plaçant un "u" avant la chaîne de caractèress) comme nous l'avons fait ci-dessus, nous devons nous assurer que Python lui-même est informé que notre programme est en UTF-8, et nous devons mettre le commentaire `#encoding=utf-8` en haut de notre programme.
 
 Vous devriez en apprendre plus sur ce sujet en lisant:
 
