@@ -16,7 +16,7 @@ Guido van Rossum, le créateur du langage, l'a appelé en référence à la sér
 
 ### Simple
 
-Python est un langage simple et minimaliste. Lire un bon progamme écrit en Python ressemble beaucoup à lire de l'anglais, mais de l'anglais très strict! La nature de pseudo-code de Python est une de ses plus grandes forces. Cela vous permet de vous concentrer sur la solution du problème plutôt que sur le langage lui-même.
+Python est un langage simple et minimaliste. Lire un bon programme écrit en Python ressemble beaucoup à lire de l'anglais, mais de l'anglais très strict! La nature de pseudo-code de Python est une de ses plus grandes forces. Cela vous permet de vous concentrer sur la solution du problème plutôt que sur le langage lui-même.
 
 ### Facile à apprendre
 
@@ -24,11 +24,11 @@ Comme vous le constaterez, il est extrêmement facile de commencer à utiliser P
 
 ### Libre et Open Source
 
-Python est un exemple de _FLOSS_ (_Free/Libre et Open Source Software_, ou Logiciel Libre et Open source). En d'autres termes, vous pouvez librement distributer des copies de ce logiciel, lire son code source, le modifier, et en uiliser des morceaux dans un nouveau programme. FLOSS est basé sur le concept de communauté qui partage ses connaissances. C'est l'une des raisons pour laquelle Python est si bien - il a été créé et est constamment amélioré par une communauté qui veut simplement un meilleur Python.
+Python est un exemple de _FLOSS_ (_Free/Libre et Open Source Software_, ou Logiciel Libre et Open source). En d'autres termes, vous pouvez librement distribuer des copies de ce logiciel, lire son code source, le modifier, et en utiliser des morceaux dans un nouveau programme. FLOSS est basé sur le concept de communauté qui partage ses connaissances. C'est l'une des raisons pour laquelle Python est si bien - il a été créé et est constamment amélioré par une communauté qui veut simplement un meilleur Python.
 
 ### Langage de haut niveau
 
-Quand vous écrivez des programmes en Python, vous n'avez pas besoin de vous préocupper des détails commme gérer la mémoire utilisée par votre programme, etc...
+Quand vous écrivez des programmes en Python, vous n'avez pas besoin de vous préoccuper des détails comme gérer la mémoire utilisée par votre programme, etc...
 
 ### Portable
 
@@ -44,20 +44,20 @@ Cela appelle quelques explications.
 
 Un programme écrit dans un langage compilé comme C ou C++ est converti à partir du langage source (C ou C++) dans un langage parlé par l'ordinateur (code binaire avec des 0 et des 1) en utilisant un compilateur avec différents flags et options. Quand vous lancez le programme, l'éditeur de liens/le chargeur copie le programme du disque dur vers la mémoire et commence à l'exécuter.
 
-Python, par contre, n'a pas besoin de compilation vers du code binaire. Vous _lancez_ juste le programme directement à partir du code source. En interne, Python convertit le code souce dans une forme intermédiaire appelée bytecode et ensuite le convertit dans le langage natif de l'ordinateur et le lance. Tout cela, en fait, rend l'utilisation de Python plus facile, vu que vous n'avez pas besoin de vous inquiéter de la compilation du programme, que les bonnes librairies sont liées et chargées, etc... Cela rend aussi les programmes Python plus portables, vu qu'il suffit de copier un programme Python d'un ordinateur sur un autre, et cela marche!
+Python, par contre, n'a pas besoin de compilation vers du code binaire. Vous _lancez_ juste le programme directement à partir du code source. En interne, Python convertit le code source dans une forme intermédiaire appelée bytecode et ensuite le convertit dans le langage natif de l'ordinateur et le lance. Tout cela, en fait, rend l'utilisation de Python plus facile, vu que vous n'avez pas besoin de vous inquiéter de la compilation du programme, que les bonnes librairies sont liées et chargées, etc... Cela rend aussi les programmes Python plus portables, vu qu'il suffit de copier un programme Python d'un ordinateur sur un autre, et cela marche!
 
 ### Orienté objet
 
-Python supporte la programmation orientée procédure et la programmation orientée objet. Dans les langages _orienté-procedure_, le programme est construit autour de procédures ou fonctions qui sont des portions re-utilisables de programmes. Dans les langages _orienté-objet_, le programme est construit autour d'objets qui comprennent données et fonctionnalités. Python a une manière à la fois très puissante et très simple de faire de la Programmation Orientée Objet, en particulier comparé à des langages comme C++ ou Java.
+Python supporte la programmation orientée procédure et la programmation orientée objet. Dans les langages _orientés procédure_, le programme est construit autour de procédures ou fonctions qui sont des portions réutilisables de programmes. Dans les langages _orientés objet_, le programme est construit autour d'objets qui comprennent données et fonctionnalités. Python a une manière à la fois très puissante et très simple de faire de la Programmation Orientée Objet, en particulier comparé à des langages comme C++ ou Java.
 
 ### Extensible
 
-Si vous avez besoin qu'un morceau de code critique tourne très vite, ou qu'un algorithme reste caché, vous pouvez écrire cette partie de votre programme en C ou C\++ et ensuite  l'utiliser dans votre programme Python.
+Si vous avez besoin qu'un morceau de code critique tourne très vite, ou qu'un algorithme reste caché, vous pouvez écrire cette partie de votre programme en C ou C\++ et ensuite l'utiliser dans votre programme Python.
 
 ### Embarqué
 
 
-Vous pouvez embarquer Python dans vos progammes C/C\++ pour donner des possibilités de _scripting_ aux utilisateurs de vos programmes.
+Vous pouvez embarquer Python dans vos programmes C/C\++ pour donner des possibilités de _scripting_ aux utilisateurs de vos programmes.
 
 ### De nombreuses bibliothèques
 

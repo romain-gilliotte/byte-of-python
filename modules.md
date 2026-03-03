@@ -52,9 +52,9 @@ La variable `sys.argv` est une *liste* de chaîne de caractères
 
 Si vous utilisez un EDI pour écrire et exécuter ces programmes, cherchez une manière de passer des command line arguments au programme dans les menus.
 
-Ici, quand nous exécutons `python using_sys.py nous sommes des arguments`, nous lançons le module `using_sys.py` avec la commande `python` et les autres choses qui suivent sont des arguments passés au programme. Python stocke les arguments de la ligne de commande dans la variable `sys.argv` vpour nous afin de l'utiliser.
+Ici, quand nous exécutons `python using_sys.py nous sommes des arguments`, nous lançons le module `using_sys.py` avec la commande `python` et les autres choses qui suivent sont des arguments passés au programme. Python stocke les arguments de la ligne de commande dans la variable `sys.argv` pour nous afin de l'utiliser.
 
-Souvenez-vous, le nom du script qui s'exécute est toujours le premier  argument dans la liste `sys.argv`. Donc, dans ce cas nous aurons `'using_sys.py'` en tant que `sys.argv[0]`, `'nous'` en tant que `sys.argv[1]`, `'sommes'` en tant que `sys.argv[2]`, `'des'` en tant que `sys.argv[3]` et `'arguments'` en tant que `sys.argv[3]`. Notez que Python commence à compter à partir de 0 et pas 1.
+Souvenez-vous, le nom du script qui s'exécute est toujours le premier  argument dans la liste `sys.argv`. Donc, dans ce cas nous aurons `'using_sys.py'` en tant que `sys.argv[0]`, `'nous'` en tant que `sys.argv[1]`, `'sommes'` en tant que `sys.argv[2]`, `'des'` en tant que `sys.argv[3]` et `'arguments'` en tant que `sys.argv[4]`. Notez que Python commence à compter à partir de 0 et pas 1.
 
 Le `sys.path` contient la liste des noms de répertoires d'où les modules sont importés. Notez que la première chaîne de caractères dans `sys.path` est vide - cette chaîne vide indique que le répertoire courant fait partie de `sys.path` qui est comme la variable d'environnement `PYTHONPATH` . Cela signifie que vous pouvez directement importer les modules situés dans le répertoire courant. Sinon, vous devez placer votre module dans un des répertoires listés dans `sys.path`.
 
@@ -62,7 +62,7 @@ Notez que le répertoire courant est le répertoire à partir duquel le programm
 
 ## Fichiers .pyc byte-compilés {#pyc}
 
-Importer un module est assez couteux, donc Python fait des ruses pour être plus rapide. Une façon est de créer des fichiers ''byte-compiled'' avec l'extension `.pyc` qui est une forme intermédiaire dans laquelle Python transforme le programme (souvenez-vous du chapitre [introduction](./about_python.md#interpreted) sur la manière de fonctionner de Python ?). Ce fichier `.pyc` est utile quand vous importez le module une autre fois à partir d'un autre programme - cela sera beaucoup plus rapide vu qu'une partie du traitement nécessaire à l'importation d'un module est déjà fait. Egalement, ces fichiers byte-compiled sont indépendants de la plateforme.
+Importer un module est assez coûteux, donc Python fait des ruses pour être plus rapide. Une façon est de créer des fichiers ''byte-compiled'' avec l'extension `.pyc` qui est une forme intermédiaire dans laquelle Python transforme le programme (souvenez-vous du chapitre [introduction](./about_python.md#interpreted) sur la manière de fonctionner de Python ?). Ce fichier `.pyc` est utile quand vous importez le module une autre fois à partir d'un autre programme - cela sera beaucoup plus rapide vu qu'une partie du traitement nécessaire à l'importation d'un module est déjà fait. Egalement, ces fichiers byte-compiled sont indépendants de la plateforme.
 
 NOTE: Ces fichiers  `.pyc` sont en général créés dans le même répertoire que les fichiers correspondants `.py` . Si Python n'a pas l'autorisation d'écrire dans ce répertoire, alors les fichiers `.pyc` ne seront _pas_ créés.
 
@@ -76,7 +76,7 @@ Exemple:
 
 ```python
 from math import sqrt
-print("La racine carré de 16 vaut", sqrt(16))
+print("La racine carrée de 16 vaut", sqrt(16))
 ```
 
 ## Nommage des modules {#module-name}
@@ -156,7 +156,7 @@ say_hi()
 print('Version', __version__)
 ```
 
-L'affichage de `monmodule_demo2.py` est le même que celui de `mymodule_demo.py`.
+L'affichage de `mymodule_demo2.py` est le même que celui de `mymodule_demo.py`.
 
 Notez que s'il y avait déjà un nom `__version__` déclaré dans le module qui importe mymodule, il y aurait une collision entre les deux. Cela est aussi vraisemblable parce que l'usage est que chaque module doit déclarer son numéro de version en utilisant ce nom. C'est pour cette raison qu'il est toujours recommandé de préférer l'instruction `import` , même si elle peut rendre votre programme un peu plus long.
 
@@ -168,7 +168,7 @@ from mymodule import *
 
 Cela va importer tous les noms publics comme `sayhi` mais ne va pas importer `__version__` parce qu'il commence par des double underscores.
 
-> WARNING: N'oubliez pas que vous devriez éviter d'utiliser cette fonctionalité `from mymodule import *`.
+> WARNING: N'oubliez pas que vous devriez éviter d'utiliser cette fonctionnalité `from mymodule import *`.
 
 <!-- -->
 
@@ -220,7 +220,7 @@ $ python
 
 D'abord, nous voyons l'utilisation de `dir` sur le module importé `sys` . Nous pouvons voir l'immense liste des attributs qu'il contient.
 
-Ensuite, nous utilisons la fonction `dir` sans lui passer de paramètres. Par défault, elle renvoie la liste des attributes du module courant. Notez que la liste des modules importés fait aussi partie de cette liste.
+Ensuite, nous utilisons la fonction `dir` sans lui passer de paramètres. Par défaut, elle renvoie la liste des attributs du module courant. Notez que la liste des modules importés fait aussi partie de cette liste.
 
 Afin d'étudier `dir` en action, nous définissons une nouvelle variable `a` et nous lui donnons une valeur et nous vérifions `dir` et nous notons qu'il y a une valeur supplémentaire dans la liste du même nom. Nous enlevons la variable/attribut du module courant en utilisant l'instruction `del` et la modification se voit lors de l'affichage de la fonction `dir` .
 

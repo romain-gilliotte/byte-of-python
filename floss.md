@@ -6,7 +6,7 @@
 
 Si vous avez déjà lu ce livre, alors vous êtes déjà familier avec le logiciel libre car vous avez utilisé *Python* pendant la lecture et Python est un logiciel open source!
 
-Voici quelques exemples de le logiciels libre pour donner une idée du genre de choses que le partage et la construction de communauté peuvent créer:
+Voici quelques exemples de logiciels libres pour donner une idée du genre de choses que le partage et la construction de communauté peuvent créer:
 
 [Linux](http://www.kernel.org): Il s'agit du noyau du système d'exploitation GNU/Linux. Linux, le noyau, a été créé par Linus Torvalds quand il était étudiant. Android est basé sur Linux. Tous les sites Web que vous utilisez ces jours-ci fonctionnent principalement sous Linux.
 

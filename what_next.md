@@ -4,7 +4,7 @@ Si vous avez lu ce livre attentivement jusqu'ici et écrit de nombreux programme
 
 Je vous suggère de vous attaquer à ce problème :
 
-> Créer votre propre *carnet d'adresses* en ligne de commande avec lequel vous pourrez consulter, ajouter, modifier, détruire ou rechercher parmis vos contacts comme vos amis, les membres de votre famille et vos collègues, et retrouver des informations comme l'email et/ou le téléphone de chacun. Les détails doivent être enregistrés entre chaque utilisation du programme.
+> Créer votre propre *carnet d'adresses* en ligne de commande avec lequel vous pourrez consulter, ajouter, modifier, détruire ou rechercher parmi vos contacts comme vos amis, les membres de votre famille et vos collègues, et retrouver des informations comme l'email et/ou le téléphone de chacun. Les détails doivent être enregistrés entre chaque utilisation du programme.
 
 Cela est assez facile si vous pensez à tout ce que l'on a vu précédemment. Si vous voulez des indications sur la manière de faire, voici un indice: Créez une classe qui représente les informations relatives à une personne. Utilisez un dictionnaire pour enregistrer les objets d'une personne avec le nom en tant que clé. Utilisez le module pickle pour enregistrer les objets de manière persistente sur votre disque dur. Utilisez les méthodes fournies par le dictionnaire pour ajouter, détruire et modifier les personnes.
 
@@ -25,7 +25,7 @@ Voyez également:
 - [Exercices pour programmeurs: 57 défis pour développer vos compétences en programmation](https://pragprog.com/book/bhwb/exercises-for-programmers)
 - [Projets Python niveau intermédiaire](https://openhatch.org/wiki/Intermediate_Python_Workshop/Projects).
 
-## Example Code
+## Exemples de code
 
 La meilleure façon d'apprendre un langage de programmation consiste à écrire et à lire beaucoup de code:
 
@@ -76,7 +76,7 @@ Pour les installer et les utiliser, utilisez [pip](http://www.pip-installer.org/
 
 ## Création de sites web
 
-Apprenez à utiliser [Flask](http://flask.pocoo.org) pour créer vos propres sites web. Quelques resources pour démarrer :
+Apprenez à utiliser [Flask](http://flask.pocoo.org) pour créer vos propres sites web. Quelques ressources pour démarrer :
 
 - [Flask Official Quickstart](http://flask.pocoo.org/docs/quickstart/)
 - [The Flask Mega-Tutorial](http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
@@ -110,7 +110,7 @@ Pour une analyse plus détaillée, voyez la page 26 de [«&nbsp;The Python Paper
 
 ## Autres implémentations
 
-Il y a en général deux parties dans un langage de programmation - le language et le logiciel. Un langage est _comment_ vous écrivez quelque chose. Le logiciel est _ce qui_ fait réellement tourner notre programme.
+Il y a en général deux parties dans un langage de programmation - le langage et le logiciel. Un langage est _comment_ vous écrivez quelque chose. Le logiciel est _ce qui_ fait réellement tourner notre programme.
 
 Nous avons utilisé le logiciel _CPython_ pour exécuter nos programmes. On l'appelle CPython parce qu'il est écrit en langage C et que c'est l'interpréteur **c**lassique de Python.
 

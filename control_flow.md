@@ -1,6 +1,6 @@
 # Structures de contrôle {#control-flow}
 
-Dans les programmes que nous avons vus jusqu'à présent, il y a toujours eu une série d'instructions fidèlement exécutés par Python de haut en bas sans exceptions. Et si vous vouliez changer le flux de son fonctionnement? Par exemple, vous voulez que le programme prenne des décisions et fasse des choses différentes en fonction de situations différentes, comme afficher «&nbsp;Bonjour&nbsp;» ou «&nbsp;Bonsoir&nbsp;» en fonction de l’heure de la journée?
+Dans les programmes que nous avons vus jusqu'à présent, il y a toujours eu une série d'instructions fidèlement exécutées par Python de haut en bas sans exceptions. Et si vous vouliez changer le flux de son fonctionnement? Par exemple, vous voulez que le programme prenne des décisions et fasse des choses différentes en fonction de situations différentes, comme afficher «&nbsp;Bonjour&nbsp;» ou «&nbsp;Bonsoir&nbsp;» en fonction de l’heure de la journée?
 
 Comme vous l'avez peut-être deviné, ceci est réalisé à l'aide de structure de contrôle. Il existe trois instructions de structure de contrôle en Python - `if`,`for` et `while`.
 
@@ -24,7 +24,7 @@ elif guess < number:
     print('Non, c\'est un peu plus que ça')
     # Vous pouvez faire ce que vous voulez dans un bloc...
 else:
-    print('Non, c\'est une peu moins que ça')
+    print('Non, c\'est un peu moins que ça')
     # Il faut que guessed > number pour être ici
 
 print('Fini')
@@ -77,7 +77,7 @@ if True:
 
 Une fois que Python a fini d’exécuter l’instruction `if` complète ainsi que les clauses` elif` et `else` associées, il passe à l’instruction suivante du bloc contenant l’instruction `if`. Dans ce cas, il s’agit du bloc principal (où commence l’exécution du programme) et l’instruction suivante est l’instruction `print('Fini')`. Après cela, Python voit la fin du programme et finit simplement.
 
-Même s’il s’agit d’un programme très simple, j’ai souligné beaucoup de choses que vous devriez remarquer. Tout cela est assez simple (et étonnamment simple pour ceux d’entre vous qui programment en C/C\++). Vous aurez besoin d'appliquer tous ces éléments au début, mais après quelques exercices, vous vous sentirez à l'aise avec elles et elles vous paraîtrons «&nbsp;naturelles&nbsp;».
+Même s’il s’agit d’un programme très simple, j’ai souligné beaucoup de choses que vous devriez remarquer. Tout cela est assez simple (et étonnamment simple pour ceux d’entre vous qui programment en C/C\++). Vous aurez besoin d'appliquer tous ces éléments au début, mais après quelques exercices, vous vous sentirez à l'aise avec elles et elles vous paraîtront «&nbsp;naturelles&nbsp;».
 
 > **Remarque pour les programmeurs C/C++**
 >

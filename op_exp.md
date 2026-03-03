@@ -8,7 +8,7 @@ Les _Opérateurs_ sont la fonctionnalité qui fait quelque chose et peuvent êtr
 
 Nous jetterons un coup d'oeil rapide aux opérateurs et à leur utilisation.
 
-Notez que vous pouvez évaluer de manière interactive les expressions données dans les exemples en utilisant l'interpréteur. Par exemple, pour tester l'expression `2 + 3`, utilisez l'interpréteur intéractif python:
+Notez que vous pouvez évaluer de manière interactive les expressions données dans les exemples en utilisant l'interpréteur. Par exemple, pour tester l'expression `2 + 3`, utilisez l'interpréteur interactif Python:
 
 ```python
 >>> 2 + 3
@@ -29,7 +29,7 @@ Voici un aperçu rapide des opérateurs disponibles:
     - `-5.2` vaut un nombre négatif et `50 - 24` vaut `26`.
 
 - `*` (multiplication)
-    - Donne le produit de deux nombres, ou bien une une chaîne de caractères répétée le nombre de fois indiqué.
+    - Donne le produit de deux nombres, ou bien une chaîne de caractères répétée le nombre de fois indiqué.
     - `2 * 3` vaut `6`. `'la' * 3` vaut `'lalala'`.
 
 - `**` (puissance)
@@ -41,7 +41,7 @@ Voici un aperçu rapide des opérateurs disponibles:
     - `13 / 3` vaut `4.333333333333333`
 
 - `//` (quotient)
-    - Divise x par y et arrondi le resultat à l'entier `inférieur`. Si l'une des opérandes est un flottant, le résultat sera également un flottant.
+    - Divise x par y et arrondi le résultat à l'entier `inférieur`. Si l'une des opérandes est un flottant, le résultat sera également un flottant.
     - `13 // 3` vaut `4`
     - `-13 // 3` vaut `-5`
     - `9//1.81` vaut `4.0`
@@ -53,12 +53,12 @@ Voici un aperçu rapide des opérateurs disponibles:
 - `<<` (décalage de bits à gauche)
     - Fait un décalage à gauche du nombre de bits indiqué. (Chaque nombre est représenté en mémoire par des bits, c'est-à-dire 0 et 1)
     - `2 << 2` vaut `8`. `2` est représenté par `10` in binaire.
-    - Le décalage à gauche de 2 bits donne `1000` qui représente le nombre `8` en décimale.
+    - Le décalage à gauche de 2 bits donne `1000` qui représente le nombre `8` en décimal.
 
 - `>>` (décalage de bits à droite)
     - Fait un décalage à droite du nombre de bits indiqué.
     - `11 >> 1` vaut `5`.
-    - `11` est représenté par `1011` en binaire, qui décallé à droite d'un bit donne `101`, qui vaut `5` en décimale.
+    - `11` est représenté par `1011` en binaire, qui décalé à droite d'un bit donne `101`, qui vaut `5` en décimal.
 
 - `&` (et logique bit à bit)
     - `ET` bit à bit des nombres
@@ -93,7 +93,7 @@ Voici un aperçu rapide des opérateurs disponibles:
     - Indique si x est supérieur ou égal à y
     - `x = 4; y = 3; x >= 3` vaut `True`
 
-- `==` (egal à)
+- `==` (égal à)
     - Compare deux objets pour voir s'ils sont égaux
     - `x = 2; y = 2; x == y` vaut `True`
     - `x = 'str'; y = 'stR'; x == y` vaut `False`
@@ -112,7 +112,7 @@ Voici un aperçu rapide des opérateurs disponibles:
     - `x = False; y = True; x and y` vaut `False` vu que x est False. Dans ce cas, Python ne va pas évaluer y car il sait que la partie gauche de l'expression 'and' est `False` ce qui implique que l'expression complète sera `False` quelles que soient les autres valeurs. C'est ce que l'on appelle _short-circuit evaluation_.
 
 - `or` (ou booléen)
-    - Si x est `True`, il renvoie True, sinon il rencoir l'évaluation de y
+    - Si x est `True`, il renvoie True, sinon il renvoie l'évaluation de y
     - `x = True; y = False; x or y` vaut `True`. La _short-circuit evaluation_ s'applique ici aussi.
 
 ## Raccourci pour les opérations mathématiques et les affectations

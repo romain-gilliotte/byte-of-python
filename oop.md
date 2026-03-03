@@ -22,7 +22,7 @@ Une classe est créée en utilisant le mot-clé `class`. Les champs et méthodes
 
 Les méthodes d'une classe ont une seule différence avec les fonctions ordinaires - elles ont un nom en plus qui doit être ajouté au début de la liste des paramètres, mais vous ne devez **pas** donner une valeur à ce paramètre quand vous appelez la méthode, Python le fournira. Cette variable particulière fait référence à l'objet _lui-même_, et par convention on lui donne le nom de `self`.
 
-Vous pouvez donner n'importe quel nom à ce paramètre, mais il est _fortement recommandé_ d'utiliser le nom `self`, tout autre nom est mal vu. Il y a de nombreux avantages à utiliser un nom standard: n'importe quelle personne lisant votre programme le reconnaîtra immediatement et même des EDIs spécialisés (Environnement de Développement Intégré) vous aideront si vous utilisez `self`.
+Vous pouvez donner n'importe quel nom à ce paramètre, mais il est _fortement recommandé_ d'utiliser le nom `self`, tout autre nom est mal vu. Il y a de nombreux avantages à utiliser un nom standard: n'importe quelle personne lisant votre programme le reconnaîtra immédiatement et même des EDIs spécialisés (Environnement de Développement Intégré) vous aideront si vous utilisez `self`.
 
 > **Note pour les programmeurs C++/Java/C#**
 >
@@ -226,7 +226,7 @@ On peut imaginer que les décorateurs sont un raccourci pour appeler une fonctio
 how_many = classmethod(how_many)
 ```
 
-Notez que la méthode `__init__` est utilisée pour initialiser l'instance `Robot` avec un nom. Dans cette méthode, nous augmentons le compteur `population` de 1, vu que nous avons ajouté un robot. Notez aussi que la valeur de `self.name` est spécifique à chaque objet de par sa nature de variable d'object.
+Notez que la méthode `__init__` est utilisée pour initialiser l'instance `Robot` avec un nom. Dans cette méthode, nous augmentons le compteur `population` de 1, vu que nous avons ajouté un robot. Notez aussi que la valeur de `self.name` est spécifique à chaque objet de par sa nature de variable d'objet.
 
 Souvenez-vous, vous devez vous référer aux variables et méthodes du même objet en utilisant *uniquement* `self`. Cela s'appelle une *référence d'attribut*.
 
@@ -262,7 +262,7 @@ Voyons cela avec un programme (enregistrez sous `oop_subclass.py`):
 
 ```python
 class SchoolMember:
-    """Représente n'\importe quel personne de l\'école."""
+    """Représente n'importe quelle personne de l\'école."""
     def __init__(self, name, age):
         self.name = name
         self.age = age

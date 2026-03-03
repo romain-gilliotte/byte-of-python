@@ -2,7 +2,7 @@
 
 Les structures de données sont juste cela - ce sont des *structures* qui peuvent contenir des *données*. En d'autres termes, elles sont utilisées pour stocker un ensemble de données liées entre elles.
 
-Il y a quatre structures de données fournies dans Python - _les listes, les tuples, les dictionnaires et les emsembles_. Nous verrons maintenant comment utiliser chacune et comment nous simplifier la vie.
+Il y a quatre structures de données fournies dans Python - _les listes, les tuples, les dictionnaires et les ensembles_. Nous verrons maintenant comment utiliser chacune et comment nous simplifier la vie.
 
 ## Liste
 
@@ -70,7 +70,7 @@ Nous utilisons aussi la boucle `for..in` pour itérer les éléments de la liste
 
 Notez l'utilisation du mot-clé `end` de la fonction `print` pour indiquer que nous voulons finir l'affichage avec un espace au lieu de l'habituel retour à la ligne.
 
-Ensuite, nous ajoutons un élément à la liste en utilisant la méthode `append` de l'objet _list_, comme indiqué précédemment. puis, nous vérifiions que l'élément a bien été ajouté à la liste en affichant le contenu de la liste avec l'instruction `print` qui l'affiche proprement.
+Ensuite, nous ajoutons un élément à la liste en utilisant la méthode `append` de l'objet _list_, comme indiqué précédemment. puis, nous vérifions que l'élément a bien été ajouté à la liste en affichant le contenu de la liste avec l'instruction `print` qui l'affiche proprement.
 Puis, nous trions la liste avec la méthode `sort` de la liste. Il est important de comprendre que cette méthode modifie la liste elle-même et ne renvoie pas une liste modifiée - c'est différent de la manière dont les chaînes de caractères fonctionnent. C'est pour cela que nous disons que les listes sont modifiables (ndlt: _mutable_) et que les chaînes de caractères sont immuables (ndlt: _immutable_).
 
 Ensuite, quand nous avons fini d'acheter des objets sur le marché, nous voulons les enlever de la liste. Nous faisons cela avec l'instruction `del` . Ici, nous indiquons quel élément de la liste nous voulons enlever et l'instruction `del` le fait pour nous.  Nous indiquons que nous voulons enlever le premier élément de la liste et donc nous utilisons `del shoplist[0]` (souvenez-vous que Python compte à partir de 0).
@@ -96,7 +96,7 @@ new_zoo = ('singe', 'chameau', zoo)
 print('le nombre de cages dans le nouveau zoo est', len(new_zoo))
 print('Les animaux dans le nouveau zoo sont', new_zoo)
 print('Les animaux venant de l\'ancien zoo sont', new_zoo[2])
-print('Le dernier animal venant de l\ancien zoo sont', new_zoo[2][2])
+print('Le dernier animal venant de l'ancien zoo est', new_zoo[2][2])
 print('Le nombre d\'animaux dans le nouveau zoo sont', len(new_zoo)-1+len(new_zoo[2]))
 ```
 
@@ -123,7 +123,7 @@ Nous pouvons accéder les éléments dans le tuple en indiquant la position de l
 
 > **Tuple avec 0 ou 1 élément**
 >
-> Un tuple vide créé par une paire de parenthèses sans rien à l'intérieur comme `myempty = ()`. Cependant, un tuple avec un seul élément n'est pas si simple. Il faut le définir avec une virgule suivi du premier e(et seul) élément, afin que Python puisse différencier un tuple d'une paire de parenthèses entourant l'objet dans une expression, c'est-à-dire que vous devez déclarer `singleton = (2 , )` si vous voulez un tuple contenant l'élément `2`.
+> Un tuple vide créé par une paire de parenthèses sans rien à l'intérieur comme `myempty = ()`. Cependant, un tuple avec un seul élément n'est pas si simple. Il faut le définir avec une virgule suivi du premier (et seul) élément, afin que Python puisse différencier un tuple d'une paire de parenthèses entourant l'objet dans une expression, c'est-à-dire que vous devez déclarer `singleton = (2 , )` si vous voulez un tuple contenant l'élément `2`.
 
 <!-- -->
 
@@ -205,7 +205,7 @@ Pour la liste des méthodes de la classe `dict` , voyez `help(dict)`.
 
 ## Séquence
 
-Les listes, tuples et chaînes de caractères sont des exemples de séquences, mais que sont les séquences et qu'il y a-t-il de tellement particulier à leur sujet ?
+Les listes, tuples et chaînes de caractères sont des exemples de séquences, mais que sont les séquences et qu'y a-t-il de tellement particulier à leur sujet ?
 
 La principale fonctionnalité est qu'elles ont des test d'appartenance (c'est-à-dire les expressions `in` et `not in`) et les opérations d'indexage. L'opération d'*indexage* nous permet de rechercher directement un élément particulier dans la séquence.
 
@@ -267,7 +267,7 @@ L'index peut être une valeur négative à partir de la fin de la séquence. Don
 
 L'opération de tranchage est utilisée en indiquant le nom de la séquence suivi par une paire optionnelle de nombres séparés par un caractère deux-points à l'intérieur des square brackets. Notez que ceci est très similaire à l'opération d'indexation utilisée jusque-là . Souvenez-vous que les nombres sont optionnels mais pas le caractère deux-points.
 
-Le premier nombre (avant le deux-points) dans l'opération de tranchage fait référence à la position où démarre la tranche et le deuxième nombre (après le caractère deux-points) indique où s'arrête la tranche. Si le premier nombre n'est pas indiqué, Python va commencer au début de la séquence. Si le deuxième nombre est absent, Python va arrêter à ma fin de la séquence. Notez que la tranche renvoyé _démarre_ à ma position de début et va se terminer juste avant la position _fin_ c'est-à-dire que la position de début est incluse dans la tranche et la position de fin est exclue de la séquence de tranchage.
+Le premier nombre (avant le deux-points) dans l'opération de tranchage fait référence à la position où démarre la tranche et le deuxième nombre (après le caractère deux-points) indique où s'arrête la tranche. Si le premier nombre n'est pas indiqué, Python va commencer au début de la séquence. Si le deuxième nombre est absent, Python va arrêter à la fin de la séquence. Notez que la tranche renvoyée _démarre_ à la position de début et va se terminer juste avant la position _fin_ c'est-à-dire que la position de début est incluse dans la tranche et la position de fin est exclue de la séquence de tranchage.
 
 Ainsi, `shoplist[1:3]` renvoie une tranche de la séquence en partant de la position 1, inclut la position 2 mais s'arrête à la position 3 et donc une *tranche* de deux éléments est retourné.  De la même manière, `shoplist[:]` renvoie une copie de la séquence complète.
 
@@ -289,7 +289,7 @@ Vous pouvez aussi fournir un troisième argument pour la tranche, qui est le _pa
 
 Notez que quand le pas est de 2, nous obtenons les éléments en positions 0, 2, ... Quand le pas est de 3, nous obtenons les éléments en position 0, 3, etc.
 
-Essayez diverses combinaisons de tranchage en utilisant l'interpréteur intéractif Python, c'est-à-dire l'invite de commandes, afin de voir immédiatement les résultats. Ce qui est chouette avec les séquences, c'est que vous pouvez manipuler des tuples, des listes et des chaînes de caractères de la même manière !
+Essayez diverses combinaisons de tranchage en utilisant l'interpréteur interactif Python, c'est-à-dire l'invite de commandes, afin de voir immédiatement les résultats. Ce qui est chouette avec les séquences, c'est que vous pouvez manipuler des tuples, des listes et des chaînes de caractères de la même manière !
 
 ## Ensemble
 
@@ -366,7 +366,7 @@ maliste contient ['carotte', 'banane']
 
 L'essentiel des explications est disponible dans les commentaires.
 
-Souvenez-vous que si vous voulez faire une copie d'une liste ou autre séquence ou d'objets complexes (pas des _objets_ simples comme des entiers), alors vous devez utiliser l'opération de tranchage pour faire une copie. Si affectez juste une séquence à une nouvelle variable, les deux font faire _référence_ au même objet, et cela peut poser problème si vous n'y êtes pas attentifs.
+Souvenez-vous que si vous voulez faire une copie d'une liste ou autre séquence ou d'objets complexes (pas des _objets_ simples comme des entiers), alors vous devez utiliser l'opération de tranchage pour faire une copie. Si vous affectez juste une séquence à une nouvelle variable, les deux font faire _référence_ au même objet, et cela peut poser problème si vous n'y êtes pas attentifs.
 
 > **Note pour les programmeurs Perl**
 >
@@ -409,7 +409,7 @@ Brésil_*_Russie_*_Inde_*_Chine
 
 **Comment ça marche**
 
-Ici, nous voyons en action de nombreuses méthodes des chaînes de caractères. La méthode `startswith` est utilisée pour trouver si une chaîne de caractères commence avec la chîne indiquée. L'opérateur `in` est utilisé pour vérifier si une chaîne donnée fait partie de la chaîne de caractères.
+Ici, nous voyons en action de nombreuses méthodes des chaînes de caractères. La méthode `startswith` est utilisée pour trouver si une chaîne de caractères commence avec la chaîne indiquée. L'opérateur `in` est utilisé pour vérifier si une chaîne donnée fait partie de la chaîne de caractères.
 
 La méthode `find` est utilisée pour trouver la position d'une chaîne donnée dans la chaîne, ou retourne -1 si elle ne trouve pas sous-chaîne. La classe `str` a aussi une méthode pour `join` (joindre) les items d'une séquence, avec la chaîne jouant le rôle de délimiteur entre chaque item de la séquence et retournant une chaîne plus longue.
 

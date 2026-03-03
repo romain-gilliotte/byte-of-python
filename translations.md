@@ -20,7 +20,7 @@ Lutz Horn dit:
 
 Bernd Hengelein dit:
 
-> Lutz et moi allons faire la traduction allemande ensemble. Nous venons juste de commencer l'intro et la préface, mais nous vous tiendrons au courant des progrès réalisés. Ok, maintenant quelques choses personnelles. J'ai 34 ans et je joue avec des ordinateurs depuis les années 1980, lorsque le «&nbsp;Commodore C64&nbsp;» était le maître incontesté. Après des études en informatique, j'ai commencé à travailler comme ingénieur en logiciel. Actuellement, je travaille dans le domaine de l'imagerie médicale pour une grande entreprise allemande. Bien que C++ soit mon language principal que j'utilise (obligatoirement) pour mon travail quotidien, je suis constamment à la recherche de nouvelles choses à apprendre. L'année dernière, je suis tombée amoureus de Python, un langage merveilleuse, tant par ses possibilités que par sa beauté. J'ai lu quelque part sur le réseau un type qui disait qu'il aime le Python, parce que le code est si beau. À mon avis, il a absolument raison. A l'époque où j'ai décidé d'apprendre le Python, j'ai remarqué qu'il y avait très peu de bonne documentation disponible en allemand. Lorsque je suis tombé sur votre livre, l’idée spontanée d’une traduction en allemand m’a traversé l’esprit. Heureusement, Lutz a eu la même idée et nous pouvons maintenant nous diviser le travail. Je suis impatient de notre coopération!
+> Lutz et moi allons faire la traduction allemande ensemble. Nous venons juste de commencer l'intro et la préface, mais nous vous tiendrons au courant des progrès réalisés. Ok, maintenant quelques choses personnelles. J'ai 34 ans et je joue avec des ordinateurs depuis les années 1980, lorsque le «&nbsp;Commodore C64&nbsp;» était le maître incontesté. Après des études en informatique, j'ai commencé à travailler comme ingénieur en logiciel. Actuellement, je travaille dans le domaine de l'imagerie médicale pour une grande entreprise allemande. Bien que C++ soit mon langage principal que j'utilise (obligatoirement) pour mon travail quotidien, je suis constamment à la recherche de nouvelles choses à apprendre. L'année dernière, je suis tombé amoureux de Python, un langage merveilleux, tant par ses possibilités que par sa beauté. J'ai lu quelque part sur le réseau un type qui disait qu'il aime le Python, parce que le code est si beau. À mon avis, il a absolument raison. A l'époque où j'ai décidé d'apprendre le Python, j'ai remarqué qu'il y avait très peu de bonne documentation disponible en allemand. Lorsque je suis tombé sur votre livre, l’idée spontanée d’une traduction en allemand m’a traversé l’esprit. Heureusement, Lutz a eu la même idée et nous pouvons maintenant nous diviser le travail. Je suis impatient de notre coopération!
 
 ## Arabe
 
@@ -107,7 +107,7 @@ Alfonso de la Guarda Reyes (alfonsodg@ictechperu.net), Gustavo Echeverria (gusta
 
 Gustavo Echeverria dit:
 
-> Je travaille en tant qu'ingénieur logiciel en Argentine. J'utilise principalement les technologies C# et .NET au travail, mais n'utilise que Python ou en Ruby pour mes projets personnels. Je connaissais Python il y a de nombreuses années et je me suis retrouvé coincé immédiatement. Peu de temps après avoir découvert Python, j'ai découvert ce livre et cela m'a aidé à apprendre le language. Je me suis porté volontaire pour traduire le livre en espagnol. Maintenant, après avoir reçu quelques demandes, j'ai commencé à traduire «&nbsp;A Byte of Python&nbsp;» avec l'aide de Maximiliano Soler.
+> Je travaille en tant qu'ingénieur logiciel en Argentine. J'utilise principalement les technologies C# et .NET au travail, mais n'utilise que Python ou en Ruby pour mes projets personnels. Je connaissais Python il y a de nombreuses années et je me suis retrouvé coincé immédiatement. Peu de temps après avoir découvert Python, j'ai découvert ce livre et cela m'a aidé à apprendre le langage. Je me suis porté volontaire pour traduire le livre en espagnol. Maintenant, après avoir reçu quelques demandes, j'ai commencé à traduire «&nbsp;A Byte of Python&nbsp;» avec l'aide de Maximiliano Soler.
 
 Cristian Bermudez Serna a déclaré:
 
@@ -125,7 +125,7 @@ Elle est maintenant hébergée sur GitBook à l'adresse https://rgilliotte.gitbo
 
 ## Grec
 
-La communauté grecque Ubuntu [a traduit le livre en grec](http://wiki.ubuntu-gr.org/byte-of-python-el), pour l'utiliser dans nos leçons asynchrone de Python en ligne que nous proposons sur nos forums. Contactez [@savvasradevic](https://twitter.com/savvasradevic) pour plus d'informations.
+La communauté grecque Ubuntu [a traduit le livre en grec](http://wiki.ubuntu-gr.org/byte-of-python-el), pour l'utiliser dans nos leçons asynchrones de Python en ligne que nous proposons sur nos forums. Contactez [@savvasradevic](https://twitter.com/savvasradevic) pour plus d'informations.
 
 ## Indonésien
 
@@ -159,7 +159,7 @@ Mise à jour le 22 novembre 2009: Ariunsanaa est sur le point de terminer la tra
 
 Eirik Vågeskar est élève du secondaire à [Sandvika videregående skole](http://no.wikipedia.org/wiki/Sandvika_videreg%C3%A5ende_skole) en Norvège, et un [blogueur](http://forbedre.blogspot.com/). Il traduit actuellement le livre en norvégien (bokmål).
 
-> _Eirik Vågeskar_: J'ai toujours voulu programmer, mais comme je parle une petite langue, le processus d'apprentissage a été beaucoup plus difficile. La plupart des didacticiels et des livres sont rédigés dans un anglais très technique. Par conséquent, la plupart des diplômés du secondaire n'ont pas le vocabulaire nécessaire pour comprendre le fond des didacticiels. Quand j'ai découvert ce livre, tous mes problèmes ont été résolus. «&nbsp;A Byte of Python&nbsp;» utilisait un langage simple, non technique, pour expliquer un langage de programmation tout aussi simple, ce qui rend l'apprentissage de Python amusant. Après avoir lu la moitié du livre, j'ai décidé qu'il valait la peine qu'on le traduise. J'espère que la traduction aidera les personnes qui se sont retrouvées dans la même situation que moi (en particulier les jeunes) et peut-être aussi de faire en sorte de susciter un intérêt envers ce language chez les personnes possédant un bagage technique plus limité.
+> _Eirik Vågeskar_: J'ai toujours voulu programmer, mais comme je parle une petite langue, le processus d'apprentissage a été beaucoup plus difficile. La plupart des didacticiels et des livres sont rédigés dans un anglais très technique. Par conséquent, la plupart des diplômés du secondaire n'ont pas le vocabulaire nécessaire pour comprendre le fond des didacticiels. Quand j'ai découvert ce livre, tous mes problèmes ont été résolus. «&nbsp;A Byte of Python&nbsp;» utilisait un langage simple, non technique, pour expliquer un langage de programmation tout aussi simple, ce qui rend l'apprentissage de Python amusant. Après avoir lu la moitié du livre, j'ai décidé qu'il valait la peine qu'on le traduise. J'espère que la traduction aidera les personnes qui se sont retrouvées dans la même situation que moi (en particulier les jeunes) et peut-être aussi de faire en sorte de susciter un intérêt envers ce langage chez les personnes possédant un bagage technique plus limité.
 
 ## Polonais
 

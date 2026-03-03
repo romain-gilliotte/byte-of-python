@@ -1,6 +1,6 @@
 # Fonctions
 
-Les fonctions sont des morceaux re-utilisables de programmes. Ils vous permettent de donner un nom à un bloc d'instructions et vous pouvez exécuter ce bloc n'importe où et autant de fois que vous le voulez. C'est ce qu'on nomme *appeler* la fonction. Nous avons déjà utilisé des fonctions intégrées comme `len` et `range`.
+Les fonctions sont des morceaux réutilisables de programmes. Elles vous permettent de donner un nom à un bloc d'instructions et vous pouvez exécuter ce bloc n'importe où et autant de fois que vous le voulez. C'est ce qu'on nomme *appeler* la fonction. Nous avons déjà utilisé des fonctions intégrées comme `len` et `range`.
 
 Le concept de fonction est probablement *le* plus important bloc de base de n'importe quel logiciel un peu complexe (dans n'importe quel langage), donc nous explorerons divers aspects des fonctions dans ce chapitre.
 
@@ -79,7 +79,7 @@ Quand vous déclarez des variables à l'intérieur de la définition d'une fonct
 
 > **Note de la traduction**
 >
-> Le terme anglais *scope* est très utilisé, et à le même sens que *portée*.
+> Le terme anglais *scope* est très utilisé, et a le même sens que *portée*.
 
 Exemple (enregistrez sous `function_local.py`):
 
@@ -288,7 +288,7 @@ $ python func_return.py
 
 **Comment ça marche**
 
-La fonction `maximum` renvoie la valeur maximum des paramètres, dans ce cas les nombres fournis à la fonction. Elle utilise une simple instruction `if..else` pour trouver la plus grand valeur et ensuite *retourne* cette valeur.
+La fonction `maximum` renvoie la valeur maximum des paramètres, dans ce cas les nombres fournis à la fonction. Elle utilise une simple instruction `if..else` pour trouver la plus grande valeur et ensuite *retourne* cette valeur.
 
 Notez qu'une instruction `return` sans une valeur est équivalente à `return None`. `None` est un type spécial en Python, qui représente le néant. Par exemple, il est utilisé pour indiquer qu'une valeur n'a pas de valeur, si elle a une valeur de `None`.
 
@@ -305,7 +305,7 @@ L'instruction `pass` est utilisée en Python pour indiquer un bloc d'instruction
 
 ## DocStrings
 
-Python a une chic fonctionnalité appelée *documentation strings*, communément appelée *docstrings*. Les DocStrings sont un outil important que vous devriez utiliser, car cela vous aide à mieux documenter le programme et le rend plus facile à comprendre. Etonnament, nous pouvons même récuperer les docstrings en revenant, disons d'une fonction, pendant que le programme s'exécute!
+Python a une chic fonctionnalité appelée *documentation strings*, communément appelée *docstrings*. Les DocStrings sont un outil important que vous devriez utiliser, car cela vous aide à mieux documenter le programme et le rend plus facile à comprendre. Étonnamment, nous pouvons même récupérer les docstrings en revenant, disons d'une fonction, pendant que le programme s'exécute!
 
 Exemple (enregistrez sous `function_docstring.py`):
 

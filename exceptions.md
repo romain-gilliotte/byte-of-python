@@ -34,7 +34,7 @@ Python lève une erreur appelée `EOFError` qui signifie en gros qu’il a trouv
 
 ## Gérer les exceptions
 
-We can handle exceptions using the `try..except` statement.  We basically put our usual statements within the try-block and put all our error handlers in the except-block.
+Nous pouvons gérer les exceptions en utilisant l'instruction `try..except`. Nous plaçons nos instructions habituelles dans le bloc `try` et mettons tous nos gestionnaires d'erreur dans le bloc `except`.
 
 Exemple (enregistrez sous `exceptions_handle.py`):
 
@@ -68,7 +68,7 @@ Vous avez saisi Pas d'exception
 
 **Comment ça marche**
 
-Nous mettons toutes les instructions qui peuvent lever des exceptions/erreurs à l'intérieur du bloc `try` et gérons les erreurs/exceptions prévues dans la clause (ou bloc) `except`. La clause `except` peut gérer une seule erreur ou exception spécifiée, ou une liste d'erreurs ou d'exceptions entre parenthèses. Si le nom des erreurs ou exceptions à gérer n'est pas specifié, le bloc gérera *toutes* les erreurs et exceptions.
+Nous mettons toutes les instructions qui peuvent lever des exceptions/erreurs à l'intérieur du bloc `try` et gérons les erreurs/exceptions prévues dans la clause (ou bloc) `except`. La clause `except` peut gérer une seule erreur ou exception spécifiée, ou une liste d'erreurs ou d'exceptions entre parenthèses. Si le nom des erreurs ou exceptions à gérer n'est pas spécifié, le bloc gérera *toutes* les erreurs et exceptions.
 
 Notez qu'il faut avoir au moins une clause `except` associée à chaque clause `try`. Sinon, quel serait l'intérêt d'avoir un bloc try ?
 
@@ -126,11 +126,11 @@ Pas d'exception levée.
 
 Nous créons ici notre propre type d'exception. Ce nouveau type d'exception est appelé `ShortInputException`. Il possède deux champs: `length` qui est la longueur saisie, et `atleast` qui est la longueur minimum attendue par le programme.
 
-Dans la clause `except`, nous indiquons la classe de l'erreur qui sera stockée en tant que `ex` (`as ex`), le nom de variable qui va contenir l'objet d'erreur/exception correspondant. Cela est comparable aux paramètres et arguments dans un appel de fonction. A l'intérieur de cet clause `except`, nous utilisons les champs `length` et `atleast` de l'objet exception pour afficher le message approprié à l'utilisateur.
+Dans la clause `except`, nous indiquons la classe de l'erreur qui sera stockée en tant que `ex` (`as ex`), le nom de variable qui va contenir l'objet d'erreur/exception correspondant. Cela est comparable aux paramètres et arguments dans un appel de fonction. À l'intérieur de cette clause `except`, nous utilisons les champs `length` et `atleast` de l'objet exception pour afficher le message approprié à l'utilisateur.
 
 ## Try ... Finally {#try-finally}
 
-Supposons, vous lisez un fichier dans votre programme. Comment être certain que l'objet fichier est fermé proprement, indépendament du fait qu'une exception soit levée ou non dans le code qui le manipule ? Cela se fait à l'aide d'un bloc `finally`.
+Supposons, vous lisez un fichier dans votre programme. Comment être certain que l'objet fichier est fermé proprement, indépendamment du fait qu'une exception soit levée ou non dans le code qui le manipule ? Cela se fait à l'aide d'un bloc `finally`.
 
 Enregistrez ce programme sous `exceptions_finally.py`:
 
