@@ -32,7 +32,7 @@ Vous vous demandez comment Python donne une valeur à `self` et pourquoi vous n'
 
 Cela signifie aussi que si vous avez une méthode qui ne prend pas d'argument, alors elle a quand même un argument: `self`.
 
-## Classes {#class}
+## Classes {#classes}
 
 La classe la plus simple possible est montrée dans l'exemple suivant (enregistrez sous `oop_simplestclass.py`).
 

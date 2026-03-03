@@ -30,6 +30,8 @@ Pour la neuvième révision, je suis passé au [format AsciiDoc](http://asciidoc
 
 Pour la dixième révision, je suis passé à l'écriture au format Markdown + [GitBook](https://www.gitbook.com), à l'aide de [l'éditeur Spacemacs](http://spacemacs.org).
 
+Nov 2020: Depuis que Gitbook a abandonné son logiciel open source, migration vers [Honkit, un fork communautaire de Gitbook legacy](https://github.com/honkit/honkit).
+
 ## À propos de l'auteur
 
 Voir https://www.swaroopch.com/about/

@@ -177,7 +177,7 @@ Nous faisons notre lecture de fichier habituelle, mais nous avons introduit de m
 
 Notez que l'exception `KeyboardInterrupt` est levée et que le programme se ferme. Cependant, avant sa fermeture, la clause `finally` est exécutée et l'objet fichier est fermé.
 
-Notez également qu'une variable affectée d'une valeur de 0 ou `None` ou d'une variable qui contient séquence ou une collection vide est considérée comme `False` par Python. C'est pourquoi nous pouvons utiliser `if: f` dans le code ci-dessus.
+Notez également qu'une variable affectée d'une valeur de 0 ou `None` ou d'une variable qui contient séquence ou une collection vide est considérée comme `False` par Python. C'est pourquoi nous pouvons utiliser `if f:` dans le code ci-dessus.
 
 Notez également que nous utilisons `sys.stdout.flush()` après `print` pour nous garantir que le message soit immédiatement affiché à l'écran.
 

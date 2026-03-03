@@ -48,7 +48,7 @@ Python, par contre, n'a pas besoin de compilation vers du code binaire. Vous _la
 
 ### Orienté objet
 
-Python supporte la programmation orientée procédure et la programmation orientée objet. Dans les langages _orientés procédure_, le programme est construit autour de procédures ou fonctions qui sont des portions réutilisables de programmes. Dans les langages _orientés objet_, le programme est construit autour d'objets qui comprennent données et fonctionnalités. Python a une manière à la fois très puissante et très simple de faire de la Programmation Orientée Objet, en particulier comparé à des langages comme C++ ou Java.
+Python supporte la programmation orientée procédure et la programmation orientée objet (POO). Dans les langages _orientés procédure_, le programme est construit autour de procédures ou fonctions qui sont des portions réutilisables de programmes. Dans les langages _orientés objet_, le programme est construit autour d'objets qui comprennent données et fonctionnalités. Python a une manière à la fois très puissante et très simple de faire de la POO, en particulier comparé à des langages comme C++ ou Java.
 
 ### Extensible
 
@@ -84,7 +84,7 @@ Pour plus de détails sur les différences entre Python 2 et Python 3, voir:
 
 ## Que disent les programmeurs
 
-Vous trouverez intéressant de lire ce que des grands hackers comme ESR disent à propos de Python:
+Vous trouverez intéressant de lire ce que des grands hackers comme Eric S. Raymond (ESR) disent à propos de Python:
 
 - _Eric S. Raymond_ est l'auteur de [La Cathédrale et le Bazar](http://fr.wikipedia.org/wiki/La_Cath%C3%A9drale_et_le_Bazar) et aussi la personne qui a créé le terme «&nbsp;Open Source&nbsp;». Il dit que [Python est devenu son langage de programmation préféré](http://www.linuxjournal.com/article.php?sid=3882). Cet article a été la vraie inspiration pour mon premier contact avec Python.
 - _Bruce Eckel_ est l'auteur des livres célèbres _Thinking in Java_ et _Thinking in C++_. Il dit qu'aucun langage ne l'a rendu plus productif que Python. Il dit que Python est peut-être le seul langage qui se concentre sur le fait simplifier le travail du programmeur. Lisez  [l'interview complète](http://www.artima.com/intv/aboutme.html) pour plus de détails.

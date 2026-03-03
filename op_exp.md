@@ -61,16 +61,16 @@ Voici un aperçu rapide des opérateurs disponibles:
     - `11` est représenté par `1011` en binaire, qui décalé à droite d'un bit donne `101`, qui vaut `5` en décimal.
 
 - `&` (et logique bit à bit)
-    - `ET` bit à bit des nombres
-    - `5 & 3` vaut `1`.
+    - `ET` bit à bit des nombres : si les deux bits sont `1`, le résultat est `1`. Sinon, c'est `0`.
+    - `5 & 3` vaut `1` (`0101 & 0011` donne `0001`)
 
 - `|` (ou logique bit à bit)
-    - `OU` bit à bit des nombres
-    - `5 | 3` vaut `7`
+    - `OU` bit à bit des nombres : si les deux bits sont `0`, le résultat est `0`. Sinon, c'est `1`.
+    - `5 | 3` vaut `7` (`0101 | 0011` donne `0111`)
 
 - `^` (ou exclusif bit à bit)
-    - Calcule le ou exclusif bit à bit des nombres (`XOR`)
-    - `5 ^ 3` vaut `6`
+    - `XOR` bit à bit des nombres : si les deux bits (`1` ou `0`) sont identiques, le résultat est `0`. Sinon, c'est `1`.
+    - `5 ^ 3` vaut `6` (`0101 ^ 0011` donne `0110`)
 
 - `~` (inversion bit à bit)
     - L'inversion bit à bit de x vaut -(x+1)

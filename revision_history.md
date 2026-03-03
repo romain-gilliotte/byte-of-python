@@ -16,6 +16,10 @@ Le livre a besoin de l’aide de ses lecteurs tels que vous pour indiquer les pa
 
 # Historique des révisions {#revision-history}
 
+- Pas de changement de version
+    - 06 Nov 2020
+    - Migration de GitBook (abandonné) vers [Honkit, un fork communautaire de GitBook legacy](https://github.com/honkit/honkit)
+
 - 4.0
     - 19 janvier 2016
     - Retour au Python 3
@@ -38,7 +42,7 @@ Le livre a besoin de l’aide de ses lecteurs tels que vous pour indiquer les pa
     - 04 septembre 2008, toujours en cours
     - Réveil après une interruption de 3 ans et demi!
     - Re-écriture pour Python 3.0
-    - Conversion au format http://www.mediawiki.org[MediaWiki] (à nouveau)
+    - Conversion au format [MediaWiki](http://www.mediawiki.org) (à nouveau)
 
 - 1.20
     - 13 janvier 2005

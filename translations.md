@@ -88,6 +88,15 @@ Une caractéristique intéressante de cette traduction est qu’elle contient é
 
 ## Coréen
 
+### Epsimatt (2019)
+
+Epsimatt a commencé une nouvelle traduction en coréen :
+
+- Lecture en ligne : https://epsimatt.gitbook.io/byte-of-python/
+- Suivi de l'avancement : https://github.com/epsimatt/byte-of-python/issues/16
+
+### Ancienne traduction
+
 Jeongbin Park (pjb7687@gmail.com) a traduit le livre en coréen - <https://github.com/pjb7687/byte_of_python>
 
 > Je suis Jeongbin Park, travaillant actuellement en tant que chercheur en biophysique et bioinformatique en Corée.
@@ -220,3 +229,9 @@ Türker Sezer (tsezer@btturk.net) et Bugra Cakir (bugracakir@gmail.com) se sont 
 ## Ukrainien
 
 Averkiev Andrey (averkiyev@ukr.net) s'est porté volontaire pour traduire le livre en russe et peut-être en ukrainien (si le temps le permet).
+
+Daria JENS (jensdarya@gmail.com) a réalisé une traduction en ukrainien : <https://spielend-programmieren.at/byte_of_python_ukraine/>
+
+## Persan
+
+Najmeh Ghaderi (najmeh.gh.7.2008@gmail.com) s'est portée volontaire pour traduire le livre en persan. La traduction vient de commencer et est en cours.
