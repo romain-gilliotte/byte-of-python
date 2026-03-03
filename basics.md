@@ -40,7 +40,7 @@ Cela s'appelle un littéral parce que c'est _littéral_ - vous pouvez utiliser l
 Les nombres dans Python sont principalement divisés en deux types - entiers, nombres en virgule flottante.
 
 * Un exemple d'un entier est `2` qui est juste un nombre entier.
-* Des exemples de nombres en virgule flottante (ou *floats* en abrégé) sont `3.23` et `52.3E-4`. La notation `E`  indique des puissances de 10. Dans ce cas, `52.3E-4` signifie `52.3 * 10^-4`.
+* Des exemples de nombres en virgule flottante (ou *floats* en abrégé) sont `3.23` et `52.3E-4`. La notation `E` indique des puissances de 10. Dans ce cas, `52.3E-4` signifie `52.3 * 10^-4`.
 
 > **Note pour les programmeurs expérimentés**
 >

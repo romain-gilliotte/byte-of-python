@@ -61,6 +61,8 @@ Si vous êtes prêt à consacrer du temps à apprendre Vim ou Emacs, je vous rec
 
 Pour réitérer, choisissez un éditeur approprié. L'écriture de programmes Python en sera d'autant plus amusante et plus facile.
 
+Si vous êtes intéressé par une discussion détaillée sur ce sujet, consultez [Finding the Perfect Python Code Editor](https://realpython.com/courses/finding-perfect-python-code-editor/).
+
 ## PyCharm {#pycharm}
 
 [PyCharm Educational Edition](https://www.jetbrains.com/pycharm-edu/) est un éditeur gratuit que vous pouvez utiliser pour écrire des programmes Python.
