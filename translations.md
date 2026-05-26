@@ -24,11 +24,11 @@ Bernd Hengelein dit:
 
 ## Arabe
 
-Ci-dessous le lien pour la version arabe. Merci à Ashraf Ali Khalaf pour la traduction du livre, vous pouvez lire le livre en entier à l’adresse <http://www.khaledhosny.org/byte-of-python/index.html> ou le télécharger à partir de [sourceforge.net](http://downloads.sourceforge.net/omlx/byteofpython_arabic.pdf?use_mirror=osdn) pour plus d'informations, voir <http://itwadi.com/byteofpython_arabi>.
+Ci-dessous le lien pour la version arabe. Merci à Ashraf Ali Khalaf pour la traduction du livre, vous pouvez le télécharger à partir de [sourceforge.net](http://downloads.sourceforge.net/omlx/byteofpython_arabic.pdf?use_mirror=osdn) et trouver plus d'informations à l'adresse <http://itwadi.com/byteofpython_arabi>.
 
 ## Azéri
 
-Jahangir Shabiyev (c.shabiev@gmail.com) s'est porté volontaire pour traduire le livre en azéri. La traduction est en cours à l'adresse https://www.gitbook.com/book/jahangir-sh/piton-sancmasi
+Jahangir Shabiyev (c.shabiev@gmail.com) s'est porté volontaire pour traduire le livre en azéri.
 
 ## Catalan
 
@@ -43,20 +43,6 @@ Moises Gomez (moisesgomezgiron@gmail.com) s'est porté volontaire pour traduire 
 > Alors, pourquoi ne pas essayer de le traduire? Et je l'ai fait pour une version précédente de BoP.
 >
 > Dans mon pays, il existe deux langues officielles. J'ai choisi la langue catalane en supposant que d'autres la traduiront en espagnol plus répandu.
-
-## Chinois
-
-En 2017, soit après 11 ans, Mo Lun (i@molun.net) a retraduit le livre depuis le début sur la base de la version 4.0. Et la traduction est stockée dans GitHub et Gitbook. Il continue de suivre cette édition traduite et est prêt à la corriger s'il y a une erreur ou une erreur dans le BoP traduit.
-
-L'édition 2017 de la traduction est disponible à l'adresse <https://bop.molun.net>.
-
-Mo Lun dit:
-
-> Je suis un étudiant en journalisme de la CYU, à Beijing. Et en fait, j'étais un débutant absolu en programmation Python lorsque j'ai commencé à traduire ce livre. Au début, ce n’était qu’un caprice, mais lorsque j’ai effectué ce travail, j’ai réalisé qu’une décision prise par intérêt m’avait poussé à avancer autant.
->
-> Avec l’aide des traductions de mes prédécesseurs et de la grande quantité d’informations fournie par Internet, et avec l’aide de mes amis, j’ai prudemment présenté cette édition traduite. J'espère juste que mon travail de traduction aidera d'autres nouveaux arrivants à apprendre Python.
->
-> En même temps, j'attends des commentaires et suggestions et je suis prêt à changer ou à améliorer le travail superficiel réalisé sur cette traduction.
 
 ### Traduction antérieure en chinois
 
@@ -134,7 +120,7 @@ Elle est maintenant hébergée sur GitBook à l'adresse https://rgilliotte.gitbo
 
 ## Grec
 
-La communauté grecque Ubuntu [a traduit le livre en grec](http://wiki.ubuntu-gr.org/byte-of-python-el), pour l'utiliser dans nos leçons asynchrones de Python en ligne que nous proposons sur nos forums. Contactez [@savvasradevic](https://twitter.com/savvasradevic) pour plus d'informations.
+La communauté grecque Ubuntu a traduit le livre en grec, pour l'utiliser dans nos leçons asynchrones de Python en ligne que nous proposons sur nos forums. Contactez [@savvasradevic](https://twitter.com/savvasradevic) pour plus d'informations.
 
 ## Indonésien
 
@@ -147,8 +133,6 @@ Bagus Aji Santoso (baguzzzaji@gmail.com) s'est porté volontaire.
 ## Italien
 
 Enrico Morelli (mr.mlucci@gmail.com) et Massimo Lucci (morelli@cerm.unifi.it) se sont portés volontaires pour traduire le livre en italien.
-
-La traduction italienne est présente à l'adresse <http://www.gentoo.it/Programmazione/byteofpython>.
 
 > _Massimo Lucci et Enrico Morelli_: nous travaillons à l’Université de Florence (Italie) au département de chimie. Massimo en tant qu'ingénieur de service et administrateur système pour les spectromètres à résonance magnétique nucléaire; Enrico en tant qu'ingénieur de service et administrateur système pour notre CED et nos systèmes parallèles / en cluster. Nous programmons sur Python depuis environ sept ans et nous travaillons avec la plateforme Linux depuis dix ans. En Italie, nous sommes responsables et administrateurs du site Web www.gentoo.it pour la distribution Gentoo/Linux et du site www.nmr.it (en construction) pour les applications de la résonance magnétique nucléaire et l'organisation et la gestion du Congrès. C'est tout! Nous sommes impressionnés par le langage intelligent utilisé dans votre livre et estimons qu’il est essentiel pour amener Python à de nouveaux utilisateurs (nous pensons à une centaine d’étudiants et de chercheurs travaillant dans nos laboratoires).
 
@@ -172,7 +156,7 @@ Eirik Vågeskar est élève du secondaire à [Sandvika videregående skole](http
 
 ## Polonais
 
-Dominik Kozaczko (dominik@kozaczko.info) s'est porté volontaire pour traduire le livre en polonais. La traduction est en cours et sa page principale est disponible ici: [Ukąś Pythona](http://python.edu.pl/byteofpython/).
+Dominik Kozaczko (dominik@kozaczko.info) s'est porté volontaire pour traduire le livre en polonais.
 
 _Mise à jour_: La traduction est terminée et prête depuis le 2 octobre 2009. Merci à Dominik, ses deux étudiants et leur ami pour leur temps et leurs efforts!
 
@@ -214,7 +198,7 @@ Plus de détails à l'adresse <http://forum.ubuntu-rs.org/Thread-zagrljaj-pitona
 
 ## Slovaque
 
-Albertio Ward (albertioward@gmail.com) a traduit le livre en slovaque à l'adresse <http://www.fatcow.com/edu/python-swaroopch-sl/>:
+Albertio Ward (albertioward@gmail.com) a traduit le livre en slovaque:
 
 > Nous sommes une organisation à but non lucratif appelée «&nbsp;Traduction pour l'éducation&nbsp;». Nous représentons un groupe de personnes, principalement des étudiants et des professeurs, de la _Slavonic University_. Nous avons des étudiants de différents départements: linguistique, chimie, biologie, etc... Nous essayons de trouver sur Internet des publications intéressantes qui peuvent être pertinentes pour nous et nos collègues universitaires. Parfois, nous trouvons des articles par nous-mêmes; D'autres fois, nos professeurs nous aident à choisir le matériel à traduire. Après avoir obtenu l’autorisation des auteurs, nous traduisons des articles et les publions sur notre blog, qui est disponible et accessible à nos collègues et amis. Ces publications traduites aident souvent les étudiants dans leur études.
 
@@ -228,9 +212,9 @@ Türker Sezer (tsezer@btturk.net) et Bugra Cakir (bugracakir@gmail.com) se sont 
 
 ## Ukrainien
 
-Averkiev Andrey (averkiyev@ukr.net) s'est porté volontaire pour traduire le livre en russe et peut-être en ukrainien (si le temps le permet).
+Daria JENS (jensdarya@gmail.com) a terminé une traduction en ukrainien : <https://spielend-programmieren.at/byte_of_python_ukraine/>
 
-Daria JENS (jensdarya@gmail.com) a réalisé une traduction en ukrainien : <https://spielend-programmieren.at/byte_of_python_ukraine/>
+Averkiev Andrey (averkiyev@ukr.net) s'est porté volontaire pour traduire le livre en russe et peut-être en ukrainien (si le temps le permet).
 
 ## Persan
 

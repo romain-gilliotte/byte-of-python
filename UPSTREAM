@@ -1,0 +1,19 @@
+# Suivi de synchronisation avec le livre anglais
+
+Ce fork est une traduction française de « A Byte of Python » de Swaroop C H.
+Dépôt source (upstream) : https://github.com/swaroopch/byte-of-python
+
+Dernier commit anglais avec lequel cette traduction est à jour :
+
+    66e5e78f51c4b6e73cc518c799af88023e63cce0
+
+Date de ce commit : 2026-05-11
+
+## Comment vérifier l'écart la prochaine fois
+
+    git remote add upstream https://github.com/swaroopch/byte-of-python.git
+    git fetch upstream
+    git log --oneline 66e5e78f51c4b6e73cc518c799af88023e63cce0..upstream/master
+
+Les commits affichés sont ceux à reporter dans la traduction. Une fois le
+rattrapage fait, mettre à jour le SHA ci-dessus.
