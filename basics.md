@@ -25,7 +25,7 @@ Utilisez autant de commentaires utiles que possible dans votre programme pour:
 - expliquer les problèmes que vous essayez de résoudre
 - expliquer les problèmes que vous essayez de surmonter dans votre programme, etc.
 
-[*Le code vous dit comment, les commentaires devraient vous dire pourquoi*](http://www.codinghorror.com/blog/2006/12/code-tells-you-how-comments-tell-you-why.html).
+[*Le code vous dit comment, les commentaires devraient vous dire pourquoi*](https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/).
 
 Ceci est utile pour les lecteurs de votre programme afin qu’ils puissent facilement comprendre ce qu’il fait. Rappelez-vous que cette personne peut être vous-même six mois plus tard!
 

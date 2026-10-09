@@ -83,7 +83,7 @@ Même s’il s’agit d’un programme très simple, j’ai souligné beaucoup d
 >
 > Il n'y a pas d'instruction `switch` en Python. Vous pouvez utiliser une instruction `if..elif..else` pour faire la même chose (et dans certains cas, utiliser un [dictionnaire](./data_structures.md#dictionary) pour le faire rapidement)
 
-## L'instruction while
+## L'instruction `while`
 
 L'instruction `while` vous permet d'exécuter plusieurs fois un bloc d'instructions tant qu'une condition est vraie. Une instruction `while` est un exemple de ce que l’on appelle une instruction de *boucle*. Une instruction `while` peut avoir une clause optionnelle `else`.
 

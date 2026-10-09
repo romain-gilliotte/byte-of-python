@@ -4,7 +4,7 @@
 
 ## Pour Python version 3
 
-Ce livre vous apprendra à utiliser Python version 3. Il vous aidera également à utiliser la version 2 de Python, plus ancienne et plus courante.
+Ce livre enseigne Python 3. Utilisez Python 3 pour suivre les exemples. Les références à Python 2 ne sont incluses qu'à titre historique et pour comprendre du code ancien.
 
 ## Qui lit A Byte of Python? <a href="#who-reads-bop" id="who-reads-bop"></a>
 
@@ -130,7 +130,7 @@ Vous pouvez lire le livre en ligne à l'adresse suivante https://python.swaroopc
 
 ## Acheter le livre
 
-Une copie papier du livre peut être achetée à l'adresse https://www.swaroopch.com/buybook/, pour le plaisir de lire hors-ligne, et pour soutenir le développement permanent et l'amélioration continue de ce livre.
+Une copie papier du livre peut être achetée à l'adresse https://www.swaroopch.com/buy-paper-books, pour le plaisir de lire hors-ligne, et pour soutenir le développement permanent et l'amélioration continue de ce livre.
 
 ## Téléchargement
 

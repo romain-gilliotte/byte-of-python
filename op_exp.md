@@ -195,7 +195,7 @@ Le périmètre vaut 14
 
 **Comment ça marche**
 
-La longueur et la largeur du rectangle sont rangées dans des variables du même nom (length et breadth). Nous les utilisons pour calculer la surface et le périmètre du rectangle avec l'aide des expressions. Nous rangeons le résultat de l'expression `length * breadth` dans la variable `area` et ensuite nous l'affichons en utilisant la fonction `print`. Dans le deuxième cas, nous utilisons directement la valeur de l'expression `2 * (length + breadth)` dans la fonction print.
+La longueur et la largeur du rectangle sont rangées dans des variables du même nom (length et breadth). Nous les utilisons pour calculer la surface et le périmètre du rectangle avec l'aide des expressions. Nous rangeons le résultat de l'expression `length * breadth` dans la variable `area` et ensuite nous l'affichons en utilisant la fonction `print`. Dans le deuxième cas, nous utilisons directement la valeur de l'expression `2 * (length + breadth)` dans la fonction `print`.
 
 Notez également comment Python _affiche joliment_ le résultat. Même si nous n'avons pas ajouté un espace entre `"l'aire est de"` et la variable `area`, Python l'insère pour nous afin d'avoir un joli affichage et le programme est bien plus lisible ainsi (vu que nous n'avons pas à nous inquiéter des espaces dans les chaînes de caractères utilisées à l'affichage). Voici un exemple de ce que fait Python pour rendre la vie du programmeur plus facile.
 

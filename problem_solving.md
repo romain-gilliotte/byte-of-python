@@ -389,7 +389,7 @@ Une manière recommandée d'écrire un programme est la procédure que nous avon
 Souvenez-vous:
 
 > Un logiciel ne se fabrique pas, il se cultive.
-> -- [Bill de hÓra](https://web.archive.org/web/20150216004032/http://97things.oreilly.com/wiki/index.php/Great_software_is_not_built,_it_is_grown)
+> -- [Bill de hÓra](https://www.oreilly.com/library/view/97-things-every/9780596800611/ch97.html)
 
 ## Récapitulatif
 

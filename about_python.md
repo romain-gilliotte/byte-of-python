@@ -71,11 +71,11 @@ Python est vraiment un langage puissant et formidable. Il possède la bonne comb
 
 ## Python 3 par rapport à 2
 
-Vous pouvez ignorer cette section si la différence entre _Python version 2_ et _Python version 3_ ne vous intéresse pas. Mais soyez conscient de la version que vous utilisez. Ce livre est écrit pour Python version 3.
+Ce livre est écrit pour Python 3. Utilisez Python 3 pour suivre les exemples et pour écrire de nouveaux programmes. Python 2 est une version obsolète qui n'est plus maintenue.
 
-N'oubliez pas qu'une fois que vous avez bien compris et appris à utiliser une version, vous pouvez facilement apprendre les différences et utiliser l'autre. Le plus difficile est d’apprendre à programmer et à comprendre les bases du langage Python lui-même. C’est notre objectif dans ce livre, et une fois que vous avez atteint cet objectif, vous pouvez facilement utiliser Python 2 ou Python 3 en fonction de votre situation.
+Apprendre à programmer et comprendre les bases du langage Python lui-même, c’est notre objectif dans ce livre. Vous n'avez pas besoin d'apprendre Python 2 pour commencer. Si vous tombez sur du code ancien écrit en Python 2, comprendre les différences peut vous aider à le migrer vers Python 3.
 
-Pour plus de détails sur les différences entre Python 2 et Python 3, voir:
+Les ressources suivantes apportent un contexte historique sur Python 2 et sur la migration vers Python 3; leur lecture n'est pas nécessaire pour les débutants:
 
 - [Le futur de Python 2](http://lwn.net/Articles/547191/)
 - [Porter du code de Python 2 vers Python 3](https://docs.python.org/3/howto/pyporting.html)
