@@ -91,7 +91,7 @@ Enfin, nous écrivons les messages prévus pour le débogage, l'information, les
 Il reste beaucoup de choses à découvrir dans la bibliothèque standard, comme le [débogage](http://docs.python.org/3/library/pdb.html),
 la [gestion des options en ligne de commande](http://docs.python.org/3/library/argparse.html), les [expressions régulières](http://docs.python.org/3/library/re.html) et bien plus.
 
-La meilleure façon de continuer à explorer la bibliothèque standard est de lire l'excellente série de Doug Hellmann [Le module Python de la semaine](https://pymotw.com/3/) (également disponible en [format papier](https://doughellmann.com/blog/the-python-3-standard-library-by-example/)) et de lire la [documentation de Python](http://docs.python.org/3/).
+La meilleure façon de continuer à explorer la bibliothèque standard est de lire l'excellente série de Doug Hellmann [Le module Python de la semaine](https://pymotw.com/3/) (également disponible en [format papier](https://doughellmann.com/books/the-python-3-standard-library-by-example/)) et de lire la [documentation de Python](http://docs.python.org/3/).
 
 ## Récapitulatif
 

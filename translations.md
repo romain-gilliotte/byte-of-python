@@ -8,6 +8,12 @@ Si vous envisagez de démarrer une nouvelle traduction, veuillez lire le [Guide 
 
 ## Allemand
 
+### Python 3
+
+[Horst JENS](https://spielend-programmieren.at) (horst.jens@spielend-programmieren.at) a terminé en 2026 une traduction en allemand: <https://spielend-programmieren.at/byte_of_python_deutsch/index.html>
+
+### Python 2 (obsolète)
+
 Lutz Horn (lutz.horn@gmx.de), Bernd Hengelein (bernd.hengelein@gmail.com) et Christoph Zwerschke (cito@online.de) se sont portés volontaires pour traduire le livre en allemand.
 
 La traduction peut être trouvée à l'adresse http://cito.github.io/byte_of_python/
@@ -43,6 +49,14 @@ Moises Gomez (moisesgomezgiron@gmail.com) s'est porté volontaire pour traduire 
 > Alors, pourquoi ne pas essayer de le traduire? Et je l'ai fait pour une version précédente de BoP.
 >
 > Dans mon pays, il existe deux langues officielles. J'ai choisi la langue catalane en supposant que d'autres la traduiront en espagnol plus répandu.
+
+## Chinois simplifié
+
+Jeffrey He (jeffreyheping) a terminé une traduction du livre en chinois simplifié.
+
+À lire en ligne à l'adresse https://jeffreyheping.github.io/byte-of-python/
+
+Dépôt source: https://github.com/jeffreyheping/byte-of-python
 
 ### Traduction antérieure en chinois
 
@@ -81,9 +95,13 @@ Epsimatt a commencé une nouvelle traduction en coréen :
 - Lecture en ligne : https://epsimatt.gitbook.io/byte-of-python/
 - Suivi de l'avancement : https://github.com/epsimatt/byte-of-python/issues/16
 
-### Ancienne traduction
+### Jeongbin Park (2022)
 
-Jeongbin Park (pjb7687@gmail.com) a traduit le livre en coréen - <https://github.com/pjb7687/byte_of_python>
+Jeongbin Park a mis à jour sa traduction coréenne pour Python 3 en novembre 2022.
+
+- Dépôt source: https://github.com/chaek-union/a_byte_of_python-korean_translation
+
+Dans son introduction à la traduction précédente, Jeongbin écrivait:
 
 > Je suis Jeongbin Park, travaillant actuellement en tant que chercheur en biophysique et bioinformatique en Corée.
 >
@@ -206,6 +224,10 @@ Albertio Ward (albertioward@gmail.com) a traduit le livre en slovaque:
 
 Mikael Jacobsson (leochingkwake@gmail.com) s'est porté volontaire pour traduire le livre en suédois.
 
+## Tamoul
+
+L'équipe TamilNeram a terminé une traduction de ce livre en tamoul. Le livre électronique `மலைப்பாம்புக்கடி` (*Malaippambukkadi*) est disponible sur la page d'accueil [https://TamilNeram.github.io](https://TamilNeram.github.io) ainsi qu'à l'adresse [https://TACE16.github.io/PyBy](https://TACE16.github.io/PyBy). Pour contacter l'équipe TamilNeram, envoyez un email à TamilNeram247@gmail.com.
+
 ## Turc
 
 Türker Sezer (tsezer@btturk.net) et Bugra Cakir (bugracakir@gmail.com) se sont portés volontaires pour traduire le livre en turc. «&nbsp;Où est la version turque? Bitse de okusak.&nbsp;»
@@ -218,4 +240,4 @@ Averkiev Andrey (averkiyev@ukr.net) s'est porté volontaire pour traduire le liv
 
 ## Persan
 
-Najmeh Ghaderi (najmeh.gh.7.2008@gmail.com) s'est portée volontaire pour traduire le livre en persan. La traduction vient de commencer et est en cours.
+Najmeh Ghaderi (najmeh.gh.7.2008@gmail.com) a terminé une traduction complète de ce livre en persan, disponible à l'adresse https://najmeh-ghaderi.github.io/Persian-translation-of-a-byte-of-Python/

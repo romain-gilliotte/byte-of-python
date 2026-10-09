@@ -161,7 +161,7 @@ Ensuite, nous récupérons l'objet en utilisant la fonction `load` du module `pi
 
 Jusqu'à présent, lorsque nous écrivions et utilisions des chaînes de caractères, ou lisions et écrivions dans un fichier, nous n'utilisions que des caractères non accentués de l'alphabet latin. Les caractères accentués, non accentués ou d'autres alphabets peuvent être représentés en Unicode (voir les articles à la fin de cette section pour plus d’informations), que Python 3 utilise par défaut pour les chaînes de caractères (tout le texte que nous avons écrit en utilisant simple, double ou triple guillemets).
 
-> NOTE: Si vous utilisez Python 2 et que vous voulez pouvoir lire et écrire des langues non anglaises, vous devez utiliser le type `unicode`, en préfixant vos chaînes par le caractère `u`. Par exemple: `u"hello world"`
+> Note historique: Python 2 utilisait un type `unicode` distinct pour le texte Unicode, avec des littéraux comme `u"hello world"`. En Python 3, les chaînes ordinaires contiennent déjà du texte Unicode; le préfixe `u` est facultatif.
 
 ```python
 >>> "hello world"
